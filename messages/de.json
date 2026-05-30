@@ -1,0 +1,532 @@
+{
+  "Site": {
+    "name": "Luckysoft",
+    "description": "Durchdachte Apps für ruhigere Alltagsabläufe.",
+    "ogAlt": "Durchdachte Luckysoft Apps in einem ruhigen Arbeitsbereich."
+  },
+  "Navigation": {
+    "products": "Produkte",
+    "vision": "Vision",
+    "support": "Support",
+    "contact": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen",
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen",
+    "mainLabel": "Hauptnavigation",
+    "mobileLabel": "Mobile Navigation",
+    "languageLabel": "Sprache",
+    "english": "EN",
+    "german": "DE"
+  },
+  "Footer": {
+    "tagline": "Durchdachte Apps für ruhigere Alltagsabläufe.",
+    "explore": "Entdecken",
+    "company": "Unternehmen",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "rights": "(c) {year} Luckysoft. Alle Rechte vorbehalten.",
+    "madeWithCare": "Mit Sorgfalt gemacht."
+  },
+  "Products": {
+    "items": {
+      "file-to-markdown": {
+        "name": "File to Markdown",
+        "shortName": "Markdown",
+        "tagline": "Wandle strukturierte Dateien in sauberes Markdown um.",
+        "summary": "Konvertiere gängige Dokumente und Quelldateien in lesbares Markdown für Dokumentation, Prompts, Notizen und Publishing-Workflows.",
+        "description": "File to Markdown hilft dir, alltägliche Dateien in sauberes Markdown umzuwandeln, ohne dass sich der Workflow schwer anfühlt. Es ist für Menschen gedacht, die Informationen zwischen Dokumenten, Editoren, KI-Tools und Publishing-Systemen bewegen.",
+        "platforms": ["Mac", "Dokumente", "Markdown"],
+        "primaryCta": "Zu File to Markdown fragen",
+        "secondaryCta": "Support erhalten",
+        "features": [
+          "Saubere Konvertierung in lesbares Markdown",
+          "Erhaltene Struktur für einfacheres Bearbeiten",
+          "Output, der praktisch für Dokumentation und Prompts ist",
+          "Ein fokussierter Workflow ohne laute Steuerelemente"
+        ],
+        "useCases": [
+          "Dokumente für Wissensdatenbanken vorbereiten",
+          "Dateien in KI-gestützte Schreib-Workflows bewegen",
+          "Strukturierte Notizen in portablen Text umwandeln"
+        ],
+        "supportTopics": [
+          "Unterstützte Dateitypen",
+          "Markdown-Formatierung",
+          "Konvertierungsqualität",
+          "Export-Workflow"
+        ]
+      },
+      "splitpop": {
+        "name": "Splitpop",
+        "shortName": "Splitpop",
+        "tagline": "Teile Rechnungen ohne unangenehme Kopfrechnung.",
+        "summary": "Eine einfache Mobile-App für geteilte Ausgaben, klare Salden und stressfreies Ausgleichen.",
+        "description": "Splitpop macht gemeinsame Rechnungen verständlich. Füge Ausgaben hinzu, teile sie mit den richtigen Personen und sieh, was ausgeglichen werden muss, ohne Tabellen oder Kopfrechnen.",
+        "platforms": ["iOS", "Android", "Mobile"],
+        "primaryCta": "Zu Splitpop fragen",
+        "secondaryCta": "Support erhalten",
+        "features": [
+          "Aufteilung einzelner Posten für gemeinsame Rechnungen",
+          "Gruppen für Reisen, Haushalte und Alltagspläne",
+          "Klare Salden, die leicht zu erklären sind",
+          "Einfaches Ausgleichen, wenn es Zeit ist abzurechnen"
+        ],
+        "useCases": [
+          "Restaurantrechnungen mit Freunden teilen",
+          "Gemeinsame Reisekosten verfolgen",
+          "Haushaltskosten transparent halten"
+        ],
+        "supportTopics": [
+          "Eine Gruppe erstellen",
+          "Ausgaben hinzufügen",
+          "Aufteilungen anpassen",
+          "Salden ausgleichen"
+        ]
+      }
+    }
+  },
+  "Principles": {
+    "items": [
+      {
+        "title": "Mit Sorgfalt gemacht",
+        "copy": "Jede Interaktion sollte durchdacht wirken, vom ersten Klick bis zum finalen Export."
+      },
+      {
+        "title": "Datenschutz zuerst",
+        "copy": "Wir bevorzugen respektvolle Standards und vermeiden es, zu sammeln, was ein Produkt nicht braucht."
+      },
+      {
+        "title": "Leichtgewichtig",
+        "copy": "Luckysoft Tools sind dafür gemacht, echte Aufgaben zu lösen, ohne selbst zur Arbeit zu werden."
+      },
+      {
+        "title": "Für echte Menschen",
+        "copy": "Klare Sprache, vorhersehbare Bedienelemente und Workflows, die in normale Tage passen."
+      }
+    ]
+  },
+  "Home": {
+    "heroAlt": "Ein weiter Küstengarten mit niedriger Brücke, Steinwegen und weichem Sonnenlicht.",
+    "heroTitle": "Durchdachte Apps, die den Alltag müheloser machen.",
+    "heroDescription": "Schön gestaltete Werkzeuge für Mac und Mobile, entwickelt, um Reibung aus den kleinen Workflows zu nehmen, die du jeden Tag wiederholst.",
+    "exploreApps": "Apps entdecken",
+    "contactUs": "Kontakt aufnehmen",
+    "productsTitle": "Einfache Tools. Sorgfältig gemacht.",
+    "productsDescription": "Kleine Werkzeuge mit klarem Zweck: wiederkehrende Arbeit leichter, ruhiger und einfacher fertig machen.",
+    "viewAllApps": "Alle Apps ansehen",
+    "principlesTitle": "Gebaut für ruhige, nützliche Arbeit.",
+    "principlesDescription": "Luckysoft Apps entstehen aus Zurückhaltung: klare Workflows, respektvolle Standards und Software, die dir nicht im Weg steht.",
+    "interludeAlt": "Ein friedlicher, sonniger Küstengarten mit Steintexturen.",
+    "interludeEyebrow": "Mit ruhiger Absicht gestaltet",
+    "interludeTitle": "Weniger Reibung in den kleinen Momenten.",
+    "interludeCopy": "Die besten Werkzeuge verlangen keine Aufmerksamkeit, die sie nicht verdient haben. Wir bauen rund um die Teile der Arbeit, die einfacher sein sollten: konvertieren, teilen, organisieren und weitermachen.",
+    "ctaTitle": "Hast du einen Workflow, der leichter sein sollte?",
+    "ctaCopy": "Sag uns, was im Weg steht. Wir interessieren uns immer für durchdachte Tools, nützliche Einschränkungen und kleine Probleme, die es wert sind, gut gelöst zu werden.",
+    "ctaButton": "Gespräch starten"
+  },
+  "ProductsPage": {
+    "metadataTitle": "Produkte",
+    "metadataDescription": "Durchdachte Luckysoft Apps für fokussierte Alltagsarbeit.",
+    "heroTitle": "Unsere Produkte",
+    "heroDescription": "Durchdachte Apps, schön gestaltet für fokussierte Alltagsarbeit. Jede ist absichtlich klein und klar darin, wobei sie dir hilft.",
+    "heroAlt": "Eine Keramikvase und eine Schale auf einer warmen Steinoberfläche.",
+    "learnMore": "Mehr erfahren",
+    "viewDetails": "Details ansehen",
+    "principlesTitle": "Kleine Software, sorgfältig geformt.",
+    "principlesDescription": "Eine gemeinsame Haltung zieht sich durch jedes Luckysoft Produkt."
+  },
+  "ProductDetail": {
+    "splitpopSectionTitle": "Klar teilen.",
+    "splitpopSectionDescription": "Entwickelt für gemeinsame Kosten, die eine klare Antwort brauchen, nicht einen Gruppenchat voller Rechnungen.",
+    "fileSectionTitle": "Sauber konvertieren.",
+    "fileSectionDescription": "Entwickelt, um nützliche Informationen nach Markdown zu bewegen, ohne die Konvertierung zu einem Projekt zu machen.",
+    "splitpopFeatureCopy": "Halte gemeinsame Ausgaben sichtbar, verständlich und leicht auszugleichen, wenn alle bereit sind.",
+    "fileFeatureCopy": "Halte konvertierte Inhalte lesbar, damit sie im nächsten Tool bearbeitet, geteilt und weiterverwendet werden können.",
+    "workflowTitle": "So funktioniert es",
+    "workflowDescription": "Ein kurzer Workflow ist leichter zu vertrauen, zu wiederholen und abzuschließen.",
+    "splitpopWorkflow": ["Rechnung hinzufügen", "Personen einladen", "Posten teilen", "Klar ausgleichen"],
+    "fileWorkflow": ["Datei hinzufügen", "Konvertierung prüfen", "Markdown kopieren", "Weitermachen"],
+    "splitpopCtaTitle": "Bereit, smarter zu teilen?",
+    "fileCtaTitle": "Wandle deine Dateien in sauberes Markdown um.",
+    "ctaCopy": "Melde dich und wir zeigen dir den passenden nächsten Schritt für dieses Produkt."
+  },
+  "Vision": {
+    "metadataTitle": "Vision",
+    "metadataDescription": "Wie Luckysoft über ruhige, nützliche Software denkt.",
+    "heroTitle": "Unsere Vision",
+    "heroDescription": "Wir glauben, dass gute Software in den richtigen Momenten unsichtbar wirken sollte: klar, respektvoll und leise nützlich.",
+    "heroAlt": "Ein goldener Baum in einer ruhigen Landschaft.",
+    "philosophyTitle": "Die Produktphilosophie",
+    "philosophyDescription": "Luckysoft Produkte sind absichtlich klein. Die Kunst liegt darin zu entscheiden, was einfach bleiben soll.",
+    "principles": [
+      {
+        "title": "Klarheit in jedem Detail",
+        "copy": "Ein Produkt sollte sich durch sorgfältige Struktur, einfache Sprache und vorhersehbare Bedienelemente selbst erklären."
+      },
+      {
+        "title": "Datenschutz als Standard",
+        "copy": "Nützliche Software sollte aufmerksam damit umgehen, was sie sammelt, speichert und Menschen an Vertrauen abverlangt."
+      },
+      {
+        "title": "Nutzen statt Lärm",
+        "copy": "Funktionen sollten sich ihren Platz verdienen, indem sie einen echten Workflow leichter machen."
+      },
+      {
+        "title": "Gebaut, um zu bleiben",
+        "copy": "Wir bevorzugen robuste Muster, ruhige Oberflächen und Werkzeuge, die über den ersten Launch hinaus nützlich bleiben."
+      }
+    ],
+    "panelAlt": "Eine warme Tischszene mit Notizbuch und Keramikvase.",
+    "panelTitle": "Software sollte Raum schaffen, keinen Druck.",
+    "panelCopy": "Uns ziehen Tools an, die Menschen helfen, eine Aufgabe zu erledigen und zu dem zurückzukehren, was ihnen wirklich wichtig ist. Das bedeutet ruhigere Standards, weniger Sackgassen und Details, die Aufmerksamkeit respektieren.",
+    "panelButton": "Gespräch starten"
+  },
+  "Support": {
+    "metadataTitle": "Support",
+    "metadataDescription": "Wähle einen Support-Pfad für Luckysoft Apps.",
+    "heroTitle": "Wie können wir helfen?",
+    "heroDescription": "Wähle ein Produkt oder einen Support-Pfad und wir leiten deine Nachricht an die richtige Stelle.",
+    "heroAlt": "Ein mediterraner Patio mit Bögen, warmem Stein, weichen Sitzplätzen und Küstenlicht.",
+    "heroButton": "Support kontaktieren",
+    "productsTitle": "Starte mit einem Produkt",
+    "productsDescription": "Wähle den passendsten Produktpfad. Diese Links öffnen das Kontaktformular mit dem richtigen Produkt.",
+    "productCards": {
+      "file-to-markdown": {
+        "description": "Hol dir Hilfe zu unterstützten Dateien, Konvertierungsergebnissen und Markdown-Workflows.",
+        "actions": ["Zu unterstützten Dateien fragen", "Konvertierungsproblem melden", "Hilfe zum Workflow anfragen"]
+      },
+      "splitpop": {
+        "description": "Hol dir Hilfe zu geteilten Rechnungen, Gruppen, Salden und App-Verhalten.",
+        "actions": ["Hilfe mit einer Rechnung", "Gruppen- oder Saldenproblem", "App-Problem melden"]
+      }
+    },
+    "pathsTitle": "Oder wähle einen Support-Pfad",
+    "pathsDescription": "Nutze diese Pfade, wenn deine Frage nicht zu einem einzelnen Produkt gehört.",
+    "quickActions": [
+      { "label": "Bug melden", "topic": "bug" },
+      { "label": "Feature vorschlagen", "topic": "feature" },
+      { "label": "Abrechnungsfrage", "topic": "billing" },
+      { "label": "Allgemeiner Support", "topic": "support" }
+    ],
+    "nextTitle": "Was als Nächstes passiert",
+    "nextDescription": "Ein kleiner Support-Flow, bereit für den Launch und mit Platz für spätere Artikel.",
+    "nextSteps": [
+      {
+        "title": "Nachricht senden",
+        "copy": "Wähle den passendsten Pfad und teile die Details, die wir brauchen, um das Problem zu verstehen."
+      },
+      {
+        "title": "Wir leiten sie weiter",
+        "copy": "Deine Nachricht geht anhand von Produkt, Thema und Kontext an die richtige Stelle."
+      },
+      {
+        "title": "Du hörst von uns",
+        "copy": "Wir antworten mit dem nächsten nützlichen Schritt, einer Rückfrage oder einem Weg zur Lösung."
+      }
+    ],
+    "ctaTitle": "Nicht sicher, wo du anfangen sollst?",
+    "ctaCopy": "Schick uns eine Nachricht und wir bringen sie in die richtige Richtung.",
+    "ctaButton": "Support kontaktieren"
+  },
+  "Contact": {
+    "metadataTitle": "Kontakt",
+    "metadataDescription": "Kontaktiere Luckysoft für Produktsupport, Partnerschaften oder Ideen.",
+    "heroTitle": "Lass uns zusammenarbeiten.",
+    "heroDescription": "Ob du eine Idee hast, Support brauchst oder etwas Durchdachtes bauen möchtest, wir freuen uns, von dir zu hören.",
+    "heroAlt": "Eine ruhige Küstenterrasse mit weichen Sitzplätzen und warmem Tageslicht.",
+    "topics": ["Produktsupport", "Partnerschaften", "Design oder Entwicklung", "Allgemeine Anfragen"]
+  },
+  "ContactForm": {
+    "labels": {
+      "name": "Name",
+      "email": "E-Mail",
+      "topic": "Thema",
+      "message": "Nachricht"
+    },
+    "placeholders": {
+      "name": "Dein Name",
+      "email": "du@example.com",
+      "message": "Erzähl uns kurz, was du brauchst."
+    },
+    "topics": {
+      "general": "Allgemeine Anfrage",
+      "support": "Produktsupport",
+      "bug": "Bug melden",
+      "feature": "Feature vorschlagen",
+      "billing": "Abrechnungsfrage",
+      "file-to-markdown": "File to Markdown",
+      "splitpop": "Splitpop"
+    },
+    "submit": "E-Mail-Entwurf öffnen",
+    "note": "Dieses Formular öffnet einen E-Mail-Entwurf, damit du die Nachricht vor dem Senden prüfen kannst.",
+    "ready": "Dein E-Mail-Entwurf ist bereit zum Senden.",
+    "subject": "Luckysoft: {topic}",
+    "body": "Name: {name}\nE-Mail: {email}\nThema: {topic}\n\n{message}"
+  },
+  "Privacy": {
+    "metadataTitle": "Datenschutzerklärung",
+    "metadataDescription": "Luckysoft Datenschutzerklärung für die Luckysoft Website, File to Markdown, Splitpop und zugehörige Support-Dienste.",
+    "updatedAt": "30. Mai 2026",
+    "lastUpdated": "Zuletzt aktualisiert: {date}",
+    "title": "Datenschutzerklärung",
+    "intro": "Diese Datenschutzerklärung erklärt, wie Luckysoft, Zürich, Schweiz (\"Luckysoft\", \"wir\", \"uns\" oder \"unser\") personenbezogene Daten für die Luckysoft Website, File to Markdown, Splitpop, unsere Kontakt- und Support-Flows, Käufe und zugehörige Dienste verarbeitet.",
+    "sections": {
+      "responsible": {
+        "title": "1. Wer verantwortlich ist",
+        "paragraphs": [
+          "Luckysoft, Zürich, Schweiz ist für die in dieser Datenschutzerklärung beschriebene Verarbeitung verantwortlich, sofern eine produktspezifische Richtlinie nichts anderes sagt.",
+          "Für Datenschutzanfragen, Kontolöschung, Datenlöschung, Support oder Fragen zu dieser Richtlinie kontaktiere uns über das <contact>Luckysoft Kontaktformular</contact>."
+        ]
+      },
+      "splitpop": {
+        "title": "2. Wie diese Richtlinie zu Splitpop steht",
+        "paragraphs": [
+          "Diese Datenschutzerklärung gilt allgemein für Luckysoft. Splitpop hat außerdem produktspezifische rechtliche Seiten unter <privacyLink>splitpop.app/privacy</privacyLink> und <termsLink>splitpop.app/terms</termsLink>.",
+          "Für Splitpop-spezifisches Cloud-, Gruppen-, Ausgaben-, Salden-, Kauf- oder Kontoverhalten gilt die Splitpop-spezifische Richtlinie zusätzlich zu dieser Richtlinie und geht vor, soweit sie Splitpop genauer beschreibt."
+        ]
+      },
+      "collect": {
+        "title": "3. Daten, die wir erheben",
+        "paragraph": "Wir versuchen, nur das zu erheben, was nötig ist, um unsere Produkte bereitzustellen, zu schützen, zu unterstützen und zu verbessern. Je nachdem, welches Produkt oder welchen Dienst du nutzt, können wir die folgenden Kategorien von Daten verarbeiten:",
+        "items": [
+          "Kontakt- und Supportdaten, zum Beispiel dein Name, Kontaktdaten, Nachrichteninhalt, Anhänge, die du sendest, Produktauswahl und Supportverlauf.",
+          "Website-Daten, zum Beispiel besuchte Seiten, ungefährer Standort aus der IP-Adresse, Geräte- und Browserinformationen, Referrer-Informationen und grundlegende Logs, die für Sicherheit und Zuverlässigkeit nötig sind.",
+          "File to Markdown-Daten, zum Beispiel App-Einstellungen, Diagnosen, Kaufstatus und Supportnachrichten. Dateiinhalte werden standardmäßig lokal oder auf deinem Gerät verarbeitet und nicht von Luckysoft erhoben, außer du sendest uns Dateien oder Auszüge absichtlich für Support.",
+          "Splitpop Konto- und Profildaten, zum Beispiel Anmeldedaten, Anzeigename, Profilinformationen, Einstellungen, Kauf- oder Abostatus und Konto-IDs.",
+          "Splitpop Gruppen- und Ausgabendaten, zum Beispiel Gruppen, Teilnehmende, eingeladene Personen, Ausgabeneinträge, Salden, Ausgleichsinformationen, Notizen, Belege oder Anhänge, die du hinzufügst, geteilte Links und zugehörige Aktivität.",
+          "Geräte-, App- und Diagnosedaten, zum Beispiel App-Version, Gerätetyp, Betriebssystem, Crash-Logs, Leistungsdaten, Fehlerberichte und Sicherheitslogs.",
+          "Zahlungsbezogene Daten, zum Beispiel Kauf-IDs, Abostatus, gekauftes Produkt, Verlängerungsstatus, Rückerstattungsstatus, Rechnungen, Rechnungskontaktdaten und begrenzte Zahlungsmetadaten."
+        ]
+      },
+      "payments": {
+        "title": "4. Zahlungs- und App-Store-Daten",
+        "paragraphs": [
+          "Käufe können von Apple, Google, Stripe oder einem anderen Checkout-Anbieter abgewickelt werden. Diese Anbieter verarbeiten Zahlungsinformationen nach ihren eigenen Bedingungen und Datenschutzerklärungen. Luckysoft erhält keine vollständigen Kartennummern von Apple, Google oder Stripe.",
+          "Wir können begrenzte Informationen erhalten, die nötig sind, um Käufe zu bestätigen, Abos zu verwalten, Betrug zu verhindern, Support zu leisten, Buchhaltungsunterlagen zu führen und steuerliche oder rechtliche Pflichten zu erfüllen."
+        ]
+      },
+      "use": {
+        "title": "5. Wie wir Daten nutzen",
+        "paragraph": "Wir nutzen personenbezogene Daten für diese Zwecke:",
+        "items": [
+          "Um unsere Website, Apps, Cloud-Dienste, Support und Käufe bereitzustellen, zu warten, zu sichern und zu verbessern.",
+          "Um Splitpop-Funktionen wie Gruppen, Ausgaben, Salden, Kontozugriff, Synchronisierung, geteilte Links und Support zu betreiben.",
+          "Um Nachrichten zu beantworten, Datenschutz- oder Löschanfragen zu bearbeiten, Probleme zu untersuchen und servicebezogene Informationen zu kommunizieren.",
+          "Um Zuverlässigkeit zu überwachen, Abstürze zu diagnostizieren, Missbrauch zu erkennen, Betrug zu verhindern und Nutzer sowie unsere Dienste zu schützen.",
+          "Um Käufe, Abos, Rückerstattungen, Steuern, Rechnungen und Plattform- oder Zahlungsanbieter-Unterlagen zu verarbeiten.",
+          "Um rechtliche Pflichten zu erfüllen, unsere Bedingungen durchzusetzen und unsere Rechte zu verteidigen, wo nötig."
+        ]
+      },
+      "bases": {
+        "title": "6. Rechtsgrundlagen",
+        "paragraphs": [
+          "Soweit das Schweizer Datenschutzgesetz, die DSGVO oder ähnliche Gesetze gelten, stützen wir uns auf die passende Rechtsgrundlage für die jeweilige Verarbeitung. Dazu können die Erfüllung eines Vertrags mit dir, deine Einwilligung, unsere berechtigten Interessen am Betrieb und Schutz unserer Dienste, die Erfüllung rechtlicher Pflichten sowie die Geltendmachung oder Verteidigung rechtlicher Ansprüche gehören.",
+          "Du kannst eine Einwilligung widerrufen, wenn die Verarbeitung auf Einwilligung beruht. Das berührt jedoch nicht die Verarbeitung vor dem Widerruf oder Verarbeitung, die auf einer anderen Rechtsgrundlage erlaubt ist."
+        ]
+      },
+      "thirdParties": {
+        "title": "7. Drittanbieter",
+        "paragraph": "Wir nutzen Dienstleister, um unsere Produkte zu hosten, zu betreiben, zu verkaufen, zu unterstützen und zu verbessern. Diese Anbieter können Daten für uns oder je nach Dienst als eigenständige Verantwortliche verarbeiten.",
+        "items": [
+          "Infrastruktur-, Hosting-, Datenbank-, Speicher- und Sicherheitsanbieter.",
+          "Sentry oder ähnliche Diagnosedienste für Crash-Berichte, Fehlerüberwachung und App-Zuverlässigkeit.",
+          "Apple App Store und Google Play Services für App-Vertrieb, Käufe, Abos, Rückerstattungen und Plattform-Analysen.",
+          "Stripe für Checkout, Abrechnung, Zahlungsabwicklung, Rechnungen, Betrugsprävention und zugehörige Zahlungsvorgänge.",
+          "Support-, Workflow-, Kommunikations- oder Issue-Tracking-Tools, die genutzt werden, um auf Kontaktformular-Nachrichten und Produktanfragen zu antworten."
+        ],
+        "after": "Wir verkaufen keine personenbezogenen Daten. Wir nutzen deine File to Markdown-Dateiinhalte nicht für Werbung. Wir nutzen private Splitpop Gruppen- oder Ausgabendaten auch nicht wissentlich für Werbung Dritter."
+      },
+      "sharing": {
+        "title": "8. Weitergabe und Offenlegung",
+        "paragraphs": [
+          "Wir können personenbezogene Daten mit Dienstleistern, Zahlungs- und App-Store-Anbietern, professionellen Beratern, Behörden, Gerichten, Aufsichtsstellen oder anderen Parteien teilen, wenn dies nötig ist, um die Dienste bereitzustellen, Gesetze einzuhalten, Rechte und Sicherheit zu schützen, Missbrauch zu untersuchen oder eine Unternehmensübertragung wie Fusion, Übernahme oder Verkauf von Vermögenswerten abzuschließen.",
+          "Splitpop ist auf Zusammenarbeit ausgelegt. Daten, die du zu einer Gruppe, einem geteilten Link, einer Teilnehmendenliste, Ausgabe, Notiz, einem Beleg oder Saldo hinzufügst, können für die Personen sichtbar sein, die du einlädst oder mit denen du teilst."
+        ]
+      },
+      "retention": {
+        "title": "9. Aufbewahrung",
+        "paragraphs": [
+          "Wir bewahren personenbezogene Daten nur so lange auf, wie es für die in dieser Richtlinie beschriebenen Zwecke vernünftigerweise nötig ist, einschließlich Bereitstellung von Diensten, Pflege von Konten, Lösung von Supportfällen, Sicherheits- und Audit-Logs, Einhaltung steuerlicher und buchhalterischer Pflichten und Verteidigung rechtlicher Ansprüche.",
+          "Wenn du Löschung verlangst, werden wir personenbezogene Daten löschen oder anonymisieren, soweit dies erforderlich und vernünftigerweise möglich ist. Einige Informationen können für begrenzte Zeit in Backups, Logs, Kaufunterlagen, Steuerunterlagen, Streitfallakten oder rechtlichen Unterlagen verbleiben, wenn die Aufbewahrung gesetzlich vorgeschrieben oder erlaubt ist."
+        ]
+      },
+      "rights": {
+        "title": "10. Deine Rechte und Wahlmöglichkeiten",
+        "paragraphs": [
+          "Je nachdem, wo du lebst, kannst du Rechte auf Auskunft, Berichtigung, Löschung, Erhalt einer Kopie, Einschränkung, Widerspruch oder Widerruf der Einwilligung für bestimmte Verarbeitungen deiner personenbezogenen Daten haben. Du kannst außerdem das Recht haben, dich bei einer Datenschutzbehörde zu beschweren.",
+          "Du kannst Datenschutz-, Export-, Berichtigungs- und Löschanfragen über das <contact>Luckysoft Kontaktformular</contact> senden. Wir müssen möglicherweise deine Identität prüfen, bevor wir auf eine Anfrage reagieren."
+        ]
+      },
+      "security": {
+        "title": "11. Sicherheit",
+        "paragraphs": [
+          "Wir nutzen angemessene technische und organisatorische Maßnahmen, die personenbezogene Daten schützen sollen. Keine App, kein Cloud-Dienst, kein Gerät und keine Internetübertragung kann vollständig sicher, fehlerfrei oder verlustfrei garantiert werden. Du bist dafür verantwortlich, sichere Geräte zu verwenden, Kontozugangsdaten vertraulich zu halten und Informationen nur mit Personen zu teilen, denen du vertraust."
+        ]
+      },
+      "transfers": {
+        "title": "12. Internationale Übermittlungen",
+        "paragraphs": [
+          "Luckysoft hat seinen Sitz in der Schweiz. Unsere Anbieter, Nutzer und Infrastruktur können sich in der Schweiz, im Europäischen Wirtschaftsraum, im Vereinigten Königreich, in den Vereinigten Staaten oder in anderen Ländern befinden. Wo erforderlich, nutzen wir geeignete Übermittlungsgarantien wie vertragliche Schutzmaßnahmen, Angemessenheitsbeschlüsse oder andere rechtmäßige Übermittlungsmechanismen."
+        ]
+      },
+      "children": {
+        "title": "13. Kinder und Alter",
+        "paragraphs": [
+          "Luckysoft Produkte richten sich nicht an Kinder unter 16 Jahren. Wenn du unter 16 bist, darfst du unsere Dienste nur mit Zustimmung eines Elternteils oder gesetzlichen Vertreters nutzen. Wenn wir erfahren, dass wir personenbezogene Daten eines Kindes auf eine Weise erhoben haben, die elterliche Zustimmung erfordert, und diese Zustimmung nicht vorlag, werden wir angemessene Schritte zur Löschung unternehmen."
+        ]
+      },
+      "changes": {
+        "title": "14. Änderungen dieser Richtlinie",
+        "paragraphs": [
+          "Wir können diese Datenschutzerklärung aktualisieren, wenn sich unsere Produkte, Datenpraktiken, Anbieter oder rechtlichen Anforderungen ändern. Die aktualisierte Version wird auf dieser Seite mit einem neuen Datum für \"Zuletzt aktualisiert\" veröffentlicht. Wenn eine Änderung wesentlich ist, können wir zusätzliche Hinweise geben, sofern erforderlich."
+        ]
+      }
+    }
+  },
+  "Terms": {
+    "metadataTitle": "Nutzungsbedingungen",
+    "metadataDescription": "Luckysoft Nutzungsbedingungen für die Luckysoft Website, File to Markdown, Splitpop, Käufe und zugehörige Support-Dienste.",
+    "updatedAt": "30. Mai 2026",
+    "lastUpdated": "Zuletzt aktualisiert: {date}",
+    "title": "Nutzungsbedingungen",
+    "intro": "Diese Nutzungsbedingungen regeln deinen Zugriff auf und deine Nutzung der Luckysoft Website, File to Markdown, Splitpop, Käufe, Support und zugehörige Dienste. Bitte lies sie sorgfältig, bevor du unsere Produkte nutzt.",
+    "sections": {
+      "who": {
+        "title": "1. Wer wir sind",
+        "paragraphs": [
+          "Die Dienste werden von Luckysoft, Zürich, Schweiz (\"Luckysoft\", \"wir\", \"uns\" oder \"unser\") bereitgestellt.",
+          "Fragen zu diesen Bedingungen, Support, Datenschutzanfragen, Löschanfragen oder Kontoanfragen können über das <contact>Luckysoft Kontaktformular</contact> gesendet werden."
+        ]
+      },
+      "acceptance": {
+        "title": "2. Annahme dieser Bedingungen",
+        "paragraphs": [
+          "Wenn du eine Luckysoft Website, App, einen Kauf, Support-Flow, eine Beta, einen Cloud-Dienst oder eine zugehörige Funktion aufrufst oder nutzt, stimmst du diesen Nutzungsbedingungen und der <privacy>Luckysoft Datenschutzerklärung</privacy> zu. In unseren Apps kannst du außerdem aufgefordert werden, diese Bedingungen und die Datenschutzerklärung vor oder während der Nutzung ausdrücklich zu akzeptieren.",
+          "Wenn du nicht einverstanden bist, nutze die Dienste nicht. Wenn du die Dienste im Namen einer Organisation nutzt, bestätigst du, dass du befugt bist, diese Organisation an diese Bedingungen zu binden."
+        ]
+      },
+      "splitpop": {
+        "title": "3. Splitpop-spezifische Bedingungen",
+        "paragraphs": [
+          "Splitpop hat außerdem produktspezifische rechtliche Seiten unter <privacyLink>splitpop.app/privacy</privacyLink> und <termsLink>splitpop.app/terms</termsLink>.",
+          "Diese Splitpop-spezifischen Bedingungen gelten zusätzlich zu diesen Bedingungen und gehen vor, soweit sie Splitpop-spezifisches Cloud-, Gruppen-, Ausgaben-, Salden-, Kauf- oder Kontoverhalten genauer beschreiben."
+        ]
+      },
+      "eligibility": {
+        "title": "4. Berechtigung",
+        "paragraphs": [
+          "Du musst mindestens 16 Jahre alt sein oder die Zustimmung deines Elternteils oder gesetzlichen Vertreters haben, um die Dienste zu nutzen. Du musst außerdem rechtlich in der Lage sein, diese Bedingungen zu akzeptieren und alle Gesetze einzuhalten, die für deine Nutzung der Dienste gelten."
+        ]
+      },
+      "responsibilities": {
+        "title": "5. Deine Verantwortung",
+        "paragraph": "Du bist dafür verantwortlich, wie du die Dienste nutzt, einschließlich:",
+        "items": [
+          "Die Dienste nur für rechtmäßige Zwecke und gemäß diesen Bedingungen zu nutzen.",
+          "Genaue Informationen bereitzustellen und Konto- oder Rechnungsinformationen aktuell zu halten, wenn dies erforderlich ist.",
+          "Geräte, Konten, Passwörter, Anmeldemethoden und geteilte Links sicher zu halten.",
+          "Sicherzustellen, dass du das Recht hast, Inhalte oder personenbezogene Daten, die du bereitstellst, hochzuladen, zu konvertieren, zu speichern, zu teilen oder einzugeben.",
+          "Alle erforderlichen Erlaubnisse einzuholen, bevor du andere Personen zu Splitpop Gruppen hinzufügst, ihre Informationen eingibst, Ausgaben teilst oder sie zu einem Dienst einlädst.",
+          "Outputs, Salden, Berechnungen, Exporte, Konvertierungen und Aufzeichnungen zu prüfen, bevor du dich darauf verlässt."
+        ]
+      },
+      "prohibited": {
+        "title": "6. Verbotene Nutzung",
+        "paragraph": "Du darfst nicht:",
+        "items": [
+          "Die Dienste auf eine rechtswidrige, schädliche, täuschende, missbräuchliche, belästigende, diffamierende, in die Privatsphäre eingreifende oder rechtsverletzende Weise nutzen.",
+          "Inhalte hochladen oder teilen, für die du keine Erlaubnis hast oder die Rechte einer anderen Person verletzen.",
+          "Die Dienste stören, unterbrechen, zurückentwickeln, scrapen, überlasten, sondieren oder Sicherheitsmaßnahmen umgehen, außer soweit gesetzlich erlaubt.",
+          "Die Dienste nutzen, um Malware, Spam, betrügerische Nachrichten oder unautorisierte Werbung zu übertragen.",
+          "Die Dienste für Hochrisiko-, Notfall-, sicherheitskritische, Finanzberatungs-, Rechtsberatungs-, Steuerberatungs-, Buchhaltungs-, medizinische oder regulierte Entscheidungszwecke nutzen."
+        ]
+      },
+      "content": {
+        "title": "7. Nutzerinhalte",
+        "paragraphs": [
+          "Du behältst das Eigentum an Inhalten, die du über die Dienste einreichst, hochlädst, eingibst, konvertierst, speicherst oder teilst. Du gewährst Luckysoft die begrenzten Rechte, die nötig sind, um die Dienste für dich und die Personen, mit denen du teilst, zu hosten, zu verarbeiten, anzuzeigen, zu übertragen, zu unterstützen, zu sichern und zu betreiben.",
+          "Du bist allein verantwortlich für deine Inhalte und für alle Auswirkungen ihrer Weitergabe. Luckysoft befürwortet, überprüft oder übernimmt keine Verantwortung für Nutzerinhalte, geteilte Ausgabenaufzeichnungen, hochgeladene Dateien, Notizen, Belege, Links oder Kommunikation."
+        ]
+      },
+      "file": {
+        "title": "8. File to Markdown",
+        "paragraphs": [
+          "File to Markdown ist ein fokussiertes Konvertierungstool. Sofern du uns nicht absichtlich Material für Support sendest, werden deine Dateien standardmäßig lokal oder auf deinem Gerät verarbeitet.",
+          "Du bist dafür verantwortlich, alle konvertierten Ergebnisse zu prüfen, bevor du dich darauf verlässt. Luckysoft garantiert nicht, dass Konvertierungen vollständig, korrekt, sicher, verlustfrei, richtig formatiert, für einen bestimmten Workflow geeignet oder frei von Auslassungen, Formatierungsänderungen, Metadatenverlust oder Interpretationsfehlern sind."
+        ]
+      },
+      "splitpopProduct": {
+        "title": "9. Splitpop",
+        "paragraphs": [
+          "Splitpop hilft Gruppen, gemeinsame Ausgaben zu erfassen und zu verstehen. Es ist keine Bank, kein Zahlungsinstitut, kein Treuhanddienst, kein Buchhalter, Steuerberater, Finanzberater, Rechtsberater, Inkassodienst oder Streitbeilegungsdienst.",
+          "Ausgaben, Salden, Ausgleichsvorschläge, Summen, Exporte, Benachrichtigungen und zahlungsbezogene Aufzeichnungen dienen nur zur Information. Du und die Personen in deiner Gruppe seid dafür verantwortlich, Beträge zu prüfen, miteinander auszugleichen, Erstattungen zu handhaben, Streitigkeiten zu lösen, eigene Aufzeichnungen zu führen und alle steuerlichen, buchhalterischen, verbraucherrechtlichen, arbeitsrechtlichen, mietrechtlichen oder sonstigen rechtlichen Pflichten einzuhalten."
+        ]
+      },
+      "purchases": {
+        "title": "10. Käufe, Abos und Rückerstattungen",
+        "paragraphs": [
+          "Kostenpflichtige Funktionen, Abos, In-App-Käufe, App-Store-Käufe, Checkout-Käufe und Verlängerungen können von Apple, Google, Stripe oder einem anderen Zahlungsanbieter abgewickelt werden. Deren Bedingungen, Datenschutzerklärungen, Rückerstattungsregeln, Abrechnungsregeln, Steuern und Plattformanforderungen können zusätzlich zu diesen Bedingungen gelten.",
+          "Preise, Funktionen, Testzeiträume, Abos und Verfügbarkeit können sich ändern. Außer soweit gesetzlich oder durch den jeweiligen App Store oder Zahlungsanbieter vorgeschrieben, sind Zahlungen nicht garantiert erstattungsfähig."
+        ]
+      },
+      "availability": {
+        "title": "11. Änderungen, Verfügbarkeit und Updates",
+        "paragraphs": [
+          "Wir können jeden Dienst oder jede Funktion jederzeit ändern, aussetzen, einstellen, beschränken, umbenennen, entfernen oder aktualisieren. Wir können außerdem Updates veröffentlichen, die ändern, wie ein Produkt funktioniert. Wir sind nicht verantwortlich für Verluste, die dadurch entstehen, dass du verfügbare Updates nicht installierst oder kompatible Geräte, Konten, Betriebssysteme, Netzwerkzugang oder Dienste Dritter nicht aufrechterhältst."
+        ]
+      },
+      "warranties": {
+        "title": "12. Keine Gewährleistungen",
+        "paragraphs": [
+          "Soweit gesetzlich zulässig, werden die Dienste \"wie besehen\" und \"wie verfügbar\" ohne Gewährleistungen jeglicher Art bereitgestellt, ob ausdrücklich, stillschweigend, gesetzlich oder anderweitig.",
+          "Luckysoft garantiert nicht, dass die Dienste ununterbrochen, rechtzeitig, sicher, privat, fehlerfrei, verlustfrei, korrekt, vollständig, mit jedem Gerät oder jeder Plattform kompatibel oder für einen bestimmten Zweck geeignet sind. Du nutzt die Dienste auf eigenes Risiko."
+        ]
+      },
+      "liability": {
+        "title": "13. Haftungsbeschränkung",
+        "paragraphs": [
+          "Soweit gesetzlich zulässig, haftet Luckysoft nicht für indirekte, beiläufige, besondere, Folgeschäden, exemplarische Schäden, Strafschäden, Vertrauensschäden, soziale Schäden, Gruppenkonflikte, finanzielle, steuerliche, buchhalterische, rechtliche Schäden, Betriebsunterbrechungen, entgangenen Gewinn, Datenverlust, Verlust von Goodwill, Geräte-, Netzwerk- oder Drittschäden, selbst wenn Luckysoft darauf hingewiesen wurde, dass solche Schäden eintreten können.",
+          "Soweit gesetzlich zulässig, ist die gesamte Haftung von Luckysoft für alle Ansprüche im Zusammenhang mit den Diensten auf den Betrag begrenzt, den du in den 12 Monaten vor dem Ereignis, das den Anspruch begründet, direkt an Luckysoft für den betreffenden Dienst gezahlt hast. Wenn du den betreffenden Dienst kostenlos genutzt hast, ist die gesamte Haftung von Luckysoft auf CHF 50 begrenzt.",
+          "Nichts in diesen Bedingungen schließt Haftung aus oder beschränkt sie, soweit dies rechtswidrig wäre, einschließlich Haftung für rechtswidrige Absicht oder grobe Fahrlässigkeit, soweit eine solche Haftung nach zwingendem Schweizer Recht nicht ausgeschlossen werden kann."
+        ]
+      },
+      "indemnity": {
+        "title": "14. Freistellung",
+        "paragraphs": [
+          "Soweit gesetzlich zulässig, erklärst du dich damit einverstanden, Luckysoft von Ansprüchen, Verlusten, Verbindlichkeiten, Schäden, Kosten und Ausgaben freizustellen und schadlos zu halten, die aus deinen Inhalten, deiner Nutzung oder deinem Missbrauch der Dienste, deinem Verstoß gegen diese Bedingungen, deinem Gesetzesverstoß, deiner Verletzung der Rechte einer anderen Person oder deiner Weitergabe von Daten ohne die erforderliche Erlaubnis entstehen."
+        ]
+      },
+      "termination": {
+        "title": "15. Beendigung",
+        "paragraphs": [
+          "Du kannst die Nutzung der Dienste jederzeit beenden. Wir können den Zugriff auf die Dienste aussetzen, beschränken oder beenden, wenn wir vernünftigerweise annehmen, dass du diese Bedingungen verletzt, ein Risiko für uns oder andere geschaffen, Schaden verursacht, die Dienste rechtswidrig genutzt hast oder wenn ein Dienst eingestellt wird.",
+          "Abschnitte, die ihrer Natur nach die Beendigung überdauern sollten, bleiben bestehen, einschließlich Eigentum, Nutzerverantwortung, Zahlungsunterlagen, Haftungsausschlüsse, Haftungsbeschränkung, Freistellung, anwendbares Recht und Streitbestimmungen."
+        ]
+      },
+      "privacy": {
+        "title": "16. Datenschutz",
+        "paragraphs": [
+          "Unsere <privacy>Datenschutzerklärung</privacy> erklärt, wie wir personenbezogene Daten verarbeiten. Durch die Nutzung der Dienste nimmst du zur Kenntnis, dass wir personenbezogene Daten wie dort und in jeder anwendbaren produktspezifischen Datenschutzerklärung beschrieben verarbeiten."
+        ]
+      },
+      "law": {
+        "title": "17. Anwendbares Recht und Gerichtsstand",
+        "paragraphs": [
+          "Diese Bedingungen unterliegen dem Recht der Schweiz, ohne Berücksichtigung kollisionsrechtlicher Regeln. Die Gerichte von Zürich, Schweiz, sind ausschließlich zuständig, außer soweit zwingendes Verbraucherschutzrecht oder anderes zwingendes Recht dir das Recht gibt, Ansprüche an einem anderen Ort geltend zu machen."
+        ]
+      },
+      "changes": {
+        "title": "18. Änderungen dieser Bedingungen",
+        "paragraphs": [
+          "Wir können diese Bedingungen aktualisieren, wenn sich unsere Produkte, unser Geschäft, Anbieter, rechtliche Anforderungen oder Risikokontrollen ändern. Die aktualisierte Version wird auf dieser Seite mit einem neuen Datum für \"Zuletzt aktualisiert\" veröffentlicht. Wenn eine Änderung wesentlich ist, können wir zusätzliche Hinweise geben, sofern erforderlich. Die weitere Nutzung der Dienste nach Inkrafttreten der aktualisierten Bedingungen bedeutet, dass du die aktualisierten Bedingungen akzeptierst."
+        ]
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Diese Seite ist entweder privat, wurde verschoben oder gehört nicht zur öffentlichen Luckysoft Website.",
+    "button": "Zur Startseite"
+  }
+}
