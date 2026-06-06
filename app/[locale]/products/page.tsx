@@ -226,7 +226,7 @@ export default async function ProductsPage({ params }: PageProps) {
               {copy.description}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/support">{copy.primaryCta}</Button>
+              <Button href="#use-cases">{copy.primaryCta}</Button>
               <Button className="!border-white/14 !bg-white/[0.03] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/platform" variant="secondary">
                 {copy.secondaryCta}
               </Button>
@@ -245,7 +245,7 @@ export default async function ProductsPage({ params }: PageProps) {
         </Container>
       </section>
 
-      <section className="py-20 md:py-24">
+      <section className="py-20 md:py-24" id="use-cases">
         <Container>
           <div className="mb-10 max-w-2xl">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#60efff]">

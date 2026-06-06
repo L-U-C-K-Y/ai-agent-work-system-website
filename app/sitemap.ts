@@ -7,7 +7,6 @@ const localizedRoutes = [
   { en: "", de: "/de" },
   { en: "/products", de: "/de/produkte" },
   { en: "/platform", de: "/de/plattform" },
-  { en: "/support", de: "/de/support" },
   { en: "/contact", de: "/de/kontakt" },
   { en: "/privacy", de: "/de/datenschutz" },
   { en: "/terms", de: "/de/agb" },

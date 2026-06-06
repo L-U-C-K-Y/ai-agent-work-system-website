@@ -22,8 +22,6 @@ export const routing = defineRouting({
       en: "/platform",
       de: "/plattform",
     },
-    "/vision": "/vision",
-    "/support": "/support",
     "/contact": {
       en: "/contact",
       de: "/kontakt",

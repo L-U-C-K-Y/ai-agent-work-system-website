@@ -128,8 +128,6 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
 
   if (
     internalPathname === "/platform" ||
-    internalPathname === "/vision" ||
-    internalPathname === "/support" ||
     internalPathname === "/contact" ||
     internalPathname === "/privacy" ||
     internalPathname === "/terms"

@@ -53,7 +53,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "finance" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "green",
   },
   inventory: {
@@ -62,7 +62,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "inventory" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "cyan",
   },
   hr: {
@@ -71,7 +71,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "hr" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "amber",
   },
   support: {
@@ -80,7 +80,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "support" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "cyan",
   },
   product: {
@@ -89,7 +89,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "product" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "green",
   },
   revenue: {
@@ -98,7 +98,7 @@ const productStructure: Record<
       pathname: "/contact",
       query: { topic: "revenue" },
     },
-    secondaryCtaHref: "/support",
+    secondaryCtaHref: "/products",
     accent: "amber",
   },
 };
