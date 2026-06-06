@@ -76,6 +76,11 @@ export function SiteFooter() {
           </h2>
           <ul className="mt-2 flex flex-col gap-1.5 text-[0.68rem] leading-4 text-[#8ea0b5]">
             <li>
+              <Link className="hover:text-white" href="/ai-adoption">
+                {footer("aiAdoption")}
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-white" href="/contact">
                 {footer("contact")}
               </Link>

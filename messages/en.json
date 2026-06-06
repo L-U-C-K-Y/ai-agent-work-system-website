@@ -7,6 +7,7 @@
   "Navigation": {
     "home": "Home",
     "platform": "Platform",
+    "aiAdoption": "AI Adoption",
     "solutions": "Use cases",
     "company": "Company",
     "contact": "Contact",
@@ -102,6 +103,7 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "contact": "Contact",
+    "aiAdoption": "AI Adoption",
     "rights": "(c) {year} JobDone AI. All rights reserved.",
     "madeWithCare": "Human and agent work, fully traceable.",
     "links": {

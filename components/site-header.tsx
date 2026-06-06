@@ -99,6 +99,10 @@ function toInternalPathname(pathname: string) {
     return "/platform";
   }
 
+  if (unprefixed === "/ki-einfuehrung") {
+    return "/ai-adoption";
+  }
+
   if (unprefixed === "/kontakt") {
     return "/contact";
   }
@@ -135,6 +139,7 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
 
   if (
     internalPathname === "/platform" ||
+    internalPathname === "/ai-adoption" ||
     internalPathname === "/contact" ||
     internalPathname === "/privacy" ||
     internalPathname === "/terms"
@@ -344,6 +349,17 @@ export function SiteHeader() {
                 ctaHref="/platform"
                 ctaLabel={t("platform")}
               />
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                aria-current={
+                  internalPathname === "/ai-adoption" ? "page" : undefined
+                }
+                className={navLinkClassName}
+                render={<Link href="/ai-adoption" />}
+              >
+                {t("aiAdoption")}
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger className={navTriggerClassName}>

@@ -41,6 +41,7 @@ const fallbackNavigation = {
       ["Home", "/"],
       ["Use cases", "/products"],
       ["Platform", "/platform"],
+      ["AI Adoption", "/ai-adoption"],
       ["Company", "/contact"],
     ],
     cta: "Request Access",
@@ -49,9 +50,10 @@ const fallbackNavigation = {
     mainLabel: "Hauptnavigation",
     items: [
       ["Home", "/"],
-      ["Anwendungsfälle", "/products"],
-      ["Plattform", "/platform"],
-      ["Unternehmen", "/contact"],
+      ["Anwendungsfälle", "/de/produkte"],
+      ["Plattform", "/de/plattform"],
+      ["AI Adoption", "/de/ki-einfuehrung"],
+      ["Unternehmen", "/de/kontakt"],
     ],
     cta: "Zugang anfragen",
   },
@@ -96,7 +98,7 @@ function HeaderFallback({ locale }: { locale: Locale }) {
         </nav>
         <NextLink
           className="hidden min-h-10 items-center whitespace-nowrap rounded-md bg-[var(--primary)] px-4 text-sm font-semibold text-[var(--primary-foreground)] md:inline-flex"
-          href="/contact"
+          href={locale === "de" ? "/de/kontakt" : "/contact"}
         >
           {copy.cta}
         </NextLink>

@@ -22,6 +22,10 @@ export const routing = defineRouting({
       en: "/platform",
       de: "/plattform",
     },
+    "/ai-adoption": {
+      en: "/ai-adoption",
+      de: "/ki-einfuehrung",
+    },
     "/contact": {
       en: "/contact",
       de: "/kontakt",

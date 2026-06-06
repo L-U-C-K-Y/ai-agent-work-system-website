@@ -8,6 +8,7 @@ export const mainNavigation = [
   { key: "home", href: "/" },
   { key: "solutions", href: "/products" },
   { key: "platform", href: "/platform" },
+  { key: "aiAdoption", href: "/ai-adoption" },
   { key: "company", href: "/contact" },
 ] as const;
 

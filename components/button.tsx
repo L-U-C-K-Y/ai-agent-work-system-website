@@ -13,6 +13,7 @@ type ButtonProps = {
         pathname: string;
         params?: Record<string, string>;
         query?: Record<string, string>;
+        hash?: string;
       };
   variant?: "primary" | "secondary" | "plain";
   className?: string;
