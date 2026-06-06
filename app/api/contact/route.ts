@@ -36,6 +36,7 @@ const apiMessages = {
     invalidBody: "Invalid request body.",
     required: "Name, email, company, and message are required.",
     invalidEmail: "Enter a valid email address.",
+    rateLimited: "Too many requests. Please try again later.",
     notConfigured: "Email delivery is not configured yet.",
     providerError: "Could not send email.",
   },
@@ -43,10 +44,15 @@ const apiMessages = {
     invalidBody: "Ungültiger Anfrageinhalt.",
     required: "Name, E-Mail, Unternehmen und Nachricht sind erforderlich.",
     invalidEmail: "Gib eine gültige E-Mail-Adresse ein.",
+    rateLimited: "Zu viele Anfragen. Bitte versuche es später erneut.",
     notConfigured: "Der E-Mail-Versand ist noch nicht konfiguriert.",
     providerError: "E-Mail konnte nicht gesendet werden.",
   },
 } as const;
+
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+const rateLimitStore = new Map<string, { count: number; resetAt: number }>();
 
 function getApiMessages(request: Request) {
   const language = request.headers.get("accept-language") ?? "";
@@ -61,6 +67,7 @@ type ContactPayload = {
   email?: unknown;
   company?: unknown;
   website?: unknown;
+  websiteUrl?: unknown;
   companySize?: unknown;
   industry?: unknown;
   topic?: unknown;
@@ -73,6 +80,36 @@ function isValidEmail(value: string) {
 
 function cleanText(value: unknown, maxLength: number) {
   return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
+}
+
+function getClientKey(request: Request, email: string) {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  const ip =
+    forwardedFor?.split(",")[0]?.trim() ??
+    request.headers.get("x-real-ip") ??
+    "unknown";
+
+  return `${ip}:${email.toLowerCase()}`;
+}
+
+function isRateLimited(key: string) {
+  const now = Date.now();
+  const entry = rateLimitStore.get(key);
+
+  if (!entry || entry.resetAt <= now) {
+    rateLimitStore.set(key, {
+      count: 1,
+      resetAt: now + RATE_LIMIT_WINDOW_MS,
+    });
+    return false;
+  }
+
+  if (entry.count >= RATE_LIMIT_MAX_REQUESTS) {
+    return true;
+  }
+
+  entry.count += 1;
+  return false;
 }
 
 function renderTextEmail({
@@ -127,6 +164,7 @@ export async function POST(request: Request) {
   const email = cleanText(payload.email, 254);
   const company = cleanText(payload.company, 180);
   const website = cleanText(payload.website, 300);
+  const websiteUrl = cleanText(payload.websiteUrl, 300);
   const companySizeKey = cleanText(payload.companySize, 80);
   const industryKey = cleanText(payload.industry, 80);
   const topicKey = cleanText(payload.topic, 80);
@@ -148,6 +186,17 @@ export async function POST(request: Request) {
     return NextResponse.json(
       { error: messages.invalidEmail },
       { status: 400 },
+    );
+  }
+
+  if (websiteUrl) {
+    return NextResponse.json({ ok: true });
+  }
+
+  if (isRateLimited(getClientKey(request, email))) {
+    return NextResponse.json(
+      { error: messages.rateLimited },
+      { status: 429 },
     );
   }
 

@@ -87,6 +87,7 @@ export function ContactForm() {
     const email = String(form.get("email") ?? "");
     const company = String(form.get("company") ?? "");
     const website = String(form.get("website") ?? "");
+    const websiteUrl = String(form.get("websiteUrl") ?? "");
     const companySize = String(form.get("companySize") ?? "not-specified");
     const industry = String(form.get("industry") ?? "not-specified");
     const topic = String(form.get("topic") ?? "general");
@@ -104,6 +105,7 @@ export function ContactForm() {
           email,
           company,
           website,
+          websiteUrl,
           companySize,
           industry,
           topic,
@@ -132,6 +134,16 @@ export function ContactForm() {
       className="relative self-start rounded-lg border border-white/10 bg-[#0b1117] p-5 shadow-[0_30px_90px_rgba(0,0,0,0.28)] md:sticky md:top-24 md:p-8"
       onSubmit={handleSubmit}
     >
+      <div aria-hidden="true" className="hidden">
+        <label htmlFor="websiteUrl">Website URL</label>
+        <input
+          autoComplete="off"
+          id="websiteUrl"
+          name="websiteUrl"
+          tabIndex={-1}
+          type="text"
+        />
+      </div>
       <FieldGroup>
         <div className="grid gap-5 sm:grid-cols-2">
           <Field>
