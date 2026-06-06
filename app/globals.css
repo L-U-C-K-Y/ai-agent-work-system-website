@@ -1,18 +1,51 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 :root {
-  --background: #fbfaf7;
-  --foreground: #25211c;
-  --muted: #746b5f;
-  --soft: #f1ede6;
-  --surface: #fffdf9;
-  --surface-strong: #ebe4d9;
-  --border: #ded5c8;
-  --accent: #887662;
-  --accent-strong: #665645;
-  --olive: #69705a;
-  --charcoal: #25211c;
-  --cool-muted: #6f7776;
+  --background: #05080c;
+  --foreground: #f4fff7;
+  --muted: #9aabbf;
+  --muted-foreground: oklch(0.708 0 0);
+  --soft: #080d12;
+  --surface: #0b1117;
+  --glass: rgba(11, 17, 23, 0.72);
+  --glass-strong: rgba(13, 22, 28, 0.88);
+  --surface-strong: #121d24;
+  --border: rgba(255, 255, 255, 0.1);
+  --primary: #206ae9;
+  --primary-foreground: #ffffff;
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: #206ae9;
+  --chart-2: oklch(0.795 0.184 86.047);
+  --chart-3: oklch(0.681 0.162 75.834);
+  --chart-4: oklch(0.554 0.135 66.442);
+  --chart-5: oklch(0.476 0.114 61.907);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: #206ae9;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+  --accent: var(--primary);
+  --accent-foreground: var(--primary-foreground);
+  --accent-strong: var(--primary);
+  --teal: var(--chart-2);
+  --amber: var(--chart-3);
+  --olive: #079889;
+  --charcoal: #05080c;
+  --cool-muted: #8ea0b5;
+  --radius: 0.625rem;
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -21,9 +54,45 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", Arial, Helvetica, sans-serif;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Manrope", "Manrope Fallback", Arial, Helvetica, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
   --font-serif: Georgia, "Times New Roman", serif;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
 * {
@@ -38,12 +107,13 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 ::selection {
-  background: var(--surface-strong);
-  color: var(--foreground);
+  background: var(--primary);
+  color: var(--primary-foreground);
 }
 
 img,

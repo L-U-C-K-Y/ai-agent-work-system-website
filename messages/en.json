@@ -1,87 +1,370 @@
 {
   "Site": {
-    "name": "Luckysoft",
-    "description": "Thoughtful apps for calmer everyday workflows.",
-    "ogAlt": "Luckysoft thoughtful apps in a calm workspace."
+    "name": "JobDone AI",
+    "description": "The AI Agent Work System for businesses.",
+    "ogAlt": "JobDone AI collaborative work system for human and AI agent teams."
   },
   "Navigation": {
-    "products": "Products",
-    "vision": "Vision",
-    "support": "Support",
+    "aiDesks": "Workspaces",
+    "platform": "Platform",
+    "solutions": "Use cases",
+    "governance": "Governance",
+    "resources": "Resources",
+    "company": "Company",
+    "products": "Workspaces",
+    "vision": "Platform",
+    "support": "Use cases",
     "contact": "Contact",
-    "getInTouch": "Get in touch",
+    "getInTouch": "Request Access",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "mainLabel": "Main navigation",
     "mobileLabel": "Mobile navigation",
+    "mobileDescription": "Navigate JobDone AI workspaces, platform pages, use cases, and access requests.",
     "languageLabel": "Language",
     "english": "EN",
     "german": "DE"
   },
+  "MegaMenu": {
+    "workspaces": {
+      "eyebrow": "Workspaces",
+      "title": "Rooms for every team that shares work with AI coworkers.",
+      "links": {
+        "finance": {
+          "title": "Finance Ops",
+          "description": "Invoices, approvals, vendor records, and close tasks."
+        },
+        "inventory": {
+          "title": "Inventory Ops",
+          "description": "Assets, replenishment, exceptions, and handoffs."
+        },
+        "people": {
+          "title": "People Ops",
+          "description": "Onboarding, policy requests, and employee documents."
+        },
+        "support": {
+          "title": "Support Ops",
+          "description": "Case triage, customer context, and escalation paths."
+        },
+        "product": {
+          "title": "Product Ops",
+          "description": "Feedback, bugs, releases, incidents, and evidence."
+        },
+        "revenue": {
+          "title": "Revenue Ops",
+          "description": "Research, CRM hygiene, and follow-up preparation."
+        }
+      }
+    },
+    "platform": {
+      "eyebrow": "Platform",
+      "title": "The operating layer behind human and AI work.",
+      "links": {
+        "workGraph": {
+          "title": "Work graph",
+          "description": "Connect messages, work cards, records, and audit history."
+        },
+        "aiCoworkers": {
+          "title": "AI coworkers",
+          "description": "Give agents identity, context, tools, memory, and visibility."
+        },
+        "governance": {
+          "title": "Governance",
+          "description": "Keep approvals, permissions, evidence, and controls attached."
+        }
+      }
+    },
+    "useCases": {
+      "eyebrow": "Use cases",
+      "title": "See how requests become approved business outcomes.",
+      "links": {
+        "messageToWork": {
+          "title": "Message to work",
+          "description": "Turn channel requests into tracked work cards."
+        },
+        "knowledgeToAction": {
+          "title": "Knowledge to action",
+          "description": "Ground agent steps in approved context and citations."
+        },
+        "recordsToAutomation": {
+          "title": "Records to automation",
+          "description": "Draft, review, and apply database updates with control."
+        }
+      }
+    }
+  },
   "Footer": {
-    "tagline": "Thoughtful apps for calmer everyday workflows.",
+    "tagline": "Collaborative work system for human and agent teams.",
     "explore": "Explore",
     "company": "Company",
+    "aiDesks": "Workspaces",
+    "platform": "Platform",
+    "solutions": "Use cases",
+    "governance": "Governance",
+    "resources": "Resources",
+    "about": "About",
     "privacy": "Privacy",
     "terms": "Terms",
     "contact": "Contact",
-    "rights": "(c) {year} Luckysoft. All rights reserved.",
-    "madeWithCare": "Made with care."
+    "rights": "(c) {year} JobDone AI. All rights reserved.",
+    "madeWithCare": "Human and agent work, fully traceable.",
+    "links": {
+      "workspace": {
+        "finance": "Finance",
+        "inventory": "Inventory",
+        "hr": "HR",
+        "support": "Support",
+        "product": "Product",
+        "revenue": "Revenue"
+      },
+      "platform": {
+        "workSystem": "Work System",
+        "aiAgents": "AI Agents",
+        "integrations": "Integrations",
+        "apis": "APIs"
+      },
+      "solutions": {
+        "byFunction": "By Function",
+        "byProcess": "By Process",
+        "useCases": "Use Cases",
+        "industries": "Industries"
+      },
+      "governance": {
+        "security": "Security",
+        "compliance": "Compliance",
+        "audit": "Audit",
+        "controls": "Controls"
+      },
+      "resources": {
+        "documentation": "Documentation",
+        "blog": "Blog",
+        "guides": "Guides",
+        "webinars": "Webinars"
+      }
+    }
   },
   "Products": {
     "items": {
-      "file-to-markdown": {
-        "name": "File to Markdown",
-        "shortName": "Markdown",
-        "tagline": "Turn structured files into clean Markdown.",
-        "summary": "Convert common documents and source files into readable Markdown for docs, prompts, notes, and publishing workflows.",
-        "description": "File to Markdown helps turn everyday files into clean Markdown without making the workflow feel heavy. It is designed for people who move information between documents, editors, AI tools, and publishing systems.",
-        "platforms": ["Mac", "Documents", "Markdown"],
-        "primaryCta": "Ask about File to Markdown",
-        "secondaryCta": "Get support",
+      "finance": {
+        "name": "Finance Ops",
+        "shortName": "Finance",
+        "tagline": "Invoices, approvals, vendor records, and exceptions in one room.",
+        "summary": "Finance teams can coordinate documents, approvals, reconciliations, and system updates with AI coworkers that keep evidence attached.",
+        "description": "A shared operating room for finance work where people and AI coworkers review invoices, collect policy context, propose record updates, and keep approvals traceable.",
+        "platforms": [
+          "Finance AI",
+          "Controller",
+          "Approval Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
         "features": [
-          "Clean conversion into readable Markdown",
-          "Structure preserved for easier editing",
-          "Output that is practical for docs and prompts",
-          "A focused workflow without noisy controls"
+          "Invoice intake and triage",
+          "Policy-aware approval packets",
+          "Vendor and asset record proposals",
+          "Reconciliation follow-up"
         ],
         "useCases": [
-          "Prepare documents for knowledge bases",
-          "Move files into AI-assisted writing workflows",
-          "Convert structured notes into portable text"
+          "Approved spend policy citations",
+          "Vendor, invoice, asset, and purchase records",
+          "Approval routing with evidence and audit"
         ],
         "supportTopics": [
-          "Supported file types",
-          "Markdown formatting",
-          "Conversion quality",
-          "Export workflow"
+          "Invoices",
+          "Approvals",
+          "Vendor records",
+          "Reconciliation"
+        ],
+        "workflow": [
+          "Work arrives",
+          "AI coworkers gather context",
+          "Humans approve exceptions",
+          "Records and dashboards update"
         ]
       },
-      "splitpop": {
-        "name": "Splitpop",
-        "shortName": "Splitpop",
-        "tagline": "Split bills without the awkward math.",
-        "summary": "A simple mobile app for shared expenses, clear balances, and settling up without friction.",
-        "description": "Splitpop keeps shared bills understandable. Add expenses, split them with the right people, and see what needs to be settled without spreadsheets or mental arithmetic.",
-        "platforms": ["iOS", "Android", "Mobile"],
-        "primaryCta": "Ask about Splitpop",
-        "secondaryCta": "Get support",
+      "inventory": {
+        "name": "Inventory Ops",
+        "shortName": "Inventory",
+        "tagline": "Assets, replenishment, exceptions, and handoffs stay connected.",
+        "summary": "Inventory work becomes a live room where agents inspect records, flag drift, draft updates, and hand off exceptions with context.",
+        "description": "A workspace for inventory and operations teams to coordinate asset records, stock exceptions, replenishment requests, and cross-functional handoffs with visible AI coworkers.",
+        "platforms": [
+          "Inventory AI",
+          "Records Agent",
+          "Handoff Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
         "features": [
-          "Item-level splitting for shared bills",
-          "Groups for trips, homes, and everyday plans",
-          "Clear balances that are easy to explain",
-          "Simple settlement when it is time to square up"
+          "Asset record monitoring",
+          "Stock exception triage",
+          "Replenishment work cards",
+          "Cross-team handoff threads"
         ],
         "useCases": [
-          "Split restaurant bills with friends",
-          "Track shared trip expenses",
-          "Keep household costs transparent"
+          "Warehouse notes, order policies, and SOPs",
+          "Asset, stock, location, and vendor tables",
+          "Draft record updates for human review"
         ],
         "supportTopics": [
-          "Creating a group",
-          "Adding expenses",
-          "Adjusting splits",
-          "Settling balances"
+          "Assets",
+          "Replenishment",
+          "Exceptions",
+          "Handoffs"
+        ],
+        "workflow": [
+          "Signal lands in the room",
+          "Agent checks current records",
+          "Work card routes the exception",
+          "Approved updates sync back"
+        ]
+      },
+      "hr": {
+        "name": "People Ops",
+        "shortName": "People",
+        "tagline": "Onboarding, policy requests, employee documents, and approvals.",
+        "summary": "People teams can keep sensitive employee workflows structured, cited, and reviewable while AI coworkers handle repeatable coordination.",
+        "description": "A governed workspace for onboarding, policy questions, employee document handling, and approval-heavy people operations where every agent action is visible.",
+        "platforms": [
+          "People AI",
+          "Policy Agent",
+          "Access Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
+        "features": [
+          "Onboarding checklists",
+          "Policy-grounded answers",
+          "Document collection follow-up",
+          "Access and approval routing"
+        ],
+        "useCases": [
+          "Handbooks, policies, onboarding guides",
+          "Employee, role, equipment, and access records",
+          "Approval workflows for sensitive changes"
+        ],
+        "supportTopics": [
+          "Onboarding",
+          "Policies",
+          "Documents",
+          "Access"
+        ],
+        "workflow": [
+          "Employee request opens",
+          "Policy and records are cited",
+          "Agent drafts next actions",
+          "Owner reviews and closes"
+        ]
+      },
+      "support": {
+        "name": "Support Ops",
+        "shortName": "Support",
+        "tagline": "Case triage, customer context, escalation paths, and evidence.",
+        "summary": "Support teams can turn inbound messages into tracked work with customer context, knowledge citations, and escalation-ready packets.",
+        "description": "A collaborative room for support operations where human responders and AI coworkers triage cases, collect customer context, search knowledge, and route escalations.",
+        "platforms": [
+          "Support AI",
+          "Triage Agent",
+          "Escalation Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
+        "features": [
+          "Case triage from messages",
+          "Knowledge-cited draft responses",
+          "Customer record lookups",
+          "Escalation packet creation"
+        ],
+        "useCases": [
+          "Help center, runbooks, release notes",
+          "Customer, account, case, and incident records",
+          "Escalation automations with ownership"
+        ],
+        "supportTopics": [
+          "Cases",
+          "Customers",
+          "Escalations",
+          "Knowledge"
+        ],
+        "workflow": [
+          "Case enters the channel",
+          "Agent pulls account context",
+          "Response and escalation are drafted",
+          "Outcome updates records"
+        ]
+      },
+      "product": {
+        "name": "Product Ops",
+        "shortName": "Product",
+        "tagline": "Feedback, bugs, releases, incidents, and product evidence.",
+        "summary": "Product teams can connect customer feedback, issue records, release work, and incident evidence in one shared system.",
+        "description": "A product operations workspace that turns feedback, bugs, incidents, and release coordination into traceable work shared by people and AI coworkers.",
+        "platforms": [
+          "Product AI",
+          "Feedback Agent",
+          "Release Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
+        "features": [
+          "Feedback clustering",
+          "Bug and incident work cards",
+          "Release checklist coordination",
+          "Evidence-linked decisions"
+        ],
+        "useCases": [
+          "Roadmaps, specs, release notes, incident docs",
+          "Feedback, bug, release, and customer tables",
+          "Automated routing from signal to owner"
+        ],
+        "supportTopics": [
+          "Feedback",
+          "Bugs",
+          "Releases",
+          "Incidents"
+        ],
+        "workflow": [
+          "Signal is captured",
+          "Agent links evidence",
+          "Team decides priority",
+          "Release records stay current"
+        ]
+      },
+      "revenue": {
+        "name": "Revenue Ops",
+        "shortName": "Revenue",
+        "tagline": "Research, CRM hygiene, follow-up prep, and account motion.",
+        "summary": "Revenue teams can keep account research, CRM updates, next-step prep, and follow-up workflows visible and governed.",
+        "description": "A revenue operations room for account research, CRM hygiene, meeting prep, follow-up work, and pipeline updates coordinated by people and AI coworkers.",
+        "platforms": [
+          "Revenue AI",
+          "Research Agent",
+          "CRM Agent"
+        ],
+        "primaryCta": "Request access",
+        "secondaryCta": "View use cases",
+        "features": [
+          "Account research briefs",
+          "CRM update proposals",
+          "Follow-up work cards",
+          "Pipeline hygiene automations"
+        ],
+        "useCases": [
+          "Account plans, call notes, product context",
+          "Accounts, contacts, deals, and activity records",
+          "Follow-up automations with review gates"
+        ],
+        "supportTopics": [
+          "Research",
+          "CRM",
+          "Follow-up",
+          "Pipeline"
+        ],
+        "workflow": [
+          "Account motion starts",
+          "Agent prepares context",
+          "Team reviews next step",
+          "CRM and tasks update"
         ]
       }
     }
@@ -89,153 +372,192 @@
   "Principles": {
     "items": [
       {
-        "title": "Made with care",
-        "copy": "Every interaction should feel considered, from the first click to the final export."
+        "title": "Visible by default",
+        "copy": "People can see what AI coworkers are doing, what they need, and what changed."
       },
       {
-        "title": "Privacy first",
-        "copy": "We prefer respectful defaults and avoid collecting what a product does not need."
+        "title": "Context attached",
+        "copy": "Knowledge, records, approvals, and evidence stay attached to the work item."
       },
       {
-        "title": "Lightweight",
-        "copy": "Luckysoft tools are designed to solve real tasks without becoming the work."
+        "title": "Governed actions",
+        "copy": "Agents operate through scoped tools, review gates, and auditable permissions."
       },
       {
-        "title": "For real people",
-        "copy": "Clear language, predictable controls, and workflows that fit into ordinary days."
+        "title": "Built for real operations",
+        "copy": "The system is shaped around repeatable business work, not isolated demos."
       }
     ]
   },
   "Home": {
-    "heroAlt": "A wide coastal garden with a low bridge, stone paths, and soft sunlight.",
-    "heroTitle": "Thoughtful apps that make every day feel effortless.",
-    "heroDescription": "Beautifully crafted utilities for Mac and mobile, designed to remove friction from the small workflows you repeat every day.",
-    "exploreApps": "Explore our apps",
-    "contactUs": "Contact us",
-    "productsTitle": "Simple tools. Carefully made.",
-    "productsDescription": "Small utilities with a clear purpose: make repeated work feel lighter, quieter, and easier to finish.",
-    "viewAllApps": "View all apps",
-    "principlesTitle": "Built for calm, useful work.",
-    "principlesDescription": "Luckysoft apps are built around restraint: clear workflows, respectful defaults, and software that stays out of your way.",
-    "interludeAlt": "A peaceful sunlit coastal garden with stone textures.",
-    "interludeEyebrow": "Designed with quiet intent",
-    "interludeTitle": "Less friction in the little moments.",
-    "interludeCopy": "The best tools do not ask for attention they have not earned. We build around the parts of work that should be simpler: converting, splitting, organizing, and moving on.",
-    "ctaTitle": "Have a workflow that should feel lighter?",
-    "ctaCopy": "Tell us what is getting in the way. We are always interested in thoughtful tools, useful constraints, and small problems worth solving well.",
-    "ctaButton": "Start a conversation"
+    "heroAlt": "JobDone AI collaborative workspace with human and AI coworkers.",
+    "heroTitle": "A collaborative work system for humans and AI agents.",
+    "heroDescription": "JobDone AI gives teams one place to chat with AI coworkers, turn messages into rich work cards, run automations, and jump directly into the knowledge and records behind every outcome.",
+    "exploreApps": "See the system",
+    "contactUs": "Explore workspaces",
+    "productsTitle": "Work happens in shared rooms.",
+    "productsDescription": "Channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity in one focused operating surface.",
+    "viewAllApps": "View workspaces",
+    "principlesTitle": "Designed for accountable AI work.",
+    "principlesDescription": "The system keeps people close to judgment while AI coworkers handle repeatable coordination with context and traceability.",
+    "interludeAlt": "Abstract JobDone AI work graph.",
+    "interludeEyebrow": "Coworking with context",
+    "interludeTitle": "Chat, work cards, knowledge, and records stay connected.",
+    "interludeCopy": "Every message can become work, every work item can open the right data, and every agent action remains visible to the team.",
+    "ctaTitle": "Put humans and AI agents in the same work system.",
+    "ctaCopy": "Request access to see how JobDone AI coordinates work, records, approvals, and agent activity in one operating workspace.",
+    "ctaButton": "Request access"
   },
   "ProductsPage": {
-    "metadataTitle": "Products",
-    "metadataDescription": "Thoughtful Luckysoft apps for focused everyday work.",
-    "heroTitle": "Our Products",
-    "heroDescription": "Thoughtful apps, beautifully crafted for focused everyday work. Each one is small on purpose and direct about what it helps you do.",
-    "heroAlt": "A ceramic vase and bowl on a warm stone tabletop.",
+    "metadataTitle": "Workspaces",
+    "metadataDescription": "Department-specific workspaces for human and AI agent teams.",
+    "heroTitle": "Operating rooms for human and AI work.",
+    "heroDescription": "Each workspace brings channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity into one focused operating surface.",
+    "heroAlt": "JobDone AI workspace rooms with agent status and work cards.",
     "learnMore": "Learn more",
-    "viewDetails": "View details",
-    "principlesTitle": "Small software, carefully shaped.",
-    "principlesDescription": "A shared point of view runs through every Luckysoft product."
+    "viewDetails": "View workspace",
+    "principlesTitle": "Department-specific rooms, one shared system.",
+    "principlesDescription": "Start where work already lives, then connect the knowledge, records, and automations agents need to complete it."
   },
   "ProductDetail": {
-    "splitpopSectionTitle": "Split clearly.",
-    "splitpopSectionDescription": "Designed for shared costs that need a clear answer, not a group chat full of calculations.",
-    "fileSectionTitle": "Convert cleanly.",
-    "fileSectionDescription": "Designed for moving useful information into Markdown without turning conversion into a project.",
-    "splitpopFeatureCopy": "Keep the shared expense visible, understandable, and easy to settle when everyone is ready.",
-    "fileFeatureCopy": "Keep the converted content readable so it can be edited, shared, and reused in the next tool.",
-    "workflowTitle": "How it works",
-    "workflowDescription": "A short workflow is easier to trust, repeat, and finish.",
-    "splitpopWorkflow": ["Add a bill", "Invite people", "Split items", "Settle clearly"],
-    "fileWorkflow": ["Add your file", "Review the conversion", "Copy Markdown", "Keep moving"],
-    "splitpopCtaTitle": "Ready to split smarter?",
-    "fileCtaTitle": "Turn your files into clean Markdown.",
-    "ctaCopy": "Reach out and we will point you toward the right next step for this product."
+    "capabilitiesEyebrow": "Workspace capabilities",
+    "capabilitiesTitle": "Everything the team needs to move from message to completed work.",
+    "capabilityCopy": "Each capability is connected to the shared room, the work card, the relevant knowledge, and the records that need to stay current.",
+    "workflowEyebrow": "How work moves",
+    "workflowTitle": "From request to completed work, without losing context.",
+    "platformLink": "Explore platform",
+    "ctaEyebrow": "Closed preview",
+    "ctaTitle": "Bring this workspace into the JobDone AI work system.",
+    "ctaCopy": "JobDone AI is in closed preview. Request access to discuss the workflows, records, and agent coworkers that matter for your team.",
+    "graphic": {
+      "channel": "Channel",
+      "aiCoworkers": "AI coworkers",
+      "workThread": "Work thread",
+      "workThreadCopy": "Message, decision, evidence, and system update stay linked to the same work card.",
+      "richWorkCard": "Rich work card",
+      "routed": "routed",
+      "knowledge": "Knowledge",
+      "records": "Records",
+      "automation": "Automation"
+    }
   },
   "Vision": {
-    "metadataTitle": "Vision",
-    "metadataDescription": "How Luckysoft thinks about calm, useful software.",
-    "heroTitle": "Our Vision",
-    "heroDescription": "We believe good software should feel invisible at the right moments: clear, respectful, and quietly useful.",
-    "heroAlt": "A golden tree in a quiet landscape.",
-    "philosophyTitle": "The product philosophy",
-    "philosophyDescription": "Luckysoft products are small on purpose. The craft is in deciding what should remain simple.",
+    "metadataTitle": "Platform",
+    "metadataDescription": "The work graph behind every JobDone AI agent action.",
+    "heroTitle": "The work graph behind every agent action.",
+    "heroDescription": "JobDone AI connects coworking, work objects, AI runtime, governed knowledge, record databases, approvals, and evidence into one operating layer.",
+    "heroAlt": "Layered JobDone AI platform architecture.",
+    "philosophyTitle": "Agents are coworkers, not disconnected scripts.",
+    "philosophyDescription": "The platform gives agents a place to work with people, cite context, update records, and stop for review when judgment is required.",
     "principles": [
       {
-        "title": "Clarity in every detail",
-        "copy": "A product should explain itself through careful structure, plain language, and predictable controls."
+        "title": "Visible",
+        "copy": "People see what agents are doing, what they need, and what they changed."
       },
       {
-        "title": "Privacy by default",
-        "copy": "Useful software should be thoughtful about what it collects, stores, and asks people to trust."
+        "title": "Contextual",
+        "copy": "Knowledge citations and database rows are directly attached to the work."
       },
       {
-        "title": "Utility over noise",
-        "copy": "Features should earn their place by making a real workflow lighter."
+        "title": "Governed",
+        "copy": "Tools, records, approvals, and audit define what agents can do."
       },
       {
-        "title": "Built to last",
-        "copy": "We prefer durable patterns, calm interfaces, and tools that stay useful beyond the first launch."
+        "title": "Composable",
+        "copy": "Reusable work patterns, skills, automations, and records compound over time."
       }
     ],
-    "panelAlt": "A warm tabletop scene with a notebook and ceramic vase.",
-    "panelTitle": "Software should create room, not pressure.",
-    "panelCopy": "We are drawn to tools that help people finish a task and return to the thing they actually care about. That means quieter defaults, fewer dead ends, and details that respect attention.",
-    "panelButton": "Start a conversation"
+    "panelAlt": "JobDone AI platform layer graphic.",
+    "panelTitle": "One shared operating layer for work.",
+    "panelCopy": "Teams get collaboration, structured work, AI coworkers, knowledge, records, and governance in the same place.",
+    "panelButton": "Request access"
   },
   "Support": {
-    "metadataTitle": "Support",
-    "metadataDescription": "Choose a support path for Luckysoft apps.",
-    "heroTitle": "How can we help?",
-    "heroDescription": "Choose a product or support path and we will route your note to the right place.",
-    "heroAlt": "An arched Mediterranean patio with warm stone, soft seating, and coastal light.",
-    "heroButton": "Contact support",
-    "productsTitle": "Start with a product",
-    "productsDescription": "Pick the closest product path. These links open the contact form with the right product selected.",
-    "productCards": {
-      "file-to-markdown": {
-        "description": "Get help with supported files, conversion output, and Markdown workflows.",
-        "actions": ["Ask about supported files", "Report conversion issue", "Request workflow help"]
-      },
-      "splitpop": {
-        "description": "Get help with shared bills, groups, balances, and app behavior.",
-        "actions": ["Help with a bill", "Group or balance issue", "Report app problem"]
-      }
-    },
-    "pathsTitle": "Or choose a support path",
-    "pathsDescription": "Use these paths when the question is not tied to a single product.",
+    "metadataTitle": "Use cases",
+    "metadataDescription": "How JobDone AI coordinates real work across teams.",
+    "heroTitle": "Real workflows, shared by people and AI coworkers.",
+    "heroDescription": "Turn messages, forms, documents, and business-tool signals into tracked work with the right context, records, approvals, and automations attached.",
+    "heroAlt": "JobDone AI use case flow.",
+    "heroButton": "Request access",
+    "productsTitle": "Common operating patterns",
+    "productsDescription": "Each pattern keeps the conversation, work card, knowledge, records, and automation history together.",
+    "productCards": {},
+    "pathsTitle": "Use case entry points",
+    "pathsDescription": "Start with the work your team already handles every day.",
     "quickActions": [
-      { "label": "Report a bug", "topic": "bug" },
-      { "label": "Request a feature", "topic": "feature" },
-      { "label": "Billing question", "topic": "billing" },
-      { "label": "General support", "topic": "support" }
+      {
+        "label": "Finance operations",
+        "topic": "finance"
+      },
+      {
+        "label": "Inventory operations",
+        "topic": "inventory"
+      },
+      {
+        "label": "People operations",
+        "topic": "hr"
+      },
+      {
+        "label": "Support operations",
+        "topic": "support"
+      }
     ],
-    "nextTitle": "What happens next",
-    "nextDescription": "A small support flow, built for launch now and room for articles later.",
+    "nextTitle": "What the system does",
+    "nextDescription": "JobDone AI routes work through shared context, structured objects, and visible review gates.",
     "nextSteps": [
       {
-        "title": "Send a note",
-        "copy": "Choose the closest path and share the details we need to understand the issue."
+        "title": "Capture the request",
+        "copy": "A message, form, email, document, or system signal opens a shared work thread."
       },
       {
-        "title": "We route it",
-        "copy": "Your message goes to the right place based on product, topic, and context."
+        "title": "Attach context",
+        "copy": "Agents cite knowledge, inspect records, draft actions, and ask for review where needed."
       },
       {
-        "title": "You hear back",
-        "copy": "We will reply with the next useful step, a follow-up question, or a fix path."
+        "title": "Complete with evidence",
+        "copy": "Approved work updates records, closes loops, and leaves an auditable trail."
       }
     ],
-    "ctaTitle": "Not sure where to start?",
-    "ctaCopy": "Send us a note and we will point it in the right direction.",
-    "ctaButton": "Contact support"
+    "ctaTitle": "See the work system in motion.",
+    "ctaCopy": "Request access to discuss which workflows, records, and agent coworkers belong in your first workspace.",
+    "ctaButton": "Request access"
   },
   "Contact": {
     "metadataTitle": "Contact",
-    "metadataDescription": "Contact Luckysoft for product support, partnerships, or ideas.",
-    "heroTitle": "Let's work together.",
-    "heroDescription": "Whether you have an idea, need support, or want to build something thoughtful, we would love to hear from you.",
-    "heroAlt": "A calm coastal terrace lounge with soft seating and warm daylight.",
-    "topics": ["Product support", "Partnerships", "Design or development", "General inquiries"]
+    "metadataDescription": "Request access, a pilot conversation, or a strategic partnership discussion with JobDone AI.",
+    "eyebrow": "Closed preview",
+    "heroTitle": "Request access to JobDone AI.",
+    "heroDescription": "The AI Agent Work System is in closed preview. Use this page for access requests, pilot conversations, and strategic partnership discussions.",
+    "heroAlt": "JobDone AI closed-preview contact panel.",
+    "closedPreviewTitle": "Closed preview only",
+    "closedPreviewCopy": "JobDone AI is not generally available yet. We are prioritizing strong workflows, clear business cases, and teams ready to bring AI agents into real work with control.",
+    "topics": [
+      "Request access",
+      "Pilot conversation",
+      "Strategic discussion",
+      "Strategic partnership"
+    ],
+    "requestPipeline": {
+      "title": "Request packet",
+      "description": "A compact control plane for moving from business signal to a scoped work system.",
+      "badge": "Preview queue",
+      "metrics": [
+        ["records", "attached"],
+        ["agents", "visible"],
+        ["approval", "scoped"]
+      ],
+      "steps": [
+        ["01", "Signal", "Business context, workflow shape, and priority are captured."],
+        ["02", "Map", "AI coworker roles, records, tools, and approvals are modeled."],
+        ["03", "Scope", "A preview path is assembled with boundaries and ownership."],
+        ["04", "Open", "The right work system surface is prepared for access."]
+      ],
+      "consoleLines": [
+        "workspace_graph: hydrated",
+        "human_review: required",
+        "email_delivery: api_route"
+      ]
+    }
   },
   "ContactForm": {
     "labels": {
@@ -247,286 +569,278 @@
     "placeholders": {
       "name": "Your name",
       "email": "you@example.com",
-      "message": "Tell us a little about what you need."
+      "message": "Tell us your company, role, and whether this is about access, a pilot, or partnership."
     },
     "topics": {
       "general": "General inquiry",
-      "support": "Product support",
-      "bug": "Report a bug",
-      "feature": "Request a feature",
-      "billing": "Billing question",
-      "file-to-markdown": "File to Markdown",
-      "splitpop": "Splitpop"
+      "closed-preview": "Request access",
+      "pilot": "Pilot conversation",
+      "strategic": "Strategic discussion",
+      "partnership": "Strategic partnership"
     },
-    "submit": "Open email draft",
-    "note": "This form opens an email draft so you can review the message before sending it.",
-    "ready": "Your email draft is ready to send.",
-    "subject": "Luckysoft: {topic}",
-    "body": "Name: {name}\nEmail: {email}\nTopic: {topic}\n\n{message}"
+    "submit": "Send request",
+    "note": "This form sends your request directly to JobDone AI.",
+    "sending": "Sending...",
+    "sent": "Request sent. We will get back to you soon.",
+    "error": "Could not send the request. Please try again."
   },
   "Privacy": {
     "metadataTitle": "Privacy Policy",
-    "metadataDescription": "Luckysoft privacy policy for the Luckysoft website, File to Markdown, Splitpop, and related support services.",
-    "updatedAt": "May 30, 2026",
+    "metadataDescription": "JobDone AI privacy policy for the public website and closed-preview access requests.",
+    "updatedAt": "June 5, 2026",
     "lastUpdated": "Last updated: {date}",
     "title": "Privacy Policy",
-    "intro": "This Privacy Policy explains how Luckysoft, Zurich, Switzerland (\"Luckysoft\", \"we\", \"us\", or \"our\") handles personal data for the Luckysoft website, File to Markdown, Splitpop, our contact and support flows, purchases, and related services.",
+    "intro": "This Privacy Policy explains how JobDone AI handles personal data for this public website, closed-preview access requests, contact messages, and related communications.",
     "sections": {
       "responsible": {
         "title": "1. Who is responsible",
         "paragraphs": [
-          "Luckysoft, Zurich, Switzerland is responsible for the processing described in this Privacy Policy unless a product-specific policy says otherwise.",
-          "For privacy requests, account deletion, data deletion, support, or questions about this policy, contact us through the <contact>Luckysoft contact form</contact>."
+          "JobDone AI, Zurich, Switzerland is responsible for the processing described in this Privacy Policy unless a separate agreement says otherwise.",
+          "For privacy requests, access requests, deletion requests, or questions about this policy, contact us through the <contact>JobDone AI contact form</contact>."
         ]
       },
       "splitpop": {
-        "title": "2. How this policy relates to Splitpop",
+        "title": "2. Closed-preview scope",
         "paragraphs": [
-          "This Privacy Policy applies to Luckysoft generally. Splitpop also has product-specific legal pages at <privacyLink>splitpop.app/privacy</privacyLink> and <termsLink>splitpop.app/terms</termsLink>.",
-          "For Splitpop-specific cloud, group, expense, balance, purchase, or account behavior, the Splitpop-specific policy applies in addition to this policy and controls where it describes Splitpop more specifically."
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "This policy covers the public website and preview-related communications. Any pilot or customer deployment may be governed by separate written agreements, security terms, and data-processing terms."
         ]
       },
       "collect": {
         "title": "3. Data we collect",
-        "paragraph": "We try to collect only what is needed to provide, protect, support, and improve our products. Depending on the product or service you use, we may process the following categories of data:",
+        "paragraph": "We collect only what is reasonably needed to operate the website, respond to inquiries, evaluate access requests, and keep the service secure.",
         "items": [
-          "Contact and support data, such as your name, contact details, message content, attachments you choose to send, product selection, and support history.",
-          "Website data, such as pages visited, approximate location from IP address, device and browser information, referrer information, and basic logs needed for security and reliability.",
-          "File to Markdown data, such as app settings, diagnostics, purchase status, and support messages. File contents are processed locally or on your device by default and are not collected by Luckysoft unless you intentionally send files or excerpts to us for support.",
-          "Splitpop account and profile data, such as sign-in details, display name, profile information, preferences, purchase or subscription status, and account identifiers.",
-          "Splitpop group and expense data, such as groups, participants, invited people, expense entries, balances, settlement information, notes, receipts or attachments you add, shared links, and related activity.",
-          "Device, app, and diagnostic data, such as app version, device type, operating system, crash logs, performance data, error reports, and security logs.",
-          "Payment-related data, such as purchase identifiers, subscription status, product purchased, renewal status, refund status, invoices, billing contact details, and limited payment metadata."
+          "Contact data, such as your name, email address, company, role, topic, and message content.",
+          "Website data, such as pages visited, approximate location from IP address, device and browser information, referrer information, and basic logs used for security and reliability.",
+          "Preview discussion data, such as workflow descriptions, business context, requested integrations, and notes you choose to share with us.",
+          "Diagnostic and security data, such as server logs, error reports, abuse-prevention signals, and operational metadata."
         ]
       },
       "payments": {
-        "title": "4. Payment and app store data",
+        "title": "4. Payment data",
         "paragraphs": [
-          "Purchases may be handled by Apple, Google, Stripe, or another checkout provider. Those providers process payment information under their own terms and privacy policies. Luckysoft does not receive full card numbers from Apple, Google, or Stripe.",
-          "We may receive limited information needed to confirm purchases, manage subscriptions, prevent fraud, provide support, keep accounting records, and comply with tax or legal duties."
+          "The public website does not currently process payments or public subscriptions.",
+          "If commercial access is arranged separately, payment and contracting information may be handled under separate terms or by third-party providers."
         ]
       },
       "use": {
         "title": "5. How we use data",
         "paragraph": "We use personal data for these purposes:",
         "items": [
-          "To provide, maintain, secure, and improve our website, apps, cloud services, support, and purchases.",
-          "To operate Splitpop features such as groups, expenses, balances, account access, sync, shared links, and support.",
-          "To answer messages, process privacy or deletion requests, investigate issues, and communicate service-related information.",
-          "To monitor reliability, diagnose crashes, detect abuse, prevent fraud, and protect users and our services.",
-          "To process purchases, subscriptions, refunds, taxes, invoices, and platform or payment-provider records.",
-          "To comply with legal obligations, enforce our terms, and defend our rights where necessary."
+          "To operate, secure, maintain, and improve the public website.",
+          "To respond to contact messages and closed-preview access requests.",
+          "To evaluate whether JobDone AI is a fit for a requested workflow, pilot, or partnership discussion.",
+          "To monitor reliability, diagnose issues, prevent abuse, and protect the website and service.",
+          "To comply with legal obligations, enforce terms, and defend our rights where necessary."
         ]
       },
       "bases": {
         "title": "6. Legal bases",
         "paragraphs": [
-          "Where the Swiss Federal Act on Data Protection, the GDPR, or similar laws apply, we rely on the appropriate legal bases for the relevant processing activity. These may include performing a contract with you, your consent, our legitimate interests in operating and protecting our services, compliance with legal obligations, and establishing or defending legal claims.",
+          "Where the Swiss Federal Act on Data Protection, the GDPR, or similar laws apply, we rely on appropriate legal bases, including your request, our legitimate interests in operating and protecting the website, consent where required, legal obligations, and establishing or defending legal claims.",
           "You may withdraw consent where processing is based on consent, but that does not affect processing that happened before withdrawal or processing that is allowed on another legal basis."
         ]
       },
       "thirdParties": {
         "title": "7. Third-party services",
-        "paragraph": "We use service providers to host, operate, sell, support, and improve our products. These providers may process data for us or as independent controllers depending on the service.",
+        "paragraph": "We may use service providers to host, secure, monitor, analyze, and operate the website and communications.",
         "items": [
-          "Infrastructure, hosting, database, storage, and security providers.",
-          "Sentry or similar diagnostic services for crash reports, error monitoring, and app reliability.",
-          "Apple App Store and Google Play services for app distribution, purchases, subscriptions, refunds, and platform analytics.",
-          "Stripe for checkout, billing, payment processing, invoices, fraud prevention, and related payment operations.",
-          "Support, workflow, communication, or issue-tracking tools used to respond to contact-form messages and product requests."
+          "Hosting, infrastructure, database, storage, and security providers.",
+          "Analytics or diagnostics providers used to understand reliability and website usage.",
+          "Email, CRM, support, workflow, or issue-tracking tools used to respond to access requests and messages.",
+          "Professional advisers, legal providers, and compliance service providers where needed."
         ],
-        "after": "We do not sell personal data. We do not use your File to Markdown file contents for advertising. We also do not knowingly use private Splitpop group or expense data for third-party advertising."
+        "after": "We do not sell personal data."
       },
       "sharing": {
         "title": "8. Sharing and disclosures",
         "paragraphs": [
-          "We may share personal data with service providers, payment and app store providers, professional advisers, authorities, courts, regulators, or other parties when needed to provide the services, comply with law, protect rights and safety, investigate misuse, or complete a business transfer such as a merger, acquisition, or asset sale.",
-          "Splitpop is collaborative by design. Data you add to a group, shared link, participant list, expense, note, receipt, or balance may be visible to the people you invite or share it with."
+          "We may share personal data with service providers, professional advisers, authorities, courts, regulators, or other parties when needed to operate the website, comply with law, protect rights and safety, investigate misuse, or complete a business transfer such as a merger, acquisition, financing, or asset sale.",
+          "We do not make closed-preview inquiry details public."
         ]
       },
       "retention": {
         "title": "9. Retention",
         "paragraphs": [
-          "We keep personal data only as long as reasonably needed for the purposes described in this policy, including providing services, maintaining accounts, resolving support issues, keeping security and audit logs, complying with tax and accounting duties, and defending legal claims.",
-          "If you request deletion, we will delete or anonymize personal data where required and reasonably possible. Some information may remain in backups, logs, purchase records, tax records, dispute files, or legal records for a limited period where retention is required or permitted by law."
+          "We keep personal data only as long as reasonably needed for the purposes described in this policy, including responding to inquiries, maintaining business records, security, audit, legal compliance, and defending legal claims.",
+          "If you request deletion, we will delete or anonymize personal data where required and reasonably possible. Some information may remain in backups, logs, legal records, or security records for a limited period where retention is required or permitted by law."
         ]
       },
       "rights": {
         "title": "10. Your rights and choices",
         "paragraphs": [
           "Depending on where you live, you may have rights to access, correct, delete, receive a copy of, restrict, object to, or withdraw consent for certain processing of your personal data. You may also have a right to complain to a data protection authority.",
-          "You can send privacy, export, correction, and deletion requests through the <contact>Luckysoft contact form</contact>. We may need to verify your identity before acting on a request."
+          "You can send privacy, export, correction, and deletion requests through the <contact>JobDone AI contact form</contact>. We may need to verify your identity before acting on a request."
         ]
       },
       "security": {
         "title": "11. Security",
         "paragraphs": [
-          "We use reasonable technical and organizational measures designed to protect personal data. No app, cloud service, device, or internet transmission can be guaranteed to be fully secure, error-free, or lossless. You are responsible for using secure devices, keeping account credentials confidential, and sharing information only with people you trust."
+          "We use reasonable technical and organizational measures designed to protect personal data. No website, cloud service, device, or internet transmission can be guaranteed to be fully secure, error-free, or lossless."
         ]
       },
       "transfers": {
         "title": "12. International transfers",
         "paragraphs": [
-          "Luckysoft is based in Switzerland. Our providers, users, and infrastructure may be located in Switzerland, the European Economic Area, the United Kingdom, the United States, or other countries. Where required, we use appropriate transfer safeguards such as contractual protections, adequacy decisions, or other lawful transfer mechanisms."
+          "JobDone AI is based in Switzerland. Our providers and infrastructure may be located in Switzerland, the European Economic Area, the United Kingdom, the United States, or other countries. Where required, we use appropriate transfer safeguards such as contractual protections, adequacy decisions, or other lawful transfer mechanisms."
         ]
       },
       "children": {
         "title": "13. Children and age",
         "paragraphs": [
-          "Luckysoft products are not directed to children under 16. If you are under 16, you may use our services only with consent from a parent or legal guardian. If we learn that we have collected personal data from a child in a way that requires parental consent and that consent was not provided, we will take reasonable steps to delete it."
+          "The JobDone AI public website and preview process are not directed to children under 16."
         ]
       },
       "changes": {
         "title": "14. Changes to this policy",
         "paragraphs": [
-          "We may update this Privacy Policy when our products, data practices, providers, or legal requirements change. The updated version will be posted on this page with a new \"Last updated\" date. If a change is material, we may provide additional notice where required."
+          "We may update this Privacy Policy when our service, data practices, providers, or legal requirements change. The updated version will be posted on this page with a new last-updated date."
         ]
       }
     }
   },
   "Terms": {
     "metadataTitle": "Terms of Service",
-    "metadataDescription": "Luckysoft terms of service for the Luckysoft website, File to Markdown, Splitpop, purchases, and related support services.",
-    "updatedAt": "May 30, 2026",
+    "metadataDescription": "JobDone AI terms for the public website and closed-preview access requests.",
+    "updatedAt": "June 5, 2026",
     "lastUpdated": "Last updated: {date}",
     "title": "Terms of Service",
-    "intro": "These Terms of Service govern your access to and use of the Luckysoft website, File to Markdown, Splitpop, purchases, support, and related services. Please read them carefully before using our products.",
+    "intro": "These Terms of Service govern your access to and use of the JobDone AI public website, contact forms, closed-preview access requests, and related communications.",
     "sections": {
       "who": {
         "title": "1. Who we are",
         "paragraphs": [
-          "The services are provided by Luckysoft, Zurich, Switzerland (\"Luckysoft\", \"we\", \"us\", or \"our\").",
-          "Questions about these terms, support, privacy requests, deletion requests, or account requests can be sent through the <contact>Luckysoft contact form</contact>."
+          "The public website is provided by JobDone AI, Zurich, Switzerland (\"JobDone AI\", \"we\", \"us\", or \"our\").",
+          "Questions about these terms, privacy requests, deletion requests, or access requests can be sent through the <contact>JobDone AI contact form</contact>."
         ]
       },
       "acceptance": {
         "title": "2. Acceptance of these terms",
         "paragraphs": [
-          "By accessing or using any Luckysoft website, app, purchase, support flow, beta, cloud service, or related feature, you agree to these Terms of Service and the <privacy>Luckysoft Privacy Policy</privacy>. In our apps, you may also be asked to explicitly accept these terms and the Privacy Policy before or during use.",
-          "If you do not agree, do not use the services. If you use the services on behalf of an organization, you confirm that you have authority to bind that organization to these terms."
+          "By accessing or using this website, contact form, preview request flow, or related feature, you agree to these Terms of Service and the <privacy>JobDone AI Privacy Policy</privacy>.",
+          "If you use the website on behalf of an organization, you confirm that you have authority to act for that organization."
         ]
       },
       "splitpop": {
-        "title": "3. Splitpop-specific terms",
+        "title": "3. Closed preview",
         "paragraphs": [
-          "Splitpop also has product-specific legal pages at <privacyLink>splitpop.app/privacy</privacyLink> and <termsLink>splitpop.app/terms</termsLink>.",
-          "Those Splitpop-specific terms apply in addition to these terms and control where they describe Splitpop-specific cloud, group, expense, balance, purchase, or account behavior more specifically."
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "Submitting a request does not guarantee access, a pilot, a partnership, feature availability, pricing, timing, or any commercial relationship. Any pilot or deployment may require separate written agreements."
         ]
       },
       "eligibility": {
         "title": "4. Eligibility",
         "paragraphs": [
-          "You must be at least 16 years old, or have consent from your parent or legal guardian, to use the services. You must also be legally able to accept these terms and comply with all laws that apply to your use of the services."
+          "You must be at least 16 years old and legally able to accept these terms to use the website or submit a request."
         ]
       },
       "responsibilities": {
         "title": "5. Your responsibilities",
-        "paragraph": "You are responsible for how you use the services, including:",
+        "paragraph": "You are responsible for how you use the website, including:",
         "items": [
-          "Using the services only for lawful purposes and in accordance with these terms.",
-          "Providing accurate information and keeping account or billing information current when required.",
-          "Keeping devices, accounts, passwords, sign-in methods, and shared links secure.",
-          "Making sure you have the right to upload, convert, store, share, or enter any content or personal data you provide.",
-          "Getting any required permission before adding other people to Splitpop groups, entering their information, sharing expenses, or inviting them to a service.",
-          "Reviewing outputs, balances, calculations, exports, conversions, and records before relying on them."
+          "Using the website only for lawful purposes and in accordance with these terms.",
+          "Providing accurate information in contact and access-request forms.",
+          "Making sure you have the right to share any company, workflow, document, system, or personal data you provide.",
+          "Reviewing any information we provide before relying on it for business decisions.",
+          "Keeping confidential information out of public or non-secure messages unless separately agreed."
         ]
       },
       "prohibited": {
         "title": "6. Prohibited use",
         "paragraph": "You must not:",
         "items": [
-          "Use the services in a way that is unlawful, harmful, deceptive, abusive, harassing, defamatory, invasive of privacy, or infringing.",
-          "Upload or share content that you do not have permission to use or that violates another person's rights.",
-          "Interfere with, disrupt, reverse engineer, scrape, overload, probe, or bypass the security of the services except where allowed by law.",
-          "Use the services to transmit malware, spam, fraudulent messages, or unauthorized advertising.",
-          "Use the services for high-risk, emergency, safety-critical, financial-advisory, legal-advisory, tax-advisory, accounting, medical, or regulated decision-making purposes."
+          "Use the website in a way that is unlawful, harmful, deceptive, abusive, harassing, defamatory, invasive of privacy, or infringing.",
+          "Upload or send content that you do not have permission to use or that violates another person or organization's rights.",
+          "Interfere with, disrupt, reverse engineer, scrape, overload, probe, or bypass the security of the website except where allowed by law.",
+          "Use the website to transmit malware, spam, fraudulent messages, or unauthorized advertising.",
+          "Misrepresent your identity, organization, authority, or relationship to JobDone AI."
         ]
       },
       "content": {
-        "title": "7. User content",
+        "title": "7. Information you submit",
         "paragraphs": [
-          "You keep ownership of content you submit, upload, enter, convert, store, or share through the services. You grant Luckysoft the limited rights needed to host, process, display, transmit, support, back up, secure, and operate the services for you and the people you choose to share with.",
-          "You are solely responsible for your content and for any effects of sharing it. Luckysoft does not endorse, verify, or accept responsibility for user content, shared expense records, uploaded files, notes, receipts, links, or communications."
+          "You keep ownership of information you submit through the website. You grant JobDone AI the limited rights needed to receive, process, review, respond to, and store that information for the purposes described in these terms and our Privacy Policy.",
+          "You are solely responsible for the information you submit and for ensuring you have permission to share it."
         ]
       },
       "file": {
-        "title": "8. File to Markdown",
+        "title": "8. Website information",
         "paragraphs": [
-          "File to Markdown is a focused conversion tool. Unless you intentionally send us material for support, your files are processed locally or on your device by default.",
-          "You are responsible for reviewing all converted output before relying on it. Luckysoft does not guarantee that conversions will be complete, accurate, secure, lossless, correctly formatted, suitable for a particular workflow, or free from omissions, formatting changes, metadata loss, or interpretation errors."
+          "Website copy, diagrams, mockups, product descriptions, and preview materials are provided for general informational purposes.",
+          "Because JobDone AI is in closed preview, features, positioning, availability, pricing, integrations, and product details may change."
         ]
       },
       "splitpopProduct": {
-        "title": "9. Splitpop",
+        "title": "9. AI outputs and workflow discussions",
         "paragraphs": [
-          "Splitpop helps groups record and understand shared expenses. It is not a bank, payment institution, escrow service, accountant, tax adviser, financial adviser, legal adviser, debt collector, or dispute-resolution service.",
-          "Expenses, balances, settlement suggestions, totals, exports, notifications, and payment-related records are informational only. You and the people in your group are responsible for checking amounts, settling with each other, handling reimbursements, resolving disputes, keeping your own records, and complying with any tax, accounting, consumer, employment, rental, or other legal obligations."
+          "Any examples, mockups, workflow discussions, agent behavior descriptions, or system diagrams on this website are illustrative and do not create a warranty or commitment.",
+          "You are responsible for evaluating whether any workflow, automation, AI output, integration, or record update is appropriate for your organization and legal obligations."
         ]
       },
       "purchases": {
-        "title": "10. Purchases, subscriptions, and refunds",
+        "title": "10. Commercial terms",
         "paragraphs": [
-          "Paid features, subscriptions, in-app purchases, app store purchases, checkout purchases, and renewals may be handled by Apple, Google, Stripe, or another payment provider. Their terms, privacy policies, refund rules, billing rules, taxes, and platform requirements may apply in addition to these terms.",
-          "Prices, features, trial periods, subscriptions, and availability may change. Except where required by law or by the applicable app store or payment provider, payments are not guaranteed to be refundable."
+          "The public website does not currently offer self-serve purchases.",
+          "Any commercial access, pilot, paid deployment, data-processing arrangement, or service-level commitment must be agreed separately in writing."
         ]
       },
       "availability": {
         "title": "11. Changes, availability, and updates",
         "paragraphs": [
-          "We may modify, suspend, discontinue, limit, rename, remove, or update any service or feature at any time. We may also release updates that change how a product works. We are not responsible for loss caused by your failure to install available updates or maintain compatible devices, accounts, operating systems, network access, or third-party services."
+          "We may modify, suspend, discontinue, limit, rename, remove, or update the website or any preview-related feature at any time."
         ]
       },
       "warranties": {
         "title": "12. No warranties",
         "paragraphs": [
-          "To the maximum extent permitted by law, the services are provided \"as is\" and \"as available\", without warranties of any kind, whether express, implied, statutory, or otherwise.",
-          "Luckysoft does not warrant that the services will be uninterrupted, timely, secure, private, error-free, lossless, accurate, complete, compatible with every device or platform, or fit for any particular purpose. You use the services at your own risk."
+          "To the maximum extent permitted by law, the website and preview materials are provided \"as is\" and \"as available\", without warranties of any kind, whether express, implied, statutory, or otherwise.",
+          "JobDone AI does not warrant that the website will be uninterrupted, timely, secure, private, error-free, lossless, accurate, complete, compatible with every device or platform, or fit for any particular purpose."
         ]
       },
       "liability": {
         "title": "13. Limitation of liability",
         "paragraphs": [
-          "To the maximum extent permitted by law, Luckysoft will not be liable for indirect, incidental, special, consequential, exemplary, punitive, reliance, social, group-dispute, financial, tax, accounting, legal, business-interruption, lost-profit, lost-data, lost-goodwill, device, network, or third-party damages, even if Luckysoft has been advised that such damages may occur.",
-          "To the maximum extent permitted by law, Luckysoft's total liability for all claims relating to the services is limited to the amount you paid directly to Luckysoft for the relevant service in the 12 months before the event giving rise to the claim. If you used the relevant service for free, Luckysoft's total liability is limited to CHF 50.",
+          "To the maximum extent permitted by law, JobDone AI will not be liable for indirect, incidental, special, consequential, exemplary, punitive, reliance, business-interruption, lost-profit, lost-data, lost-goodwill, device, network, or third-party damages, even if JobDone AI has been advised that such damages may occur.",
+          "To the maximum extent permitted by law, JobDone AI's total liability for all claims relating to the website is limited to CHF 50.",
           "Nothing in these terms excludes or limits liability where it would be unlawful to do so, including liability for unlawful intent or gross negligence where such liability cannot be excluded under mandatory Swiss law."
         ]
       },
       "indemnity": {
         "title": "14. Indemnity",
         "paragraphs": [
-          "To the maximum extent permitted by law, you agree to indemnify and hold Luckysoft harmless from claims, losses, liabilities, damages, costs, and expenses arising from your content, your use or misuse of the services, your violation of these terms, your violation of law, your violation of another person's rights, or your sharing of data without the required permission."
+          "To the maximum extent permitted by law, you agree to indemnify and hold JobDone AI harmless from claims, losses, liabilities, damages, costs, and expenses arising from information you submit, your use or misuse of the website, your violation of these terms, your violation of law, or your violation of another person or organization's rights."
         ]
       },
       "termination": {
         "title": "15. Termination",
         "paragraphs": [
-          "You may stop using the services at any time. We may suspend, restrict, or terminate access to the services if we reasonably believe you violated these terms, created risk for us or others, caused harm, used the services unlawfully, or if a service is discontinued.",
-          "Sections that by their nature should survive termination will survive, including ownership, user responsibility, payment records, disclaimers, limitation of liability, indemnity, governing law, and dispute provisions."
+          "You may stop using the website at any time. We may suspend, restrict, or block access to the website if we reasonably believe you violated these terms, created risk, caused harm, used the website unlawfully, or if the website or a feature is discontinued.",
+          "Sections that by their nature should survive termination will survive, including ownership, user responsibility, disclaimers, limitation of liability, indemnity, governing law, and dispute provisions."
         ]
       },
       "privacy": {
         "title": "16. Privacy",
         "paragraphs": [
-          "Our <privacy>Privacy Policy</privacy> explains how we handle personal data. By using the services, you acknowledge that we process personal data as described there and in any applicable product-specific privacy policy."
+          "Our <privacy>Privacy Policy</privacy> explains how we handle personal data. By using the website, you acknowledge that we process personal data as described there."
         ]
       },
       "law": {
         "title": "17. Governing law and venue",
         "paragraphs": [
-          "These terms are governed by the laws of Switzerland, without regard to conflict-of-law rules. The courts of Zurich, Switzerland have exclusive jurisdiction, except where mandatory consumer protection or other mandatory law gives you the right to bring claims elsewhere."
+          "These terms are governed by the laws of Switzerland, without regard to conflict-of-law rules. The courts of Zurich, Switzerland have exclusive jurisdiction, except where mandatory law gives you the right to bring claims elsewhere."
         ]
       },
       "changes": {
         "title": "18. Changes to these terms",
         "paragraphs": [
-          "We may update these terms when our products, business, providers, legal requirements, or risk controls change. The updated version will be posted on this page with a new \"Last updated\" date. If a change is material, we may provide additional notice where required. Continued use of the services after the updated terms become effective means you accept the updated terms."
+          "We may update these terms when our service, business, providers, legal requirements, or risk controls change. The updated version will be posted on this page with a new last-updated date. Continued use of the website after updated terms become effective means you accept the updated terms."
         ]
       }
     }
   },
   "NotFound": {
     "title": "Page not found",
-    "description": "This page is either private, moved, or not part of the public Luckysoft site.",
+    "description": "This page is either private, moved, or not part of the public JobDone AI site.",
     "button": "Return home"
   }
 }

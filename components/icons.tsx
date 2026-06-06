@@ -1,13 +1,14 @@
-type IconProps = {
-  className?: string;
-};
+import type { SVGProps } from "react";
 
-export function ArrowRightIcon({ className }: IconProps) {
+type IconProps = SVGProps<SVGSVGElement>;
+
+export function ArrowRightIcon({ className, ...props }: IconProps) {
   return (
     <svg
       aria-hidden="true"
       className={className}
       fill="none"
+      {...props}
       viewBox="0 0 24 24"
     >
       <path
@@ -21,12 +22,13 @@ export function ArrowRightIcon({ className }: IconProps) {
   );
 }
 
-export function MenuIcon({ className }: IconProps) {
+export function MenuIcon({ className, ...props }: IconProps) {
   return (
     <svg
       aria-hidden="true"
       className={className}
       fill="none"
+      {...props}
       viewBox="0 0 24 24"
     >
       <path
@@ -39,12 +41,13 @@ export function MenuIcon({ className }: IconProps) {
   );
 }
 
-export function CloseIcon({ className }: IconProps) {
+export function CloseIcon({ className, ...props }: IconProps) {
   return (
     <svg
       aria-hidden="true"
       className={className}
       fill="none"
+      {...props}
       viewBox="0 0 24 24"
     >
       <path

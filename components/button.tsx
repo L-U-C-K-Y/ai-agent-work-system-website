@@ -1,7 +1,9 @@
 import type { ReactNode } from "react";
 
 import { ArrowRightIcon } from "@/components/icons";
+import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
 
 type ButtonProps = {
   children: ReactNode;
@@ -22,24 +24,26 @@ export function Button({
   variant = "primary",
   className = "",
 }: ButtonProps) {
-  const base =
-    "group inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-medium leading-none transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]";
-  const variants = {
-    primary:
-      "bg-[var(--accent-strong)] text-white hover:bg-[var(--charcoal)]",
-    secondary:
-      "border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] hover:border-[var(--accent)] hover:bg-white",
-    plain:
-      "px-0 text-[var(--foreground)] hover:text-[var(--accent-strong)]",
-  };
+  const uiVariant =
+    variant === "primary" ? "default" : variant === "secondary" ? "outline" : "link";
 
   return (
     <Link
-      className={`${base} ${variants[variant]} ${className}`}
+      className={cn(
+        buttonVariants({ variant: uiVariant, size: "lg" }),
+        "group min-h-11 rounded-md px-5 py-3 font-semibold",
+        variant === "primary" && "shadow-[0_0_30px_rgba(32,106,233,0.2)]",
+        variant === "secondary" && "bg-[var(--surface)] text-[var(--foreground)]",
+        variant === "plain" && "min-h-0 px-0 py-0",
+        className,
+      )}
       href={href as never}
     >
       <span>{children}</span>
-      <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+      <ArrowRightIcon
+        className="transition-transform group-hover:translate-x-0.5"
+        data-icon="inline-end"
+      />
     </Link>
   );
 }

@@ -1,5 +1,11 @@
 export type ProductStatus = "public" | "private" | "coming-soon";
-export type ProductSlug = "file-to-markdown" | "splitpop";
+export type ProductSlug =
+  | "finance"
+  | "inventory"
+  | "hr"
+  | "support"
+  | "product"
+  | "revenue";
 
 export type ProductCopy = {
   name: string;
@@ -13,6 +19,7 @@ export type ProductCopy = {
   features: string[];
   useCases: string[];
   supportTopics: string[];
+  workflow: string[];
 };
 
 export type Product = ProductCopy & {
@@ -20,39 +27,79 @@ export type Product = ProductCopy & {
   status: ProductStatus;
   primaryCtaHref: { pathname: "/contact"; query: { topic: ProductSlug } };
   secondaryCtaHref: string;
-  accent: "stone" | "olive" | "sand" | "charcoal";
-  heroImage: string;
+  accent: "green" | "cyan" | "amber";
 };
 
 type RawTranslator = {
   raw: (key: string) => unknown;
 };
 
-export const productSlugs = ["file-to-markdown", "splitpop"] as const;
+export const productSlugs = [
+  "finance",
+  "inventory",
+  "hr",
+  "support",
+  "product",
+  "revenue",
+] as const;
 
 const productStructure: Record<
   ProductSlug,
   Omit<Product, keyof ProductCopy | "slug">
 > = {
-  "file-to-markdown": {
+  finance: {
     status: "public",
     primaryCtaHref: {
       pathname: "/contact",
-      query: { topic: "file-to-markdown" },
+      query: { topic: "finance" },
     },
     secondaryCtaHref: "/support",
-    accent: "olive",
-    heroImage: "/images/backgrounds/file-markdown-hero.webp",
+    accent: "green",
   },
-  splitpop: {
+  inventory: {
     status: "public",
     primaryCtaHref: {
       pathname: "/contact",
-      query: { topic: "splitpop" },
+      query: { topic: "inventory" },
     },
     secondaryCtaHref: "/support",
-    accent: "sand",
-    heroImage: "/images/backgrounds/splitpop-hero.webp",
+    accent: "cyan",
+  },
+  hr: {
+    status: "public",
+    primaryCtaHref: {
+      pathname: "/contact",
+      query: { topic: "hr" },
+    },
+    secondaryCtaHref: "/support",
+    accent: "amber",
+  },
+  support: {
+    status: "public",
+    primaryCtaHref: {
+      pathname: "/contact",
+      query: { topic: "support" },
+    },
+    secondaryCtaHref: "/support",
+    accent: "cyan",
+  },
+  product: {
+    status: "public",
+    primaryCtaHref: {
+      pathname: "/contact",
+      query: { topic: "product" },
+    },
+    secondaryCtaHref: "/support",
+    accent: "green",
+  },
+  revenue: {
+    status: "public",
+    primaryCtaHref: {
+      pathname: "/contact",
+      query: { topic: "revenue" },
+    },
+    secondaryCtaHref: "/support",
+    accent: "amber",
   },
 };
 

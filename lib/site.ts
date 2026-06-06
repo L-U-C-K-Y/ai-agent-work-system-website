@@ -1,14 +1,16 @@
 export const siteConfig = {
-  name: "Luckysoft",
-  url: "https://luckysoft.app",
-  email: "hello@luckysoft.app",
+  name: "JobDone AI",
+  url: "https://jobdone.ai",
+  email: "hello@jobdone.ai",
 };
 
 export const mainNavigation = [
-  { key: "products", href: "/products" },
-  { key: "vision", href: "/vision" },
-  { key: "support", href: "/support" },
-  { key: "contact", href: "/contact" },
+  { key: "aiDesks", href: "/products" },
+  { key: "platform", href: "/vision" },
+  { key: "solutions", href: "/support" },
+  { key: "governance", href: "/vision" },
+  { key: "resources", href: "/support" },
+  { key: "company", href: "/contact" },
 ] as const;
 
 export const legalNavigation = [

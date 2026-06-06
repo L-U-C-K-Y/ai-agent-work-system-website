@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { ReactNode } from "react";
 
 import { Container } from "@/components/container";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "@/i18n/navigation";
 
 type TermsPageProps = {
@@ -19,11 +21,11 @@ function Section({
   children: ReactNode;
 }) {
   return (
-    <section className="border-t border-[var(--border)] pt-8">
-      <h2 className="font-serif text-3xl text-[var(--foreground)]">
+    <section className="border-t border-white/10 pt-8">
+      <h2 className="text-2xl font-semibold tracking-tight text-white">
         {title}
       </h2>
-      <div className="mt-4 space-y-4 text-base leading-7 text-[var(--muted)]">
+      <div className="mt-4 flex flex-col gap-4 text-sm leading-7 text-[#a4b3c6]">
         {children}
       </div>
     </section>
@@ -41,7 +43,7 @@ function List({ items }: { items: string[] }) {
 }
 
 const linkClass =
-  "font-medium text-[var(--foreground)] underline decoration-[var(--border-strong)] underline-offset-4 transition hover:decoration-[var(--foreground)]";
+  "font-medium text-white underline decoration-white/25 underline-offset-4 transition hover:decoration-white";
 
 export async function generateMetadata({
   params,
@@ -71,30 +73,24 @@ export default async function TermsPage({ params }: TermsPageProps) {
         {chunks}
       </Link>
     ),
-    privacyLink: (chunks: ReactNode) => (
-      <a href="https://www.splitpop.app/privacy" className={linkClass}>
-        {chunks}
-      </a>
-    ),
-    termsLink: (chunks: ReactNode) => (
-      <a href="https://www.splitpop.app/terms" className={linkClass}>
-        {chunks}
-      </a>
-    ),
   };
 
   return (
-    <main className="py-14 md:py-20">
-      <Container className="max-w-3xl">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-[var(--muted)]">
-          {t("lastUpdated", { date: t("updatedAt") })}
-        </p>
-        <h1 className="mt-4 font-serif text-5xl leading-[1.02] text-[var(--foreground)] md:text-7xl">
-          {t("title")}
-        </h1>
-        <p className="mt-6 text-lg leading-8 text-[var(--muted)]">
-          {t("intro")}
-        </p>
+    <main className="bg-[#05080c] py-14 text-white md:py-20">
+      <Container className="max-w-4xl">
+        <Card className="border-white/10 bg-[#0b1117] text-white">
+          <CardContent className="p-6 md:p-8">
+            <Badge variant="outline" className="border-[var(--primary)]/35 font-mono uppercase tracking-[0.18em] text-[var(--primary)]">
+              {t("lastUpdated", { date: t("updatedAt") })}
+            </Badge>
+            <h1 className="mt-5 text-5xl font-semibold leading-[1.02] tracking-tight md:text-7xl">
+              {t("title")}
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-[#a4b3c6]">
+              {t("intro")}
+            </p>
+          </CardContent>
+        </Card>
 
         <div className="mt-12 space-y-10">
           <Section title={t("sections.who.title")}>

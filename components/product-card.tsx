@@ -17,7 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
       className="group flex h-full flex-col rounded-lg border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
       href={{ pathname: "/products/[slug]", params: { slug: product.slug } }}
     >
-      <AppIcon product={product.slug as "file-to-markdown" | "splitpop"} />
+      <AppIcon product={product.slug} />
       <div className="mt-8">
         <h3 className="font-serif text-2xl leading-tight text-[var(--foreground)]">
           {product.name}
@@ -31,7 +31,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
       <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[var(--foreground)]">
         {t("learnMore")}
-        <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+        <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-0.5" />
       </div>
     </Link>
   );
