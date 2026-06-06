@@ -118,6 +118,11 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
             <p>{t("sections.bases.paragraphs.1")}</p>
           </Section>
 
+          <Section title={t("sections.automated.title")}>
+            <p>{t("sections.automated.paragraphs.0")}</p>
+            <p>{t("sections.automated.paragraphs.1")}</p>
+          </Section>
+
           <Section title={t("sections.thirdParties.title")}>
             <p>{t("sections.thirdParties.paragraph")}</p>
             <List items={t.raw("sections.thirdParties.items") as string[]} />

@@ -508,145 +508,164 @@
   },
   "Privacy": {
     "metadataTitle": "Privacy Policy",
-    "metadataDescription": "JobDone AI privacy policy for the public website and closed-preview access requests.",
-    "updatedAt": "June 5, 2026",
+    "metadataDescription": "JobDone AI privacy policy for the public website, access requests, and preview-related communications.",
+    "updatedAt": "June 6, 2026",
     "lastUpdated": "Last updated: {date}",
     "title": "Privacy Policy",
-    "intro": "This Privacy Policy explains how JobDone AI handles personal data for this public website, closed-preview access requests, contact messages, and related communications.",
+    "intro": "This Privacy Policy explains how JobDone AI GmbH handles personal data for this public website, access requests, contact messages, and preview-related communications. It does not replace any separate data-processing agreement, pilot agreement, or customer contract.",
     "sections": {
       "responsible": {
-        "title": "1. Who is responsible",
+        "title": "1. Controller and contact",
         "paragraphs": [
-          "JobDone AI, Zurich, Switzerland is responsible for the processing described in this Privacy Policy unless a separate agreement says otherwise.",
+          "JobDone AI GmbH, Baarerstrasse 11, 6300 Zug, Switzerland. Legal form: limited liability company (GmbH). Registered seat: Zug. UID: CHE-408.536.393. CH-ID: CH-170-4024762-7. FCRO-ID: 1751464. JobDone AI GmbH is the controller for the processing described in this Privacy Policy unless a separate written agreement says otherwise.",
           "For privacy requests, access requests, deletion requests, or questions about this policy, contact us through the <contact>JobDone AI contact form</contact>."
+        ]
+      },
+      "preview": {
+        "title": "2. Website and closed-preview scope",
+        "paragraphs": [
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "This policy covers the public website, language preference handling, contact forms, access requests, email delivery, and preview-related communications. Any pilot, customer deployment, production workspace, integration, security review, or processing of customer data must be governed by separate written agreements, security terms, and data-processing terms."
         ]
       },
       "collect": {
         "title": "3. Data we collect",
-        "paragraph": "We collect only what is reasonably needed to operate the website, respond to inquiries, evaluate access requests, and keep the service secure.",
+        "paragraph": "We collect only what is reasonably needed for the purposes described below. Depending on how you use the website, this may include:",
         "items": [
-          "Contact data, such as your name, email address, company, role, topic, and message content.",
-          "Website data, such as pages visited, approximate location from IP address, device and browser information, referrer information, and basic logs used for security and reliability.",
-          "Preview discussion data, such as workflow descriptions, business context, requested integrations, and notes you choose to share with us.",
-          "Diagnostic and security data, such as server logs, error reports, abuse-prevention signals, and operational metadata."
+          "Contact and request data, such as name, email address, company, company website, company size, industry, role or topic, message content, and other information you choose to submit.",
+          "Website and technical data, such as requested pages, date and time, IP address, approximate location derived from IP address, device and browser information, referrer, user agent, and basic server logs used for security and reliability.",
+          "Language preference data, such as the NEXT_LOCALE cookie used to remember whether you selected English or German.",
+          "Preview discussion data, such as workflow descriptions, business context, requested integrations, system categories, knowledge or records you describe, and notes you choose to share with us.",
+          "Diagnostic, anti-abuse, and security data, such as rate-limit signals, error reports, delivery logs, abuse-prevention signals, and operational metadata.",
+          "We ask that you do not submit special-category, highly confidential, regulated, or third-party personal data through the public contact form unless we have separately agreed on an appropriate secure process."
         ]
       },
       "payments": {
         "title": "4. Payment data",
         "paragraphs": [
-          "The public website does not currently process payments or public subscriptions.",
-          "If commercial access is arranged separately, payment and contracting information may be handled under separate terms or by third-party providers."
+          "The public website does not currently process payments, subscriptions, or public self-serve purchases.",
+          "If commercial access is arranged separately, payment, contracting, tax, and billing information may be handled under separate written terms or by third-party providers."
         ]
       },
       "use": {
         "title": "5. How we use data",
-        "paragraph": "We use personal data for these purposes:",
+        "paragraph": "We use personal data for the following purposes:",
         "items": [
-          "To operate, secure, maintain, and improve the public website.",
-          "To respond to contact messages and closed-preview access requests.",
-          "To evaluate whether JobDone AI is a fit for a requested workflow, pilot, or partnership discussion.",
-          "To monitor reliability, diagnose issues, prevent abuse, and protect the website and service.",
-          "To comply with legal obligations, enforce terms, and defend our rights where necessary."
+          "To operate, secure, maintain, troubleshoot, and improve the public website and contact flow.",
+          "To remember your language preference and route you to localized pages.",
+          "To receive, deliver, review, and respond to contact messages and access requests, including by email through our email service provider.",
+          "To evaluate whether JobDone AI is a fit for a requested workflow, pilot, integration, or commercial discussion.",
+          "To monitor reliability, diagnose issues, prevent abuse, enforce rate limits, and protect the website, service, users, and our rights.",
+          "To keep appropriate business, security, compliance, and legal records.",
+          "To comply with legal obligations, enforce terms, and establish, exercise, or defend legal claims where necessary."
         ]
       },
       "bases": {
         "title": "6. Legal bases",
         "paragraphs": [
-          "Where the Swiss Federal Act on Data Protection, the GDPR, or similar laws apply, we rely on appropriate legal bases, including your request, our legitimate interests in operating and protecting the website, consent where required, legal obligations, and establishing or defending legal claims.",
-          "You may withdraw consent where processing is based on consent, but that does not affect processing that happened before withdrawal or processing that is allowed on another legal basis."
+          "Where the Swiss Federal Act on Data Protection, the GDPR, or similar laws apply, we rely on appropriate legal bases, including your request or pre-contractual steps, our legitimate interests in operating and protecting the website and responding to business inquiries, consent where required, compliance with legal obligations, and establishing, exercising, or defending legal claims.",
+          "You may withdraw consent where processing is based on consent. Withdrawal does not affect processing that happened before withdrawal or processing that is permitted on another legal basis."
+        ]
+      },
+      "automated": {
+        "title": "7. Automated decisions and AI",
+        "paragraphs": [
+          "The public website does not make legally or similarly significant decisions about you by fully automated means. Access requests are reviewed by JobDone AI or its representatives and do not guarantee access, pricing, timing, a pilot, or any commercial relationship.",
+          "Website copy, diagrams, examples, and AI-related descriptions are informational. They are not automated decisions, professional advice, or binding assessments of your organization, workflow, data, or legal obligations."
         ]
       },
       "thirdParties": {
-        "title": "7. Third-party services",
-        "paragraph": "We may use service providers to host, secure, monitor, analyze, and operate the website and communications.",
+        "title": "8. Service providers",
+        "paragraph": "We may use service providers and professional advisers to host, secure, monitor, deliver, analyze, and operate the website and related communications. These providers may process personal data for us or as independent controllers depending on the service and legal context.",
         "items": [
-          "Hosting, infrastructure, database, storage, and security providers.",
-          "Analytics or diagnostics providers used to understand reliability and website usage.",
-          "Email, CRM, support, workflow, or issue-tracking tools used to respond to access requests and messages.",
-          "Professional advisers, legal providers, and compliance service providers where needed."
+          "Hosting, infrastructure, database, storage, networking, and security providers.",
+          "Email delivery providers, including Resend, used to send website requests to JobDone AI and receive delivery-related information.",
+          "Diagnostics, logging, anti-abuse, and reliability tools used to understand errors, security events, and website operation.",
+          "Email, CRM, support, workflow, or issue-tracking tools used to review and respond to access requests and messages.",
+          "Professional advisers, legal providers, accounting providers, compliance providers, insurers, and auditors where needed."
         ],
         "after": "We do not sell personal data."
       },
       "sharing": {
-        "title": "8. Sharing and disclosures",
+        "title": "9. Sharing and disclosures",
         "paragraphs": [
-          "We may share personal data with service providers, professional advisers, authorities, courts, regulators, or other parties when needed to operate the website, comply with law, protect rights and safety, investigate misuse, or complete a business transfer such as a merger, acquisition, financing, or asset sale.",
-          "We do not make closed-preview inquiry details public."
+          "We may disclose personal data to service providers, professional advisers, authorities, courts, regulators, counterparties, or other parties when needed to operate the website, respond to requests, comply with law, protect rights and safety, investigate misuse, enforce terms, or complete a business transaction such as a merger, financing, restructuring, acquisition, or asset sale.",
+          "We do not make access-request details public and we do not publish confidential preview discussions without permission."
         ]
       },
       "retention": {
-        "title": "9. Retention",
+        "title": "10. Retention",
         "paragraphs": [
-          "We keep personal data only as long as reasonably needed for the purposes described in this policy, including responding to inquiries, maintaining business records, security, audit, legal compliance, and defending legal claims.",
-          "If you request deletion, we will delete or anonymize personal data where required and reasonably possible. Some information may remain in backups, logs, legal records, or security records for a limited period where retention is required or permitted by law."
+          "We keep personal data only as long as reasonably needed for the purposes described in this policy, including responding to inquiries, evaluating access requests, maintaining business records, security, audit, legal compliance, dispute management, and defending legal claims.",
+          "If you request deletion, we will delete or anonymize personal data where required and reasonably possible. Some information may remain for a limited period in backups, logs, legal records, security records, or records that we are required or permitted to keep by law."
         ]
       },
       "rights": {
-        "title": "10. Your rights and choices",
+        "title": "11. Your rights and choices",
         "paragraphs": [
-          "Depending on where you live, you may have rights to access, correct, delete, receive a copy of, restrict, object to, or withdraw consent for certain processing of your personal data. You may also have a right to complain to a data protection authority.",
-          "You can send privacy, export, correction, and deletion requests through the <contact>JobDone AI contact form</contact>. We may need to verify your identity before acting on a request."
+          "Depending on where you live and which law applies, you may have rights to access, receive information about, correct, delete, restrict, object to, receive a copy of, or withdraw consent for certain processing of your personal data. You may also have a right to complain to a competent data protection authority, including the Swiss Federal Data Protection and Information Commissioner where applicable.",
+          "You can send privacy, export, correction, objection, and deletion requests through the <contact>JobDone AI contact form</contact>. We may need to verify your identity and authority before acting on a request."
         ]
       },
       "security": {
-        "title": "11. Security",
+        "title": "12. Security",
         "paragraphs": [
-          "We use reasonable technical and organizational measures designed to protect personal data. No website, cloud service, device, or internet transmission can be guaranteed to be fully secure, error-free, or lossless."
+          "We use reasonable technical and organizational measures designed to protect personal data. No website, cloud service, device, email delivery route, or internet transmission can be guaranteed to be fully secure, uninterrupted, private, error-free, or lossless. Please do not submit sensitive production data through the public contact form."
         ]
       },
       "transfers": {
-        "title": "12. International transfers",
+        "title": "13. International transfers",
         "paragraphs": [
-          "JobDone AI is based in Switzerland. Our providers and infrastructure may be located in Switzerland, the European Economic Area, the United Kingdom, the United States, or other countries. Where required, we use appropriate transfer safeguards such as contractual protections, adequacy decisions, or other lawful transfer mechanisms."
+          "JobDone AI GmbH is based in Switzerland. Our providers, infrastructure, email delivery, support tools, and professional advisers may be located in Switzerland, the European Economic Area, the United Kingdom, the United States, or other countries. Where required, we use appropriate transfer safeguards such as adequacy decisions, contractual protections, standard contractual clauses, transfer risk assessments, or other lawful transfer mechanisms."
         ]
       },
       "children": {
-        "title": "13. Children and age",
+        "title": "14. Children and age",
         "paragraphs": [
-          "The JobDone AI public website and preview process are not directed to children under 16."
+          "The JobDone AI public website and preview process are intended for business users and are not directed to children under 16. Do not submit personal data about children through the public website."
         ]
       },
       "changes": {
-        "title": "14. Changes to this policy",
+        "title": "15. Changes to this policy",
         "paragraphs": [
-          "We may update this Privacy Policy when our service, data practices, providers, or legal requirements change. The updated version will be posted on this page with a new last-updated date."
-        ]
-      },
-      "preview": {
-        "title": "2. Closed-preview scope",
-        "paragraphs": [
-          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
-          "This policy covers the public website and preview-related communications. Any pilot or customer deployment may be governed by separate written agreements, security terms, and data-processing terms."
+          "We may update this Privacy Policy when our website, service, data practices, providers, legal requirements, or risk controls change. The updated version will be posted on this page with a new last-updated date. If a separate agreement applies to you, changes to that agreement must follow its own amendment process."
         ]
       }
     }
   },
   "Terms": {
     "metadataTitle": "Terms of Service",
-    "metadataDescription": "JobDone AI terms for the public website and closed-preview access requests.",
-    "updatedAt": "June 5, 2026",
+    "metadataDescription": "JobDone AI terms for the public website, access requests, and preview-related communications.",
+    "updatedAt": "June 6, 2026",
     "lastUpdated": "Last updated: {date}",
     "title": "Terms of Service",
-    "intro": "These Terms of Service govern your access to and use of the JobDone AI public website, contact forms, closed-preview access requests, and related communications.",
+    "intro": "These Terms of Service govern your access to and use of the JobDone AI public website, contact forms, access-request flows, preview materials, and related communications. They do not grant access to the JobDone AI platform and do not replace any separate written agreement.",
     "sections": {
       "who": {
         "title": "1. Who we are",
         "paragraphs": [
-          "The public website is provided by JobDone AI, Zurich, Switzerland (\"JobDone AI\", \"we\", \"us\", or \"our\").",
+          "The public website is provided by JobDone AI GmbH (\"JobDone AI\", \"we\", \"us\", or \"our\"). JobDone AI GmbH, Baarerstrasse 11, 6300 Zug, Switzerland. Legal form: limited liability company (GmbH). Registered seat: Zug. UID: CHE-408.536.393. CH-ID: CH-170-4024762-7. FCRO-ID: 1751464.",
           "Questions about these terms, privacy requests, deletion requests, or access requests can be sent through the <contact>JobDone AI contact form</contact>."
         ]
       },
       "acceptance": {
         "title": "2. Acceptance of these terms",
         "paragraphs": [
-          "By accessing or using this website, contact form, preview request flow, or related feature, you agree to these Terms of Service and the <privacy>JobDone AI Privacy Policy</privacy>.",
-          "If you use the website on behalf of an organization, you confirm that you have authority to act for that organization."
+          "By accessing or using this website, contact form, access-request flow, preview material, or related feature, you agree to these Terms of Service and the <privacy>JobDone AI Privacy Policy</privacy>.",
+          "If you use the website on behalf of an organization, you confirm that you have authority to act for that organization and to bind it to these terms. If you do not agree, you must not use the website."
+        ]
+      },
+      "preview": {
+        "title": "3. Closed preview and no entitlement",
+        "paragraphs": [
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "Submitting a request, joining a discussion, receiving a response, viewing a demo, or exchanging materials does not guarantee access, a pilot, a partnership, pricing, timing, roadmap delivery, feature availability, service levels, integrations, support, security terms, data-processing terms, or any commercial relationship. Any pilot, deployment, paid access, integration, or production use requires a separate written agreement signed or accepted by JobDone AI."
         ]
       },
       "eligibility": {
         "title": "4. Eligibility",
         "paragraphs": [
-          "You must be at least 16 years old and legally able to accept these terms to use the website or submit a request."
+          "You must be at least 16 years old and legally able to accept these terms to use the website or submit a request. The website is intended for business and professional use."
         ]
       },
       "responsibilities": {
@@ -654,108 +673,103 @@
         "paragraph": "You are responsible for how you use the website, including:",
         "items": [
           "Using the website only for lawful purposes and in accordance with these terms.",
-          "Providing accurate information in contact and access-request forms.",
-          "Making sure you have the right to share any company, workflow, document, system, or personal data you provide.",
-          "Reviewing any information we provide before relying on it for business decisions.",
-          "Keeping confidential information out of public or non-secure messages unless separately agreed."
+          "Providing accurate, current, and non-misleading information in contact and access-request forms.",
+          "Making sure you have the right and authority to share any company, workflow, document, system, integration, confidential, or personal data you provide.",
+          "Keeping special-category, regulated, highly confidential, production, credential, trade-secret, health, financial account, or third-party personal data out of public forms unless we have separately agreed on a secure process.",
+          "Reviewing all information, examples, diagrams, and communications before relying on them for business, technical, compliance, legal, or operational decisions.",
+          "Maintaining your own security, backups, records, compliance program, and legal review."
         ]
       },
       "prohibited": {
         "title": "6. Prohibited use",
         "paragraph": "You must not:",
         "items": [
-          "Use the website in a way that is unlawful, harmful, deceptive, abusive, harassing, defamatory, invasive of privacy, or infringing.",
-          "Upload or send content that you do not have permission to use or that violates another person or organization's rights.",
-          "Interfere with, disrupt, reverse engineer, scrape, overload, probe, or bypass the security of the website except where allowed by law.",
-          "Use the website to transmit malware, spam, fraudulent messages, or unauthorized advertising.",
-          "Misrepresent your identity, organization, authority, or relationship to JobDone AI."
+          "Use the website in a way that is unlawful, harmful, deceptive, abusive, harassing, defamatory, invasive of privacy, infringing, or otherwise violates rights or laws.",
+          "Upload, submit, or transmit content that you do not have permission to use or that violates another person or organization's rights.",
+          "Interfere with, disrupt, reverse engineer, scrape, crawl, overload, probe, scan, test, bypass, or attempt to defeat the security or access controls of the website except where mandatory law expressly allows it.",
+          "Use the website to transmit malware, spam, fraudulent messages, unauthorized advertising, or harmful code.",
+          "Misrepresent your identity, organization, authority, affiliation, purpose, or relationship to JobDone AI.",
+          "Use website information to build or train a competing service, benchmark us publicly, or make public claims about performance, security, pricing, or availability without our written permission."
         ]
       },
       "content": {
         "title": "7. Information you submit",
         "paragraphs": [
-          "You keep ownership of information you submit through the website. You grant JobDone AI the limited rights needed to receive, process, review, respond to, and store that information for the purposes described in these terms and our Privacy Policy.",
-          "You are solely responsible for the information you submit and for ensuring you have permission to share it."
+          "You keep ownership of information you submit through the website. You grant JobDone AI a non-exclusive, worldwide, royalty-free right to receive, host, process, transmit, review, reproduce internally, respond to, retain, and use that information as reasonably needed for the website, access-request evaluation, security, compliance, business communication, and purposes described in our Privacy Policy.",
+          "You are solely responsible for the information you submit, for ensuring that it is lawful and accurate, and for ensuring that you have all permissions, notices, consents, and rights required to share it with us."
+        ]
+      },
+      "websiteInfo": {
+        "title": "8. Website information and no professional advice",
+        "paragraphs": [
+          "Website copy, diagrams, mockups, product descriptions, examples, AI adoption material, and preview materials are provided for general informational and marketing purposes only.",
+          "They are not legal, financial, tax, security, compliance, procurement, operational, or other professional advice. They are not a substitute for your own review, independent advice, risk assessment, or testing. Because JobDone AI is in closed preview, features, positioning, availability, pricing, integrations, security measures, product details, and roadmap items may change or never be released."
+        ]
+      },
+      "aiOutputs": {
+        "title": "9. AI outputs, workflow discussions, and integrations",
+        "paragraphs": [
+          "Any examples, mockups, workflow discussions, agent behavior descriptions, automation descriptions, integration references, or system diagrams on this website are illustrative and do not create a warranty, representation, commitment, service level, implementation obligation, or fitness statement.",
+          "You are responsible for evaluating whether any workflow, AI Coworker, AI Automation, AI output, integration, approval process, knowledge source, or record update is appropriate, lawful, secure, and suitable for your organization and legal obligations. Human review, controls, testing, monitoring, and governance remain your responsibility unless a separate written agreement says otherwise."
         ]
       },
       "purchases": {
         "title": "10. Commercial terms",
         "paragraphs": [
-          "The public website does not currently offer self-serve purchases.",
-          "Any commercial access, pilot, paid deployment, data-processing arrangement, or service-level commitment must be agreed separately in writing."
+          "The public website does not currently offer self-serve purchases, subscriptions, public pricing, public trials, or production access.",
+          "Any commercial access, pilot, paid deployment, security commitment, data-processing arrangement, implementation work, integration, support obligation, service-level commitment, or procurement term must be agreed separately in writing. If separate written terms conflict with these website terms, the separate written terms govern for that specific relationship."
         ]
       },
       "availability": {
         "title": "11. Changes, availability, and updates",
         "paragraphs": [
-          "We may modify, suspend, discontinue, limit, rename, remove, or update the website or any preview-related feature at any time."
+          "We may modify, suspend, discontinue, limit, rename, remove, restrict, block, or update the website, public content, contact flow, preview-related feature, or any part of the website at any time without liability. We do not guarantee that the website or any content will remain available, uninterrupted, secure, or unchanged."
         ]
       },
       "warranties": {
         "title": "12. No warranties",
         "paragraphs": [
-          "To the maximum extent permitted by law, the website and preview materials are provided \"as is\" and \"as available\", without warranties of any kind, whether express, implied, statutory, or otherwise.",
-          "JobDone AI does not warrant that the website will be uninterrupted, timely, secure, private, error-free, lossless, accurate, complete, compatible with every device or platform, or fit for any particular purpose."
+          "To the maximum extent permitted by law, the website, contact forms, preview materials, diagrams, examples, and communications are provided \"as is\" and \"as available\", without warranties of any kind, whether express, implied, statutory, or otherwise.",
+          "JobDone AI disclaims all warranties and representations, including warranties of accuracy, completeness, reliability, availability, merchantability, fitness for a particular purpose, non-infringement, title, security, privacy, compatibility, performance, and course of dealing. JobDone AI does not warrant that the website will be uninterrupted, timely, secure, private, error-free, lossless, accurate, complete, compatible with every device or platform, or suitable for any particular purpose."
         ]
       },
       "liability": {
         "title": "13. Limitation of liability",
         "paragraphs": [
-          "To the maximum extent permitted by law, JobDone AI will not be liable for indirect, incidental, special, consequential, exemplary, punitive, reliance, business-interruption, lost-profit, lost-data, lost-goodwill, device, network, or third-party damages, even if JobDone AI has been advised that such damages may occur.",
-          "To the maximum extent permitted by law, JobDone AI's total liability for all claims relating to the website is limited to CHF 50.",
-          "Nothing in these terms excludes or limits liability where it would be unlawful to do so, including liability for unlawful intent or gross negligence where such liability cannot be excluded under mandatory Swiss law."
+          "To the maximum extent permitted by law, JobDone AI and its directors, officers, employees, contractors, advisers, affiliates, successors, and suppliers will not be liable for indirect, incidental, special, consequential, exemplary, punitive, reliance, business-interruption, lost-profit, lost-revenue, lost-data, lost-goodwill, loss-of-opportunity, procurement, device, network, security, reputational, or third-party damages, even if advised that such damages may occur.",
+          "To the maximum extent permitted by law, JobDone AI's total aggregate liability for all claims relating to the website, contact forms, preview materials, or these terms is limited to CHF 50 or the minimum amount that mandatory law requires, whichever is higher.",
+          "Nothing in these terms excludes or limits liability where exclusion or limitation would be unlawful, including liability for unlawful intent, fraudulent concealment, death or personal injury caused by us where applicable, or gross negligence where such liability cannot be excluded under mandatory Swiss law."
         ]
       },
       "indemnity": {
         "title": "14. Indemnity",
         "paragraphs": [
-          "To the maximum extent permitted by law, you agree to indemnify and hold JobDone AI harmless from claims, losses, liabilities, damages, costs, and expenses arising from information you submit, your use or misuse of the website, your violation of these terms, your violation of law, or your violation of another person or organization's rights."
+          "To the maximum extent permitted by law, you agree to defend, indemnify, and hold JobDone AI and its directors, officers, employees, contractors, advisers, affiliates, successors, and suppliers harmless from claims, losses, liabilities, damages, fines, penalties, costs, and expenses, including reasonable legal fees, arising from information you submit, your use or misuse of the website, your violation of these terms, your violation of law, your violation of another person or organization's rights, or your lack of authority to submit information or act for an organization."
         ]
       },
       "termination": {
-        "title": "15. Termination",
+        "title": "15. Suspension and termination",
         "paragraphs": [
-          "You may stop using the website at any time. We may suspend, restrict, or block access to the website if we reasonably believe you violated these terms, created risk, caused harm, used the website unlawfully, or if the website or a feature is discontinued.",
-          "Sections that by their nature should survive termination will survive, including ownership, user responsibility, disclaimers, limitation of liability, indemnity, governing law, and dispute provisions."
+          "You may stop using the website at any time. We may suspend, restrict, block, rate-limit, remove, or terminate access to the website or any feature if we reasonably believe you violated these terms, created risk, caused harm, used the website unlawfully, submitted abusive or unsafe content, or if the website or a feature is discontinued.",
+          "Sections that by their nature should survive will survive, including ownership, submitted information, user responsibility, website information, AI outputs, commercial terms, disclaimers, limitation of liability, indemnity, privacy, governing law, venue, and changes."
         ]
       },
       "privacy": {
         "title": "16. Privacy",
         "paragraphs": [
-          "Our <privacy>Privacy Policy</privacy> explains how we handle personal data. By using the website, you acknowledge that we process personal data as described there."
+          "Our <privacy>Privacy Policy</privacy> explains how we handle personal data. By using the website, you acknowledge that personal data is processed as described there."
         ]
       },
       "law": {
         "title": "17. Governing law and venue",
         "paragraphs": [
-          "These terms are governed by the laws of Switzerland, without regard to conflict-of-law rules. The courts of Zurich, Switzerland have exclusive jurisdiction, except where mandatory law gives you the right to bring claims elsewhere."
+          "These terms and any non-contractual obligations relating to them are governed by the substantive laws of Switzerland, excluding conflict-of-law rules and excluding the United Nations Convention on Contracts for the International Sale of Goods. Subject to mandatory law, the courts of Zug, Switzerland have exclusive jurisdiction."
         ]
       },
       "changes": {
         "title": "18. Changes to these terms",
         "paragraphs": [
-          "We may update these terms when our service, business, providers, legal requirements, or risk controls change. The updated version will be posted on this page with a new last-updated date. Continued use of the website after updated terms become effective means you accept the updated terms."
-        ]
-      },
-      "preview": {
-        "title": "3. Closed preview",
-        "paragraphs": [
-          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
-          "Submitting a request does not guarantee access, a pilot, a partnership, feature availability, pricing, timing, or any commercial relationship. Any pilot or deployment may require separate written agreements."
-        ]
-      },
-      "websiteInfo": {
-        "title": "8. Website information",
-        "paragraphs": [
-          "Website copy, diagrams, mockups, product descriptions, and preview materials are provided for general informational purposes.",
-          "Because JobDone AI is in closed preview, features, positioning, availability, pricing, integrations, and product details may change."
-        ]
-      },
-      "aiOutputs": {
-        "title": "9. AI outputs and workflow discussions",
-        "paragraphs": [
-          "Any examples, mockups, workflow discussions, agent behavior descriptions, or system diagrams on this website are illustrative and do not create a warranty or commitment.",
-          "You are responsible for evaluating whether any workflow, automation, AI output, integration, or record update is appropriate for your organization and legal obligations."
+          "We may update these terms when our website, service, business, providers, legal requirements, risk controls, or public materials change. The updated version will be posted on this page with a new last-updated date. Continued use of the website after updated terms are posted means you accept the updated terms. Separate written agreements can only be changed according to their own terms."
         ]
       }
     }

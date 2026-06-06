@@ -508,254 +508,268 @@
   },
   "Privacy": {
     "metadataTitle": "Datenschutzerklärung",
-    "metadataDescription": "Datenschutzerklärung von JobDone AI für die öffentliche Website und Zugangsanfragen zur Closed Preview.",
-    "updatedAt": "5. Juni 2026",
+    "metadataDescription": "Datenschutzerklärung von JobDone AI für die öffentliche Website, Zugangsanfragen und previewbezogene Kommunikation.",
+    "updatedAt": "6. Juni 2026",
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "title": "Datenschutzerklärung",
-    "intro": "Diese Datenschutzerklärung erklärt, wie JobDone AI personenbezogene Daten für diese öffentliche Website, Zugangsanfragen zur Closed Preview, Kontaktanfragen und zugehörige Kommunikation verarbeitet.",
+    "intro": "Diese Datenschutzerklärung erklärt, wie die JobDone AI GmbH personenbezogene Daten für diese öffentliche Website, Zugangsanfragen, Kontaktanfragen und previewbezogene Kommunikation verarbeitet. Sie ersetzt keine separate Datenverarbeitungsvereinbarung, Pilotvereinbarung oder Kundenvereinbarung.",
     "sections": {
       "responsible": {
-        "title": "1. Verantwortliche Stelle",
+        "title": "1. Verantwortliche Stelle und Kontakt",
         "paragraphs": [
-          "JobDone AI, Zürich, Schweiz ist für die in dieser Datenschutzerklärung beschriebene Verarbeitung verantwortlich, sofern keine separate Vereinbarung etwas anderes regelt.",
-          "Für Datenschutzanfragen, Zugangsanfragen, Löschanfragen oder Fragen zu dieser Erklärung kontaktiere uns über das <contact>JobDone AI Kontaktformular</contact>."
+          "JobDone AI GmbH, Baarerstrasse 11, 6300 Zug, Schweiz. Rechtsform: Gesellschaft mit beschränkter Haftung (GmbH). Sitz: Zug. UID: CHE-408.536.393. CH-ID: CH-170-4024762-7. EHRA-ID: 1751464. Die JobDone AI GmbH ist die verantwortliche Stelle für die in dieser Datenschutzerklärung beschriebene Verarbeitung, sofern keine separate schriftliche Vereinbarung etwas anderes regelt.",
+          "Für Datenschutzanfragen, Zugangsanfragen, Löschanfragen oder Fragen zu dieser Erklärung kontaktieren Sie uns über das <contact>JobDone AI Kontaktformular</contact>."
+        ]
+      },
+      "preview": {
+        "title": "2. Umfang der Website und Closed Preview",
+        "paragraphs": [
+          "JobDone AI befindet sich derzeit in einer Closed Preview und ist nicht allgemein als öffentlicher Self-Service verfügbar.",
+          "Diese Erklärung gilt für die öffentliche Website, die Sprachpräferenz, Kontaktformulare, Zugangsanfragen, E-Mail-Zustellung und previewbezogene Kommunikation. Jeder Pilot, Kundeneinsatz, Produktions-Workspace, jede Integration, Sicherheitsprüfung oder Verarbeitung von Kundendaten muss durch separate schriftliche Vereinbarungen, Sicherheitsbedingungen und Datenverarbeitungsbedingungen geregelt werden."
         ]
       },
       "collect": {
         "title": "3. Welche Daten wir erheben",
-        "paragraph": "Wir erheben nur Daten, die angemessen erforderlich sind, um die Website zu betreiben, Anfragen zu beantworten, Zugangsanfragen zu bewerten und den Dienst sicher zu halten.",
+        "paragraph": "Wir erheben nur Daten, die für die unten beschriebenen Zwecke angemessen erforderlich sind. Je nachdem, wie Sie die Website nutzen, kann dies Folgendes umfassen:",
         "items": [
-          "Kontaktdaten wie Name, E-Mail-Adresse, Unternehmen, Rolle, Thema und Nachrichteninhalt.",
-          "Website-Daten wie besuchte Seiten, ungefähre Standortdaten aus der IP-Adresse, Geräte- und Browserinformationen, Referrer-Informationen sowie grundlegende Logs für Sicherheit und Zuverlässigkeit.",
-          "Daten aus Preview-Gesprächen wie Workflow-Beschreibungen, Business-Kontext, gewünschte Integrationen und Notizen, die du mit uns teilst.",
-          "Diagnose- und Sicherheitsdaten wie Serverlogs, Fehlerberichte, Missbrauchspräventionssignale und operative Metadaten."
+          "Kontakt- und Anfragedaten wie Name, E-Mail-Adresse, Unternehmen, Unternehmenswebsite, Unternehmensgröße, Branche, Rolle oder Thema, Nachrichteninhalt und andere Informationen, die Sie uns übermitteln.",
+          "Website- und technische Daten wie angefragte Seiten, Datum und Uhrzeit, IP-Adresse, aus der IP-Adresse abgeleiteter ungefährer Standort, Geräte- und Browserinformationen, Referrer, User Agent und grundlegende Serverlogs für Sicherheit und Zuverlässigkeit.",
+          "Daten zur Sprachpräferenz, insbesondere das NEXT_LOCALE-Cookie, mit dem gespeichert wird, ob Sie Englisch oder Deutsch ausgewählt haben.",
+          "Daten aus Preview-Gesprächen wie Workflow-Beschreibungen, Business-Kontext, gewünschte Integrationen, Systemkategorien, von Ihnen beschriebene Wissens- oder Datensatztypen und Notizen, die Sie uns freiwillig mitteilen.",
+          "Diagnose-, Missbrauchsvermeidungs- und Sicherheitsdaten wie Rate-Limit-Signale, Fehlerberichte, Zustellungslogs, Missbrauchspräventionssignale und operative Metadaten.",
+          "Bitte übermitteln Sie keine besonders schützenswerten, hochvertraulichen, regulierten oder personenbezogenen Daten Dritter über das öffentliche Kontaktformular, sofern wir nicht separat einen geeigneten sicheren Prozess vereinbart haben."
         ]
       },
       "payments": {
         "title": "4. Zahlungsdaten",
         "paragraphs": [
-          "Die öffentliche Website verarbeitet derzeit keine Zahlungen oder öffentlichen Abonnements.",
-          "Wenn kommerzieller Zugang separat vereinbart wird, können Zahlungs- und Vertragsinformationen unter separaten Bedingungen oder durch Drittanbieter verarbeitet werden."
+          "Die öffentliche Website verarbeitet derzeit keine Zahlungen, Abonnements oder öffentlichen Self-Service-Käufe.",
+          "Wenn kommerzieller Zugang separat vereinbart wird, können Zahlungs-, Vertrags-, Steuer- und Rechnungsinformationen unter separaten schriftlichen Bedingungen oder durch Drittanbieter verarbeitet werden."
         ]
       },
       "use": {
         "title": "5. Wie wir Daten verwenden",
         "paragraph": "Wir verwenden personenbezogene Daten für folgende Zwecke:",
         "items": [
-          "Zum Betrieb, zur Sicherung, Wartung und Verbesserung der öffentlichen Website.",
-          "Zur Beantwortung von Kontaktanfragen und Zugangsanfragen zur Closed Preview.",
-          "Zur Bewertung, ob JobDone AI zu einem angefragten Workflow, Pilot oder Partnerschaftsgespräch passt.",
-          "Zur Überwachung der Zuverlässigkeit, Diagnose von Problemen, Verhinderung von Missbrauch und zum Schutz der Website und des Dienstes.",
-          "Zur Erfüllung gesetzlicher Pflichten, Durchsetzung von Bedingungen und Verteidigung unserer Rechte, soweit erforderlich."
+          "Zum Betrieb, zur Sicherung, Wartung, Fehlerbehebung und Verbesserung der öffentlichen Website und des Kontaktflows.",
+          "Zum Speichern Ihrer Sprachpräferenz und zur Weiterleitung auf lokalisierte Seiten.",
+          "Zum Empfangen, Zustellen, Prüfen und Beantworten von Kontaktanfragen und Zugangsanfragen, einschließlich per E-Mail über unseren E-Mail-Dienstleister.",
+          "Zur Bewertung, ob JobDone AI zu einem angefragten Workflow, Pilot, einer Integration oder einer kommerziellen Diskussion passt.",
+          "Zur Überwachung der Zuverlässigkeit, Diagnose von Problemen, Verhinderung von Missbrauch, Durchsetzung von Rate Limits und zum Schutz der Website, des Dienstes, der Nutzer und unserer Rechte.",
+          "Zur Führung angemessener Geschäfts-, Sicherheits-, Compliance- und Rechtsunterlagen.",
+          "Zur Erfüllung gesetzlicher Pflichten, Durchsetzung von Bedingungen und Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen, soweit erforderlich."
         ]
       },
       "bases": {
         "title": "6. Rechtsgrundlagen",
         "paragraphs": [
-          "Soweit das Schweizer Datenschutzgesetz, die DSGVO oder ähnliche Gesetze gelten, stützen wir uns auf geeignete Rechtsgrundlagen, darunter deine Anfrage, unsere berechtigten Interessen am Betrieb und Schutz der Website, Einwilligung, soweit erforderlich, gesetzliche Pflichten sowie die Geltendmachung oder Verteidigung von Rechtsansprüchen.",
-          "Du kannst eine Einwilligung widerrufen, wenn die Verarbeitung darauf beruht. Der Widerruf berührt jedoch nicht die Verarbeitung vor dem Widerruf oder eine Verarbeitung, die auf anderer Rechtsgrundlage zulässig ist."
+          "Soweit das Schweizer Datenschutzgesetz, die DSGVO oder ähnliche Gesetze gelten, stützen wir uns auf geeignete Rechtsgrundlagen, darunter Ihre Anfrage oder vorvertragliche Maßnahmen, unsere berechtigten Interessen am Betrieb und Schutz der Website und an der Beantwortung geschäftlicher Anfragen, Einwilligung soweit erforderlich, die Erfüllung gesetzlicher Pflichten sowie die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
+          "Sie können eine Einwilligung widerrufen, wenn die Verarbeitung darauf beruht. Der Widerruf berührt nicht die Verarbeitung vor dem Widerruf oder eine Verarbeitung, die auf einer anderen Rechtsgrundlage zulässig ist."
+        ]
+      },
+      "automated": {
+        "title": "7. Automatisierte Entscheidungen und AI",
+        "paragraphs": [
+          "Die öffentliche Website trifft keine rechtlich oder ähnlich erheblichen Entscheidungen über Sie ausschließlich automatisiert. Zugangsanfragen werden von JobDone AI oder ihren Vertreterinnen und Vertretern geprüft und garantieren keinen Zugang, keine Preise, keinen Zeitplan, keinen Pilot und keine kommerzielle Beziehung.",
+          "Website-Texte, Diagramme, Beispiele und AI-bezogene Beschreibungen dienen der Information. Sie sind keine automatisierten Entscheidungen, keine professionelle Beratung und keine verbindliche Beurteilung Ihrer Organisation, Workflows, Daten oder rechtlichen Pflichten."
         ]
       },
       "thirdParties": {
-        "title": "7. Drittanbieter",
-        "paragraph": "Wir können Dienstleister einsetzen, um die Website und Kommunikation zu hosten, zu sichern, zu überwachen, zu analysieren und zu betreiben.",
+        "title": "8. Dienstleister",
+        "paragraph": "Wir können Dienstleister und professionelle Berater einsetzen, um die Website und zugehörige Kommunikation zu hosten, zu sichern, zu überwachen, zuzustellen, zu analysieren und zu betreiben. Diese Anbieter können je nach Dienst und rechtlichem Kontext personenbezogene Daten für uns oder als eigenständige Verantwortliche verarbeiten.",
         "items": [
-          "Hosting-, Infrastruktur-, Datenbank-, Speicher- und Sicherheitsanbieter.",
-          "Analyse- oder Diagnoseanbieter, die wir zur Einschätzung von Zuverlässigkeit und Website-Nutzung einsetzen.",
-          "E-Mail-, CRM-, Support-, Workflow- oder Issue-Tracking-Tools zur Bearbeitung von Zugangsanfragen und Nachrichten.",
-          "Professionelle Berater, Rechtsdienstleister und Compliance-Dienstleister, soweit erforderlich."
+          "Hosting-, Infrastruktur-, Datenbank-, Speicher-, Netzwerk- und Sicherheitsanbieter.",
+          "E-Mail-Zustellungsanbieter, einschließlich Resend, mit denen Website-Anfragen an JobDone AI zugestellt und zustellungsbezogene Informationen empfangen werden.",
+          "Diagnose-, Logging-, Missbrauchsvermeidungs- und Zuverlässigkeitstools zur Analyse von Fehlern, Sicherheitsereignissen und Website-Betrieb.",
+          "E-Mail-, CRM-, Support-, Workflow- oder Issue-Tracking-Tools zur Prüfung und Beantwortung von Zugangsanfragen und Nachrichten.",
+          "Professionelle Berater, Rechtsdienstleister, Buchhaltungsdienstleister, Compliance-Dienstleister, Versicherer und Prüfer, soweit erforderlich."
         ],
         "after": "Wir verkaufen keine personenbezogenen Daten."
       },
       "sharing": {
-        "title": "8. Weitergabe und Offenlegung",
+        "title": "9. Weitergabe und Offenlegung",
         "paragraphs": [
-          "Wir können personenbezogene Daten an Dienstleister, professionelle Berater, Behörden, Gerichte, Regulierungsstellen oder andere Parteien weitergeben, wenn dies zum Betrieb der Website, zur Einhaltung von Gesetzen, zum Schutz von Rechten und Sicherheit, zur Untersuchung von Missbrauch oder zur Durchführung einer Unternehmenstransaktion wie Fusion, Erwerb, Finanzierung oder Asset-Verkauf erforderlich ist.",
-          "Details aus Closed-Preview-Anfragen machen wir nicht öffentlich."
+          "Wir können personenbezogene Daten an Dienstleister, professionelle Berater, Behörden, Gerichte, Regulierungsstellen, Gegenparteien oder andere Parteien offenlegen, wenn dies zum Betrieb der Website, zur Beantwortung von Anfragen, zur Einhaltung von Gesetzen, zum Schutz von Rechten und Sicherheit, zur Untersuchung von Missbrauch, zur Durchsetzung von Bedingungen oder zur Durchführung einer Unternehmenstransaktion wie Fusion, Finanzierung, Umstrukturierung, Erwerb oder Asset-Verkauf erforderlich ist.",
+          "Wir machen Details aus Zugangsanfragen nicht öffentlich und veröffentlichen vertrauliche Preview-Gespräche nicht ohne Erlaubnis."
         ]
       },
       "retention": {
-        "title": "9. Aufbewahrung",
+        "title": "10. Aufbewahrung",
         "paragraphs": [
-          "Wir bewahren personenbezogene Daten nur so lange auf, wie es für die in dieser Erklärung beschriebenen Zwecke angemessen erforderlich ist, einschließlich Beantwortung von Anfragen, Pflege von Geschäftsunterlagen, Sicherheit, Audit, gesetzlicher Compliance und Verteidigung von Rechtsansprüchen.",
-          "Wenn du Löschung verlangst, löschen oder anonymisieren wir personenbezogene Daten, soweit dies erforderlich und angemessen möglich ist. Einige Informationen können für begrenzte Zeit in Backups, Logs, Rechtsunterlagen oder Sicherheitsunterlagen verbleiben, soweit die Aufbewahrung gesetzlich erforderlich oder erlaubt ist."
+          "Wir bewahren personenbezogene Daten nur so lange auf, wie es für die in dieser Erklärung beschriebenen Zwecke angemessen erforderlich ist, einschließlich Beantwortung von Anfragen, Bewertung von Zugangsanfragen, Führung von Geschäftsunterlagen, Sicherheit, Audit, gesetzlicher Compliance, Streitfallmanagement und Verteidigung von Rechtsansprüchen.",
+          "Wenn Sie Löschung verlangen, löschen oder anonymisieren wir personenbezogene Daten, soweit dies erforderlich und angemessen möglich ist. Einige Informationen können für begrenzte Zeit in Backups, Logs, Rechtsunterlagen, Sicherheitsunterlagen oder Unterlagen verbleiben, die wir gesetzlich aufbewahren müssen oder dürfen."
         ]
       },
       "rights": {
-        "title": "10. Deine Rechte und Wahlmöglichkeiten",
+        "title": "11. Ihre Rechte und Wahlmöglichkeiten",
         "paragraphs": [
-          "Je nach Wohnort kannst du Rechte auf Auskunft, Berichtigung, Löschung, Kopie, Einschränkung, Widerspruch oder Widerruf einer Einwilligung für bestimmte Verarbeitungen deiner personenbezogenen Daten haben. Du kannst außerdem das Recht haben, dich bei einer Datenschutzbehörde zu beschweren.",
-          "Du kannst Datenschutz-, Export-, Berichtigungs- und Löschanfragen über das <contact>JobDone AI Kontaktformular</contact> senden. Wir müssen möglicherweise deine Identität verifizieren, bevor wir eine Anfrage bearbeiten."
+          "Je nach Wohnort und anwendbarem Recht können Sie Rechte auf Auskunft, Information, Berichtigung, Löschung, Einschränkung, Widerspruch, Kopie oder Widerruf einer Einwilligung für bestimmte Verarbeitungen Ihrer personenbezogenen Daten haben. Sie können außerdem das Recht haben, sich bei einer zuständigen Datenschutzbehörde zu beschweren, einschließlich beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten, soweit anwendbar.",
+          "Sie können Datenschutz-, Export-, Berichtigungs-, Widerspruchs- und Löschanfragen über das <contact>JobDone AI Kontaktformular</contact> senden. Wir müssen möglicherweise Ihre Identität und Berechtigung verifizieren, bevor wir eine Anfrage bearbeiten."
         ]
       },
       "security": {
-        "title": "11. Sicherheit",
+        "title": "12. Sicherheit",
         "paragraphs": [
-          "Wir verwenden angemessene technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten. Keine Website, kein Cloud-Dienst, kein Gerät und keine Internetübertragung kann vollständig sicher, fehlerfrei oder verlustfrei garantiert werden."
+          "Wir verwenden angemessene technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten. Keine Website, kein Cloud-Dienst, kein Gerät, kein E-Mail-Zustellungsweg und keine Internetübertragung kann vollständig sicher, unterbrechungsfrei, privat, fehlerfrei oder verlustfrei garantiert werden. Bitte übermitteln Sie keine sensiblen Produktionsdaten über das öffentliche Kontaktformular."
         ]
       },
       "transfers": {
-        "title": "12. Internationale Übermittlungen",
+        "title": "13. Internationale Übermittlungen",
         "paragraphs": [
-          "JobDone AI hat seinen Sitz in der Schweiz. Unsere Anbieter und Infrastruktur können sich in der Schweiz, im Europäischen Wirtschaftsraum, im Vereinigten Königreich, in den Vereinigten Staaten oder in anderen Ländern befinden. Soweit erforderlich, verwenden wir geeignete Übermittlungsgarantien wie vertragliche Schutzmaßnahmen, Angemessenheitsbeschlüsse oder andere rechtmäßige Mechanismen."
+          "Die JobDone AI GmbH hat ihren Sitz in der Schweiz. Unsere Anbieter, Infrastruktur, E-Mail-Zustellung, Support-Tools und professionellen Berater können sich in der Schweiz, im Europäischen Wirtschaftsraum, im Vereinigten Königreich, in den Vereinigten Staaten oder in anderen Ländern befinden. Soweit erforderlich, verwenden wir geeignete Übermittlungsgarantien wie Angemessenheitsbeschlüsse, vertragliche Schutzmaßnahmen, Standardvertragsklauseln, Transfer-Risikoanalysen oder andere rechtmäßige Übermittlungsmechanismen."
         ]
       },
       "children": {
-        "title": "13. Kinder und Alter",
+        "title": "14. Kinder und Alter",
         "paragraphs": [
-          "Die öffentliche Website und der Preview-Prozess von JobDone AI richten sich nicht an Kinder unter 16 Jahren."
+          "Die öffentliche Website und der Preview-Prozess von JobDone AI richten sich an geschäftliche Nutzer und nicht an Kinder unter 16 Jahren. Übermitteln Sie keine personenbezogenen Daten von Kindern über die öffentliche Website."
         ]
       },
       "changes": {
-        "title": "14. Änderungen dieser Erklärung",
+        "title": "15. Änderungen dieser Erklärung",
         "paragraphs": [
-          "Wir können diese Datenschutzerklärung aktualisieren, wenn sich unser Dienst, unsere Datenpraktiken, Anbieter oder rechtliche Anforderungen ändern. Die aktualisierte Version wird mit einem neuen Aktualisierungsdatum auf dieser Seite veröffentlicht."
-        ]
-      },
-      "preview": {
-        "title": "2. Umfang der Closed Preview",
-        "paragraphs": [
-          "JobDone AI befindet sich derzeit in einer Closed Preview und ist nicht allgemein als öffentlicher Self-Service verfügbar.",
-          "Diese Erklärung gilt für die öffentliche Website und previewbezogene Kommunikation. Jeder Pilot oder Kundeneinsatz kann separaten schriftlichen Vereinbarungen, Sicherheitsbedingungen und Datenverarbeitungsbedingungen unterliegen."
+          "Wir können diese Datenschutzerklärung aktualisieren, wenn sich unsere Website, unser Dienst, unsere Datenpraktiken, Anbieter, rechtliche Anforderungen oder Risikokontrollen ändern. Die aktualisierte Version wird mit einem neuen Aktualisierungsdatum auf dieser Seite veröffentlicht. Wenn für Sie eine separate Vereinbarung gilt, richten sich Änderungen dieser Vereinbarung nach ihrem eigenen Änderungsprozess."
         ]
       }
     }
   },
   "Terms": {
     "metadataTitle": "Nutzungsbedingungen",
-    "metadataDescription": "Nutzungsbedingungen von JobDone AI für die öffentliche Website und Zugangsanfragen zur Closed Preview.",
-    "updatedAt": "5. Juni 2026",
+    "metadataDescription": "Nutzungsbedingungen von JobDone AI für die öffentliche Website, Zugangsanfragen und previewbezogene Kommunikation.",
+    "updatedAt": "6. Juni 2026",
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "title": "Nutzungsbedingungen",
-    "intro": "Diese Nutzungsbedingungen regeln deinen Zugriff auf und deine Nutzung der öffentlichen JobDone AI Website, Kontaktformulare, Zugangsanfragen zur Closed Preview und zugehörige Kommunikation.",
+    "intro": "Diese Nutzungsbedingungen regeln Ihren Zugriff auf und Ihre Nutzung der öffentlichen JobDone AI Website, Kontaktformulare, Zugangsanfragen, Preview-Materialien und zugehörige Kommunikation. Sie gewähren keinen Zugang zur JobDone AI Plattform und ersetzen keine separate schriftliche Vereinbarung.",
     "sections": {
       "who": {
         "title": "1. Wer wir sind",
         "paragraphs": [
-          "Die öffentliche Website wird von JobDone AI, Zürich, Schweiz (\"JobDone AI\", \"wir\", \"uns\" oder \"unser\") bereitgestellt.",
+          "Die öffentliche Website wird von der JobDone AI GmbH (\"JobDone AI\", \"wir\", \"uns\" oder \"unser\") bereitgestellt. JobDone AI GmbH, Baarerstrasse 11, 6300 Zug, Schweiz. Rechtsform: Gesellschaft mit beschränkter Haftung (GmbH). Sitz: Zug. UID: CHE-408.536.393. CH-ID: CH-170-4024762-7. EHRA-ID: 1751464.",
           "Fragen zu diesen Bedingungen, Datenschutzanfragen, Löschanfragen oder Zugangsanfragen können über das <contact>JobDone AI Kontaktformular</contact> gesendet werden."
         ]
       },
       "acceptance": {
         "title": "2. Annahme dieser Bedingungen",
         "paragraphs": [
-          "Durch Zugriff auf oder Nutzung dieser Website, des Kontaktformulars, des Preview-Anfrageflows oder einer zugehörigen Funktion stimmst du diesen Nutzungsbedingungen und der <privacy>JobDone AI Datenschutzerklärung</privacy> zu.",
-          "Wenn du die Website im Namen einer Organisation nutzt, bestätigst du, dass du berechtigt bist, für diese Organisation zu handeln."
+          "Durch Zugriff auf oder Nutzung dieser Website, des Kontaktformulars, des Zugangsanfrageflows, von Preview-Materialien oder einer zugehörigen Funktion stimmen Sie diesen Nutzungsbedingungen und der <privacy>JobDone AI Datenschutzerklärung</privacy> zu.",
+          "Wenn Sie die Website im Namen einer Organisation nutzen, bestätigen Sie, dass Sie berechtigt sind, für diese Organisation zu handeln und sie an diese Bedingungen zu binden. Wenn Sie nicht zustimmen, dürfen Sie die Website nicht nutzen."
+        ]
+      },
+      "preview": {
+        "title": "3. Closed Preview und kein Anspruch",
+        "paragraphs": [
+          "JobDone AI befindet sich derzeit in einer Closed Preview und ist nicht allgemein als öffentlicher Self-Service verfügbar.",
+          "Das Absenden einer Anfrage, die Teilnahme an einem Gespräch, der Erhalt einer Antwort, das Ansehen einer Demo oder der Austausch von Materialien garantiert keinen Zugang, keinen Pilot, keine Partnerschaft, keine Preise, keinen Zeitplan, keine Roadmap-Lieferung, keine Feature-Verfügbarkeit, keine Service Levels, keine Integrationen, keinen Support, keine Sicherheitsbedingungen, keine Datenverarbeitungsbedingungen und keine kommerzielle Beziehung. Jeder Pilot, Einsatz, bezahlte Zugang, jede Integration oder produktive Nutzung erfordert eine separate schriftliche Vereinbarung, die von JobDone AI unterzeichnet oder akzeptiert wurde."
         ]
       },
       "eligibility": {
         "title": "4. Berechtigung",
         "paragraphs": [
-          "Du musst mindestens 16 Jahre alt und rechtlich in der Lage sein, diese Bedingungen anzunehmen, um die Website zu nutzen oder eine Anfrage zu senden."
+          "Sie müssen mindestens 16 Jahre alt und rechtlich in der Lage sein, diese Bedingungen anzunehmen, um die Website zu nutzen oder eine Anfrage zu senden. Die Website ist für geschäftliche und professionelle Nutzung bestimmt."
         ]
       },
       "responsibilities": {
-        "title": "5. Deine Verantwortlichkeiten",
-        "paragraph": "Du bist dafür verantwortlich, wie du die Website nutzt, einschließlich:",
+        "title": "5. Ihre Verantwortlichkeiten",
+        "paragraph": "Sie sind dafür verantwortlich, wie Sie die Website nutzen, einschließlich:",
         "items": [
           "Die Website nur für rechtmäßige Zwecke und gemäß diesen Bedingungen zu nutzen.",
-          "Korrekte Informationen in Kontakt- und Zugangsanfrageformularen bereitzustellen.",
-          "Sicherzustellen, dass du berechtigt bist, bereitgestellte Unternehmens-, Workflow-, Dokument-, System- oder personenbezogene Daten zu teilen.",
-          "Alle von uns bereitgestellten Informationen zu prüfen, bevor du dich bei Geschäftsentscheidungen darauf verlässt.",
-          "Vertrauliche Informationen aus öffentlichen oder unsicheren Nachrichten herauszuhalten, sofern nichts Separates vereinbart wurde."
+          "Korrekte, aktuelle und nicht irreführende Informationen in Kontakt- und Zugangsanfrageformularen bereitzustellen.",
+          "Sicherzustellen, dass Sie berechtigt und befugt sind, bereitgestellte Unternehmens-, Workflow-, Dokument-, System-, Integrations-, vertrauliche oder personenbezogene Daten zu teilen.",
+          "Besonders schützenswerte, regulierte, hochvertrauliche, produktive, Zugangsdaten-, Geschäftsgeheimnis-, Gesundheits-, Finanzkonto- oder personenbezogene Daten Dritter aus öffentlichen Formularen herauszuhalten, sofern wir nicht separat einen sicheren Prozess vereinbart haben.",
+          "Alle Informationen, Beispiele, Diagramme und Mitteilungen zu prüfen, bevor Sie sich bei geschäftlichen, technischen, Compliance-, rechtlichen oder operativen Entscheidungen darauf verlassen.",
+          "Ihre eigene Sicherheit, Backups, Unterlagen, Compliance-Programme und rechtliche Prüfung aufrechtzuerhalten."
         ]
       },
       "prohibited": {
         "title": "6. Unzulässige Nutzung",
-        "paragraph": "Du darfst nicht:",
+        "paragraph": "Sie dürfen nicht:",
         "items": [
-          "Die Website rechtswidrig, schädlich, täuschend, missbräuchlich, belästigend, diffamierend, datenschutzverletzend oder rechtsverletzend nutzen.",
-          "Inhalte hochladen oder senden, zu deren Nutzung du keine Berechtigung hast oder die Rechte anderer Personen oder Organisationen verletzen.",
-          "Die Website stören, beeinträchtigen, zurückentwickeln, scrapen, überlasten, sondieren oder Sicherheitsmaßnahmen umgehen, außer soweit gesetzlich erlaubt.",
-          "Die Website zur Übertragung von Malware, Spam, betrügerischen Nachrichten oder nicht autorisierter Werbung nutzen.",
-          "Deine Identität, Organisation, Befugnis oder Beziehung zu JobDone AI falsch darstellen."
+          "Die Website rechtswidrig, schädlich, täuschend, missbräuchlich, belästigend, diffamierend, datenschutzverletzend, rechtsverletzend oder anderweitig rechts- oder rechteverletzend nutzen.",
+          "Inhalte hochladen, übermitteln oder übertragen, zu deren Nutzung Sie keine Berechtigung haben oder die Rechte anderer Personen oder Organisationen verletzen.",
+          "Die Website stören, beeinträchtigen, zurückentwickeln, scrapen, crawlen, überlasten, sondieren, scannen, testen, umgehen oder versuchen, Sicherheits- oder Zugriffskontrollen der Website zu überwinden, außer soweit zwingendes Recht dies ausdrücklich erlaubt.",
+          "Die Website zur Übertragung von Malware, Spam, betrügerischen Nachrichten, nicht autorisierter Werbung oder schädlichem Code nutzen.",
+          "Ihre Identität, Organisation, Befugnis, Zugehörigkeit, Absicht oder Beziehung zu JobDone AI falsch darstellen.",
+          "Website-Informationen verwenden, um einen konkurrierenden Dienst aufzubauen oder zu trainieren, uns öffentlich zu benchmarken oder öffentliche Behauptungen über Performance, Sicherheit, Preise oder Verfügbarkeit ohne unsere schriftliche Erlaubnis aufzustellen."
         ]
       },
       "content": {
-        "title": "7. Von dir übermittelte Informationen",
+        "title": "7. Von Ihnen übermittelte Informationen",
         "paragraphs": [
-          "Du behältst das Eigentum an Informationen, die du über die Website übermittelst. Du räumst JobDone AI die begrenzten Rechte ein, die erforderlich sind, um diese Informationen für die in diesen Bedingungen und unserer Datenschutzerklärung beschriebenen Zwecke zu empfangen, zu verarbeiten, zu prüfen, zu beantworten und zu speichern.",
-          "Du bist allein für die von dir übermittelten Informationen verantwortlich und dafür, sicherzustellen, dass du sie teilen darfst."
+          "Sie behalten das Eigentum an Informationen, die Sie über die Website übermitteln. Sie räumen JobDone AI ein nicht ausschließliches, weltweites, unentgeltliches Recht ein, diese Informationen zu empfangen, zu hosten, zu verarbeiten, zu übertragen, zu prüfen, intern zu vervielfältigen, zu beantworten, aufzubewahren und zu verwenden, soweit dies für die Website, die Bewertung von Zugangsanfragen, Sicherheit, Compliance, geschäftliche Kommunikation und die in unserer Datenschutzerklärung beschriebenen Zwecke angemessen erforderlich ist.",
+          "Sie sind allein für die von Ihnen übermittelten Informationen verantwortlich, dafür, dass sie rechtmäßig und korrekt sind, und dafür, dass Sie alle erforderlichen Berechtigungen, Hinweise, Einwilligungen und Rechte haben, um sie mit uns zu teilen."
+        ]
+      },
+      "websiteInfo": {
+        "title": "8. Website-Informationen und keine professionelle Beratung",
+        "paragraphs": [
+          "Website-Texte, Diagramme, Mockups, Produktbeschreibungen, Beispiele, AI-Adoption-Materialien und Preview-Materialien dienen ausschließlich allgemeinen Informations- und Marketingzwecken.",
+          "Sie sind keine Rechts-, Finanz-, Steuer-, Sicherheits-, Compliance-, Beschaffungs-, operative oder sonstige professionelle Beratung. Sie ersetzen nicht Ihre eigene Prüfung, unabhängige Beratung, Risikobewertung oder Tests. Da JobDone AI in der Closed Preview ist, können sich Features, Positionierung, Verfügbarkeit, Preise, Integrationen, Sicherheitsmaßnahmen, Produktdetails und Roadmap-Punkte ändern oder niemals veröffentlicht werden."
+        ]
+      },
+      "aiOutputs": {
+        "title": "9. AI-Ausgaben, Workflow-Gespräche und Integrationen",
+        "paragraphs": [
+          "Alle Beispiele, Mockups, Workflow-Gespräche, Beschreibungen von Agentenverhalten, Automatisierungsbeschreibungen, Integrationshinweise oder Systemdiagramme auf dieser Website sind illustrativ und begründen keine Gewährleistung, Zusicherung, Verpflichtung, Service-Level, Implementierungspflicht oder Eignungsaussage.",
+          "Sie sind dafür verantwortlich zu beurteilen, ob ein Workflow, AI Coworker, eine AI Automatisierung, AI-Ausgabe, Integration, ein Freigabeprozess, eine Wissensquelle oder eine Datensatzaktualisierung für Ihre Organisation und rechtlichen Pflichten geeignet, rechtmäßig, sicher und passend ist. Menschliche Prüfung, Kontrollen, Tests, Monitoring und Governance bleiben Ihre Verantwortung, sofern keine separate schriftliche Vereinbarung etwas anderes regelt."
         ]
       },
       "purchases": {
         "title": "10. Kommerzielle Bedingungen",
         "paragraphs": [
-          "Die öffentliche Website bietet derzeit keine Self-Service-Käufe an.",
-          "Jeder kommerzielle Zugang, Pilot, bezahlte Einsatz, jede Datenverarbeitungsvereinbarung oder Service-Level-Zusage muss separat schriftlich vereinbart werden."
+          "Die öffentliche Website bietet derzeit keine Self-Service-Käufe, Abonnements, öffentlichen Preise, öffentlichen Testversionen oder produktiven Zugang an.",
+          "Jeder kommerzielle Zugang, Pilot, bezahlte Einsatz, jede Sicherheitszusage, Datenverarbeitungsvereinbarung, Implementierungsarbeit, Integration, Supportpflicht, Service-Level-Zusage oder Beschaffungsbedingung muss separat schriftlich vereinbart werden. Wenn separate schriftliche Bedingungen diesen Website-Bedingungen widersprechen, gelten die separaten schriftlichen Bedingungen für diese konkrete Beziehung."
         ]
       },
       "availability": {
         "title": "11. Änderungen, Verfügbarkeit und Updates",
         "paragraphs": [
-          "Wir können die Website oder jede previewbezogene Funktion jederzeit ändern, aussetzen, einstellen, begrenzen, umbenennen, entfernen oder aktualisieren."
+          "Wir können die Website, öffentliche Inhalte, den Kontaktflow, previewbezogene Funktionen oder jeden Teil der Website jederzeit ohne Haftung ändern, aussetzen, einstellen, begrenzen, umbenennen, entfernen, einschränken, blockieren oder aktualisieren. Wir garantieren nicht, dass die Website oder Inhalte verfügbar, unterbrechungsfrei, sicher oder unverändert bleiben."
         ]
       },
       "warranties": {
         "title": "12. Keine Gewährleistungen",
         "paragraphs": [
-          "Soweit gesetzlich zulässig, werden die Website und Preview-Materialien \"wie besehen\" und \"wie verfügbar\" ohne Gewährleistungen jeglicher Art bereitgestellt, ob ausdrücklich, stillschweigend, gesetzlich oder anderweitig.",
-          "JobDone AI gewährleistet nicht, dass die Website unterbrechungsfrei, rechtzeitig, sicher, privat, fehlerfrei, verlustfrei, korrekt, vollständig, mit jedem Gerät oder jeder Plattform kompatibel oder für einen bestimmten Zweck geeignet ist."
+          "Soweit gesetzlich zulässig, werden die Website, Kontaktformulare, Preview-Materialien, Diagramme, Beispiele und Mitteilungen \"wie besehen\" und \"wie verfügbar\" ohne Gewährleistungen jeglicher Art bereitgestellt, ob ausdrücklich, stillschweigend, gesetzlich oder anderweitig.",
+          "JobDone AI schließt alle Gewährleistungen und Zusicherungen aus, einschließlich Gewährleistungen für Richtigkeit, Vollständigkeit, Zuverlässigkeit, Verfügbarkeit, Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung, Rechtsbestand, Sicherheit, Datenschutz, Kompatibilität, Performance und Geschäftsgepflogenheiten. JobDone AI gewährleistet nicht, dass die Website unterbrechungsfrei, rechtzeitig, sicher, privat, fehlerfrei, verlustfrei, korrekt, vollständig, mit jedem Gerät oder jeder Plattform kompatibel oder für einen bestimmten Zweck geeignet ist."
         ]
       },
       "liability": {
         "title": "13. Haftungsbeschränkung",
         "paragraphs": [
-          "Soweit gesetzlich zulässig, haftet JobDone AI nicht für indirekte, zufällige, besondere, Folge-, exemplarische, Straf-, Vertrauens-, Geschäftsunterbrechungs-, Gewinn-, Daten-, Goodwill-, Geräte-, Netzwerk- oder Drittschäden, selbst wenn JobDone AI auf die Möglichkeit solcher Schäden hingewiesen wurde.",
-          "Soweit gesetzlich zulässig, ist die Gesamthaftung von JobDone AI für alle Ansprüche im Zusammenhang mit der Website auf CHF 50 begrenzt.",
-          "Nichts in diesen Bedingungen schließt eine Haftung aus oder begrenzt sie, soweit dies rechtswidrig wäre, einschließlich Haftung für rechtswidrige Absicht oder grobe Fahrlässigkeit, soweit diese Haftung nach zwingendem Schweizer Recht nicht ausgeschlossen werden kann."
+          "Soweit gesetzlich zulässig, haften JobDone AI sowie ihre Geschäftsführer, Organe, Mitarbeitenden, Auftragnehmer, Berater, verbundenen Unternehmen, Rechtsnachfolger und Lieferanten nicht für indirekte, zufällige, besondere, Folge-, exemplarische, Straf-, Vertrauens-, Geschäftsunterbrechungs-, Gewinn-, Umsatz-, Daten-, Goodwill-, Chancen-, Beschaffungs-, Geräte-, Netzwerk-, Sicherheits-, Reputations- oder Drittschäden, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde.",
+          "Soweit gesetzlich zulässig, ist die gesamte aggregierte Haftung von JobDone AI für alle Ansprüche im Zusammenhang mit der Website, Kontaktformularen, Preview-Materialien oder diesen Bedingungen auf CHF 50 oder den Mindestbetrag begrenzt, den zwingendes Recht verlangt, je nachdem welcher Betrag höher ist.",
+          "Nichts in diesen Bedingungen schließt eine Haftung aus oder begrenzt sie, soweit ein Ausschluss oder eine Begrenzung rechtswidrig wäre, einschließlich Haftung für rechtswidrige Absicht, arglistiges Verschweigen, Tod oder Personenschäden, die von uns verursacht wurden, soweit anwendbar, oder grobe Fahrlässigkeit, soweit diese Haftung nach zwingendem Schweizer Recht nicht ausgeschlossen werden kann."
         ]
       },
       "indemnity": {
         "title": "14. Freistellung",
         "paragraphs": [
-          "Soweit gesetzlich zulässig, erklärst du dich damit einverstanden, JobDone AI von Ansprüchen, Verlusten, Haftungen, Schäden, Kosten und Aufwendungen freizustellen, die aus von dir übermittelten Informationen, deiner Nutzung oder missbräuchlichen Nutzung der Website, deinem Verstoß gegen diese Bedingungen, deinem Verstoß gegen Gesetze oder der Verletzung von Rechten anderer Personen oder Organisationen entstehen."
+          "Soweit gesetzlich zulässig, erklären Sie sich damit einverstanden, JobDone AI sowie ihre Geschäftsführer, Organe, Mitarbeitenden, Auftragnehmer, Berater, verbundenen Unternehmen, Rechtsnachfolger und Lieferanten von Ansprüchen, Verlusten, Haftungen, Schäden, Bußen, Strafen, Kosten und Aufwendungen einschließlich angemessener Anwaltskosten freizustellen und schadlos zu halten, die aus von Ihnen übermittelten Informationen, Ihrer Nutzung oder missbräuchlichen Nutzung der Website, Ihrem Verstoß gegen diese Bedingungen, Ihrem Gesetzesverstoß, Ihrer Verletzung von Rechten anderer Personen oder Organisationen oder fehlender Befugnis zur Übermittlung von Informationen oder zum Handeln für eine Organisation entstehen."
         ]
       },
       "termination": {
-        "title": "15. Beendigung",
+        "title": "15. Aussetzung und Beendigung",
         "paragraphs": [
-          "Du kannst die Nutzung der Website jederzeit beenden. Wir können den Zugriff auf die Website aussetzen, beschränken oder blockieren, wenn wir vernünftigerweise annehmen, dass du gegen diese Bedingungen verstoßen, Risiken geschaffen, Schaden verursacht, die Website rechtswidrig genutzt hast oder wenn die Website oder eine Funktion eingestellt wird.",
-          "Abschnitte, die ihrer Natur nach fortbestehen sollen, bleiben bestehen, einschließlich Eigentum, Nutzerverantwortung, Haftungsausschlüsse, Haftungsbeschränkung, Freistellung, anwendbares Recht und Streitbeilegungsbestimmungen."
+          "Sie können die Nutzung der Website jederzeit beenden. Wir können den Zugriff auf die Website oder Funktionen aussetzen, beschränken, blockieren, rate-limiten, entfernen oder beenden, wenn wir vernünftigerweise annehmen, dass Sie gegen diese Bedingungen verstoßen, Risiken geschaffen, Schaden verursacht, die Website rechtswidrig genutzt, missbräuchliche oder unsichere Inhalte übermittelt haben oder wenn die Website oder eine Funktion eingestellt wird.",
+          "Abschnitte, die ihrer Natur nach fortbestehen sollen, bleiben bestehen, einschließlich Eigentum, übermittelter Informationen, Nutzerverantwortung, Website-Informationen, AI-Ausgaben, kommerzieller Bedingungen, Haftungsausschlüsse, Haftungsbeschränkung, Freistellung, Datenschutz, anwendbares Recht, Gerichtsstand und Änderungen."
         ]
       },
       "privacy": {
         "title": "16. Datenschutz",
         "paragraphs": [
-          "Unsere <privacy>Datenschutzerklärung</privacy> erklärt, wie wir personenbezogene Daten verarbeiten. Durch die Nutzung der Website nimmst du zur Kenntnis, dass wir personenbezogene Daten wie dort beschrieben verarbeiten."
+          "Unsere <privacy>Datenschutzerklärung</privacy> erklärt, wie wir personenbezogene Daten verarbeiten. Durch die Nutzung der Website nehmen Sie zur Kenntnis, dass personenbezogene Daten wie dort beschrieben verarbeitet werden."
         ]
       },
       "law": {
         "title": "17. Anwendbares Recht und Gerichtsstand",
         "paragraphs": [
-          "Diese Bedingungen unterliegen dem Recht der Schweiz, ohne Berücksichtigung von Kollisionsnormen. Die Gerichte in Zürich, Schweiz, sind ausschließlich zuständig, außer zwingendes Recht gibt dir das Recht, Ansprüche anderswo geltend zu machen."
+          "Diese Bedingungen und alle außervertraglichen Pflichten im Zusammenhang damit unterliegen dem materiellen Recht der Schweiz unter Ausschluss von Kollisionsnormen und unter Ausschluss des Übereinkommens der Vereinten Nationen über Verträge über den internationalen Warenkauf. Vorbehaltlich zwingenden Rechts sind die Gerichte in Zug, Schweiz, ausschließlich zuständig."
         ]
       },
       "changes": {
         "title": "18. Änderungen dieser Bedingungen",
         "paragraphs": [
-          "Wir können diese Bedingungen aktualisieren, wenn sich unser Dienst, Geschäft, Anbieter, rechtliche Anforderungen oder Risikokontrollen ändern. Die aktualisierte Version wird mit einem neuen Aktualisierungsdatum auf dieser Seite veröffentlicht. Die weitere Nutzung der Website nach Inkrafttreten aktualisierter Bedingungen bedeutet, dass du die aktualisierten Bedingungen akzeptierst."
-        ]
-      },
-      "preview": {
-        "title": "3. Closed Preview",
-        "paragraphs": [
-          "JobDone AI befindet sich derzeit in einer Closed Preview und ist nicht allgemein als öffentlicher Self-Service verfügbar.",
-          "Das Absenden einer Anfrage garantiert keinen Zugang, keinen Pilot, keine Partnerschaft, keine Feature-Verfügbarkeit, keine Preise, keinen Zeitplan und keine kommerzielle Beziehung. Jeder Pilot oder Einsatz kann separate schriftliche Vereinbarungen erfordern."
-        ]
-      },
-      "websiteInfo": {
-        "title": "8. Website-Informationen",
-        "paragraphs": [
-          "Website-Texte, Diagramme, Mockups, Produktbeschreibungen und Preview-Materialien dienen allgemeinen Informationszwecken.",
-          "Da JobDone AI in der Closed Preview ist, können sich Features, Positionierung, Verfügbarkeit, Preise, Integrationen und Produktdetails ändern."
-        ]
-      },
-      "aiOutputs": {
-        "title": "9. KI-Ausgaben und Workflow-Gespräche",
-        "paragraphs": [
-          "Alle Beispiele, Mockups, Workflow-Gespräche, Beschreibungen von Agentenverhalten oder Systemdiagramme auf dieser Website sind illustrativ und begründen keine Garantie oder Verpflichtung.",
-          "Du bist dafür verantwortlich zu beurteilen, ob ein Workflow, eine Automatisierung, KI-Ausgabe, Integration oder Datensatzaktualisierung für deine Organisation und rechtlichen Pflichten geeignet ist."
+          "Wir können diese Bedingungen aktualisieren, wenn sich unsere Website, unser Dienst, Geschäft, Anbieter, rechtliche Anforderungen, Risikokontrollen oder öffentlichen Materialien ändern. Die aktualisierte Version wird mit einem neuen Aktualisierungsdatum auf dieser Seite veröffentlicht. Die weitere Nutzung der Website nach Veröffentlichung aktualisierter Bedingungen bedeutet, dass Sie die aktualisierten Bedingungen akzeptieren. Separate schriftliche Vereinbarungen können nur nach ihren eigenen Bedingungen geändert werden."
         ]
       }
     }
