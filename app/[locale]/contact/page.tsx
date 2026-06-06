@@ -43,8 +43,8 @@ function RequestPipelineGraphic({
   };
 }) {
   return (
-    <Card className="mt-8 overflow-hidden border-white/10 bg-[#07101a]/82 text-white shadow-[0_28px_90px_rgba(0,0,0,0.34)] backdrop-blur-xl">
-      <CardHeader className="border-b border-white/10 bg-[radial-gradient(circle_at_10%_0%,rgba(32,106,233,0.24),transparent_34%),linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))]">
+    <Card className="mt-8 overflow-hidden border-white/10 bg-[linear-gradient(180deg,rgba(12,22,34,0.9),rgba(5,8,12,0.92))] py-0 text-white shadow-[0_28px_90px_rgba(0,0,0,0.3)]">
+      <CardHeader className="border-b border-white/10 p-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <CardTitle className="text-base">{copy.title}</CardTitle>
@@ -64,35 +64,39 @@ function RequestPipelineGraphic({
         <div className="grid border-b border-white/10 sm:grid-cols-3">
           {copy.metrics.map(([label, value]) => (
             <div
-              className="border-b border-white/10 p-4 sm:border-b-0 sm:border-r last:sm:border-r-0"
+              className="bg-white/[0.018] p-4 sm:border-r sm:border-white/10 last:sm:border-r-0"
               key={label}
             >
-              <p className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-[#5c7088]">
+              <p className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-[#6f86a2]">
                 {label}
               </p>
               <p className="mt-1 text-sm font-semibold text-white">{value}</p>
             </div>
           ))}
         </div>
-        <div className="relative p-4">
-          <div className="absolute bottom-8 left-8 top-8 w-px bg-gradient-to-b from-[#206ae9] via-[#46e6b3] to-transparent" />
-          <div className="space-y-3">
+        <div className="p-4">
+          <div className="grid gap-3">
             {copy.steps.map(([step, label, description]) => (
               <div
-                className="relative grid gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-4 pl-12 sm:grid-cols-[5.5rem_1fr]"
+                className="relative overflow-hidden rounded-lg border border-white/10 bg-[#081019]/86 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
                 key={step}
               >
-                <div className="absolute left-[1.08rem] top-5 grid size-6 place-items-center rounded-full border border-[#206ae9]/50 bg-[#07101a] font-mono text-[0.62rem] text-[#9fc0ff] shadow-[0_0_24px_rgba(32,106,233,0.32)]">
-                  {step}
+                <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,#206ae9,transparent)]" />
+                <div className="grid gap-3 sm:grid-cols-[6rem_1fr] sm:items-start">
+                  <div className="flex items-center gap-3">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-md border border-[#2f6fff]/35 bg-[#206ae9]/10 font-mono text-[0.62rem] text-[#8fb5ff]">
+                      {step}
+                    </span>
+                    <p className="text-sm font-semibold text-white">{label}</p>
+                  </div>
+                  <p className="text-sm leading-6 text-[#93a4b8]">
+                    {description}
+                  </p>
                 </div>
-                <p className="text-sm font-semibold text-white">{label}</p>
-                <p className="text-sm leading-6 text-[#93a4b8]">
-                  {description}
-                </p>
               </div>
             ))}
           </div>
-          <div className="mt-4 rounded-lg border border-white/10 bg-black/25 p-4 font-mono text-[0.68rem] leading-5 text-[#93a4b8]">
+          <div className="mt-4 rounded-lg border border-white/10 bg-black/22 p-4 font-mono text-[0.68rem] leading-5 text-[#93a4b8]">
             <p className="text-[#46e6b3]">jobdone.request.prepare()</p>
             {copy.consoleLines.map((line) => (
               <p key={line}>{line}</p>
@@ -123,15 +127,15 @@ export default async function ContactPage({ params }: ContactPageProps) {
     <main className="bg-[#05080c] text-white">
       <section className="relative overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(32,106,233,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(32,106,233,0.05)_1px,transparent_1px)] bg-[size:56px_56px]" />
-        <Container className="grid gap-10 md:grid-cols-[0.85fr_1.15fr]">
-          <div className="relative">
+        <Container className="grid min-w-0 items-start gap-10 md:grid-cols-[0.85fr_1.15fr]">
+          <div className="relative min-w-0">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {t("eyebrow")}
             </p>
-            <h1 className="mt-5 break-words text-5xl font-semibold leading-[0.95] tracking-tight text-white sm:text-6xl md:text-7xl">
+            <h1 className="mt-5 max-w-full break-words text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.98] tracking-tight text-white md:text-7xl">
               {t("heroTitle")}
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#a4b3c6]">
+            <p className="mt-6 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-xl md:text-lg md:leading-8">
               {t("heroDescription")}
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">

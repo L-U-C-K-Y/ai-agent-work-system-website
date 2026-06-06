@@ -209,7 +209,7 @@ export default async function SupportPage({ params }: PageProps) {
                 alt={copy.heroAlt}
                 className="aspect-[16/9] lg:-mx-[8vw] lg:w-[calc(100%+16vw)]"
                 priority
-                src="/images/jobdone-ai/experiments/neon-hero-command-console.png"
+                src="/images/jobdone-ai/neon-hero-command-console.png"
               />
             ) : (
               <UseCaseBoard copy={copy} />

@@ -5,6 +5,7 @@
     "ogAlt": "JobDone AI kollaboratives Arbeitssystem für Teams aus Menschen und KI-Agenten."
   },
   "Navigation": {
+    "home": "Home",
     "aiDesks": "Workspaces",
     "platform": "Plattform",
     "solutions": "Anwendungsfälle",
@@ -20,7 +21,7 @@
     "closeMenu": "Navigationsmenü schließen",
     "mainLabel": "Hauptnavigation",
     "mobileLabel": "Mobile Navigation",
-    "mobileDescription": "Navigiere durch JobDone AI Workspaces, Plattformseiten, Anwendungsfälle und Zugangsanfragen.",
+    "mobileDescription": "Navigiere durch JobDone AI Anwendungsfälle, Vision, Unternehmensseiten und Zugangsanfragen.",
     "languageLabel": "Sprache",
     "english": "EN",
     "german": "DE"
@@ -76,19 +77,48 @@
     },
     "useCases": {
       "eyebrow": "Anwendungsfälle",
-      "title": "So werden Anfragen zu freigegebenen Geschäftsergebnissen.",
+      "title": "Operationsräume für Arbeit, die AI Agenten und Teams gemeinsam erledigen.",
+      "viewAll": "Alle Anwendungsfälle ansehen",
       "links": {
-        "messageToWork": {
-          "title": "Nachricht zu Arbeit",
-          "description": "Verwandle Channel-Anfragen in nachverfolgbare Work Cards."
+        "finance": {
+          "title": "Finance Ops",
+          "description": "Rechnungen, Freigaben, Lieferantendaten und Abschlussaufgaben."
         },
-        "knowledgeToAction": {
-          "title": "Wissen zu Aktion",
-          "description": "Verankere Agentenschritte in freigegebenem Kontext und Zitaten."
+        "inventory": {
+          "title": "Inventory Ops",
+          "description": "Assets, Nachbestellung, Ausnahmen und Übergaben."
         },
-        "recordsToAutomation": {
-          "title": "Datensätze zu Automatisierung",
-          "description": "Entwirf, prüfe und übernimm Datenbankänderungen kontrolliert."
+        "people": {
+          "title": "People Ops",
+          "description": "Onboarding, Richtlinienanfragen und Mitarbeiterdokumente."
+        },
+        "support": {
+          "title": "Support Ops",
+          "description": "Falltriage, Kundenkontext und Eskalationspfade."
+        },
+        "product": {
+          "title": "Product Ops",
+          "description": "Feedback, Bugs, Releases, Vorfälle und Nachweise."
+        },
+        "revenue": {
+          "title": "Revenue Ops",
+          "description": "Recherche, CRM-Pflege und Vorbereitung von Follow-ups."
+        }
+      }
+    },
+    "company": {
+      "links": {
+        "contact": {
+          "title": "Kontakt",
+          "description": "Zugang anfragen oder ein Gespräch starten."
+        },
+        "privacy": {
+          "title": "Datenschutz",
+          "description": "Wie JobDone AI Website- und Anfragedaten verarbeitet."
+        },
+        "terms": {
+          "title": "AGB",
+          "description": "Bedingungen für die öffentliche Website und die geschlossene Preview."
         }
       }
     }
@@ -99,6 +129,7 @@
     "company": "Unternehmen",
     "aiDesks": "Workspaces",
     "platform": "Plattform",
+    "system": "System",
     "solutions": "Anwendungsfälle",
     "governance": "Governance",
     "resources": "Ressourcen",
@@ -118,10 +149,13 @@
         "revenue": "Revenue"
       },
       "platform": {
-        "workSystem": "Arbeitssystem",
-        "aiAgents": "KI-Agenten",
-        "integrations": "Integrationen",
-        "apis": "APIs"
+        "work": "Arbeit",
+        "aiCoworkers": "AI Coworker",
+        "automations": "AI Automatisierungen",
+        "knowledge": "Wissen",
+        "records": "Datensätze",
+        "approvals": "Freigaben",
+        "auditEvidence": "Audit und Nachweise"
       },
       "solutions": {
         "byFunction": "Nach Funktion",
@@ -130,6 +164,9 @@
         "industries": "Branchen"
       },
       "governance": {
+        "approvals": "Freigaben",
+        "evidence": "Nachweisspur",
+        "audit": "Audit-Bereitschaft",
         "security": "Sicherheit",
         "compliance": "Compliance",
         "audit": "Audit",
@@ -563,12 +600,18 @@
     "labels": {
       "name": "Name",
       "email": "E-Mail",
+      "company": "Unternehmen",
+      "website": "Website",
       "topic": "Thema",
+      "companySize": "Unternehmensgröße",
+      "industry": "Branche",
       "message": "Nachricht"
     },
     "placeholders": {
       "name": "Dein Name",
       "email": "du@example.com",
+      "company": "Unternehmensname",
+      "website": "https://unternehmen.de",
       "message": "Nenne Unternehmen, Rolle und ob es um Zugang, Pilot oder Partnerschaft geht."
     },
     "topics": {
@@ -577,6 +620,25 @@
       "pilot": "Pilotgespräch",
       "strategic": "Strategische Anfrage",
       "partnership": "Strategische Partnerschaft"
+    },
+    "companySizes": {
+      "not-specified": "Größe auswählen",
+      "1-10": "1-10",
+      "11-50": "11-50",
+      "51-200": "51-200",
+      "201-1000": "201-1.000",
+      "1000-plus": "1.000+"
+    },
+    "industries": {
+      "not-specified": "Branche auswählen",
+      "software": "Software / Technologie",
+      "finance": "Finanzen / Versicherung",
+      "operations": "Operations / Logistik",
+      "healthcare": "Gesundheit",
+      "manufacturing": "Produktion",
+      "retail": "Retail / Handel",
+      "professional-services": "Professional Services",
+      "other": "Andere"
     },
     "submit": "Anfrage senden",
     "note": "Dieses Formular sendet deine Anfrage direkt an JobDone AI.",

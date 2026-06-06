@@ -242,7 +242,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
             <Link
               className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-[#206ae9] hover:text-white"
-              href="/vision"
+              href="/platform"
             >
               {t("platformLink")} -&gt;
             </Link>

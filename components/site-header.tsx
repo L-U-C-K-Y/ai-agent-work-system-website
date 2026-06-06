@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { usePathname, useSearchParams } from "next/navigation";
 import type { ComponentProps } from "react";
 
@@ -32,7 +33,13 @@ type LinkHref = ComponentProps<typeof Link>["href"];
 type MegaMenuLink = readonly [string, LinkHref, string];
 type MegaMenuLinkConfig = readonly [string, LinkHref];
 
-const workspaceLinks = [
+const navLinkClassName =
+  "h-9 px-2.5 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.025] hover:text-white focus:!bg-white/[0.025] focus-visible:!bg-white/[0.025] focus-visible:!ring-1 focus-visible:!ring-white/12 aria-[current=page]:text-white";
+
+const navTriggerClassName =
+  "bg-transparent text-[#9aabbf] hover:bg-white/[0.025] hover:text-white data-open:bg-white/[0.025] data-open:text-white data-popup-open:bg-white/[0.025] data-popup-open:text-white data-popup-open:hover:bg-white/[0.035]";
+
+const useCaseLinks = [
   [
     "finance",
     { pathname: "/products/[slug]", params: { slug: "finance" } },
@@ -59,16 +66,10 @@ const workspaceLinks = [
   ],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
-const platformLinks = [
-  ["workGraph", "/vision"],
-  ["aiCoworkers", "/vision"],
-  ["governance", "/vision"],
-] as const satisfies readonly MegaMenuLinkConfig[];
-
-const useCaseLinks = [
-  ["messageToWork", "/support"],
-  ["knowledgeToAction", "/support"],
-  ["recordsToAutomation", "/support"],
+const companyLinks = [
+  ["contact", "/contact"],
+  ["privacy", "/privacy"],
+  ["terms", "/terms"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
 function toInternalPathname(pathname: string) {
@@ -85,6 +86,10 @@ function toInternalPathname(pathname: string) {
 
   if (unprefixed.startsWith("/produkte/")) {
     return `/products/${unprefixed.slice("/produkte/".length)}`;
+  }
+
+  if (unprefixed === "/plattform") {
+    return "/platform";
   }
 
   if (unprefixed === "/kontakt") {
@@ -122,6 +127,7 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
   }
 
   if (
+    internalPathname === "/platform" ||
     internalPathname === "/vision" ||
     internalPathname === "/support" ||
     internalPathname === "/contact" ||
@@ -195,26 +201,40 @@ function MegaMenuPanel({
   eyebrow,
   title,
   links,
+  ctaLabel,
+  ctaHref,
 }: {
   eyebrow: string;
   title: string;
   links: readonly MegaMenuLink[];
+  ctaLabel: string;
+  ctaHref: LinkHref;
 }) {
   return (
-    <NavigationMenuContent className="w-[620px] p-0">
-      <div className="grid grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-lg border border-white/10 bg-[#05080c] shadow-[0_24px_80px_rgba(0,0,0,0.42)]">
-        <div className="border-r border-white/10 bg-[radial-gradient(circle_at_10%_0%,rgba(32,106,233,0.28),transparent_38%),#080d12] p-5">
+    <NavigationMenuContent className="w-[760px] p-0">
+      <div className="grid grid-cols-[0.92fr_1.08fr] overflow-hidden rounded-lg border border-white/10 bg-[#05080c] shadow-[0_24px_80px_rgba(0,0,0,0.42)]">
+        <div className="relative overflow-hidden border-r border-white/10 bg-[#030609] p-5">
+          <Image
+            alt=""
+            className="absolute inset-x-0 bottom-0 h-full w-full object-cover opacity-60"
+            height={720}
+            src="/images/jobdone-ai/neon-workspace-rooms.png"
+            width={1200}
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,6,9,0.52),#030609_78%)]" />
+          <div className="relative">
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-[var(--primary)]">
             {eyebrow}
           </p>
           <h2 className="mt-3 text-xl font-semibold leading-tight text-white">
             {title}
           </h2>
-          <div className="mt-8 rounded-md border border-white/10 bg-black/30 p-3 font-mono text-[0.68rem] leading-5 text-[#8ea0b5]">
+          <div className="mt-20 rounded-md border border-white/10 bg-black/35 p-3 font-mono text-[0.68rem] leading-5 text-[#8ea0b5] backdrop-blur-md">
             <p className="text-[var(--chart-2)]">system.status</p>
             <p>agents: visible</p>
             <p>records: attached</p>
             <p>approvals: scoped</p>
+          </div>
           </div>
         </div>
         <div className="grid gap-2 p-3">
@@ -226,7 +246,34 @@ function MegaMenuPanel({
               title={label}
             />
           ))}
+          <NavigationMenuLink
+            className="mt-1 rounded-lg border border-[var(--primary)]/35 bg-[var(--primary)]/10 p-3 text-sm font-semibold text-white hover:bg-[var(--primary)]/18 focus:bg-[var(--primary)]/18"
+            render={<Link href={ctaHref} />}
+          >
+            {ctaLabel}
+          </NavigationMenuLink>
         </div>
+      </div>
+    </NavigationMenuContent>
+  );
+}
+
+function CompanyMenuPanel({
+  links,
+}: {
+  links: readonly MegaMenuLink[];
+}) {
+  return (
+    <NavigationMenuContent className="w-[300px] p-0">
+      <div className="grid gap-2 overflow-hidden rounded-lg border border-white/10 bg-[#05080c] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.42)]">
+        {links.map(([label, href, description]) => (
+          <MegaLink
+            description={description}
+            href={href}
+            key={label}
+            title={label}
+          />
+        ))}
       </div>
     </NavigationMenuContent>
   );
@@ -238,7 +285,7 @@ export function SiteHeader() {
   const mega = useTranslations("MegaMenu");
   const internalPathname = toInternalPathname(pathname);
   const getMegaLinks = (
-    section: "workspaces" | "platform" | "useCases",
+    section: "useCases" | "company",
     links: readonly MegaMenuLinkConfig[],
   ) =>
     links.map(
@@ -258,50 +305,41 @@ export function SiteHeader() {
         <NavigationMenu className="hidden flex-none md:flex">
           <NavigationMenuList className="gap-1">
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent text-[#9aabbf] hover:bg-white/[0.04] hover:text-white data-open:bg-white/[0.04] data-open:text-white">
-                {t("aiDesks")}
-              </NavigationMenuTrigger>
-              <MegaMenuPanel
-                eyebrow={mega("workspaces.eyebrow")}
-                links={getMegaLinks("workspaces", workspaceLinks)}
-                title={mega("workspaces.title")}
-              />
+              <NavigationMenuLink
+                aria-current={internalPathname === "/" ? "page" : undefined}
+                className={navLinkClassName}
+                render={<Link href="/" />}
+              >
+                {t("home")}
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent text-[#9aabbf] hover:bg-white/[0.04] hover:text-white data-open:bg-white/[0.04] data-open:text-white">
-                {t("platform")}
-              </NavigationMenuTrigger>
-              <MegaMenuPanel
-                eyebrow={mega("platform.eyebrow")}
-                links={getMegaLinks("platform", platformLinks)}
-                title={mega("platform.title")}
-              />
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-transparent text-[#9aabbf] hover:bg-white/[0.04] hover:text-white data-open:bg-white/[0.04] data-open:text-white">
+              <NavigationMenuTrigger className={navTriggerClassName}>
                 {t("solutions")}
               </NavigationMenuTrigger>
               <MegaMenuPanel
                 eyebrow={mega("useCases.eyebrow")}
                 links={getMegaLinks("useCases", useCaseLinks)}
                 title={mega("useCases.title")}
+                ctaHref="/products"
+                ctaLabel={mega("useCases.viewAll")}
               />
             </NavigationMenuItem>
-            {mainNavigation.slice(3).map((item) => {
-              const active = internalPathname.startsWith(item.href);
-
-              return (
-                <NavigationMenuItem key={item.key}>
-                  <NavigationMenuLink
-                    aria-current={active ? "page" : undefined}
-                    className="h-9 px-2.5 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.04] hover:text-white aria-[current=page]:text-white"
-                    render={<Link href={item.href} />}
-                  >
-                    {t(item.key)}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              );
-            })}
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                aria-current={internalPathname === "/platform" ? "page" : undefined}
+                className={navLinkClassName}
+                render={<Link href="/platform" />}
+              >
+                {t("platform")}
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className={navTriggerClassName}>
+                {t("company")}
+              </NavigationMenuTrigger>
+              <CompanyMenuPanel links={getMegaLinks("company", companyLinks)} />
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -341,6 +379,15 @@ export function SiteHeader() {
                   key={item.key}
                 >
                   {t(item.key)}
+                </Link>
+              ))}
+              {useCaseLinks.map(([key, href]) => (
+                <Link
+                  className="rounded-lg border border-white/10 bg-white/[0.02] px-3 py-3 text-sm font-medium text-[#9aabbf]"
+                  href={href}
+                  key={key}
+                >
+                  {mega(`useCases.links.${key}.title`)}
                 </Link>
               ))}
             </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Manrope } from "next/font/google";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -29,15 +29,18 @@ type LocaleLayoutProps = {
   }>;
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 const fallbackNavigation = {
   en: {
     mainLabel: "Main navigation",
     items: [
-      ["Workspaces", "/products"],
-      ["Platform", "/vision"],
-      ["Use cases", "/support"],
-      ["Governance", "/vision"],
-      ["Resources", "/support"],
+      ["Home", "/"],
+      ["Use cases", "/products"],
+      ["Platform", "/platform"],
       ["Company", "/contact"],
     ],
     cta: "Request Access",
@@ -45,11 +48,9 @@ const fallbackNavigation = {
   de: {
     mainLabel: "Hauptnavigation",
     items: [
-      ["Workspaces", "/products"],
-      ["Plattform", "/vision"],
-      ["Anwendungsfälle", "/support"],
-      ["Governance", "/vision"],
-      ["Ressourcen", "/support"],
+      ["Home", "/"],
+      ["Anwendungsfälle", "/products"],
+      ["Plattform", "/platform"],
       ["Unternehmen", "/contact"],
     ],
     cta: "Zugang anfragen",
@@ -127,6 +128,13 @@ export async function generateMetadata({
       template: `%s | ${t("name")}`,
     },
     description: t("description"),
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      shortcut: "/favicon.ico",
+    },
     alternates: {
       languages: {
         en: "/",

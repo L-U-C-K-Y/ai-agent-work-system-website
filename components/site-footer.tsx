@@ -19,22 +19,32 @@ const workspaceLinks = [
   ["revenue", { pathname: "/products/[slug]", params: { slug: "revenue" } }],
 ] as const satisfies readonly (readonly [string, LinkHref])[];
 
+const platformLinks = [
+  ["work", "/platform"],
+  ["aiCoworkers", "/platform"],
+  ["automations", "/platform"],
+  ["knowledge", "/platform"],
+  ["records", "/platform"],
+  ["approvals", "/platform"],
+  ["auditEvidence", "/platform"],
+] as const satisfies readonly (readonly [string, LinkHref])[];
+
 export function SiteFooter() {
   const footer = useTranslations("Footer");
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-white/10 bg-[#080d12]">
-      <div className="mx-auto grid w-full max-w-[1280px] gap-4 px-5 py-4 md:grid-cols-[1.2fr_repeat(4,1fr)] md:px-6">
+      <div className="mx-auto grid w-full max-w-[1280px] gap-4 px-5 py-4 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:px-6">
         <div>
           <Logo />
           <p className="mt-2 max-w-sm text-[0.68rem] leading-4 text-[#9aabbf]">
             {footer("tagline")}
           </p>
         </div>
-        <nav aria-label={footer("aiDesks")}>
+        <nav aria-label={footer("solutions")}>
           <h2 className="text-xs font-semibold text-white">
-            {footer("aiDesks")}
+            {footer("solutions")}
           </h2>
           <ul className="mt-2 flex flex-col gap-1.5 text-[0.68rem] leading-4 text-[#8ea0b5]">
             {workspaceLinks.map(([label, href]) => (
@@ -51,28 +61,13 @@ export function SiteFooter() {
             {footer("platform")}
           </h2>
           <ul className="mt-2 flex flex-col gap-1.5 text-[0.68rem] leading-4 text-[#8ea0b5]">
-            <li>
-              <Link className="hover:text-white" href="/vision">
-                {footer("platform")}
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-white" href="/vision">
-                {footer("governance")}
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <nav aria-label={footer("solutions")}>
-          <h2 className="text-xs font-semibold text-white">
-            {footer("solutions")}
-          </h2>
-          <ul className="mt-2 flex flex-col gap-1.5 text-[0.68rem] leading-4 text-[#8ea0b5]">
-            <li>
-              <Link className="hover:text-white" href="/support">
-                {footer("solutions")}
-              </Link>
-            </li>
+            {platformLinks.map(([label, href]) => (
+              <li key={label}>
+                <Link className="hover:text-white" href={href}>
+                  {footer(`links.platform.${label}`)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <nav aria-label={footer("company")}>

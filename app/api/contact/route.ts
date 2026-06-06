@@ -10,17 +10,38 @@ const topicLabels: Record<string, string> = {
   partnership: "Strategic partnership",
 };
 
+const companySizeLabels: Record<string, string> = {
+  "not-specified": "Not specified",
+  "1-10": "1-10",
+  "11-50": "11-50",
+  "51-200": "51-200",
+  "201-1000": "201-1,000",
+  "1000-plus": "1,000+",
+};
+
+const industryLabels: Record<string, string> = {
+  "not-specified": "Not specified",
+  software: "Software / technology",
+  finance: "Finance / insurance",
+  operations: "Operations / logistics",
+  healthcare: "Healthcare",
+  manufacturing: "Manufacturing",
+  retail: "Retail / commerce",
+  "professional-services": "Professional services",
+  other: "Other",
+};
+
 const apiMessages = {
   en: {
     invalidBody: "Invalid request body.",
-    required: "Name, email, and message are required.",
+    required: "Name, email, company, and message are required.",
     invalidEmail: "Enter a valid email address.",
     notConfigured: "Email delivery is not configured yet.",
     providerError: "Could not send email.",
   },
   de: {
     invalidBody: "Ungültiger Anfrageinhalt.",
-    required: "Name, E-Mail und Nachricht sind erforderlich.",
+    required: "Name, E-Mail, Unternehmen und Nachricht sind erforderlich.",
     invalidEmail: "Gib eine gültige E-Mail-Adresse ein.",
     notConfigured: "Der E-Mail-Versand ist noch nicht konfiguriert.",
     providerError: "E-Mail konnte nicht gesendet werden.",
@@ -38,6 +59,10 @@ function getApiMessages(request: Request) {
 type ContactPayload = {
   name?: unknown;
   email?: unknown;
+  company?: unknown;
+  website?: unknown;
+  companySize?: unknown;
+  industry?: unknown;
   topic?: unknown;
   message?: unknown;
 };
@@ -53,11 +78,19 @@ function cleanText(value: unknown, maxLength: number) {
 function renderTextEmail({
   name,
   email,
+  company,
+  website,
+  companySize,
+  industry,
   topic,
   message,
 }: {
   name: string;
   email: string;
+  company: string;
+  website: string;
+  companySize: string;
+  industry: string;
   topic: string;
   message: string;
 }) {
@@ -66,6 +99,10 @@ function renderTextEmail({
     "",
     `Name: ${name}`,
     `Email: ${email}`,
+    `Company: ${company}`,
+    `Website: ${website || "Not provided"}`,
+    `Company size: ${companySize}`,
+    `Industry: ${industry}`,
     `Topic: ${topic}`,
     "",
     "Message:",
@@ -88,11 +125,19 @@ export async function POST(request: Request) {
 
   const name = cleanText(payload.name, 160);
   const email = cleanText(payload.email, 254);
+  const company = cleanText(payload.company, 180);
+  const website = cleanText(payload.website, 300);
+  const companySizeKey = cleanText(payload.companySize, 80);
+  const industryKey = cleanText(payload.industry, 80);
   const topicKey = cleanText(payload.topic, 80);
   const message = cleanText(payload.message, 5000);
   const topic = topicLabels[topicKey] ?? topicLabels.general;
+  const companySize =
+    companySizeLabels[companySizeKey] ?? companySizeLabels["not-specified"];
+  const industry =
+    industryLabels[industryKey] ?? industryLabels["not-specified"];
 
-  if (!name || !email || !message) {
+  if (!name || !email || !company || !message) {
     return NextResponse.json(
       { error: messages.required },
       { status: 400 },
@@ -124,7 +169,16 @@ export async function POST(request: Request) {
   }
 
   const subject = `JobDone AI: ${topic}`;
-  const text = renderTextEmail({ name, email, topic, message });
+  const text = renderTextEmail({
+    name,
+    email,
+    company,
+    website,
+    companySize,
+    industry,
+    topic,
+    message,
+  });
 
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",

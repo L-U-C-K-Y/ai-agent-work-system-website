@@ -5,6 +5,7 @@
     "ogAlt": "JobDone AI collaborative work system for human and AI agent teams."
   },
   "Navigation": {
+    "home": "Home",
     "aiDesks": "Workspaces",
     "platform": "Platform",
     "solutions": "Use cases",
@@ -20,7 +21,7 @@
     "closeMenu": "Close navigation menu",
     "mainLabel": "Main navigation",
     "mobileLabel": "Mobile navigation",
-    "mobileDescription": "Navigate JobDone AI workspaces, platform pages, use cases, and access requests.",
+    "mobileDescription": "Navigate JobDone AI use cases, platform, company pages, and access requests.",
     "languageLabel": "Language",
     "english": "EN",
     "german": "DE"
@@ -76,19 +77,48 @@
     },
     "useCases": {
       "eyebrow": "Use cases",
-      "title": "See how requests become approved business outcomes.",
+      "title": "Operating rooms for the work AI agents and teams share.",
+      "viewAll": "View all use cases",
       "links": {
-        "messageToWork": {
-          "title": "Message to work",
-          "description": "Turn channel requests into tracked work cards."
+        "finance": {
+          "title": "Finance Ops",
+          "description": "Invoices, approvals, vendor records, and close tasks."
         },
-        "knowledgeToAction": {
-          "title": "Knowledge to action",
-          "description": "Ground agent steps in approved context and citations."
+        "inventory": {
+          "title": "Inventory Ops",
+          "description": "Assets, replenishment, exceptions, and handoffs."
         },
-        "recordsToAutomation": {
-          "title": "Records to automation",
-          "description": "Draft, review, and apply database updates with control."
+        "people": {
+          "title": "People Ops",
+          "description": "Onboarding, policy requests, and employee documents."
+        },
+        "support": {
+          "title": "Support Ops",
+          "description": "Case triage, customer context, and escalation paths."
+        },
+        "product": {
+          "title": "Product Ops",
+          "description": "Feedback, bugs, releases, incidents, and evidence."
+        },
+        "revenue": {
+          "title": "Revenue Ops",
+          "description": "Research, CRM hygiene, and follow-up preparation."
+        }
+      }
+    },
+    "company": {
+      "links": {
+        "contact": {
+          "title": "Contact",
+          "description": "Request access or start a conversation."
+        },
+        "privacy": {
+          "title": "Privacy",
+          "description": "How JobDone AI handles website and request data."
+        },
+        "terms": {
+          "title": "Terms",
+          "description": "Terms for the public website and closed preview."
         }
       }
     }
@@ -99,6 +129,7 @@
     "company": "Company",
     "aiDesks": "Workspaces",
     "platform": "Platform",
+    "system": "System",
     "solutions": "Use cases",
     "governance": "Governance",
     "resources": "Resources",
@@ -118,10 +149,13 @@
         "revenue": "Revenue"
       },
       "platform": {
-        "workSystem": "Work System",
-        "aiAgents": "AI Agents",
-        "integrations": "Integrations",
-        "apis": "APIs"
+        "work": "Work",
+        "aiCoworkers": "AI coworkers",
+        "automations": "AI automations",
+        "knowledge": "Knowledge",
+        "records": "Records",
+        "approvals": "Approvals",
+        "auditEvidence": "Audit and evidence"
       },
       "solutions": {
         "byFunction": "By Function",
@@ -130,9 +164,11 @@
         "industries": "Industries"
       },
       "governance": {
+        "approvals": "Approvals",
+        "evidence": "Evidence trail",
+        "audit": "Audit readiness",
         "security": "Security",
         "compliance": "Compliance",
-        "audit": "Audit",
         "controls": "Controls"
       },
       "resources": {
@@ -563,12 +599,18 @@
     "labels": {
       "name": "Name",
       "email": "Email",
+      "company": "Company",
+      "website": "Website",
       "topic": "Topic",
+      "companySize": "Company size",
+      "industry": "Industry",
       "message": "Message"
     },
     "placeholders": {
       "name": "Your name",
       "email": "you@example.com",
+      "company": "Company name",
+      "website": "https://company.com",
       "message": "Tell us your company, role, and whether this is about access, a pilot, or partnership."
     },
     "topics": {
@@ -577,6 +619,25 @@
       "pilot": "Pilot conversation",
       "strategic": "Strategic discussion",
       "partnership": "Strategic partnership"
+    },
+    "companySizes": {
+      "not-specified": "Select size",
+      "1-10": "1-10",
+      "11-50": "11-50",
+      "51-200": "51-200",
+      "201-1000": "201-1,000",
+      "1000-plus": "1,000+"
+    },
+    "industries": {
+      "not-specified": "Select industry",
+      "software": "Software / technology",
+      "finance": "Finance / insurance",
+      "operations": "Operations / logistics",
+      "healthcare": "Healthcare",
+      "manufacturing": "Manufacturing",
+      "retail": "Retail / commerce",
+      "professional-services": "Professional services",
+      "other": "Other"
     },
     "submit": "Send request",
     "note": "This form sends your request directly to JobDone AI.",

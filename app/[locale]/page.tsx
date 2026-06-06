@@ -27,11 +27,11 @@ const pageCopy = {
     statusLabel: "Work graph online",
     statusItems: ["channels: synced", "agents: visible", "records: attached"],
     heroBadge: "AI Agent Work System",
-    heroTitle: "A collaborative work system for humans and AI agents.",
+    heroTitle: "A work system for teams and AI agents.",
     heroDescription:
-      "JobDone AI gives teams one place to chat with AI coworkers, turn messages into rich work cards, run automations, and jump directly into the knowledge and records behind every outcome.",
-    primaryCta: "See the system",
-    secondaryCta: "Explore workspaces",
+      "JobDone AI turns chat, work cards, automations, knowledge, records, approvals, and evidence into one shared operating surface.",
+    primaryCta: "See the platform",
+    secondaryCta: "Explore use cases",
     heroStats: [
       ["42", "active work items"],
       ["8", "agent coworkers"],
@@ -39,6 +39,11 @@ const pageCopy = {
     ],
     heroAlt:
       "JobDone AI collaborative workspace showing channels, AI coworkers, work cards, knowledge, records, and approvals",
+    businessValue: [
+      ["Coordinate work", "Humans and AI coworkers collaborate in channels, turn conversations into work, and stay aligned across every handoff."],
+      ["Control agent action", "Permissions, approvals, and policy-aware actions keep agent work grounded in rules and audit requirements."],
+      ["Update business records", "Agents read, draft, and update governed records in your systems with full visibility and traceable changes."],
+    ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
       channelsLabel: "Channels",
@@ -143,11 +148,11 @@ const pageCopy = {
     statusLabel: "Work Graph online",
     statusItems: ["Channels: synchronisiert", "Agenten: sichtbar", "Datensätze: verbunden"],
     heroBadge: "AI Agent Work System",
-    heroTitle: "Ein kollaboratives Arbeitssystem für Menschen und KI-Agenten.",
+    heroTitle: "Ein Arbeitssystem für Teams und KI-Agenten.",
     heroDescription:
-      "JobDone AI gibt Teams einen Ort, um mit AI Coworkern zu chatten, Nachrichten in reichhaltige Work Cards zu verwandeln, Automatisierungen auszuführen und direkt in das Wissen und die Datensätze hinter jedem Ergebnis zu springen.",
-    primaryCta: "System ansehen",
-    secondaryCta: "Workspaces erkunden",
+      "JobDone AI verwandelt Chat, Work Cards, Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise in eine gemeinsame operative Oberfläche.",
+    primaryCta: "Plattform ansehen",
+    secondaryCta: "Anwendungsfälle erkunden",
     heroStats: [
       ["42", "aktive Work Items"],
       ["8", "Agent-Coworker"],
@@ -155,6 +160,11 @@ const pageCopy = {
     ],
     heroAlt:
       "JobDone AI kollaborativer Workspace mit Channels, AI Coworkern, Work Cards, Wissen, Datensätzen und Freigaben",
+    businessValue: [
+      ["Arbeit koordinieren", "Menschen und AI Coworker arbeiten in Channels zusammen, verwandeln Konversationen in Arbeit und bleiben über jede Übergabe hinweg abgestimmt."],
+      ["Agentenaktionen kontrollieren", "Berechtigungen, Freigaben und policy-bewusste Aktionen halten Agentenarbeit in Regeln und Audit-Anforderungen verankert."],
+      ["Geschäftsdaten aktualisieren", "Agenten lesen, entwerfen und aktualisieren gesteuerte Datensätze in deinen Systemen mit voller Sichtbarkeit und nachvollziehbaren Änderungen."],
+    ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
       channelsLabel: "Channels",
@@ -442,7 +452,7 @@ function PrimitiveGrid({ copy }: { copy: HomeCopy }) {
         <ExperimentVisual
           alt=""
           className="h-full rounded-none border-0 opacity-70 shadow-none"
-          src="/images/jobdone-ai/experiments/neon-abstract-glass-primitives.png"
+          src="/images/jobdone-ai/neon-abstract-glass-primitives.png"
         />
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#080d12_0%,rgba(8,13,18,0.86)_34%,rgba(8,13,18,0.62)_100%)]" />
@@ -553,7 +563,7 @@ function CollaborationFlow({ copy }: { copy: HomeCopy }) {
           </div>
           <Link
             className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-[#206ae9] hover:text-white"
-            href="/vision"
+            href="/platform"
           >
             {copy.flowLink}
           </Link>
@@ -568,6 +578,32 @@ function CollaborationFlow({ copy }: { copy: HomeCopy }) {
               <p className="font-mono text-xs text-[#206ae9]">{step}</p>
               <h3 className="mt-10 text-xl font-semibold text-white">{title}</h3>
               <p className="mt-3 text-sm leading-6 text-[#91a2b8]">{description}</p>
+            </article>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function BusinessValueBand({ copy }: { copy: HomeCopy }) {
+  return (
+    <section className="relative z-10 -mt-12 bg-transparent pb-20">
+      <Container>
+        <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.3)] md:grid-cols-3">
+          {copy.businessValue.map(([title, description], index) => (
+            <article
+              className="relative bg-[linear-gradient(180deg,rgba(13,24,37,0.9),rgba(8,13,18,0.92))] p-6 md:p-8"
+              key={title}
+            >
+              <div className="mb-6 grid size-14 place-items-center rounded-lg border border-[#2f6fff]/25 bg-[#206ae9]/10 font-mono text-sm text-[#8fb5ff] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+                {String(index + 1).padStart(2, "0")}
+              </div>
+              <h2 className="text-xl font-semibold text-white">{title}</h2>
+              <p className="mt-3 text-sm leading-6 text-[#9aabbf]">
+                {description}
+              </p>
+              <span className="mt-5 block h-px w-24 bg-[linear-gradient(90deg,#206ae9,transparent)]" />
             </article>
           ))}
         </div>
@@ -648,7 +684,9 @@ function FinalCta({ copy }: { copy: HomeCopy }) {
   return (
     <section className="bg-[#05080c] pb-10">
       <Container>
-        <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/20 bg-[radial-gradient(circle_at_80%_0%,rgba(32,106,233,0.22),transparent_35%),#0b1117] p-8 md:p-12">
+        <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/20 bg-[linear-gradient(135deg,rgba(32,106,233,0.16),rgba(8,13,18,0.82)_36%,rgba(5,8,12,0.94))] p-8 md:p-12">
+          <div className="absolute inset-y-0 right-0 hidden w-[58%] bg-[url('/images/jobdone-ai/neon-abstract-glass-primitives.png')] bg-cover bg-center opacity-34 md:block" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#0b1117_0%,rgba(11,17,23,0.9)_33%,rgba(11,17,23,0.35)_70%,transparent_100%)]" />
           <div className="relative max-w-2xl">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {copy.finalCta.eyebrow}
@@ -677,59 +715,32 @@ export default async function Home({ params }: HomeProps) {
   return (
     <main className="bg-[#05080c] text-white">
       <section className="relative overflow-hidden border-b border-white/8 bg-[#030609]">
-        <Container className="relative py-6">
-          <div className="flex flex-col gap-3 rounded-lg border border-white/10 bg-[#070c12]/82 p-3 text-sm shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="outline" className="border-[var(--primary)]/35 text-[var(--primary)]">
-                {copy.statusBadge}
-              </Badge>
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#8ea0b5]">
-                {copy.statusLabel}
-              </span>
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
+        <Container className="relative pb-28 pt-20 md:pb-36 md:pt-28">
+          <div className="relative z-10 grid min-w-0 gap-12 lg:grid-cols-[0.62fr_1.38fr] lg:items-center">
+            <div className="min-w-0">
+              <h1 className="max-w-full text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.97] tracking-tight text-white md:max-w-3xl md:text-7xl">
+                {copy.heroTitle}
+              </h1>
+              <p className="mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-2xl md:text-lg md:leading-8">
+                {copy.heroDescription}
+              </p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <Button href="/platform">{copy.primaryCta}</Button>
+                <Button className="!border-white/14 !bg-white/[0.025] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/products" variant="secondary">
+                  {copy.secondaryCta}
+                </Button>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-2 font-mono text-xs text-[#8ea0b5]">
-              <span>{copy.statusItems[0]}</span>
-              <span className="text-white/30">/</span>
-              <span>{copy.statusItems[1]}</span>
-              <span className="text-white/30">/</span>
-              <span>{copy.statusItems[2]}</span>
-            </div>
-          </div>
-        </Container>
-        <Container className="relative pb-20 pt-12 md:pb-28 md:pt-16">
-          <div className="relative z-10 grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-            <div>
-            <Badge className="mb-5 rounded-full border border-[#206ae9]/25 bg-[#206ae9]/10 px-3 py-1 font-mono text-xs uppercase tracking-[0.18em] text-[#c8d8ff]">
-              {copy.heroBadge}
-            </Badge>
-            <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-7xl">
-              {copy.heroTitle}
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#a4b3c6]">
-              {copy.heroDescription}
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/vision">{copy.primaryCta}</Button>
-              <Button className="!border-white/14 !bg-white/[0.03] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/products" variant="secondary">
-                {copy.secondaryCta}
-              </Button>
-            </div>
-            <div className="mt-10 grid max-w-xl grid-cols-3 gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10">
-              {copy.heroStats.map(([value, label]) => (
-                <div className="bg-[#0b1117]/80 p-4" key={label}>
-                  <p className="font-mono text-2xl text-[#206ae9]">{value}</p>
-                  <p className="mt-1 text-xs leading-5 text-[#8ea0b5]">{label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-            <div className="relative lg:mt-8">
+            <div className="relative min-w-0">
               {useImagegenExperimentVisuals ? (
                 <ExperimentVisual
                   alt={copy.heroAlt}
-                  className="aspect-[16/9] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                  className="aspect-[16/9] lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
+                  imageClassName="object-contain"
                   priority
-                  src="/images/jobdone-ai/experiments/neon-home-edge-to-edge-black.png"
+                  src="/images/jobdone-ai/neon-home-edge-to-edge-black.png"
+                  variant="blend"
                 />
               ) : (
                 <HeroWorkspace copy={copy} />
@@ -739,6 +750,7 @@ export default async function Home({ params }: HomeProps) {
         </Container>
       </section>
 
+      <BusinessValueBand copy={copy} />
       <CoworkingSection copy={copy} />
       <PrimitiveGrid copy={copy} />
       <CollaborationFlow copy={copy} />

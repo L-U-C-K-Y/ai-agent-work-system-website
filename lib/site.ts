@@ -5,11 +5,9 @@ export const siteConfig = {
 };
 
 export const mainNavigation = [
-  { key: "aiDesks", href: "/products" },
-  { key: "platform", href: "/vision" },
-  { key: "solutions", href: "/support" },
-  { key: "governance", href: "/vision" },
-  { key: "resources", href: "/support" },
+  { key: "home", href: "/" },
+  { key: "solutions", href: "/products" },
+  { key: "platform", href: "/platform" },
   { key: "company", href: "/contact" },
 ] as const;
 

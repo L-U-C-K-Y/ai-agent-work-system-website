@@ -227,7 +227,7 @@ export default async function ProductsPage({ params }: PageProps) {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/support">{copy.primaryCta}</Button>
-              <Button className="!border-white/14 !bg-white/[0.03] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/vision" variant="secondary">
+              <Button className="!border-white/14 !bg-white/[0.03] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/platform" variant="secondary">
                 {copy.secondaryCta}
               </Button>
             </div>
@@ -237,7 +237,7 @@ export default async function ProductsPage({ params }: PageProps) {
               alt={copy.heroAlt}
               className="aspect-[16/9] lg:-mr-[16vw] lg:w-[calc(100%+16vw)]"
               priority
-              src="/images/jobdone-ai/experiments/neon-workspace-rooms.png"
+              src="/images/jobdone-ai/neon-workspace-rooms.png"
             />
           ) : (
             <MiniWorkspaceGraphic copy={copy} />
