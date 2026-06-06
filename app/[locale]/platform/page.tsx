@@ -35,6 +35,39 @@ const pageCopy = {
     architectureTitle: "One platform layer, seven connected primitives.",
     architectureDescription:
       "The system joins communication, autonomous action, workflow inputs, governed knowledge, structured records, approvals, and evidence.",
+    knowledgeRecordsTitle:
+      "Knowledge and records become the memory of the work system.",
+    knowledgeRecordsDescription:
+      "AI Coworkers and AI Automations can use approved source material, then save useful context and structured data back into governed systems of record.",
+    visualLabels: {
+      room: "work room",
+      financeRoom: "# finance",
+      message: "message",
+      handoff: "Atlas invoice handoff",
+      workCard: "work card",
+      createRecords: "Create asset records",
+      knowledge: "knowledge",
+      record: "record",
+      approval: "approval",
+      evidence: "evidence",
+      traceAttached: "Trace attached",
+      coworker: "AI Coworker",
+      automation: "AI Automation",
+      input: "input adapter",
+      runtime: "runtime",
+      accountable: "Accountable work object",
+      objectDetail: "context, owner, status, sources, approvals, output",
+      policy: "Policy v4",
+      vendor: "Vendor terms",
+      sop: "Inventory SOP",
+      assets: "Asset database",
+      vendorTable: "Vendor table",
+      approvalLog: "Approval log",
+      saved: "saved",
+      proposed: "proposed",
+      cited: "cited",
+      routed: "routed",
+    },
     platformSections: [
       {
         id: "work",
@@ -133,6 +166,39 @@ const pageCopy = {
     architectureTitle: "Eine Plattformebene, sieben verbundene Bausteine.",
     architectureDescription:
       "Das System verbindet Kommunikation, autonomes Handeln, Workflow-Inputs, gesteuertes Wissen, strukturierte Datensätze, Freigaben und Nachweise.",
+    knowledgeRecordsTitle:
+      "Wissen und Datensätze werden zum Gedächtnis des Arbeitssystems.",
+    knowledgeRecordsDescription:
+      "AI Coworker und AI Automatisierungen können freigegebene Quellen nutzen und nützlichen Kontext sowie strukturierte Daten in gesteuerte Systeme zurückspeichern.",
+    visualLabels: {
+      room: "Arbeitsraum",
+      financeRoom: "# finance",
+      message: "Nachricht",
+      handoff: "Atlas-Rechnungsübergabe",
+      workCard: "Work Card",
+      createRecords: "Asset-Datensätze erstellen",
+      knowledge: "Wissen",
+      record: "Datensatz",
+      approval: "Freigabe",
+      evidence: "Nachweis",
+      traceAttached: "Trace verbunden",
+      coworker: "AI Coworker",
+      automation: "AI Automatisierung",
+      input: "Input-Adapter",
+      runtime: "Runtime",
+      accountable: "Verantwortliches Arbeitsobjekt",
+      objectDetail: "Kontext, Owner, Status, Quellen, Freigaben, Output",
+      policy: "Richtlinie v4",
+      vendor: "Lieferantenbedingungen",
+      sop: "Inventory SOP",
+      assets: "Asset-Datenbank",
+      vendorTable: "Lieferantentabelle",
+      approvalLog: "Freigabeprotokoll",
+      saved: "gespeichert",
+      proposed: "vorgeschlagen",
+      cited: "zitiert",
+      routed: "geroutet",
+    },
     platformSections: [
       {
         id: "work",
@@ -226,6 +292,221 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function MiniNode({
+  label,
+  value,
+  tone = "blue",
+}: {
+  label: string;
+  value: string;
+  tone?: "blue" | "cyan" | "green" | "amber";
+}) {
+  const dot = {
+    blue: "bg-[#206ae9] shadow-[0_0_18px_rgba(32,106,233,0.55)]",
+    cyan: "bg-[#60efff] shadow-[0_0_18px_rgba(96,239,255,0.45)]",
+    green: "bg-[#21d07a] shadow-[0_0_18px_rgba(33,208,122,0.42)]",
+    amber: "bg-[#ffd166] shadow-[0_0_18px_rgba(255,209,102,0.36)]",
+  };
+
+  return (
+    <div className="rounded-md border border-white/10 bg-[#071019]/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+      <div className="flex items-center gap-2">
+        <span className={`size-2 rounded-full ${dot[tone]}`} />
+        <p className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-[#7f91a8]">
+          {label}
+        </p>
+      </div>
+      <p className="mt-2 text-sm font-semibold text-white">{value}</p>
+    </div>
+  );
+}
+
+function WorkRoomVisual({ copy }: { copy: PlatformCopy }) {
+  const labels = copy.visualLabels;
+
+  return (
+    <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(180deg,rgba(11,22,35,0.86),rgba(4,7,11,0.94))] p-4 shadow-[0_28px_90px_rgba(0,0,0,0.34)]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_58%_28%,rgba(32,106,233,0.2),transparent_38%)]" />
+      <div className="relative grid min-h-[420px] gap-4 md:grid-cols-[0.78fr_1fr_0.78fr]">
+        <div className="grid content-start gap-3">
+          <div className="rounded-md border border-white/10 bg-black/28 p-3">
+            <p className="font-mono text-[0.64rem] uppercase tracking-[0.16em] text-[#60efff]">
+              {labels.room}
+            </p>
+            <p className="mt-2 text-sm font-semibold text-white">
+              {labels.financeRoom}
+            </p>
+          </div>
+          <MiniNode label={labels.coworker} value="Finance AI" tone="blue" />
+          <MiniNode label={labels.coworker} value="Inventory AI" tone="cyan" />
+          <MiniNode label={labels.approval} value="Controller" tone="amber" />
+        </div>
+        <div className="relative flex flex-col justify-center gap-3">
+          <span className="absolute left-1/2 top-10 h-[calc(100%-5rem)] w-px -translate-x-1/2 bg-[linear-gradient(180deg,transparent,#206ae9,transparent)]" />
+          {[labels.message, labels.workCard, labels.runtime].map((label, index) => (
+            <div
+              className="relative z-10 rounded-lg border border-[#206ae9]/24 bg-[#081522]/88 p-4"
+              key={label}
+            >
+              <p className="font-mono text-[0.64rem] uppercase tracking-[0.14em] text-[#8fb5ff]">
+                {label}
+              </p>
+              <p className="mt-2 text-sm font-semibold text-white">
+                {index === 0
+                  ? labels.handoff
+                  : index === 1
+                    ? labels.createRecords
+                    : labels.traceAttached}
+              </p>
+              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/8">
+                <div
+                  className="h-full rounded-full bg-[#206ae9]"
+                  style={{ width: `${54 + index * 18}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="grid content-center gap-3">
+          <MiniNode label={labels.knowledge} value={labels.cited} tone="green" />
+          <MiniNode label={labels.record} value={labels.proposed} tone="cyan" />
+          <MiniNode label={labels.evidence} value={labels.saved} tone="blue" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PlatformGraphVisual({ copy }: { copy: PlatformCopy }) {
+  const labels = copy.visualLabels;
+  const nodes = [
+    [labels.room, copy.platformSections[0].title, "left-[8%] top-[18%]", "blue"],
+    [labels.coworker, copy.platformSections[1].title, "right-[9%] top-[17%]", "cyan"],
+    [labels.automation, copy.platformSections[2].title, "left-[9%] bottom-[20%]", "green"],
+    [labels.knowledge, copy.platformSections[3].title, "right-[7%] bottom-[23%]", "blue"],
+    [labels.record, copy.platformSections[4].title, "left-[38%] bottom-[7%]", "cyan"],
+    [labels.approval, copy.platformSections[5].title, "left-[39%] top-[6%]", "amber"],
+  ] as const;
+
+  return (
+    <div className="relative mx-auto mt-12 aspect-[16/8.2] w-full max-w-5xl overflow-hidden rounded-lg border border-white/10 bg-[radial-gradient(circle_at_50%_50%,rgba(32,106,233,0.2),rgba(5,8,12,0.94)_48%,rgba(3,6,9,0.98))]">
+      <svg
+        aria-hidden="true"
+        className="absolute inset-0 size-full opacity-70"
+        viewBox="0 0 1000 512"
+      >
+        <defs>
+          <linearGradient id="platform-line" x1="0" x2="1" y1="0" y2="1">
+            <stop stopColor="#206ae9" stopOpacity="0" />
+            <stop offset="0.5" stopColor="#206ae9" stopOpacity="0.72" />
+            <stop offset="1" stopColor="#60efff" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        {[
+          "M500 256 C300 120 210 106 115 124",
+          "M500 256 C700 120 790 104 890 126",
+          "M500 256 C300 386 210 406 116 394",
+          "M500 256 C704 386 798 398 900 382",
+          "M500 256 C486 150 486 86 500 48",
+          "M500 256 C498 344 498 424 500 468",
+        ].map((d) => (
+          <path d={d} fill="none" key={d} stroke="url(#platform-line)" strokeWidth="2" />
+        ))}
+      </svg>
+      <div className="absolute left-1/2 top-1/2 z-10 w-[min(19rem,48vw)] -translate-x-1/2 -translate-y-1/2 rounded-xl border border-[#60efff]/28 bg-[#07111b]/92 p-5 text-center shadow-[0_0_54px_rgba(32,106,233,0.22)]">
+        <p className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-[#60efff]">
+          {labels.workCard}
+        </p>
+        <h3 className="mt-3 text-xl font-semibold text-white">
+          {labels.accountable}
+        </h3>
+        <p className="mt-3 text-xs leading-5 text-[#9aabbf]">
+          {labels.objectDetail}
+        </p>
+      </div>
+      {nodes.map(([label, value, position, tone]) => (
+        <div
+          className={`absolute z-10 hidden w-40 rounded-lg border border-white/10 bg-[#081019]/88 p-3 shadow-[0_18px_50px_rgba(0,0,0,0.28)] md:block ${position}`}
+          key={`${label}-${value}`}
+        >
+          <MiniNode label={label} tone={tone} value={value} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function DeepDiveVisual({
+  copy,
+  variant,
+}: {
+  copy: PlatformCopy;
+  variant: "coworker" | "automation";
+}) {
+  const labels = copy.visualLabels;
+  const isCoworker = variant === "coworker";
+  const steps = isCoworker
+    ? [labels.message, labels.knowledge, labels.record, labels.evidence]
+    : [labels.input, labels.workCard, labels.knowledge, labels.approval];
+
+  return (
+    <div className="rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
+      <div className="grid gap-3 sm:grid-cols-4">
+        {steps.map((step, index) => (
+          <div className="relative" key={step}>
+            {index > 0 ? (
+              <span className="absolute right-[calc(100%-0.3rem)] top-8 hidden h-px w-[calc(100%-0.75rem)] bg-[linear-gradient(90deg,transparent,#206ae9)] sm:block" />
+            ) : null}
+            <div className="relative z-10 min-h-28 rounded-md border border-[#206ae9]/22 bg-[#0a1624] p-3">
+              <p className="font-mono text-[0.62rem] text-[#60efff]">
+                {String(index + 1).padStart(2, "0")}
+              </p>
+              <p className="mt-5 text-sm font-semibold text-white">{step}</p>
+              <p className="mt-1 text-xs text-[#8ea0b5]">
+                {index === 0
+                  ? labels.routed
+                  : index === 1
+                    ? labels.cited
+                    : index === 2
+                      ? labels.proposed
+                      : labels.saved}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function KnowledgeRecordVisual({ copy }: { copy: PlatformCopy }) {
+  const labels = copy.visualLabels;
+
+  return (
+    <div className="rounded-lg border border-white/10 bg-[#071019]/82 p-4 shadow-[0_26px_80px_rgba(0,0,0,0.28)]">
+      <div className="grid gap-3 md:grid-cols-[1fr_0.45fr_1fr] md:items-center">
+        <div className="grid gap-3">
+          <MiniNode label={labels.knowledge} value={labels.policy} tone="green" />
+          <MiniNode label={labels.knowledge} value={labels.vendor} tone="green" />
+          <MiniNode label={labels.knowledge} value={labels.sop} tone="green" />
+        </div>
+        <div className="grid place-items-center gap-2 py-2">
+          <span className="h-16 w-px bg-[linear-gradient(180deg,transparent,#60efff,transparent)] md:h-px md:w-full" />
+          <div className="rounded-full border border-[#60efff]/30 bg-[#60efff]/10 px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.12em] text-[#c7fbff]">
+            {labels.workCard}
+          </div>
+          <span className="h-16 w-px bg-[linear-gradient(180deg,transparent,#206ae9,transparent)] md:h-px md:w-full" />
+        </div>
+        <div className="grid gap-3">
+          <MiniNode label={labels.record} value={labels.assets} tone="cyan" />
+          <MiniNode label={labels.record} value={labels.vendorTable} tone="blue" />
+          <MiniNode label={labels.record} value={labels.approvalLog} tone="amber" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function SharedWorkSection({ copy }: { copy: PlatformCopy }) {
   return (
     <section
@@ -262,13 +543,7 @@ function SharedWorkSection({ copy }: { copy: PlatformCopy }) {
           </div>
         </div>
         <div className="relative min-w-0">
-          <ExperimentVisual
-            alt=""
-            className="aspect-[16/10] border-0 shadow-none"
-            imageClassName="object-contain"
-            src="/images/jobdone-ai/neon-workspace-rooms.png"
-            variant="blend"
-          />
+          <WorkRoomVisual copy={copy} />
         </div>
       </Container>
     </section>
@@ -288,7 +563,8 @@ function PlatformArchitecture({ copy }: { copy: PlatformCopy }) {
             {copy.architectureDescription}
           </p>
         </div>
-        <div className="mt-12 grid gap-4 lg:grid-cols-7">
+        <PlatformGraphVisual copy={copy} />
+        <div className="mt-8 grid gap-4 lg:grid-cols-7">
           {copy.platformSections.map((section, index) => (
             <article
               className="relative overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(180deg,rgba(13,24,37,0.82),rgba(6,10,15,0.92))] p-5 lg:col-span-1"
@@ -350,7 +626,13 @@ function DeepDiveSection({ copy }: { copy: PlatformCopy }) {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6 pt-0 md:p-8 md:pt-0">
-                <p className="text-base leading-7 text-[#a4b3c6]">
+                <DeepDiveVisual
+                  copy={copy}
+                  variant={
+                    section.id === "ai-coworkers" ? "coworker" : "automation"
+                  }
+                />
+                <p className="mt-6 text-base leading-7 text-[#a4b3c6]">
                   {description}
                 </p>
                 <div className="mt-8 grid gap-3">
@@ -388,15 +670,14 @@ function KnowledgeRecordsSection({ copy }: { copy: PlatformCopy }) {
       <Container className="relative grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">
-            Knowledge and records become the memory of the work system.
+            {copy.knowledgeRecordsTitle}
           </h2>
           <p className="mt-5 max-w-xl text-base leading-7 text-[#9aabbf]">
-            AI Coworkers and AI Automations can use approved source material,
-            then save useful context and structured data back into governed
-            systems of record.
+            {copy.knowledgeRecordsDescription}
           </p>
         </div>
         <div className="grid gap-4">
+          <KnowledgeRecordVisual copy={copy} />
           {sections.map((section) => (
             <article
               className="rounded-lg border border-white/10 bg-[#0b1117]/86 p-5 backdrop-blur-md"
