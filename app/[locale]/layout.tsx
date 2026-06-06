@@ -135,12 +135,6 @@ export async function generateMetadata({
       ],
       shortcut: "/favicon.ico",
     },
-    alternates: {
-      languages: {
-        en: "/",
-        de: "/de",
-      },
-    },
     openGraph: {
       title: t("name"),
       description: t("description"),
