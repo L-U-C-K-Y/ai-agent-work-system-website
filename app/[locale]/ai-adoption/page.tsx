@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import type { ReactNode } from "react";
 
@@ -18,6 +19,8 @@ const pageCopy = {
     title: "Adopt AI agents where real work happens.",
     description:
       "JobDone AI helps teams move from disconnected AI experiments to governed workflows where people, AI Coworkers, and AI Automations coordinate inside one operating layer.",
+    heroAlt:
+      "Abstract glass work graph connecting business signals, AI Coworkers, AI Automations, knowledge, records, approvals, and evidence",
     primaryCta: "Request access",
     secondaryCta: "Explore platform",
     heroVisual: {
@@ -118,6 +121,8 @@ const pageCopy = {
     title: "KI-Agenten dort einführen, wo echte Arbeit passiert.",
     description:
       "JobDone AI hilft Teams, von getrennten KI-Experimenten zu gesteuerten Workflows zu kommen, in denen Menschen, AI Coworker und AI Automatisierungen in einer operativen Ebene zusammenarbeiten.",
+    heroAlt:
+      "Abstrakter Glass Work Graph verbindet Business-Signale, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise",
     primaryCta: "Zugang anfragen",
     secondaryCta: "Plattform erkunden",
     heroVisual: {
@@ -245,94 +250,23 @@ function GlassPanel({
   );
 }
 
-function HeroAdoptionVisual({ copy }: { copy: AdoptionCopy }) {
-  const labels = copy.heroVisual;
-  const sideNodes = [
-    labels.signal,
-    labels.coworker,
-    labels.automation,
-    labels.records,
-    labels.approvals,
-    labels.evidence,
-  ];
-
+function HeroAdoptionVisual({ alt }: { alt: string }) {
   return (
-    <GlassPanel className="relative min-h-[25rem] overflow-hidden p-5">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_32%,rgba(32,106,233,0.28),transparent_36%),linear-gradient(180deg,rgba(8,17,27,0.2),rgba(1,3,5,0.66))]" />
-      <svg
-        aria-hidden="true"
-        className="absolute inset-0 size-full opacity-70"
-        viewBox="0 0 760 480"
-      >
-        <defs>
-          <linearGradient id="adoption-hero-line" x1="0" x2="1" y1="0" y2="1">
-            <stop stopColor="#206ae9" stopOpacity="0" />
-            <stop offset="0.5" stopColor="#60efff" stopOpacity="0.8" />
-            <stop offset="1" stopColor="#206ae9" stopOpacity="0" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M92 130 C235 128 273 240 380 240 C487 240 526 128 668 130"
-          fill="none"
-          stroke="url(#adoption-hero-line)"
-          strokeWidth="2"
-        />
-        <path
-          d="M92 350 C235 352 273 240 380 240 C487 240 526 352 668 350"
-          fill="none"
-          stroke="url(#adoption-hero-line)"
-          strokeWidth="2"
-        />
-        <path
-          d="M380 60 C380 168 380 196 380 240 C380 284 380 314 380 420"
-          fill="none"
-          stroke="url(#adoption-hero-line)"
-          strokeWidth="2"
-        />
-      </svg>
-      <div className="relative grid min-h-[22rem] place-items-center">
-        <div className="w-full max-w-sm rounded-xl border border-[#60efff]/24 bg-[#05080c]/86 p-5 text-center shadow-[0_0_70px_rgba(32,106,233,0.25)]">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-[#60efff]">
-            {labels.mapping}
-          </p>
-          <h2 className="mt-3 text-xl font-semibold text-white">
-            {labels.workspace}
-          </h2>
-          <div className="mt-5 grid grid-cols-2 gap-2">
-            {[labels.coworker, labels.automation, labels.records, labels.approvals].map(
-              (label) => (
-                <div
-                  className="rounded-md border border-white/10 bg-white/[0.035] px-3 py-2 text-xs font-medium text-[#d7e7ff]"
-                  key={label}
-                >
-                  {label}
-                </div>
-              ),
-            )}
-          </div>
-        </div>
-        {sideNodes.map((label, index) => {
-          const positions = [
-            "left-2 top-7",
-            "right-4 top-8",
-            "left-4 bottom-8",
-            "right-3 bottom-8",
-            "left-[38%] top-1",
-            "left-[38%] bottom-1",
-          ];
-
-          return (
-            <div
-              className={`absolute hidden min-w-32 rounded-lg border border-white/10 bg-[#071019]/88 p-3 text-xs font-semibold text-white md:block ${positions[index]}`}
-              key={`${label}-${index}`}
-            >
-              <span className="mb-2 block size-1.5 rounded-full bg-[#60efff] shadow-[0_0_16px_rgba(96,239,255,0.65)]" />
-              {label}
-            </div>
-          );
-        })}
-      </div>
-    </GlassPanel>
+    <div className="relative mt-4 min-h-[18rem] overflow-hidden lg:mt-0 lg:-mr-14 lg:min-h-[34rem]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_50%,rgba(32,106,233,0.18),transparent_42%)]" />
+      <Image
+        alt={alt}
+        className="absolute inset-0 size-full object-cover object-[62%_58%] opacity-95 [mask-image:linear-gradient(90deg,transparent_0%,black_16%,black_88%,transparent_100%)] lg:object-center"
+        height={1024}
+        priority
+        src="/images/jobdone-ai/neon-ai-adoption-hero.png"
+        width={1792}
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,#020508_0%,transparent_18%,transparent_82%,#020508_100%),linear-gradient(180deg,#020508_0%,transparent_18%,transparent_78%,#020508_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(180deg,transparent,#020508)]" />
+      <div className="absolute inset-x-0 top-0 h-20 bg-[linear-gradient(180deg,#020508,transparent)]" />
+      <div className="absolute right-[16%] top-[45%] hidden size-2 rounded-full bg-[#60efff] shadow-[0_0_32px_10px_rgba(96,239,255,0.22)] md:block" />
+    </div>
   );
 }
 
@@ -491,7 +425,7 @@ export default async function AIAdoptionPage({ params }: PageProps) {
               </Button>
             </div>
           </div>
-          <HeroAdoptionVisual copy={copy} />
+          <HeroAdoptionVisual alt={copy.heroAlt} />
         </Container>
       </section>
 
