@@ -6,15 +6,9 @@
   },
   "Navigation": {
     "home": "Home",
-    "aiDesks": "Workspaces",
     "platform": "Platform",
     "solutions": "Use cases",
-    "governance": "Governance",
-    "resources": "Resources",
     "company": "Company",
-    "products": "Workspaces",
-    "vision": "Platform",
-    "support": "Use cases",
     "contact": "Contact",
     "getInTouch": "Request Access",
     "openMenu": "Open navigation menu",
@@ -27,36 +21,6 @@
     "german": "DE"
   },
   "MegaMenu": {
-    "workspaces": {
-      "eyebrow": "Workspaces",
-      "title": "Rooms for every team that shares work with AI coworkers.",
-      "links": {
-        "finance": {
-          "title": "Finance Ops",
-          "description": "Invoices, approvals, vendor records, and close tasks."
-        },
-        "inventory": {
-          "title": "Inventory Ops",
-          "description": "Assets, replenishment, exceptions, and handoffs."
-        },
-        "people": {
-          "title": "People Ops",
-          "description": "Onboarding, policy requests, and employee documents."
-        },
-        "support": {
-          "title": "Support Ops",
-          "description": "Case triage, customer context, and escalation paths."
-        },
-        "product": {
-          "title": "Product Ops",
-          "description": "Feedback, bugs, releases, incidents, and evidence."
-        },
-        "revenue": {
-          "title": "Revenue Ops",
-          "description": "Research, CRM hygiene, and follow-up preparation."
-        }
-      }
-    },
     "platform": {
       "eyebrow": "Platform",
       "title": "The operating layer behind human and AI work.",
@@ -70,7 +34,7 @@
           "description": "Give agents identity, context, tools, memory, and visibility."
         },
         "governance": {
-          "title": "Governance",
+          "title": "Controls",
           "description": "Keep approvals, permissions, evidence, and controls attached."
         }
       }
@@ -127,12 +91,9 @@
     "tagline": "Collaborative work system for human and agent teams.",
     "explore": "Explore",
     "company": "Company",
-    "aiDesks": "Workspaces",
     "platform": "Platform",
     "system": "System",
     "solutions": "Use cases",
-    "governance": "Governance",
-    "resources": "Resources",
     "about": "About",
     "privacy": "Privacy",
     "terms": "Terms",
@@ -140,14 +101,6 @@
     "rights": "(c) {year} JobDone AI. All rights reserved.",
     "madeWithCare": "Human and agent work, fully traceable.",
     "links": {
-      "workspace": {
-        "finance": "Finance",
-        "inventory": "Inventory",
-        "hr": "HR",
-        "support": "Support",
-        "product": "Product",
-        "revenue": "Revenue"
-      },
       "platform": {
         "work": "Work",
         "aiCoworkers": "AI coworkers",
@@ -157,25 +110,13 @@
         "approvals": "Approvals",
         "auditEvidence": "Audit and evidence"
       },
-      "solutions": {
-        "byFunction": "By Function",
-        "byProcess": "By Process",
-        "useCases": "Use Cases",
-        "industries": "Industries"
-      },
-      "governance": {
-        "approvals": "Approvals",
-        "evidence": "Evidence trail",
-        "audit": "Audit readiness",
-        "security": "Security",
-        "compliance": "Compliance",
-        "controls": "Controls"
-      },
-      "resources": {
-        "documentation": "Documentation",
-        "blog": "Blog",
-        "guides": "Guides",
-        "webinars": "Webinars"
+      "useCases": {
+        "finance": "Finance",
+        "inventory": "Inventory",
+        "hr": "HR",
+        "support": "Support",
+        "product": "Product",
+        "revenue": "Revenue"
       }
     }
   },
@@ -425,36 +366,6 @@
       }
     ]
   },
-  "Home": {
-    "heroAlt": "JobDone AI collaborative workspace with human and AI coworkers.",
-    "heroTitle": "A collaborative work system for humans and AI agents.",
-    "heroDescription": "JobDone AI gives teams one place to chat with AI coworkers, turn messages into rich work cards, run automations, and jump directly into the knowledge and records behind every outcome.",
-    "exploreApps": "See the system",
-    "contactUs": "Explore workspaces",
-    "productsTitle": "Work happens in shared rooms.",
-    "productsDescription": "Channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity in one focused operating surface.",
-    "viewAllApps": "View workspaces",
-    "principlesTitle": "Designed for accountable AI work.",
-    "principlesDescription": "The system keeps people close to judgment while AI coworkers handle repeatable coordination with context and traceability.",
-    "interludeAlt": "Abstract JobDone AI work graph.",
-    "interludeEyebrow": "Coworking with context",
-    "interludeTitle": "Chat, work cards, knowledge, and records stay connected.",
-    "interludeCopy": "Every message can become work, every work item can open the right data, and every agent action remains visible to the team.",
-    "ctaTitle": "Put humans and AI agents in the same work system.",
-    "ctaCopy": "Request access to see how JobDone AI coordinates work, records, approvals, and agent activity in one operating workspace.",
-    "ctaButton": "Request access"
-  },
-  "ProductsPage": {
-    "metadataTitle": "Workspaces",
-    "metadataDescription": "Department-specific workspaces for human and AI agent teams.",
-    "heroTitle": "Operating rooms for human and AI work.",
-    "heroDescription": "Each workspace brings channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity into one focused operating surface.",
-    "heroAlt": "JobDone AI workspace rooms with agent status and work cards.",
-    "learnMore": "Learn more",
-    "viewDetails": "View workspace",
-    "principlesTitle": "Department-specific rooms, one shared system.",
-    "principlesDescription": "Start where work already lives, then connect the knowledge, records, and automations agents need to complete it."
-  },
   "ProductDetail": {
     "capabilitiesEyebrow": "Workspace capabilities",
     "capabilitiesTitle": "Everything the team needs to move from message to completed work.",
@@ -477,87 +388,6 @@
       "automation": "Automation"
     }
   },
-  "Vision": {
-    "metadataTitle": "Platform",
-    "metadataDescription": "The work graph behind every JobDone AI agent action.",
-    "heroTitle": "The work graph behind every agent action.",
-    "heroDescription": "JobDone AI connects coworking, work objects, AI runtime, governed knowledge, record databases, approvals, and evidence into one operating layer.",
-    "heroAlt": "Layered JobDone AI platform architecture.",
-    "philosophyTitle": "Agents are coworkers, not disconnected scripts.",
-    "philosophyDescription": "The platform gives agents a place to work with people, cite context, update records, and stop for review when judgment is required.",
-    "principles": [
-      {
-        "title": "Visible",
-        "copy": "People see what agents are doing, what they need, and what they changed."
-      },
-      {
-        "title": "Contextual",
-        "copy": "Knowledge citations and database rows are directly attached to the work."
-      },
-      {
-        "title": "Governed",
-        "copy": "Tools, records, approvals, and audit define what agents can do."
-      },
-      {
-        "title": "Composable",
-        "copy": "Reusable work patterns, skills, automations, and records compound over time."
-      }
-    ],
-    "panelAlt": "JobDone AI platform layer graphic.",
-    "panelTitle": "One shared operating layer for work.",
-    "panelCopy": "Teams get collaboration, structured work, AI coworkers, knowledge, records, and governance in the same place.",
-    "panelButton": "Request access"
-  },
-  "Support": {
-    "metadataTitle": "Use cases",
-    "metadataDescription": "How JobDone AI coordinates real work across teams.",
-    "heroTitle": "Real workflows, shared by people and AI coworkers.",
-    "heroDescription": "Turn messages, forms, documents, and business-tool signals into tracked work with the right context, records, approvals, and automations attached.",
-    "heroAlt": "JobDone AI use case flow.",
-    "heroButton": "Request access",
-    "productsTitle": "Common operating patterns",
-    "productsDescription": "Each pattern keeps the conversation, work card, knowledge, records, and automation history together.",
-    "productCards": {},
-    "pathsTitle": "Use case entry points",
-    "pathsDescription": "Start with the work your team already handles every day.",
-    "quickActions": [
-      {
-        "label": "Finance operations",
-        "topic": "finance"
-      },
-      {
-        "label": "Inventory operations",
-        "topic": "inventory"
-      },
-      {
-        "label": "People operations",
-        "topic": "hr"
-      },
-      {
-        "label": "Support operations",
-        "topic": "support"
-      }
-    ],
-    "nextTitle": "What the system does",
-    "nextDescription": "JobDone AI routes work through shared context, structured objects, and visible review gates.",
-    "nextSteps": [
-      {
-        "title": "Capture the request",
-        "copy": "A message, form, email, document, or system signal opens a shared work thread."
-      },
-      {
-        "title": "Attach context",
-        "copy": "Agents cite knowledge, inspect records, draft actions, and ask for review where needed."
-      },
-      {
-        "title": "Complete with evidence",
-        "copy": "Approved work updates records, closes loops, and leaves an auditable trail."
-      }
-    ],
-    "ctaTitle": "See the work system in motion.",
-    "ctaCopy": "Request access to discuss which workflows, records, and agent coworkers belong in your first workspace.",
-    "ctaButton": "Request access"
-  },
   "Contact": {
     "metadataTitle": "Contact",
     "metadataDescription": "Request access, a pilot conversation, or a strategic partnership discussion with JobDone AI.",
@@ -578,15 +408,40 @@
       "description": "A compact control plane for moving from business signal to a scoped work system.",
       "badge": "Preview queue",
       "metrics": [
-        ["records", "attached"],
-        ["agents", "visible"],
-        ["approval", "scoped"]
+        [
+          "records",
+          "attached"
+        ],
+        [
+          "agents",
+          "visible"
+        ],
+        [
+          "approval",
+          "scoped"
+        ]
       ],
       "steps": [
-        ["01", "Signal", "Business context, workflow shape, and priority are captured."],
-        ["02", "Map", "AI coworker roles, records, tools, and approvals are modeled."],
-        ["03", "Scope", "A preview path is assembled with boundaries and ownership."],
-        ["04", "Open", "The right work system surface is prepared for access."]
+        [
+          "01",
+          "Signal",
+          "Business context, workflow shape, and priority are captured."
+        ],
+        [
+          "02",
+          "Map",
+          "AI coworker roles, records, tools, and approvals are modeled."
+        ],
+        [
+          "03",
+          "Scope",
+          "A preview path is assembled with boundaries and ownership."
+        ],
+        [
+          "04",
+          "Open",
+          "The right work system surface is prepared for access."
+        ]
       ],
       "consoleLines": [
         "workspace_graph: hydrated",
@@ -658,13 +513,6 @@
         "paragraphs": [
           "JobDone AI, Zurich, Switzerland is responsible for the processing described in this Privacy Policy unless a separate agreement says otherwise.",
           "For privacy requests, access requests, deletion requests, or questions about this policy, contact us through the <contact>JobDone AI contact form</contact>."
-        ]
-      },
-      "splitpop": {
-        "title": "2. Closed-preview scope",
-        "paragraphs": [
-          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
-          "This policy covers the public website and preview-related communications. Any pilot or customer deployment may be governed by separate written agreements, security terms, and data-processing terms."
         ]
       },
       "collect": {
@@ -757,6 +605,13 @@
         "paragraphs": [
           "We may update this Privacy Policy when our service, data practices, providers, or legal requirements change. The updated version will be posted on this page with a new last-updated date."
         ]
+      },
+      "preview": {
+        "title": "2. Closed-preview scope",
+        "paragraphs": [
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "This policy covers the public website and preview-related communications. Any pilot or customer deployment may be governed by separate written agreements, security terms, and data-processing terms."
+        ]
       }
     }
   },
@@ -780,13 +635,6 @@
         "paragraphs": [
           "By accessing or using this website, contact form, preview request flow, or related feature, you agree to these Terms of Service and the <privacy>JobDone AI Privacy Policy</privacy>.",
           "If you use the website on behalf of an organization, you confirm that you have authority to act for that organization."
-        ]
-      },
-      "splitpop": {
-        "title": "3. Closed preview",
-        "paragraphs": [
-          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
-          "Submitting a request does not guarantee access, a pilot, a partnership, feature availability, pricing, timing, or any commercial relationship. Any pilot or deployment may require separate written agreements."
         ]
       },
       "eligibility": {
@@ -822,20 +670,6 @@
         "paragraphs": [
           "You keep ownership of information you submit through the website. You grant JobDone AI the limited rights needed to receive, process, review, respond to, and store that information for the purposes described in these terms and our Privacy Policy.",
           "You are solely responsible for the information you submit and for ensuring you have permission to share it."
-        ]
-      },
-      "file": {
-        "title": "8. Website information",
-        "paragraphs": [
-          "Website copy, diagrams, mockups, product descriptions, and preview materials are provided for general informational purposes.",
-          "Because JobDone AI is in closed preview, features, positioning, availability, pricing, integrations, and product details may change."
-        ]
-      },
-      "splitpopProduct": {
-        "title": "9. AI outputs and workflow discussions",
-        "paragraphs": [
-          "Any examples, mockups, workflow discussions, agent behavior descriptions, or system diagrams on this website are illustrative and do not create a warranty or commitment.",
-          "You are responsible for evaluating whether any workflow, automation, AI output, integration, or record update is appropriate for your organization and legal obligations."
         ]
       },
       "purchases": {
@@ -895,6 +729,27 @@
         "title": "18. Changes to these terms",
         "paragraphs": [
           "We may update these terms when our service, business, providers, legal requirements, or risk controls change. The updated version will be posted on this page with a new last-updated date. Continued use of the website after updated terms become effective means you accept the updated terms."
+        ]
+      },
+      "preview": {
+        "title": "3. Closed preview",
+        "paragraphs": [
+          "JobDone AI is currently in closed preview and is not generally available as a public self-serve service.",
+          "Submitting a request does not guarantee access, a pilot, a partnership, feature availability, pricing, timing, or any commercial relationship. Any pilot or deployment may require separate written agreements."
+        ]
+      },
+      "websiteInfo": {
+        "title": "8. Website information",
+        "paragraphs": [
+          "Website copy, diagrams, mockups, product descriptions, and preview materials are provided for general informational purposes.",
+          "Because JobDone AI is in closed preview, features, positioning, availability, pricing, integrations, and product details may change."
+        ]
+      },
+      "aiOutputs": {
+        "title": "9. AI outputs and workflow discussions",
+        "paragraphs": [
+          "Any examples, mockups, workflow discussions, agent behavior descriptions, or system diagrams on this website are illustrative and do not create a warranty or commitment.",
+          "You are responsible for evaluating whether any workflow, automation, AI output, integration, or record update is appropriate for your organization and legal obligations."
         ]
       }
     }

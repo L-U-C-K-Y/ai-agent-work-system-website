@@ -7,7 +7,7 @@ import { legalNavigation } from "@/lib/site";
 
 type LinkHref = ComponentProps<typeof Link>["href"];
 
-const workspaceLinks = [
+const useCaseLinks = [
   ["finance", { pathname: "/products/[slug]", params: { slug: "finance" } }],
   [
     "inventory",
@@ -47,10 +47,10 @@ export function SiteFooter() {
             {footer("solutions")}
           </h2>
           <ul className="mt-2 flex flex-col gap-1.5 text-[0.68rem] leading-4 text-[#8ea0b5]">
-            {workspaceLinks.map(([label, href]) => (
+            {useCaseLinks.map(([label, href]) => (
               <li key={label}>
                 <Link className="hover:text-white" href={href}>
-                  {footer(`links.workspace.${label}`)}
+                  {footer(`links.useCases.${label}`)}
                 </Link>
               </li>
             ))}

@@ -21,13 +21,13 @@ const useImagegenExperimentVisuals = true;
 
 const pageCopy = {
   en: {
-    metadataTitle: "Workspaces",
-    metadataDescription: "Workspace-first operating rooms for human and AI coworking.",
-    eyebrow: "Workspaces",
+    metadataTitle: "Use cases",
+    metadataDescription: "Department-specific use cases for human and AI agent teams.",
+    eyebrow: "Use cases",
     title: "Operating rooms for human and AI work.",
     description:
       "Each workspace brings channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity into one focused operating surface.",
-    primaryCta: "See a workspace flow",
+    primaryCta: "View use cases",
     secondaryCta: "View platform",
     heroAlt:
       "Connected JobDone AI workspace rooms for finance, support, and product operations",
@@ -35,7 +35,7 @@ const pageCopy = {
     live: "live",
     sectionEyebrow: "Start where work already lives",
     sectionTitle: "Department-specific rooms, one shared system.",
-    matrixEyebrow: "workspace runtime",
+    matrixEyebrow: "use case runtime",
     matrixTitle: "Every room ships with the same operating primitives.",
     matrixDescription:
       "Teams can start with one department and keep the same model as more workflows move into the system.",
@@ -58,17 +58,17 @@ const pageCopy = {
       ["Knowledge", "Grounding layer", "approved citations"],
       ["Records", "Data layer", "drafts and updates"],
       ["Automations", "Process layer", "repeatable handoffs"],
-      ["Governance", "Control layer", "approval and audit"],
+      ["Approvals", "Control layer", "approval and audit"],
     ],
   },
   de: {
-    metadataTitle: "Workspaces",
-    metadataDescription: "Workspace-first Operationsräume für menschliche und KI-Arbeit.",
-    eyebrow: "Workspaces",
+    metadataTitle: "Anwendungsfälle",
+    metadataDescription: "Abteilungsspezifische Anwendungsfälle für Teams aus Menschen und KI-Agenten.",
+    eyebrow: "Anwendungsfälle",
     title: "Operationsräume für menschliche und KI-Arbeit.",
     description:
       "Jeder Workspace bündelt Channels, AI Coworker, Work Cards, Automatisierungen, Wissen, Datensätze, Freigaben und Aktivität in einer fokussierten Arbeitsoberfläche.",
-    primaryCta: "Workspace-Flow ansehen",
+    primaryCta: "Anwendungsfälle ansehen",
     secondaryCta: "Plattform ansehen",
     heroAlt:
       "Verbundene JobDone AI Workspace-Räume für Finance, Support und Product Operations",
@@ -76,7 +76,7 @@ const pageCopy = {
     live: "live",
     sectionEyebrow: "Dort starten, wo Arbeit bereits entsteht",
     sectionTitle: "Abteilungsspezifische Räume, ein gemeinsames System.",
-    matrixEyebrow: "Workspace Runtime",
+    matrixEyebrow: "Anwendungsfall-Runtime",
     matrixTitle: "Jeder Raum bringt dieselben operativen Bausteine mit.",
     matrixDescription:
       "Teams können mit einer Abteilung starten und dasselbe Modell beibehalten, wenn weitere Workflows ins System wechseln.",
@@ -99,7 +99,7 @@ const pageCopy = {
       ["Wissen", "Grounding-Ebene", "freigegebene Zitate"],
       ["Datensätze", "Datenebene", "Entwürfe und Updates"],
       ["Automatisierungen", "Prozessebene", "wiederholbare Übergaben"],
-      ["Governance", "Kontrollebene", "Freigabe und Audit"],
+      ["Freigaben", "Kontrollebene", "Freigabe und Audit"],
     ],
   },
 } as const;

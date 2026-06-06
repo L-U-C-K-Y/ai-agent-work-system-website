@@ -612,7 +612,7 @@ function BusinessValueBand({ copy }: { copy: HomeCopy }) {
   );
 }
 
-function GovernanceSection({ copy }: { copy: HomeCopy }) {
+function ControlsSection({ copy }: { copy: HomeCopy }) {
   return (
     <section className="bg-[#080d12] py-20 md:py-24">
       <Container>
@@ -754,7 +754,7 @@ export default async function Home({ params }: HomeProps) {
       <CoworkingSection copy={copy} />
       <PrimitiveGrid copy={copy} />
       <CollaborationFlow copy={copy} />
-      <GovernanceSection copy={copy} />
+      <ControlsSection copy={copy} />
       <FinalCta copy={copy} />
     </main>
   );

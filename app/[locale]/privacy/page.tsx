@@ -93,9 +93,9 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
             <p>{t.rich("sections.responsible.paragraphs.1", richLinks)}</p>
           </Section>
 
-          <Section title={t("sections.splitpop.title")}>
-            <p>{t.rich("sections.splitpop.paragraphs.0", richLinks)}</p>
-            <p>{t("sections.splitpop.paragraphs.1")}</p>
+          <Section title={t("sections.preview.title")}>
+            <p>{t.rich("sections.preview.paragraphs.0", richLinks)}</p>
+            <p>{t("sections.preview.paragraphs.1")}</p>
           </Section>
 
           <Section title={t("sections.collect.title")}>

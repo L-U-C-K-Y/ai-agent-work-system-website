@@ -103,9 +103,9 @@ export default async function TermsPage({ params }: TermsPageProps) {
             <p>{t("sections.acceptance.paragraphs.1")}</p>
           </Section>
 
-          <Section title={t("sections.splitpop.title")}>
-            <p>{t.rich("sections.splitpop.paragraphs.0", richLinks)}</p>
-            <p>{t("sections.splitpop.paragraphs.1")}</p>
+          <Section title={t("sections.preview.title")}>
+            <p>{t.rich("sections.preview.paragraphs.0", richLinks)}</p>
+            <p>{t("sections.preview.paragraphs.1")}</p>
           </Section>
 
           <Section title={t("sections.eligibility.title")}>
@@ -127,14 +127,14 @@ export default async function TermsPage({ params }: TermsPageProps) {
             <p>{t("sections.content.paragraphs.1")}</p>
           </Section>
 
-          <Section title={t("sections.file.title")}>
-            <p>{t("sections.file.paragraphs.0")}</p>
-            <p>{t("sections.file.paragraphs.1")}</p>
+          <Section title={t("sections.websiteInfo.title")}>
+            <p>{t("sections.websiteInfo.paragraphs.0")}</p>
+            <p>{t("sections.websiteInfo.paragraphs.1")}</p>
           </Section>
 
-          <Section title={t("sections.splitpopProduct.title")}>
-            <p>{t("sections.splitpopProduct.paragraphs.0")}</p>
-            <p>{t("sections.splitpopProduct.paragraphs.1")}</p>
+          <Section title={t("sections.aiOutputs.title")}>
+            <p>{t("sections.aiOutputs.paragraphs.0")}</p>
+            <p>{t("sections.aiOutputs.paragraphs.1")}</p>
           </Section>
 
           <Section title={t("sections.purchases.title")}>
