@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JobDone AI Website
 
-## Getting Started
+Public marketing website for JobDone AI, "The AI Agent Work System".
 
-First, run the development server:
+## Stack
+
+- Next.js App Router
+- TypeScript
+- next-intl for English and German routes
+- Tailwind CSS v4
+- shadcn/Base UI components
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The local development server normally runs at `http://localhost:3005` in this workspace.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verification
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm lint
+pnpm build
+```
 
-## Learn More
+Before launch, check these public routes in English and German:
 
-To learn more about Next.js, take a look at the following resources:
+- `/`
+- `/de`
+- `/platform`
+- `/de/plattform`
+- `/products`
+- `/de/produkte`
+- `/contact`
+- `/de/kontakt`
+- `/privacy`
+- `/de/datenschutz`
+- `/terms`
+- `/de/agb`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact Email
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The contact form sends through Resend from `app/api/contact/route.ts`.
 
-## Deploy on Vercel
+Required production environment variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+RESEND_API_KEY=
+CONTACT_FROM_EMAIL=
+CONTACT_TO_EMAIL=hello@jobdone.ai
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`CONTACT_FROM_EMAIL` must use a sender/domain configured in Resend.
