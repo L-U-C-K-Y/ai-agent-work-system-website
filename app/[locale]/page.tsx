@@ -29,7 +29,7 @@ const pageCopy = {
     heroBadge: "AI Agent Work System",
     heroTitle: "A work system for teams and AI agents.",
     heroDescription:
-      "JobDone AI turns chat, work cards, automations, knowledge, records, approvals, and evidence into one shared operating surface.",
+      "JobDone AI brings people, AI Coworkers, AI Automations, work cards, knowledge, records, approvals, and evidence into one shared operating surface.",
     primaryCta: "See the platform",
     secondaryCta: "Explore use cases",
     heroStats: [
@@ -38,11 +38,13 @@ const pageCopy = {
       ["100%", "traceable actions"],
     ],
     heroAlt:
-      "JobDone AI collaborative workspace showing channels, AI coworkers, work cards, knowledge, records, and approvals",
+      "JobDone AI collaborative workspace showing channels, AI Coworkers, AI Automations, work cards, knowledge, records, and approvals",
     businessValue: [
-      ["Coordinate work", "Humans and AI coworkers collaborate in channels, turn conversations into work, and stay aligned across every handoff."],
-      ["Control agent action", "Permissions, approvals, and policy-aware actions keep agent work grounded in rules and audit requirements."],
-      ["Update business records", "Agents read, draft, and update governed records in your systems with full visibility and traceable changes."],
+      ["Coordinate shared work", "People and AI Coworkers collaborate in work rooms, turn conversations into durable work, and stay aligned across handoffs."],
+      ["Delegate to AI Coworkers", "Named AI teammates use approved tools, knowledge, and structured records while their progress stays visible."],
+      ["Trigger AI Automations", "Input-driven lanes receive business signals, create work, gather context, update records, and route approvals."],
+      ["Update knowledge and records", "Useful context and structured business data stay connected to the work instead of living only in messages."],
+      ["Prove what happened", "Approvals, evidence, citations, runtime events, and record changes remain inspectable."],
     ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
@@ -61,7 +63,7 @@ const pageCopy = {
       contextGraph: "Context graph",
       automationRun: "Automation run",
       automationSteps: ["Search knowledge", "Draft records", "Request approval"],
-      channels: ["# finance", "# inventory", "# approvals", "# automations"],
+      channels: ["# finance", "# inventory", "# approvals", "# ai-automations"],
     },
     coworkerStatuses: [
       ["Finance AI", "Responding", "green"],
@@ -90,7 +92,7 @@ const pageCopy = {
       ["Record proposal", "Asset database / 5 drafts"],
     ],
     coworkingCards: [
-      ["Channel message", "Ask, decide, and mention AI coworkers in the same workspace where work is created."],
+      ["Channel message", "Ask, decide, and mention AI Coworkers in the same workspace where work is created."],
       ["Work card", "Turn the conversation into a tracked object with owner, status, evidence, and approvals."],
       ["Knowledge link", "Open the exact document or citation the agent used to make a recommendation."],
       ["Record link", "Jump straight into the database row, schema, or proposed record diff behind the work."],
@@ -98,10 +100,10 @@ const pageCopy = {
     primitiveEyebrow: "Work system primitives",
     primitiveTitle: "The operating model for mixed human and agent teams.",
     systemPrimitives: [
-      ["Channels", "A shared room for people and AI coworkers to discuss work, attach evidence, and create durable work items."],
+      ["Channels", "A shared room for people and AI Coworkers to discuss work, attach evidence, and create durable work items."],
       ["Rich work cards", "Messages become structured cards with source context, owners, priority, linked records, and next actions."],
-      ["AI coworkers", "Agents appear in the workspace with names, roles, status, tools, memory, and visible progress."],
-      ["Automations", "Repeatable handoffs run in the background while people keep the right approval checkpoints."],
+      ["AI Coworkers", "Named AI teammates appear in the workspace with roles, status, tools, memory, and visible progress."],
+      ["AI Automations", "Input-driven workflow lanes create work, use knowledge, update records, and keep the right approval checkpoints."],
       ["Knowledge", "Agents search approved documents with citations and bring the right context back into the thread."],
       ["Record databases", "Agents read, draft, and update governed operational databases instead of leaving data in chat."],
     ],
@@ -109,8 +111,8 @@ const pageCopy = {
     flowTitle: "Work moves through one shared system.",
     flowLink: "Explore platform ->",
     collaborationFlow: [
-      ["01", "Work arrives", "Email, forms, chat, documents, APIs, and internal tools become structured work."],
-      ["02", "Agents coordinate", "Specialized agents inspect context, update records, draft actions, and ask for help when needed."],
+      ["01", "Work arrives", "Email, forms, files, documents, APIs, and internal tools become structured work."],
+      ["02", "AI Coworkers coordinate", "Specialized coworkers inspect context, update records, draft actions, and ask for help when needed."],
       ["03", "Humans decide", "People approve risky steps, resolve ambiguity, and keep accountability clear."],
       ["04", "Systems update", "Business tools, records, boards, and statistics move forward with evidence attached."],
     ],
@@ -137,9 +139,9 @@ const pageCopy = {
     ],
     finalCta: {
       eyebrow: "Closed preview",
-      title: "Put humans and AI agents in the same work system.",
+      title: "Put people, AI Coworkers, and AI Automations in the same work system.",
       description:
-        "Request access to see how JobDone AI coordinates work, records, approvals, and agent activity in one operating workspace.",
+        "Request access to see how JobDone AI coordinates work rooms, knowledge, records, approvals, AI Coworkers, and AI Automations in one operating workspace.",
       button: "Request Access",
     },
   },
@@ -150,7 +152,7 @@ const pageCopy = {
     heroBadge: "AI Agent Work System",
     heroTitle: "Ein Arbeitssystem für Teams und KI-Agenten.",
     heroDescription:
-      "JobDone AI verwandelt Chat, Work Cards, Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise in eine gemeinsame operative Oberfläche.",
+      "JobDone AI bringt Menschen, AI Coworker, AI Automatisierungen, Work Cards, Wissen, Datensätze, Freigaben und Nachweise in eine gemeinsame operative Oberfläche.",
     primaryCta: "Plattform ansehen",
     secondaryCta: "Anwendungsfälle erkunden",
     heroStats: [
@@ -159,11 +161,13 @@ const pageCopy = {
       ["100%", "nachvollziehbare Aktionen"],
     ],
     heroAlt:
-      "JobDone AI kollaborativer Workspace mit Channels, AI Coworkern, Work Cards, Wissen, Datensätzen und Freigaben",
+      "JobDone AI kollaborativer Workspace mit Channels, AI Coworkern, AI Automatisierungen, Work Cards, Wissen, Datensätzen und Freigaben",
     businessValue: [
-      ["Arbeit koordinieren", "Menschen und AI Coworker arbeiten in Channels zusammen, verwandeln Konversationen in Arbeit und bleiben über jede Übergabe hinweg abgestimmt."],
-      ["Agentenaktionen kontrollieren", "Berechtigungen, Freigaben und policy-bewusste Aktionen halten Agentenarbeit in Regeln und Audit-Anforderungen verankert."],
-      ["Geschäftsdaten aktualisieren", "Agenten lesen, entwerfen und aktualisieren gesteuerte Datensätze in deinen Systemen mit voller Sichtbarkeit und nachvollziehbaren Änderungen."],
+      ["Gemeinsame Arbeit koordinieren", "Menschen und AI Coworker arbeiten in Arbeitsräumen zusammen, verwandeln Konversationen in dauerhafte Arbeit und bleiben über Übergaben hinweg abgestimmt."],
+      ["An AI Coworker delegieren", "Benannte AI-Teamkollegen nutzen freigegebene Tools, Wissen und strukturierte Datensätze, während ihr Fortschritt sichtbar bleibt."],
+      ["AI Automatisierungen auslösen", "Input-getriebene Lanes empfangen Geschäftssignale, erstellen Arbeit, sammeln Kontext, aktualisieren Datensätze und routen Freigaben."],
+      ["Wissen und Datensätze aktualisieren", "Nützlicher Kontext und strukturierte Geschäftsdaten bleiben mit Arbeit verbunden, statt nur in Nachrichten zu liegen."],
+      ["Nachweisen, was passiert ist", "Freigaben, Nachweise, Zitate, Runtime-Ereignisse und Datensatzänderungen bleiben inspizierbar."],
     ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
@@ -182,7 +186,7 @@ const pageCopy = {
       contextGraph: "Kontextgraph",
       automationRun: "Automatisierungslauf",
       automationSteps: ["Wissen suchen", "Datensätze entwerfen", "Freigabe anfragen"],
-      channels: ["# finance", "# inventory", "# approvals", "# automations"],
+      channels: ["# finance", "# inventory", "# approvals", "# ai-automations"],
     },
     coworkerStatuses: [
       ["Finance AI", "Antwortet", "green"],
@@ -221,8 +225,8 @@ const pageCopy = {
     systemPrimitives: [
       ["Channels", "Ein gemeinsamer Raum, in dem Menschen und AI Coworker Arbeit besprechen, Nachweise anhängen und dauerhafte Work Items erstellen."],
       ["Rich Work Cards", "Nachrichten werden zu strukturierten Cards mit Quellkontext, Ownern, Priorität, verknüpften Datensätzen und nächsten Aktionen."],
-      ["AI Coworker", "Agenten erscheinen im Workspace mit Namen, Rollen, Status, Tools, Memory und sichtbarem Fortschritt."],
-      ["Automatisierungen", "Wiederholbare Übergaben laufen im Hintergrund, während Menschen die richtigen Freigabepunkte behalten."],
+      ["AI Coworker", "Benannte AI-Teamkollegen erscheinen im Workspace mit Rollen, Status, Tools, Memory und sichtbarem Fortschritt."],
+      ["AI Automatisierungen", "Input-getriebene Workflow-Lanes erstellen Arbeit, nutzen Wissen, aktualisieren Datensätze und behalten die richtigen Freigabepunkte."],
       ["Wissen", "Agenten durchsuchen freigegebene Dokumente mit Zitaten und bringen den richtigen Kontext zurück in den Thread."],
       ["Datensatz-Datenbanken", "Agenten lesen, entwerfen und aktualisieren gesteuerte operative Datenbanken, statt Daten im Chat liegen zu lassen."],
     ],
@@ -230,8 +234,8 @@ const pageCopy = {
     flowTitle: "Arbeit bewegt sich durch ein gemeinsames System.",
     flowLink: "Plattform erkunden ->",
     collaborationFlow: [
-      ["01", "Arbeit kommt an", "E-Mails, Formulare, Chat, Dokumente, APIs und interne Tools werden zu strukturierter Arbeit."],
-      ["02", "Agenten koordinieren", "Spezialisierte Agenten prüfen Kontext, aktualisieren Datensätze, entwerfen Aktionen und bitten bei Bedarf um Hilfe."],
+      ["01", "Arbeit kommt an", "E-Mails, Formulare, Dateien, Dokumente, APIs und interne Tools werden zu strukturierter Arbeit."],
+      ["02", "AI Coworker koordinieren", "Spezialisierte Coworker prüfen Kontext, aktualisieren Datensätze, entwerfen Aktionen und bitten bei Bedarf um Hilfe."],
       ["03", "Menschen entscheiden", "Menschen genehmigen riskante Schritte, lösen Unklarheiten und halten Verantwortlichkeit klar."],
       ["04", "Systeme aktualisieren", "Business-Tools, Datensätze, Boards und Statistiken bewegen sich mit verknüpften Nachweisen weiter."],
     ],
@@ -258,9 +262,9 @@ const pageCopy = {
     ],
     finalCta: {
       eyebrow: "Geschlossene Vorschau",
-      title: "Bringe Menschen und KI-Agenten in dasselbe Arbeitssystem.",
+      title: "Bringe Menschen, AI Coworker und AI Automatisierungen in dasselbe Arbeitssystem.",
       description:
-        "Fordere Zugang an, um zu sehen, wie JobDone AI Arbeit, Datensätze, Freigaben und Agentenaktivität in einem operativen Workspace koordiniert.",
+        "Fordere Zugang an, um zu sehen, wie JobDone AI Arbeitsräume, Wissen, Datensätze, Freigaben, AI Coworker und AI Automatisierungen in einem operativen Workspace koordiniert.",
       button: "Zugang anfragen",
     },
   },
@@ -590,7 +594,7 @@ function BusinessValueBand({ copy }: { copy: HomeCopy }) {
   return (
     <section className="relative z-10 -mt-12 bg-transparent pb-20">
       <Container>
-        <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.3)] md:grid-cols-3">
+        <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.3)] sm:grid-cols-2 lg:grid-cols-5">
           {copy.businessValue.map(([title, description], index) => (
             <article
               className="relative bg-[linear-gradient(180deg,rgba(13,24,37,0.9),rgba(8,13,18,0.92))] p-6 md:p-8"

@@ -20,13 +20,13 @@ const useCaseLinks = [
 ] as const satisfies readonly (readonly [string, LinkHref])[];
 
 const platformLinks = [
-  ["work", "/platform"],
-  ["aiCoworkers", "/platform"],
-  ["automations", "/platform"],
-  ["knowledge", "/platform"],
-  ["records", "/platform"],
-  ["approvals", "/platform"],
-  ["auditEvidence", "/platform"],
+  ["work", { pathname: "/platform", hash: "work" }],
+  ["aiCoworkers", { pathname: "/platform", hash: "ai-coworkers" }],
+  ["automations", { pathname: "/platform", hash: "ai-automations" }],
+  ["knowledge", { pathname: "/platform", hash: "knowledge" }],
+  ["records", { pathname: "/platform", hash: "records" }],
+  ["approvals", { pathname: "/platform", hash: "approvals" }],
+  ["auditEvidence", { pathname: "/platform", hash: "audit-evidence" }],
 ] as const satisfies readonly (readonly [string, LinkHref])[];
 
 export function SiteFooter() {

@@ -30,12 +30,16 @@
           "description": "Connect messages, work cards, records, and audit history."
         },
         "aiCoworkers": {
-          "title": "AI coworkers",
-          "description": "Give agents identity, context, tools, memory, and visibility."
+          "title": "AI Coworkers",
+          "description": "Give autonomous coworkers identity, context, tools, memory, and visibility."
         },
-        "governance": {
-          "title": "Controls",
-          "description": "Keep approvals, permissions, evidence, and controls attached."
+        "aiAutomations": {
+          "title": "AI Automations",
+          "description": "Turn inputs into work with knowledge, records, and approval checkpoints."
+        },
+        "knowledgeRecords": {
+          "title": "Knowledge and records",
+          "description": "Connect approved source material with flexible structured databases."
         }
       }
     },
@@ -88,7 +92,7 @@
     }
   },
   "Footer": {
-    "tagline": "Collaborative work system for human and agent teams.",
+    "tagline": "Collaborative work system for people, AI Coworkers, and AI Automations.",
     "explore": "Explore",
     "company": "Company",
     "platform": "Platform",
@@ -103,8 +107,8 @@
     "links": {
       "platform": {
         "work": "Work",
-        "aiCoworkers": "AI coworkers",
-        "automations": "AI automations",
+        "aiCoworkers": "AI Coworkers",
+        "automations": "AI Automations",
         "knowledge": "Knowledge",
         "records": "Records",
         "approvals": "Approvals",
@@ -126,8 +130,8 @@
         "name": "Finance Ops",
         "shortName": "Finance",
         "tagline": "Invoices, approvals, vendor records, and exceptions in one room.",
-        "summary": "Finance teams can coordinate documents, approvals, reconciliations, and system updates with AI coworkers that keep evidence attached.",
-        "description": "A shared operating room for finance work where people and AI coworkers review invoices, collect policy context, propose record updates, and keep approvals traceable.",
+        "summary": "Finance teams can coordinate documents, approvals, reconciliations, and system updates with AI Coworkers that keep evidence attached.",
+        "description": "A shared operating room for finance work where people and AI Coworkers review invoices, collect policy context, propose record updates, and keep approvals traceable.",
         "platforms": [
           "Finance AI",
           "Controller",
@@ -154,7 +158,7 @@
         ],
         "workflow": [
           "Work arrives",
-          "AI coworkers gather context",
+          "AI Coworkers gather context",
           "Humans approve exceptions",
           "Records and dashboards update"
         ]
@@ -164,7 +168,7 @@
         "shortName": "Inventory",
         "tagline": "Assets, replenishment, exceptions, and handoffs stay connected.",
         "summary": "Inventory work becomes a live room where agents inspect records, flag drift, draft updates, and hand off exceptions with context.",
-        "description": "A workspace for inventory and operations teams to coordinate asset records, stock exceptions, replenishment requests, and cross-functional handoffs with visible AI coworkers.",
+        "description": "A workspace for inventory and operations teams to coordinate asset records, stock exceptions, replenishment requests, and cross-functional handoffs with visible AI Coworkers.",
         "platforms": [
           "Inventory AI",
           "Records Agent",
@@ -200,7 +204,7 @@
         "name": "People Ops",
         "shortName": "People",
         "tagline": "Onboarding, policy requests, employee documents, and approvals.",
-        "summary": "People teams can keep sensitive employee workflows structured, cited, and reviewable while AI coworkers handle repeatable coordination.",
+        "summary": "People teams can keep sensitive employee workflows structured, cited, and reviewable while AI Coworkers handle repeatable coordination.",
         "description": "A governed workspace for onboarding, policy questions, employee document handling, and approval-heavy people operations where every agent action is visible.",
         "platforms": [
           "People AI",
@@ -238,7 +242,7 @@
         "shortName": "Support",
         "tagline": "Case triage, customer context, escalation paths, and evidence.",
         "summary": "Support teams can turn inbound messages into tracked work with customer context, knowledge citations, and escalation-ready packets.",
-        "description": "A collaborative room for support operations where human responders and AI coworkers triage cases, collect customer context, search knowledge, and route escalations.",
+        "description": "A collaborative room for support operations where human responders and AI Coworkers triage cases, collect customer context, search knowledge, and route escalations.",
         "platforms": [
           "Support AI",
           "Triage Agent",
@@ -255,7 +259,7 @@
         "useCases": [
           "Help center, runbooks, release notes",
           "Customer, account, case, and incident records",
-          "Escalation automations with ownership"
+          "AI Automation escalation with ownership"
         ],
         "supportTopics": [
           "Cases",
@@ -275,7 +279,7 @@
         "shortName": "Product",
         "tagline": "Feedback, bugs, releases, incidents, and product evidence.",
         "summary": "Product teams can connect customer feedback, issue records, release work, and incident evidence in one shared system.",
-        "description": "A product operations workspace that turns feedback, bugs, incidents, and release coordination into traceable work shared by people and AI coworkers.",
+        "description": "A product operations workspace that turns feedback, bugs, incidents, and release coordination into traceable work shared by people and AI Coworkers.",
         "platforms": [
           "Product AI",
           "Feedback Agent",
@@ -312,7 +316,7 @@
         "shortName": "Revenue",
         "tagline": "Research, CRM hygiene, follow-up prep, and account motion.",
         "summary": "Revenue teams can keep account research, CRM updates, next-step prep, and follow-up workflows visible and governed.",
-        "description": "A revenue operations room for account research, CRM hygiene, meeting prep, follow-up work, and pipeline updates coordinated by people and AI coworkers.",
+        "description": "A revenue operations room for account research, CRM hygiene, meeting prep, follow-up work, and pipeline updates coordinated by people and AI Coworkers.",
         "platforms": [
           "Revenue AI",
           "Research Agent",
@@ -324,12 +328,12 @@
           "Account research briefs",
           "CRM update proposals",
           "Follow-up work cards",
-          "Pipeline hygiene automations"
+          "Pipeline hygiene AI Automations"
         ],
         "useCases": [
           "Account plans, call notes, product context",
           "Accounts, contacts, deals, and activity records",
-          "Follow-up automations with review gates"
+          "Follow-up AI Automations with review gates"
         ],
         "supportTopics": [
           "Research",
@@ -350,7 +354,7 @@
     "items": [
       {
         "title": "Visible by default",
-        "copy": "People can see what AI coworkers are doing, what they need, and what changed."
+        "copy": "People can see what AI Coworkers are doing, what they need, and what changed."
       },
       {
         "title": "Context attached",
@@ -375,17 +379,17 @@
     "platformLink": "Explore platform",
     "ctaEyebrow": "Closed preview",
     "ctaTitle": "Bring this workspace into the JobDone AI work system.",
-    "ctaCopy": "JobDone AI is in closed preview. Request access to discuss the workflows, records, and agent coworkers that matter for your team.",
+    "ctaCopy": "JobDone AI is in closed preview. Request access to discuss the workflows, records, and AI Coworkers that matter for your team.",
     "graphic": {
       "channel": "Channel",
-      "aiCoworkers": "AI coworkers",
+      "aiCoworkers": "AI Coworkers",
       "workThread": "Work thread",
       "workThreadCopy": "Message, decision, evidence, and system update stay linked to the same work card.",
       "richWorkCard": "Rich work card",
       "routed": "routed",
       "knowledge": "Knowledge",
       "records": "Records",
-      "automation": "Automation"
+      "automation": "AI Automation"
     }
   },
   "Contact": {
@@ -430,7 +434,7 @@
         [
           "02",
           "Map",
-          "AI coworker roles, records, tools, and approvals are modeled."
+          "AI Coworker roles, records, tools, and approvals are modeled."
         ],
         [
           "03",

@@ -37,7 +37,7 @@ const navLinkClassName =
   "h-9 px-2.5 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.025] hover:text-white focus:!bg-white/[0.025] focus-visible:!bg-white/[0.025] focus-visible:!ring-1 focus-visible:!ring-white/12 aria-[current=page]:text-white";
 
 const navTriggerClassName =
-  "bg-transparent text-[#9aabbf] hover:bg-white/[0.025] hover:text-white data-open:bg-white/[0.025] data-open:text-white data-popup-open:bg-white/[0.025] data-popup-open:text-white data-popup-open:hover:bg-white/[0.035]";
+  "bg-transparent text-[#9aabbf] hover:bg-white/[0.025] hover:text-white data-active:bg-white/[0.025] data-active:text-white data-open:bg-white/[0.025] data-open:text-white data-popup-open:bg-white/[0.025] data-popup-open:text-white data-popup-open:hover:bg-white/[0.035]";
 
 const useCaseLinks = [
   [
@@ -70,6 +70,13 @@ const companyLinks = [
   ["contact", "/contact"],
   ["privacy", "/privacy"],
   ["terms", "/terms"],
+] as const satisfies readonly MegaMenuLinkConfig[];
+
+const platformLinks = [
+  ["workGraph", { pathname: "/platform", hash: "work" }],
+  ["aiCoworkers", { pathname: "/platform", hash: "ai-coworkers" }],
+  ["aiAutomations", { pathname: "/platform", hash: "ai-automations" }],
+  ["knowledgeRecords", { pathname: "/platform", hash: "knowledge" }],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
 function toInternalPathname(pathname: string) {
@@ -283,7 +290,7 @@ export function SiteHeader() {
   const mega = useTranslations("MegaMenu");
   const internalPathname = toInternalPathname(pathname);
   const getMegaLinks = (
-    section: "useCases" | "company",
+    section: "useCases" | "platform" | "company",
     links: readonly MegaMenuLinkConfig[],
   ) =>
     links.map(
@@ -324,13 +331,19 @@ export function SiteHeader() {
               />
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink
-                aria-current={internalPathname === "/platform" ? "page" : undefined}
-                className={navLinkClassName}
-                render={<Link href="/platform" />}
+              <NavigationMenuTrigger
+                className={navTriggerClassName}
+                data-active={internalPathname === "/platform" ? "" : undefined}
               >
                 {t("platform")}
-              </NavigationMenuLink>
+              </NavigationMenuTrigger>
+              <MegaMenuPanel
+                eyebrow={mega("platform.eyebrow")}
+                links={getMegaLinks("platform", platformLinks)}
+                title={mega("platform.title")}
+                ctaHref="/platform"
+                ctaLabel={t("platform")}
+              />
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger className={navTriggerClassName}>

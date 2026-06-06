@@ -31,11 +31,15 @@
         },
         "aiCoworkers": {
           "title": "AI Coworker",
-          "description": "Gibt Agenten Identität, Kontext, Tools, Memory und Sichtbarkeit."
+          "description": "Gibt autonomen Coworkern Identität, Kontext, Tools, Memory und Sichtbarkeit."
         },
-        "governance": {
-          "title": "Kontrollen",
-          "description": "Hält Freigaben, Berechtigungen, Nachweise und Kontrollen verbunden."
+        "aiAutomations": {
+          "title": "AI Automatisierungen",
+          "description": "Verwandeln Inputs mit Wissen, Datensätzen und Freigabepunkten in Arbeit."
+        },
+        "knowledgeRecords": {
+          "title": "Wissen und Datensätze",
+          "description": "Verbinden freigegebene Quellen mit flexiblen strukturierten Datenbanken."
         }
       }
     },
@@ -88,7 +92,7 @@
     }
   },
   "Footer": {
-    "tagline": "Kollaboratives Arbeitssystem für Menschen und Agententeams.",
+    "tagline": "Kollaboratives Arbeitssystem für Menschen, AI Coworker und AI Automatisierungen.",
     "explore": "Entdecken",
     "company": "Unternehmen",
     "platform": "Plattform",
