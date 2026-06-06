@@ -483,7 +483,10 @@ function DeepDiveVisual({
     ] as const;
 
     return (
-      <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
+      <div
+        className="relative grid overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4 md:min-h-[29rem] md:items-center"
+        data-platform-visual="ai-coworkers"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(32,106,233,0.2),transparent_42%)]" />
         <div className="relative grid gap-4 md:grid-cols-[0.78fr_1fr_0.82fr] md:items-center">
           <div className="grid gap-2">
@@ -571,7 +574,10 @@ function DeepDiveVisual({
   ];
 
   return (
-    <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
+    <div
+      className="relative grid overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4 md:min-h-[29rem] md:items-center"
+      data-platform-visual="ai-automations"
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_34%_35%,rgba(96,239,255,0.14),transparent_36%)]" />
       <div className="relative grid gap-4 md:grid-cols-[0.72fr_1.28fr]">
         <div className="grid content-center gap-2">
