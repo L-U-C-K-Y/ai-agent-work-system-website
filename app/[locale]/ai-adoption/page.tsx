@@ -300,28 +300,38 @@ function JourneyTimeline({ copy }: { copy: AdoptionCopy }) {
 function WorkflowMapVisual({ copy }: { copy: AdoptionCopy }) {
   const labels = copy.heroVisual;
   const nodes = [
-    [labels.signal, "left-[5%] top-[12%]"],
-    [labels.coworker, "right-[7%] top-[14%]"],
-    [labels.records, "left-[8%] bottom-[15%]"],
-    [labels.automation, "right-[8%] bottom-[15%]"],
-    [labels.approvals, "left-[38%] top-[5%]"],
-    [labels.evidence, "left-[40%] bottom-[5%]"],
+    [labels.signal, "left-[7%] top-[18%]", "bg-[#071522]/88"],
+    [labels.coworker, "right-[8%] top-[18%]", "bg-[#061b28]/88"],
+    [labels.records, "left-[9%] bottom-[18%]", "bg-[#071522]/88"],
+    [labels.automation, "right-[8%] bottom-[18%]", "bg-[#061b28]/88"],
+    [labels.approvals, "left-[41%] top-[7%]", "bg-[#0a1825]/88"],
+    [labels.evidence, "left-[42%] bottom-[7%]", "bg-[#0a1825]/88"],
   ] as const;
 
   return (
-    <GlassPanel className="relative min-h-[28rem] overflow-hidden p-5">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_48%,rgba(32,106,233,0.22),transparent_42%)]" />
+    <GlassPanel className="relative min-h-[28rem] overflow-hidden border-white/8 bg-[#03070b]/82 p-5">
+      <Image
+        alt=""
+        className="absolute inset-0 size-full object-cover opacity-16"
+        height={887}
+        src="/images/jobdone-ai/neon-ai-adoption-hero.png"
+        width={1774}
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_48%,rgba(32,106,233,0.2),transparent_38%),linear-gradient(180deg,rgba(3,7,11,0.52),rgba(3,7,11,0.94))]" />
       <svg
         aria-hidden="true"
-        className="absolute inset-0 size-full opacity-60"
+        className="absolute inset-0 size-full opacity-75"
         viewBox="0 0 760 500"
       >
         <defs>
           <linearGradient id="workflow-map-line" x1="0" x2="1" y1="0" y2="0">
             <stop stopColor="#206ae9" stopOpacity="0" />
-            <stop offset="0.5" stopColor="#206ae9" stopOpacity="0.85" />
+            <stop offset="0.5" stopColor="#60efff" stopOpacity="0.76" />
             <stop offset="1" stopColor="#60efff" stopOpacity="0" />
           </linearGradient>
+          <filter id="workflow-glow">
+            <feGaussianBlur stdDeviation="4" />
+          </filter>
         </defs>
         {[
           "M96 92 C260 168 300 250 380 250",
@@ -335,27 +345,49 @@ function WorkflowMapVisual({ copy }: { copy: AdoptionCopy }) {
             fill="none"
             key={d}
             stroke="url(#workflow-map-line)"
-            strokeWidth="2"
+            strokeWidth="1.6"
+          />
+        ))}
+        {[
+          [380, 250],
+          [96, 92],
+          [664, 98],
+          [112, 405],
+          [650, 405],
+          [380, 58],
+          [380, 442],
+        ].map(([cx, cy]) => (
+          <circle
+            cx={cx}
+            cy={cy}
+            fill="#60efff"
+            fillOpacity="0.55"
+            filter="url(#workflow-glow)"
+            key={`${cx}-${cy}`}
+            r="7"
           />
         ))}
       </svg>
-      <div className="absolute left-1/2 top-1/2 z-10 w-[min(20rem,70vw)] -translate-x-1/2 -translate-y-1/2 rounded-xl border border-[#60efff]/26 bg-[#05080c]/90 p-5 text-center shadow-[0_0_70px_rgba(32,106,233,0.24)]">
+      <div className="absolute left-1/2 top-1/2 z-10 w-[min(21rem,74vw)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-[#60efff]/22 bg-[#06111b]/88 p-5 text-center shadow-[0_0_70px_rgba(32,106,233,0.26),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
+        <div className="mx-auto mb-4 grid size-12 place-items-center rounded-xl border border-[#206ae9]/40 bg-[#206ae9]/14 shadow-[0_0_36px_rgba(32,106,233,0.28)]">
+          <span className="size-2 rounded-full bg-[#60efff] shadow-[0_0_18px_rgba(96,239,255,0.9)]" />
+        </div>
         <p className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-[#60efff]">
           {labels.mapping}
         </p>
         <h3 className="mt-3 text-2xl font-semibold text-white">
           {labels.workspace}
         </h3>
-        <p className="mt-3 text-sm leading-6 text-[#9aabbf]">
+        <p className="mx-auto mt-3 max-w-[17rem] text-sm leading-6 text-[#9aabbf]">
           {copy.mapDescription}
         </p>
       </div>
-      {nodes.map(([label, position]) => (
+      {nodes.map(([label, position, tone]) => (
         <div
-          className={`absolute z-10 hidden rounded-lg border border-white/10 bg-[#081019]/88 px-4 py-3 text-sm font-semibold text-white md:block ${position}`}
+          className={`absolute z-10 hidden rounded-xl border border-white/10 ${tone} px-4 py-3 text-sm font-semibold text-white shadow-[0_18px_54px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md md:block ${position}`}
           key={label}
         >
-          <span className="mr-2 inline-block size-2 rounded-full bg-[#206ae9] shadow-[0_0_18px_rgba(32,106,233,0.6)]" />
+          <span className="mr-2 inline-block size-2 rounded-full bg-[#60efff] shadow-[0_0_18px_rgba(96,239,255,0.6)]" />
           {label}
         </div>
       ))}
@@ -444,39 +476,41 @@ export default async function AIAdoptionPage({ params }: PageProps) {
       </section>
 
       <section className="border-y border-white/10 bg-[#05090d] py-16 md:py-24">
-        <Container className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="grid gap-4">
+        <Container className="grid gap-8 lg:grid-cols-[0.74fr_1.26fr]">
+          <GlassPanel className="relative self-start overflow-hidden p-4">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(32,106,233,0.18),transparent_34%)]" />
+            <span className="absolute bottom-8 left-9 top-8 hidden w-px bg-[linear-gradient(180deg,#206ae9,rgba(96,239,255,0.22),transparent)] md:block" />
+            <div className="relative grid gap-3">
             {copy.phases.map((phase, index) => (
-              <Card className="border-white/10 bg-[#08111b]/72" key={phase.title}>
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <span className="grid size-10 shrink-0 place-items-center rounded-md border border-[#206ae9]/35 bg-[#206ae9]/12 font-mono text-xs text-[#8fb5ff]">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <CardTitle>{phase.title}</CardTitle>
-                      <p className="mt-3 text-sm leading-6 text-[#9aabbf]">
-                        {phase.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="rounded-md border border-[#206ae9]/24 bg-[#071522]/72 px-3 py-2 text-sm font-medium text-[#d7e7ff]">
+              <div
+                className="relative grid grid-cols-[3rem_1fr] gap-3 rounded-lg border border-white/10 bg-[#050b12]/66 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                key={phase.title}
+              >
+                <span className="relative z-10 grid size-10 place-items-center rounded-md border border-[#206ae9]/35 bg-[#071522] font-mono text-xs text-[#8fb5ff] shadow-[0_0_24px_rgba(32,106,233,0.16)]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                <div className="min-w-0">
+                  <h3 className="text-base font-medium text-white">
+                    {phase.title}
+                  </h3>
+                  <p className="text-sm leading-6 text-[#9aabbf]">
                     {phase.output}
                   </p>
-                  <ul className="mt-4 grid gap-2 text-sm leading-6 text-[#9aabbf]">
+                  <ul className="mt-3 flex flex-wrap gap-2">
                     {phase.items.map((item) => (
-                      <li className="flex gap-2" key={item}>
-                        <span className="mt-2 size-1.5 shrink-0 rounded-full bg-[#60efff]" />
+                      <li
+                        className="rounded-full border border-[#206ae9]/24 bg-[#071522]/72 px-2.5 py-1 text-[0.72rem] leading-5 text-[#a8b7c9]"
+                        key={item}
+                      >
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
-          </div>
+            </div>
+          </GlassPanel>
           <div>
             <div className="mb-6 max-w-2xl">
               <h2 className="text-3xl font-medium leading-tight md:text-5xl">
