@@ -51,6 +51,20 @@ const pageCopy = {
       approval: "approval",
       evidence: "evidence",
       traceAttached: "Trace attached",
+      role: "role",
+      tools: "tools",
+      memory: "memory",
+      status: "status",
+      visible: "visible",
+      email: "email",
+      form: "form",
+      file: "file",
+      api: "API",
+      receive: "receive",
+      create: "create",
+      search: "search",
+      draft: "draft",
+      review: "review",
       coworker: "AI Coworker",
       automation: "AI Automation",
       input: "input adapter",
@@ -182,6 +196,20 @@ const pageCopy = {
       approval: "Freigabe",
       evidence: "Nachweis",
       traceAttached: "Trace verbunden",
+      role: "Rolle",
+      tools: "Tools",
+      memory: "Memory",
+      status: "Status",
+      visible: "sichtbar",
+      email: "E-Mail",
+      form: "Formular",
+      file: "Datei",
+      api: "API",
+      receive: "Empfangen",
+      create: "Erstellen",
+      search: "Suchen",
+      draft: "Entwerfen",
+      review: "Prüfen",
       coworker: "AI Coworker",
       automation: "AI Automatisierung",
       input: "Input-Adapter",
@@ -445,35 +473,151 @@ function DeepDiveVisual({
 }) {
   const labels = copy.visualLabels;
   const isCoworker = variant === "coworker";
-  const steps = isCoworker
-    ? [labels.message, labels.knowledge, labels.record, labels.evidence]
-    : [labels.input, labels.workCard, labels.knowledge, labels.approval];
 
-  return (
-    <div className="rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
-      <div className="grid gap-3 sm:grid-cols-4">
-        {steps.map((step, index) => (
-          <div className="relative" key={step}>
-            {index > 0 ? (
-              <span className="absolute right-[calc(100%-0.3rem)] top-8 hidden h-px w-[calc(100%-0.75rem)] bg-[linear-gradient(90deg,transparent,#206ae9)] sm:block" />
-            ) : null}
-            <div className="relative z-10 min-h-28 rounded-md border border-[#206ae9]/22 bg-[#0a1624] p-3">
-              <p className="font-mono text-[0.62rem] text-[#60efff]">
-                {String(index + 1).padStart(2, "0")}
+  if (isCoworker) {
+    const outputs = [
+      [labels.workCard, labels.create, "blue"],
+      [labels.knowledge, labels.saved, "green"],
+      [labels.record, labels.proposed, "cyan"],
+      [labels.evidence, labels.visible, "amber"],
+    ] as const;
+
+    return (
+      <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(32,106,233,0.2),transparent_42%)]" />
+        <div className="relative grid gap-4 md:grid-cols-[0.78fr_1fr_0.82fr] md:items-center">
+          <div className="grid gap-2">
+            <div className="rounded-md border border-white/10 bg-black/24 p-3">
+              <p className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-[#60efff]">
+                {labels.room}
               </p>
-              <p className="mt-5 text-sm font-semibold text-white">{step}</p>
-              <p className="mt-1 text-xs text-[#8ea0b5]">
-                {index === 0
-                  ? labels.routed
-                  : index === 1
-                    ? labels.cited
-                    : index === 2
-                      ? labels.proposed
-                      : labels.saved}
+              <p className="mt-2 text-sm font-semibold text-white">
+                {labels.financeRoom}
               </p>
             </div>
+            {["Maya", "Controller", "Finance AI"].map((name, index) => (
+              <div
+                className="flex items-center gap-2 rounded-md border border-white/10 bg-[#071019]/82 p-2.5"
+                key={name}
+              >
+                <span
+                  className={`grid size-7 shrink-0 place-items-center rounded-md text-[0.6rem] font-black text-white ${
+                    index === 2 ? "bg-[#206ae9]" : "bg-white/10"
+                  }`}
+                >
+                  {name
+                    .split(" ")
+                    .map((part) => part[0])
+                    .join("")}
+                </span>
+                <span className="truncate text-xs font-semibold text-[#d7e7ff]">
+                  {name}
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
+
+          <div className="relative rounded-xl border border-[#60efff]/24 bg-[#081522]/92 p-4 shadow-[0_0_46px_rgba(32,106,233,0.22)]">
+            <div className="absolute -left-5 top-1/2 hidden h-px w-5 bg-[#206ae9] md:block" />
+            <div className="absolute -right-5 top-1/2 hidden h-px w-5 bg-[#206ae9] md:block" />
+            <p className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-[#60efff]">
+              {labels.coworker}
+            </p>
+            <h3 className="mt-3 text-lg font-semibold text-white">Finance AI</h3>
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              {[
+                [labels.role, "Finance"],
+                [labels.tools, "5"],
+                [labels.memory, labels.cited],
+                [labels.status, labels.visible],
+              ].map(([label, value]) => (
+                <div
+                  className="rounded-md border border-white/10 bg-black/22 p-2.5"
+                  key={label}
+                >
+                  <p className="font-mono text-[0.58rem] uppercase tracking-[0.12em] text-[#7f91a8]">
+                    {label}
+                  </p>
+                  <p className="mt-1 text-xs font-semibold text-white">
+                    {value}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-2">
+            {outputs.map(([label, value, tone]) => (
+              <MiniNode
+                key={label}
+                label={label}
+                tone={tone}
+                value={value}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const adapters = [labels.email, labels.form, labels.file, labels.api];
+  const stages = [
+    [labels.receive, labels.routed],
+    [labels.create, labels.workCard],
+    [labels.search, labels.knowledge],
+    [labels.draft, labels.record],
+    [labels.review, labels.approval],
+  ];
+
+  return (
+    <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#05080c]/72 p-4">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_34%_35%,rgba(96,239,255,0.14),transparent_36%)]" />
+      <div className="relative grid gap-4 md:grid-cols-[0.72fr_1.28fr]">
+        <div className="grid content-center gap-2">
+          {adapters.map((adapter, index) => (
+            <div
+              className="flex items-center justify-between gap-3 rounded-md border border-[#206ae9]/20 bg-[#071019]/88 p-3"
+              key={adapter}
+            >
+              <span className="text-sm font-semibold text-white">{adapter}</span>
+              <span className="font-mono text-[0.62rem] text-[#8fb5ff]">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <div className="relative rounded-xl border border-[#206ae9]/24 bg-[#081522]/88 p-4">
+          <p className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-[#60efff]">
+            {labels.automation}
+          </p>
+          <div className="mt-5 grid gap-3">
+            {stages.map(([stage, value], index) => (
+              <div className="relative grid grid-cols-[2rem_1fr] gap-3" key={stage}>
+                <span className="relative z-10 grid size-8 place-items-center rounded-full border border-[#2f6fff]/42 bg-[#091522] font-mono text-[0.62rem] text-[#8fb5ff]">
+                  {index + 1}
+                </span>
+                {index < stages.length - 1 ? (
+                  <span className="absolute bottom-[-0.85rem] left-4 top-8 w-px bg-[linear-gradient(180deg,#206ae9,transparent)]" />
+                ) : null}
+                <div className="rounded-md border border-white/10 bg-black/22 p-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-sm font-semibold text-white">{stage}</p>
+                    <p className="font-mono text-[0.62rem] uppercase tracking-[0.1em] text-[#8ea0b5]">
+                      {value}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 grid gap-2 sm:grid-cols-3">
+            <MiniNode label={labels.record} value={labels.proposed} tone="cyan" />
+            <MiniNode label={labels.approval} value={labels.review} tone="amber" />
+            <MiniNode label={labels.evidence} value={labels.saved} tone="green" />
+          </div>
+        </div>
       </div>
     </div>
   );
