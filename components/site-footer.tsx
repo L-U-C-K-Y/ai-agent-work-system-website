@@ -37,7 +37,7 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 bg-[#080d12]">
       <div className="mx-auto grid w-full max-w-[1280px] gap-4 px-5 py-4 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:px-6">
         <div>
-          <Logo />
+          <Logo revealOnView />
           <p className="mt-2 max-w-sm text-[0.68rem] leading-4 text-[#9aabbf]">
             {footer("tagline")}
           </p>
