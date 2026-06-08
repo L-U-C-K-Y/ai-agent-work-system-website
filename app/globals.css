@@ -128,6 +128,194 @@ a {
   text-underline-offset: 0.2em;
 }
 
+@keyframes jobdone-site-intro-logo {
+  0% {
+    filter: blur(10px);
+    opacity: 0.22;
+    transform: scale(0.965);
+  }
+  48% {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    filter: blur(1px);
+    opacity: 0.9;
+    transform: scale(0.992);
+  }
+}
+
+@keyframes jobdone-site-intro-aura {
+  0% {
+    opacity: 0.16;
+    transform: scale(0.92);
+  }
+  42% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.34;
+    transform: scale(0.985);
+  }
+}
+
+@keyframes jobdone-site-intro-edge {
+  0% {
+    background-position: 118% 50%;
+    opacity: 0;
+  }
+  28% {
+    opacity: 0.86;
+  }
+  72% {
+    opacity: 0.64;
+  }
+  100% {
+    background-position: -18% 50%;
+    opacity: 0;
+  }
+}
+
+.jobdone-site-intro {
+  animation: jobdone-site-intro-exit 520ms ease forwards;
+  animation-delay: 1200ms;
+}
+
+@keyframes jobdone-site-intro-exit {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.jobdone-site-intro-logo-shell {
+  filter: drop-shadow(0 0 18px rgba(32, 106, 233, 0.18));
+}
+
+.jobdone-site-intro-logo {
+  animation: jobdone-site-intro-logo 1150ms ease-in-out infinite alternate;
+}
+
+.jobdone-site-intro-aura {
+  border-radius: 999px;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(103, 232, 249, 0.22),
+      rgba(32, 106, 233, 0.12) 38%,
+      transparent 72%
+    );
+  filter: blur(18px);
+  animation: jobdone-site-intro-aura 1150ms ease-in-out infinite alternate;
+}
+
+.jobdone-site-intro-edge {
+  border-radius: 999px;
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(32, 106, 233, 0.06) 28%,
+    rgba(103, 232, 249, 0.72) 49%,
+    rgba(255, 255, 255, 0.78) 52%,
+    rgba(32, 106, 233, 0.14) 70%,
+    transparent 100%
+  );
+  background-size: 240% 100%;
+  filter: blur(10px);
+  mix-blend-mode: screen;
+  animation: jobdone-site-intro-edge 1300ms ease-in-out infinite;
+}
+
+@keyframes jobdone-logo-mark-sweep {
+  0% {
+    background-position: 118% 50%;
+    opacity: 0;
+  }
+  24% {
+    opacity: 0.78;
+  }
+  74% {
+    opacity: 0.58;
+  }
+  100% {
+    background-position: -18% 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes jobdone-logo-mark-aura {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  36% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+
+.jobdone-logo-mark {
+  filter: drop-shadow(0 0 0 rgba(32, 106, 233, 0));
+  transition: filter 180ms ease;
+}
+
+.group\/logo:hover .jobdone-logo-mark,
+.group\/logo:focus-visible .jobdone-logo-mark,
+.group\/logo.is-logo-revealed .jobdone-logo-mark {
+  filter: drop-shadow(0 0 14px rgba(32, 106, 233, 0.18));
+}
+
+.jobdone-logo-mark-aura,
+.jobdone-logo-mark-edge {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.jobdone-logo-mark-aura {
+  border-radius: 999px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(103, 232, 249, 0.22),
+    rgba(32, 106, 233, 0.12) 42%,
+    transparent 72%
+  );
+  filter: blur(10px);
+}
+
+.jobdone-logo-mark-edge {
+  border-radius: 999px;
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(32, 106, 233, 0.06) 28%,
+    rgba(103, 232, 249, 0.72) 49%,
+    rgba(255, 255, 255, 0.78) 52%,
+    rgba(32, 106, 233, 0.14) 70%,
+    transparent 100%
+  );
+  background-size: 240% 100%;
+  filter: blur(8px);
+  mix-blend-mode: screen;
+}
+
+.group\/logo:hover .jobdone-logo-mark-aura,
+.group\/logo:focus-visible .jobdone-logo-mark-aura,
+.group\/logo.is-logo-revealed .jobdone-logo-mark-aura {
+  animation: jobdone-logo-mark-aura 1000ms ease both;
+}
+
+.group\/logo:hover .jobdone-logo-mark-edge,
+.group\/logo:focus-visible .jobdone-logo-mark-edge,
+.group\/logo.is-logo-revealed .jobdone-logo-mark-edge {
+  animation: jobdone-logo-mark-sweep 1050ms ease-in-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

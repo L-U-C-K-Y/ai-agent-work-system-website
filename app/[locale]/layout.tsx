@@ -9,6 +9,7 @@ import { Suspense, type ReactNode } from "react";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SiteIntro } from "@/components/site-intro";
 import { locales, routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -182,6 +183,7 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
+          <SiteIntro />
           <Suspense fallback={<HeaderFallback locale={locale as Locale} />}>
             <SiteHeader />
           </Suspense>
