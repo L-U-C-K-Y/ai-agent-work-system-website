@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export function MotionObserver() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const items = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
 
@@ -37,7 +40,7 @@ export function MotionObserver() {
     items.forEach((item) => observer.observe(item));
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }
