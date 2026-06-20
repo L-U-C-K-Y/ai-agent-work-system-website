@@ -15,4 +15,5 @@ export const mainNavigation = [
 export const legalNavigation = [
   { key: "privacy", href: "/privacy" },
   { key: "terms", href: "/terms" },
+  { key: "imprint", href: "/imprint" },
 ] as const;

@@ -88,6 +88,10 @@
         "terms": {
           "title": "Terms",
           "description": "Terms for the public website and closed preview."
+        },
+        "imprint": {
+          "title": "Imprint",
+          "description": "Company and legal notice for JobDone AI GmbH."
         }
       }
     }
@@ -102,6 +106,7 @@
     "about": "About",
     "privacy": "Privacy",
     "terms": "Terms",
+    "imprint": "Imprint",
     "contact": "Contact",
     "aiAdoption": "AI Adoption",
     "rights": "(c) {year} JobDone AI. All rights reserved.",
@@ -770,6 +775,70 @@
         "title": "18. Changes to these terms",
         "paragraphs": [
           "We may update these terms when our website, service, business, providers, legal requirements, risk controls, or public materials change. The updated version will be posted on this page with a new last-updated date. Continued use of the website after updated terms are posted means you accept the updated terms. Separate written agreements can only be changed according to their own terms."
+        ]
+      }
+    }
+  },
+  "Imprint": {
+    "metadataTitle": "Imprint",
+    "metadataDescription": "Company and legal notice for JobDone AI GmbH.",
+    "eyebrow": "Legal notice",
+    "title": "Imprint",
+    "intro": "Company identification and contact information for the JobDone AI public website.",
+    "sections": {
+      "provider": {
+        "title": "Provider",
+        "paragraphs": [
+          "This public website is provided by JobDone AI GmbH."
+        ],
+        "details": [
+          {
+            "label": "Company",
+            "value": "JobDone AI GmbH"
+          },
+          {
+            "label": "Address",
+            "value": "Baarerstrasse 11, 6300 Zug, Switzerland"
+          },
+          {
+            "label": "Legal form",
+            "value": "Limited liability company (GmbH)"
+          },
+          {
+            "label": "Registered seat",
+            "value": "Zug"
+          },
+          {
+            "label": "UID",
+            "value": "CHE-408.536.393"
+          },
+          {
+            "label": "CH-ID",
+            "value": "CH-170.4.024.762-7"
+          },
+          {
+            "label": "FCRO-ID",
+            "value": "1751464"
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "paragraphs": [
+          "You can contact JobDone AI by email at <email>hello@jobdone.ai</email> or through the <contact>JobDone AI contact form</contact>.",
+          "Official commercial register information is available from the <registry>Commercial Register of the Canton of Zug</registry>."
+        ]
+      },
+      "responsible": {
+        "title": "Responsible for website content",
+        "paragraphs": [
+          "JobDone AI GmbH is responsible for the content of this public website unless another source is expressly identified."
+        ]
+      },
+      "terms": {
+        "title": "Commercial and customer terms",
+        "paragraphs": [
+          "This imprint does not replace any separate customer agreement, pilot agreement, data-processing agreement, security terms, or other written commercial terms."
         ]
       }
     }

@@ -70,6 +70,7 @@ const companyLinks = [
   ["contact", "/contact"],
   ["privacy", "/privacy"],
   ["terms", "/terms"],
+  ["imprint", "/imprint"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
 const platformLinks = [
@@ -115,6 +116,10 @@ function toInternalPathname(pathname: string) {
     return "/terms";
   }
 
+  if (unprefixed === "/impressum") {
+    return "/imprint";
+  }
+
   return unprefixed;
 }
 
@@ -142,7 +147,8 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
     internalPathname === "/ai-adoption" ||
     internalPathname === "/contact" ||
     internalPathname === "/privacy" ||
-    internalPathname === "/terms"
+    internalPathname === "/terms" ||
+    internalPathname === "/imprint"
   ) {
     return getPathname({ href: internalPathname, locale: targetLocale });
   }
