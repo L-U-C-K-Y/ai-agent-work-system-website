@@ -444,7 +444,7 @@ function PrimitiveGrid({ copy }: { copy: HomeCopy }) {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#080d12_0%,rgba(8,13,18,0.86)_34%,rgba(8,13,18,0.62)_100%)]" />
       <Container className="relative">
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr]">
-          <div>
+          <div data-reveal="rise">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {copy.primitiveEyebrow}
             </p>
@@ -452,9 +452,12 @@ function PrimitiveGrid({ copy }: { copy: HomeCopy }) {
               {copy.primitiveTitle}
             </h2>
           </div>
-          <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:grid-cols-2">
+          <div
+            className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:grid-cols-2"
+            data-reveal-stagger
+          >
             {copy.systemPrimitives.map(([title, description]) => (
-              <article className="bg-[#0b1117] p-6" key={title}>
+              <article className="bg-[#0b1117] p-6" data-reveal="rise" key={title}>
                 <div className="mb-8 h-px w-full bg-[linear-gradient(90deg,#206ae9,transparent)]" />
                 <h3 className="text-lg font-semibold text-white">{title}</h3>
                 <p className="mt-3 text-sm leading-6 text-[#91a2b8]">{description}</p>
@@ -471,7 +474,7 @@ function CoworkingSection({ copy }: { copy: HomeCopy }) {
   return (
     <section className="bg-[#05080c] py-20 md:py-24">
       <Container>
-        <div className="mb-10 max-w-3xl">
+        <div className="mb-10 max-w-3xl" data-reveal="rise">
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#60efff]">
             {copy.coworkingEyebrow}
           </p>
@@ -485,10 +488,11 @@ function CoworkingSection({ copy }: { copy: HomeCopy }) {
 
         <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-lg border border-white/10 bg-[#0b1117] p-4">
-            <div className="grid gap-3 md:grid-cols-2">
+            <div className="grid gap-3 md:grid-cols-2" data-reveal-stagger>
               {copy.coworkingCards.map(([title, description], index) => (
                 <Card
                   className="relative min-h-40 overflow-hidden border-white/10 bg-white/[0.035] py-0"
+                  data-reveal="rise"
                   key={title}
                 >
                   <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,#60efff,transparent)]" />
@@ -510,7 +514,7 @@ function CoworkingSection({ copy }: { copy: HomeCopy }) {
             </div>
           </div>
 
-          <div className="rounded-lg border border-white/10 bg-[#0b1117] p-4">
+          <div className="rounded-lg border border-white/10 bg-[#0b1117] p-4" data-reveal="scale">
             <div className="rounded-md border border-[#206ae9]/20 bg-[#206ae9]/8 p-4">
               <p className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-[#c8d8ff]">
                 {copy.directContextLinks}
@@ -538,7 +542,10 @@ function CollaborationFlow({ copy }: { copy: HomeCopy }) {
   return (
     <section className="bg-[#05080c] py-20 md:py-24">
       <Container>
-        <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+        <div
+          className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"
+          data-reveal="rise"
+        >
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#60efff]">
               {copy.flowEyebrow}
@@ -554,10 +561,11 @@ function CollaborationFlow({ copy }: { copy: HomeCopy }) {
             {copy.flowLink}
           </Link>
         </div>
-        <div className="grid gap-4 md:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-4" data-reveal-stagger>
           {copy.collaborationFlow.map(([step, title, description]) => (
             <article
               className="relative overflow-hidden rounded-lg border border-white/10 bg-[#0b1117] p-6"
+              data-reveal="rise"
               key={title}
             >
               <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,#206ae9,transparent)]" />
@@ -576,7 +584,10 @@ function BusinessValueBand({ copy }: { copy: HomeCopy }) {
   return (
     <section className="relative z-10 -mt-12 bg-transparent pb-20">
       <Container>
-        <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.3)] sm:grid-cols-2 lg:grid-cols-5">
+        <div
+          className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.3)] sm:grid-cols-2 lg:grid-cols-5"
+          data-reveal="scale"
+        >
           {copy.businessValue.map(([title, description], index) => (
             <article
               className="relative bg-[linear-gradient(180deg,rgba(13,24,37,0.9),rgba(8,13,18,0.92))] p-6 md:p-8"
@@ -603,7 +614,10 @@ function ControlsSection({ copy }: { copy: HomeCopy }) {
     <section className="bg-[#080d12] py-20 md:py-24">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <div className="rounded-lg border border-white/10 bg-[#0b1117] p-4 shadow-[0_30px_80px_rgba(0,0,0,0.26)]">
+          <div
+            className="rounded-lg border border-white/10 bg-[#0b1117] p-4 shadow-[0_30px_80px_rgba(0,0,0,0.26)]"
+            data-reveal="scale"
+          >
             <div className="rounded-md border border-white/10 bg-[#05080c] p-4">
               <div className="mb-4 flex items-center justify-between">
                 <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#8ea0b5]">
@@ -640,7 +654,7 @@ function ControlsSection({ copy }: { copy: HomeCopy }) {
               </div>
             </div>
           </div>
-          <div>
+          <div data-reveal="rise">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {copy.governance.eyebrow}
             </p>
@@ -670,7 +684,10 @@ function FinalCta({ copy }: { copy: HomeCopy }) {
   return (
     <section className="bg-[#05080c] pb-10">
       <Container>
-        <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/20 bg-[linear-gradient(135deg,rgba(32,106,233,0.16),rgba(8,13,18,0.82)_36%,rgba(5,8,12,0.94))] p-8 md:p-12">
+        <div
+          className="relative overflow-hidden rounded-lg border border-[#206ae9]/20 bg-[linear-gradient(135deg,rgba(32,106,233,0.16),rgba(8,13,18,0.82)_36%,rgba(5,8,12,0.94))] p-8 md:p-12"
+          data-reveal="scale"
+        >
           <div className="absolute inset-y-0 right-0 hidden w-[58%] bg-[url('/images/jobdone-ai/neon-abstract-glass-primitives.png')] bg-cover bg-center opacity-34 md:block" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,#0b1117_0%,rgba(11,17,23,0.9)_33%,rgba(11,17,23,0.35)_70%,transparent_100%)]" />
           <div className="relative max-w-2xl">
@@ -705,20 +722,29 @@ export default async function Home({ params }: HomeProps) {
         <Container className="relative pb-28 pt-20 md:pb-36 md:pt-28">
           <div className="relative z-10 grid min-w-0 gap-12 lg:grid-cols-[0.62fr_1.38fr] lg:items-center">
             <div className="min-w-0">
-              <h1 className="max-w-full text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.97] tracking-tight text-white md:max-w-3xl md:text-7xl">
+              <h1
+                className="max-w-full text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.97] tracking-tight text-white md:max-w-3xl md:text-7xl"
+                data-reveal="rise"
+              >
                 {copy.heroTitle}
               </h1>
-              <p className="mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-2xl md:text-lg md:leading-8">
+              <p
+                className="reveal-delay-1 mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-2xl md:text-lg md:leading-8"
+                data-reveal="rise"
+              >
                 {copy.heroDescription}
               </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <div
+                className="reveal-delay-2 mt-9 flex flex-col gap-3 sm:flex-row"
+                data-reveal="rise"
+              >
                 <Button href="/platform">{copy.primaryCta}</Button>
                 <Button className="!border-white/14 !bg-white/[0.025] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/products" variant="secondary">
                   {copy.secondaryCta}
                 </Button>
               </div>
             </div>
-            <div className="relative min-w-0">
+            <div className="reveal-delay-2 relative min-w-0" data-reveal="scale">
               {useImagegenExperimentVisuals ? (
                 <ExperimentVisual
                   alt={copy.heroAlt}

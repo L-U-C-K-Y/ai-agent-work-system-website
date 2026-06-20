@@ -664,17 +664,18 @@ function SharedWorkSection({ copy }: { copy: PlatformCopy }) {
       id="work"
     >
       <Container className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
-        <div>
+        <div data-reveal="rise">
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white md:text-5xl">
             {copy.sharedWorkTitle}
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-7 text-[#9aabbf]">
             {copy.sharedWorkDescription}
           </p>
-          <div className="mt-8 grid gap-3">
+          <div className="mt-8 grid gap-3" data-reveal-stagger>
             {copy.sharedWorkCards.map(([title, description], index) => (
               <article
                 className="rounded-lg border border-white/10 bg-white/[0.035] p-4"
+                data-reveal="rise"
                 key={title}
               >
                 <div className="flex items-start gap-4">
@@ -692,7 +693,7 @@ function SharedWorkSection({ copy }: { copy: PlatformCopy }) {
             ))}
           </div>
         </div>
-        <div className="relative min-w-0">
+        <div className="relative min-w-0" data-reveal="scale">
           <WorkRoomVisual copy={copy} />
         </div>
       </Container>
@@ -705,7 +706,7 @@ function PlatformArchitecture({ copy }: { copy: PlatformCopy }) {
     <section className="relative overflow-hidden bg-[#030609] py-20 md:py-24">
       <div className="absolute inset-x-0 top-0 h-56 bg-[radial-gradient(ellipse_at_50%_0%,rgba(32,106,233,0.18),transparent_62%)]" />
       <Container className="relative">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center" data-reveal="rise">
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
             {copy.architectureTitle}
           </h2>
@@ -713,11 +714,14 @@ function PlatformArchitecture({ copy }: { copy: PlatformCopy }) {
             {copy.architectureDescription}
           </p>
         </div>
-        <PlatformGraphVisual copy={copy} />
-        <div className="mt-8 grid gap-4 lg:grid-cols-7">
+        <div data-reveal="scale">
+          <PlatformGraphVisual copy={copy} />
+        </div>
+        <div className="mt-8 grid gap-4 lg:grid-cols-7" data-reveal-stagger>
           {copy.platformSections.map((section, index) => (
             <article
               className="relative overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(180deg,rgba(13,24,37,0.82),rgba(6,10,15,0.92))] p-5 lg:col-span-1"
+              data-reveal="rise"
               id={section.id}
               key={section.id}
             >
@@ -761,6 +765,7 @@ function DeepDiveSection({ copy }: { copy: PlatformCopy }) {
           {cards.map(({ title, description, section }) => (
             <Card
               className="relative overflow-hidden border-white/10 bg-[linear-gradient(180deg,rgba(12,22,34,0.92),rgba(5,8,12,0.94))] py-0 text-white"
+              data-reveal="rise"
               key={section.id}
             >
               <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,#60efff,transparent)]" />
@@ -818,7 +823,7 @@ function KnowledgeRecordsSection({ copy }: { copy: PlatformCopy }) {
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#05080c_0%,rgba(5,8,12,0.88)_44%,rgba(5,8,12,0.54)_100%)]" />
       <Container className="relative grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div>
+        <div data-reveal="rise">
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">
             {copy.knowledgeRecordsTitle}
           </h2>
@@ -826,11 +831,14 @@ function KnowledgeRecordsSection({ copy }: { copy: PlatformCopy }) {
             {copy.knowledgeRecordsDescription}
           </p>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-4" data-reveal-stagger>
+          <div data-reveal="scale">
           <KnowledgeRecordVisual copy={copy} />
+          </div>
           {sections.map((section) => (
             <article
               className="rounded-lg border border-white/10 bg-[#0b1117]/86 p-5 backdrop-blur-md"
+              data-reveal="rise"
               key={section.id}
             >
               <h3 className="text-xl font-semibold text-white">
@@ -915,17 +923,18 @@ function GovernanceEvidenceSection({ copy }: { copy: PlatformCopy }) {
   return (
     <section className="bg-[#030609] py-20 md:py-24">
       <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div>
+        <div data-reveal="rise">
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">
             {copy.runtimeTitle}
           </h2>
           <p className="mt-5 max-w-xl text-base leading-7 text-[#9aabbf]">
             {copy.runtimeDescription}
           </p>
-          <div className="mt-8 grid gap-3">
+          <div className="mt-8 grid gap-3" data-reveal-stagger>
             {sections.map((section) => (
               <article
                 className="rounded-lg border border-white/10 bg-white/[0.035] p-4"
+                data-reveal="rise"
                 id={section.id}
                 key={section.id}
               >
@@ -939,7 +948,9 @@ function GovernanceEvidenceSection({ copy }: { copy: PlatformCopy }) {
             ))}
           </div>
         </div>
-        <ActivityEvidencePanel copy={copy} />
+        <div data-reveal="scale">
+          <ActivityEvidencePanel copy={copy} />
+        </div>
       </Container>
     </section>
   );
@@ -949,7 +960,10 @@ function FinalCta({ copy }: { copy: PlatformCopy }) {
   return (
     <section className="bg-[#030609] pb-16 md:pb-20">
       <Container>
-        <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/24 bg-[linear-gradient(135deg,rgba(32,106,233,0.22),rgba(8,13,18,0.82)_34%,rgba(5,8,12,0.94))] p-8 md:p-12">
+        <div
+          className="relative overflow-hidden rounded-lg border border-[#206ae9]/24 bg-[linear-gradient(135deg,rgba(32,106,233,0.22),rgba(8,13,18,0.82)_34%,rgba(5,8,12,0.94))] p-8 md:p-12"
+          data-reveal="scale"
+        >
           <div className="absolute inset-y-0 right-0 hidden w-[60%] bg-[url('/images/jobdone-ai/neon-abstract-glass-primitives.png')] bg-cover bg-center opacity-45 md:block" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,#0b1117_0%,rgba(11,17,23,0.88)_34%,rgba(11,17,23,0.28)_76%,transparent_100%)]" />
           <div className="relative max-w-2xl">
@@ -980,13 +994,22 @@ export default async function PlatformPage({ params }: PageProps) {
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
         <Container className="relative grid min-w-0 gap-12 py-16 md:min-h-[680px] md:py-20 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div className="relative z-10 min-w-0">
-            <h1 className="max-w-full text-[clamp(2.25rem,8.6vw,4.25rem)] font-semibold leading-[0.98] tracking-tight md:max-w-3xl md:text-7xl">
+            <h1
+              className="max-w-full text-[clamp(2.25rem,8.6vw,4.25rem)] font-semibold leading-[0.98] tracking-tight md:max-w-3xl md:text-7xl"
+              data-reveal="rise"
+            >
               {copy.title}
             </h1>
-            <p className="mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-xl md:text-lg md:leading-8">
+            <p
+              className="reveal-delay-1 mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-xl md:text-lg md:leading-8"
+              data-reveal="rise"
+            >
               {copy.description}
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div
+              className="reveal-delay-2 mt-9 flex flex-col gap-3 sm:flex-row"
+              data-reveal="rise"
+            >
               <Button href="#work">{copy.primaryCta}</Button>
               <Button
                 className="!border-white/14 !bg-white/[0.025] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10"
@@ -997,14 +1020,16 @@ export default async function PlatformPage({ params }: PageProps) {
               </Button>
             </div>
           </div>
-          <ExperimentVisual
-            alt={copy.heroAlt}
-            className="aspect-[16/9] min-w-0 border-0 shadow-none lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
-            imageClassName="object-contain"
-            priority
-            src="/images/jobdone-ai/neon-work-card-graph.png"
-            variant="blend"
-          />
+          <div className="reveal-delay-2 min-w-0" data-reveal="scale">
+            <ExperimentVisual
+              alt={copy.heroAlt}
+              className="aspect-[16/9] min-w-0 border-0 shadow-none lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
+              imageClassName="object-contain"
+              priority
+              src="/images/jobdone-ai/neon-work-card-graph.png"
+              variant="blend"
+            />
+          </div>
         </Container>
       </section>
 

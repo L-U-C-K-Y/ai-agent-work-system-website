@@ -444,26 +444,31 @@ export default async function AIAdoptionPage({ params }: PageProps) {
         <div className="absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_50%_0%,rgba(32,106,233,0.18),transparent_55%)]" />
         <Container className="relative grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <h1 className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-normal text-white md:text-7xl">
+            <h1
+              className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-normal text-white md:text-7xl"
+              data-reveal="rise"
+            >
               {copy.title}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-[#a8b7c9] md:text-xl">
+            <p className="reveal-delay-1 mt-7 max-w-2xl text-lg leading-8 text-[#a8b7c9] md:text-xl" data-reveal="rise">
               {copy.description}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row" data-reveal="rise">
               <Button href="/contact">{copy.primaryCta}</Button>
               <Button href="/platform" variant="secondary">
                 {copy.secondaryCta}
               </Button>
             </div>
           </div>
-          <HeroAdoptionVisual alt={copy.heroAlt} />
+          <div className="reveal-delay-2" data-reveal="fade">
+            <HeroAdoptionVisual alt={copy.heroAlt} />
+          </div>
         </Container>
       </section>
 
       <section className="bg-[#020508] py-16 md:py-24">
         <Container>
-          <div className="max-w-3xl">
+          <div className="max-w-3xl" data-reveal="rise">
             <h2 className="text-3xl font-medium leading-tight md:text-5xl">
               {copy.journeyTitle}
             </h2>
@@ -471,48 +476,52 @@ export default async function AIAdoptionPage({ params }: PageProps) {
               {copy.journeyDescription}
             </p>
           </div>
-          <JourneyTimeline copy={copy} />
+          <div data-reveal="scale">
+            <JourneyTimeline copy={copy} />
+          </div>
         </Container>
       </section>
 
       <section className="border-y border-white/10 bg-[#05090d] py-16 md:py-24">
         <Container className="grid gap-8 lg:grid-cols-[0.74fr_1.26fr]">
-          <GlassPanel className="relative self-start overflow-hidden p-4">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(32,106,233,0.18),transparent_34%)]" />
-            <span className="absolute bottom-8 left-9 top-8 hidden w-px bg-[linear-gradient(180deg,#206ae9,rgba(96,239,255,0.22),transparent)] md:block" />
-            <div className="relative grid gap-3">
-            {copy.phases.map((phase, index) => (
-              <div
-                className="relative grid grid-cols-[3rem_1fr] gap-3 rounded-lg border border-white/10 bg-[#050b12]/66 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
-                key={phase.title}
-              >
-                <span className="relative z-10 grid size-10 place-items-center rounded-md border border-[#206ae9]/35 bg-[#071522] font-mono text-xs text-[#8fb5ff] shadow-[0_0_24px_rgba(32,106,233,0.16)]">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                <div className="min-w-0">
-                  <h3 className="text-base font-medium text-white">
-                    {phase.title}
-                  </h3>
-                  <p className="text-sm leading-6 text-[#9aabbf]">
-                    {phase.output}
-                  </p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {phase.items.map((item) => (
-                      <li
-                        className="rounded-full border border-[#206ae9]/24 bg-[#071522]/72 px-2.5 py-1 text-[0.72rem] leading-5 text-[#a8b7c9]"
-                        key={item}
-                      >
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          <div data-reveal="scale">
+            <GlassPanel className="relative self-start overflow-hidden p-4">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(32,106,233,0.18),transparent_34%)]" />
+              <span className="absolute bottom-8 left-9 top-8 hidden w-px bg-[linear-gradient(180deg,#206ae9,rgba(96,239,255,0.22),transparent)] md:block" />
+              <div className="relative grid gap-3">
+                {copy.phases.map((phase, index) => (
+                  <div
+                    className="relative grid grid-cols-[3rem_1fr] gap-3 rounded-lg border border-white/10 bg-[#050b12]/66 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                    key={phase.title}
+                  >
+                    <span className="relative z-10 grid size-10 place-items-center rounded-md border border-[#206ae9]/35 bg-[#071522] font-mono text-xs text-[#8fb5ff] shadow-[0_0_24px_rgba(32,106,233,0.16)]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-medium text-white">
+                        {phase.title}
+                      </h3>
+                      <p className="text-sm leading-6 text-[#9aabbf]">
+                        {phase.output}
+                      </p>
+                      <ul className="mt-3 flex flex-wrap gap-2">
+                        {phase.items.map((item) => (
+                          <li
+                            className="rounded-full border border-[#206ae9]/24 bg-[#071522]/72 px-2.5 py-1 text-[0.72rem] leading-5 text-[#a8b7c9]"
+                            key={item}
+                          >
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-            </div>
-          </GlassPanel>
+            </GlassPanel>
+          </div>
           <div>
-            <div className="mb-6 max-w-2xl">
+            <div className="mb-6 max-w-2xl" data-reveal="rise">
               <h2 className="text-3xl font-medium leading-tight md:text-5xl">
                 {copy.mapTitle}
               </h2>
@@ -520,14 +529,16 @@ export default async function AIAdoptionPage({ params }: PageProps) {
                 {copy.mapDescription}
               </p>
             </div>
-            <WorkflowMapVisual copy={copy} />
+            <div data-reveal="scale">
+              <WorkflowMapVisual copy={copy} />
+            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-[#020508] py-16 md:py-24">
         <Container className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
+          <div data-reveal="rise">
             <h2 className="text-3xl font-medium leading-tight md:text-5xl">
               {copy.platformTitle}
             </h2>
@@ -542,7 +553,7 @@ export default async function AIAdoptionPage({ params }: PageProps) {
               ))}
             </div>
           </div>
-          <div>
+          <div data-reveal="scale">
             <h3 className="mb-4 text-2xl font-medium text-white">
               {copy.handoffTitle}
             </h3>
@@ -556,7 +567,10 @@ export default async function AIAdoptionPage({ params }: PageProps) {
 
       <section className="bg-[#020508] pb-16 md:pb-24">
         <Container>
-          <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/45 bg-[#071522] p-8 md:p-14">
+          <div
+            className="relative overflow-hidden rounded-lg border border-[#206ae9]/45 bg-[#071522] p-8 md:p-14"
+            data-reveal="scale"
+          >
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,21,34,0.95),rgba(7,21,34,0.72),rgba(7,21,34,0.96)),url('/images/jobdone-ai/neon-abstract-glass-primitives.png')] bg-cover bg-center opacity-90" />
             <div className="relative max-w-3xl">
               <h2 className="text-3xl font-medium leading-tight md:text-5xl">

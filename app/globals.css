@@ -316,6 +316,77 @@ a {
   animation: jobdone-logo-mark-sweep 1050ms ease-in-out both;
 }
 
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0) scale(0.99);
+  filter: blur(10px);
+  transition:
+    opacity 420ms ease,
+    filter 520ms ease,
+    transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, filter, transform;
+}
+
+[data-reveal="fade"] {
+  transform: none;
+  filter: blur(8px);
+}
+
+[data-reveal="scale"] {
+  transform: translate3d(0, 10px, 0) scale(0.975);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-delay-1 {
+  --reveal-delay: 70ms;
+}
+
+.reveal-delay-2 {
+  --reveal-delay: 140ms;
+}
+
+.reveal-delay-3 {
+  --reveal-delay: 210ms;
+}
+
+.reveal-delay-4 {
+  --reveal-delay: 280ms;
+}
+
+.reveal-delay-5 {
+  --reveal-delay: 350ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(2) {
+  --reveal-delay: 60ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(3) {
+  --reveal-delay: 120ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(4) {
+  --reveal-delay: 180ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(5) {
+  --reveal-delay: 240ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(6) {
+  --reveal-delay: 300ms;
+}
+
+[data-reveal-stagger] > [data-reveal]:nth-child(7) {
+  --reveal-delay: 360ms;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -324,5 +395,11 @@ a {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
   }
 }

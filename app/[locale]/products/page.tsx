@@ -219,13 +219,16 @@ export default async function ProductsPage({ params }: PageProps) {
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {copy.eyebrow}
             </p>
-            <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
+            <h1
+              className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl"
+              data-reveal="rise"
+            >
               {copy.title}
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#a4b3c6]">
+            <p className="reveal-delay-1 mt-6 max-w-xl text-lg leading-8 text-[#a4b3c6]" data-reveal="rise">
               {copy.description}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row" data-reveal="rise">
               <Button href="#use-cases">{copy.primaryCta}</Button>
               <Button className="!border-white/14 !bg-white/[0.03] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10" href="/platform" variant="secondary">
                 {copy.secondaryCta}
@@ -233,21 +236,25 @@ export default async function ProductsPage({ params }: PageProps) {
             </div>
           </div>
           {useImagegenExperimentVisuals ? (
-            <ExperimentVisual
-              alt={copy.heroAlt}
-              className="aspect-[16/9] lg:-mr-[16vw] lg:w-[calc(100%+16vw)]"
-              priority
-              src="/images/jobdone-ai/neon-workspace-rooms.png"
-            />
+            <div className="reveal-delay-2" data-reveal="scale">
+              <ExperimentVisual
+                alt={copy.heroAlt}
+                className="aspect-[16/9] lg:-mr-[16vw] lg:w-[calc(100%+16vw)]"
+                priority
+                src="/images/jobdone-ai/neon-workspace-rooms.png"
+              />
+            </div>
           ) : (
-            <MiniWorkspaceGraphic copy={copy} />
+            <div className="reveal-delay-2" data-reveal="scale">
+              <MiniWorkspaceGraphic copy={copy} />
+            </div>
           )}
         </Container>
       </section>
 
       <section className="py-20 md:py-24" id="use-cases">
         <Container>
-          <div className="mb-10 max-w-2xl">
+          <div className="mb-10 max-w-2xl" data-reveal="rise">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#60efff]">
               {copy.sectionEyebrow}
             </p>
@@ -255,9 +262,9 @@ export default async function ProductsPage({ params }: PageProps) {
               {copy.sectionTitle}
             </h2>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-reveal-stagger>
             {copy.workspaces.map(([name, channel, description]) => (
-              <Card className="border-white/10 bg-[#0b1117] text-white" key={name}>
+              <Card className="border-white/10 bg-[#0b1117] text-white" data-reveal="rise" key={name}>
                 <CardHeader>
                   <Badge variant="outline" className="w-fit border-[var(--primary)]/30 font-mono text-[var(--primary)]">
                     {channel}
@@ -275,7 +282,9 @@ export default async function ProductsPage({ params }: PageProps) {
 
       <section className="border-t border-white/10 bg-[#080d12] py-20 md:py-24">
         <Container>
-          <WorkspaceMatrix copy={copy} />
+          <div data-reveal="scale">
+            <WorkspaceMatrix copy={copy} />
+          </div>
         </Container>
       </section>
     </main>
