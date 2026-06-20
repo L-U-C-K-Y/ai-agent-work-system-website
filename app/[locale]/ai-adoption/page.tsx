@@ -18,9 +18,9 @@ const pageCopy = {
       "Move from disconnected AI experiments to integrated, accountable work systems with JobDone AI.",
     title: "Adopt AI agents where real work happens.",
     description:
-      "JobDone AI helps teams move from disconnected AI experiments to governed workflows where people, AI Coworkers, and AI Automations coordinate inside one operating layer.",
+      "JobDone AI helps teams move from disconnected AI experiments to shared workflows where people, AI Coworkers, and AI Automations work together with clear review points.",
     heroAlt:
-      "Abstract glass work graph connecting business signals, AI Coworkers, AI Automations, knowledge, records, approvals, and evidence",
+      "JobDone AI workspace connecting business signals, AI Coworkers, AI Automations, knowledge, records, approvals, and evidence",
     primaryCta: "Request access",
     secondaryCta: "Explore platform",
     heroVisual: {
@@ -33,7 +33,7 @@ const pageCopy = {
       approvals: "approvals",
       evidence: "evidence",
     },
-    journeyTitle: "From exploration to operating rhythm.",
+    journeyTitle: "From exploration to everyday work.",
     journeyDescription:
       "Adoption becomes practical when the path moves from business reality into a working system, not a separate AI side project.",
     journey: [
@@ -45,7 +45,7 @@ const pageCopy = {
       {
         title: "Integrate",
         description:
-          "Configure work rooms, inputs, AI Coworkers, AI Automations, knowledge, records, and approvals.",
+          "Set up work rooms, incoming requests, AI Coworkers, AI Automations, knowledge, records, and approvals.",
       },
       {
         title: "Operate",
@@ -73,11 +73,11 @@ const pageCopy = {
       {
         title: "Integration",
         description:
-          "The mapped workflow becomes a real JobDone AI workspace with communication rooms, flexible inputs, AI Coworkers, AI Automations, connected knowledge, records, and approvals.",
-        output: "Output: first operating workspace on JobDone AI.",
+          "The mapped workflow becomes a real JobDone AI workspace with communication rooms, flexible entry points, AI Coworkers, AI Automations, connected knowledge, records, and approvals.",
+        output: "Output: first live workspace on JobDone AI.",
         items: [
           "Work rooms and work card structure",
-          "AI Coworker roles and AI Automation inputs",
+          "AI Coworker roles and AI Automation entry points",
           "Knowledge, records, and approval routing",
         ],
       },
@@ -87,7 +87,7 @@ const pageCopy = {
           "Teams monitor work, evidence, approvals, record changes, and adoption patterns while the system becomes a repeatable way to run agent-assisted work.",
         output: "Output: expansion path across teams and workflows.",
         items: [
-          "Runtime and evidence review",
+          "Activity and evidence review",
           "Approval and record-change visibility",
           "Repeatable workspace patterns",
         ],
@@ -95,7 +95,7 @@ const pageCopy = {
     ],
     mapTitle: "Adoption work lands inside the platform.",
     mapDescription:
-      "Exploration and integration connect directly to the operating layer that runs the work: shared rooms, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence.",
+      "Exploration and integration connect directly to the workspace where people and AI do the work: shared rooms, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence.",
     platformTitle: "Why the platform matters.",
     platformDescription:
       "AI adoption needs more than advice and isolated tools. It needs a place where agent work can be assigned, inspected, approved, and connected to the knowledge and structured records that already shape the business.",
@@ -117,12 +117,12 @@ const pageCopy = {
   de: {
     metadataTitle: "AI Adoption",
     metadataDescription:
-      "Von getrennten KI-Experimenten zu integrierten, verantwortlichen Arbeitssystemen mit JobDone AI.",
-    title: "KI-Agenten dort einführen, wo echte Arbeit passiert.",
+      "Von getrennten AI-Experimenten zu integrierten, verantwortlichen Arbeitssystemen mit JobDone AI.",
+    title: "AI dort einführen, wo echte Arbeit passiert.",
     description:
-      "JobDone AI hilft Teams, von getrennten KI-Experimenten zu gesteuerten Workflows zu kommen, in denen Menschen, AI Coworker und AI Automatisierungen in einer operativen Ebene zusammenarbeiten.",
+      "JobDone AI hilft Teams, von getrennten AI-Experimenten zu gemeinsamen Workflows zu kommen, in denen Menschen, AI Coworker und AI-Automatisierungen mit klaren Prüfpunkten zusammenarbeiten.",
     heroAlt:
-      "Abstrakter Glass Work Graph verbindet Business-Signale, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise",
+      "JobDone AI Arbeitsbereich verbindet Business-Signale, AI Coworker, AI-Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise",
     primaryCta: "Zugang anfragen",
     secondaryCta: "Plattform erkunden",
     heroVisual: {
@@ -130,14 +130,14 @@ const pageCopy = {
       mapping: "Workflow-Mapping",
       workspace: "JobDone AI Workspace",
       coworker: "AI Coworker",
-      automation: "AI Automatisierungen",
+      automation: "AI-Automatisierungen",
       records: "Wissen + Datensätze",
       approvals: "Freigaben",
       evidence: "Nachweise",
     },
     journeyTitle: "Von Exploration zu operativem Rhythmus.",
     journeyDescription:
-      "AI Adoption wird praktisch, wenn der Weg aus der echten Business-Arbeit in ein funktionierendes System führt, nicht in ein separates KI-Nebenprojekt.",
+      "AI Adoption wird praktisch, wenn der Weg aus der echten Business-Arbeit in ein funktionierendes System führt, nicht in ein separates AI-Nebenprojekt.",
     journey: [
       {
         title: "Explorieren",
@@ -147,7 +147,7 @@ const pageCopy = {
       {
         title: "Integrieren",
         description:
-          "Arbeitsräume, Inputs, AI Coworker, AI Automatisierungen, Wissen, Datensätze und Freigaben konfigurieren.",
+          "Arbeitsräume, eingehende Anfragen, AI Coworker, AI-Automatisierungen, Wissen, Datensätze und Freigaben einrichten.",
       },
       {
         title: "Betreiben",
@@ -175,21 +175,21 @@ const pageCopy = {
       {
         title: "Integration",
         description:
-          "Der abgebildete Workflow wird zu einem echten JobDone AI Workspace mit Kommunikationsräumen, flexiblen Inputs, AI Coworkern, AI Automatisierungen, verbundenem Wissen, Datensätzen und Freigaben.",
+          "Der abgebildete Workflow wird zu einem echten JobDone AI Workspace mit Kommunikationsräumen, flexiblen Eingängen, AI Coworkern, AI-Automatisierungen, verbundenem Wissen, Datensätzen und Freigaben.",
         output: "Output: erster operativer Workspace auf JobDone AI.",
         items: [
           "Arbeitsräume und Work-Card-Struktur",
-          "Rollen für AI Coworker und Inputs für AI Automatisierungen",
+          "Rollen für AI Coworker und Eingänge für AI-Automatisierungen",
           "Routing für Wissen, Datensätze und Freigaben",
         ],
       },
       {
         title: "Operation",
         description:
-          "Teams beobachten Arbeit, Nachweise, Freigaben, Datensatzänderungen und Adoptionsmuster, während das System zu einer wiederholbaren Arbeitsweise mit AI Agenten wird.",
+          "Teams beobachten Arbeit, Nachweise, Freigaben, Datensatzänderungen und Adoptionsmuster, während das System zu einer wiederholbaren Arbeitsweise mit AI-Teamkollegen wird.",
         output: "Output: Erweiterungspfad über Teams und Workflows.",
         items: [
-          "Runtime- und Nachweisprüfung",
+          "Aktivitäts- und Nachweisprüfung",
           "Sichtbarkeit für Freigaben und Datensatzänderungen",
           "Wiederholbare Workspace-Muster",
         ],
@@ -197,13 +197,13 @@ const pageCopy = {
     ],
     mapTitle: "Adoptionsarbeit landet direkt in der Plattform.",
     mapDescription:
-      "Exploration und Integration verbinden sich mit der operativen Ebene, die Arbeit ausführt: gemeinsame Räume, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise.",
+      "Exploration und Integration verbinden sich direkt mit dem Arbeitsbereich, in dem Menschen und AI arbeiten: gemeinsame Räume, AI Coworker, AI-Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise.",
     platformTitle: "Warum die Plattform wichtig ist.",
     platformDescription:
       "AI Adoption braucht mehr als Beratung und isolierte Tools. Sie braucht einen Ort, an dem Agentenarbeit zugewiesen, geprüft, freigegeben und mit dem Wissen sowie den strukturierten Datensätzen verbunden wird, die das Business bereits prägen.",
     platformLinks: [
       ["AI Coworker", { pathname: "/platform", hash: "ai-coworkers" }],
-      ["AI Automatisierungen", { pathname: "/platform", hash: "ai-automations" }],
+      ["AI-Automatisierungen", { pathname: "/platform", hash: "ai-automations" }],
       ["Wissen", { pathname: "/platform", hash: "knowledge" }],
       ["Datensätze", { pathname: "/platform", hash: "records" }],
       ["Freigaben", { pathname: "/platform", hash: "approvals" }],
@@ -211,7 +211,7 @@ const pageCopy = {
     ],
     handoffTitle: "Vom Adoption-Plan zum Live-Arbeitssystem.",
     handoffDescription:
-      "Der erste abgegrenzte Workflow bleibt nicht in einer Präsentation. Er wird zu einem Workspace, in dem Menschen und AI Agenten koordinieren, Wissen und Datensätze aktualisieren und die Spur prüfbar halten.",
+      "Der erste abgegrenzte Workflow bleibt nicht in einer Präsentation. Er wird zu einem Workspace, in dem Menschen und AI-Teamkollegen koordinieren, Wissen und Datensätze aktualisieren und die Spur prüfbar halten.",
     finalTitle: "Starte mit einem AI Adoption Gespräch.",
     finalDescription:
       "Bring den Workflow, das Team oder das Business-Signal mit, das real werden soll. Wir helfen dabei, den ersten Weg in JobDone AI zu formen.",

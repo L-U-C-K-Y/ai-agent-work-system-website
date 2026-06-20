@@ -1,8 +1,8 @@
 {
   "Site": {
     "name": "JobDone AI",
-    "description": "The AI Agent Work System for businesses.",
-    "ogAlt": "JobDone AI collaborative work system for human and AI agent teams."
+    "description": "A shared workspace for teams and AI teammates.",
+    "ogAlt": "JobDone AI shared workspace for teams, AI Coworkers, and AI Automations."
   },
   "Navigation": {
     "home": "Home",
@@ -24,19 +24,19 @@
   "MegaMenu": {
     "platform": {
       "eyebrow": "Platform",
-      "title": "The operating layer behind human and AI work.",
+      "title": "The shared workspace for human and AI work.",
       "links": {
         "workGraph": {
-          "title": "Work graph",
+          "title": "Connected work",
           "description": "Connect messages, work cards, records, and audit history."
         },
         "aiCoworkers": {
           "title": "AI Coworkers",
-          "description": "Give autonomous coworkers identity, context, tools, memory, and visibility."
+          "description": "Give AI teammates a clear role, approved tools, and visible progress."
         },
         "aiAutomations": {
           "title": "AI Automations",
-          "description": "Turn inputs into work with knowledge, records, and approval checkpoints."
+          "description": "Turn incoming requests into work with knowledge, records, and approval checkpoints."
         },
         "knowledgeRecords": {
           "title": "Knowledge and records",
@@ -46,7 +46,7 @@
     },
     "useCases": {
       "eyebrow": "Use cases",
-      "title": "Operating rooms for the work AI agents and teams share.",
+      "title": "Work rooms for teams and AI.",
       "viewAll": "View all use cases",
       "links": {
         "finance": {
@@ -138,11 +138,11 @@
         "shortName": "Finance",
         "tagline": "Invoices, approvals, vendor records, and exceptions in one room.",
         "summary": "Finance teams can coordinate documents, approvals, reconciliations, and system updates with AI Coworkers that keep evidence attached.",
-        "description": "A shared operating room for finance work where people and AI Coworkers review invoices, collect policy context, propose record updates, and keep approvals traceable.",
+        "description": "A shared room for finance work where people and AI Coworkers review invoices, collect policy context, propose record updates, and keep approvals traceable.",
         "platforms": [
           "Finance AI",
           "Controller",
-          "Approval Agent"
+          "Approvals"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -178,8 +178,8 @@
         "description": "A workspace for inventory and operations teams to coordinate asset records, stock exceptions, replenishment requests, and cross-functional handoffs with visible AI Coworkers.",
         "platforms": [
           "Inventory AI",
-          "Records Agent",
-          "Handoff Agent"
+          "Records",
+          "Handoffs"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -215,8 +215,8 @@
         "description": "A governed workspace for onboarding, policy questions, employee document handling, and approval-heavy people operations where every agent action is visible.",
         "platforms": [
           "People AI",
-          "Policy Agent",
-          "Access Agent"
+          "Policies",
+          "Access"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -252,8 +252,8 @@
         "description": "A collaborative room for support operations where human responders and AI Coworkers triage cases, collect customer context, search knowledge, and route escalations.",
         "platforms": [
           "Support AI",
-          "Triage Agent",
-          "Escalation Agent"
+          "Triage",
+          "Escalations"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -289,8 +289,8 @@
         "description": "A product operations workspace that turns feedback, bugs, incidents, and release coordination into traceable work shared by people and AI Coworkers.",
         "platforms": [
           "Product AI",
-          "Feedback Agent",
-          "Release Agent"
+          "Feedback",
+          "Releases"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -326,8 +326,8 @@
         "description": "A revenue operations room for account research, CRM hygiene, meeting prep, follow-up work, and pipeline updates coordinated by people and AI Coworkers.",
         "platforms": [
           "Revenue AI",
-          "Research Agent",
-          "CRM Agent"
+          "Research",
+          "CRM updates"
         ],
         "primaryCta": "Request access",
         "secondaryCta": "View use cases",
@@ -392,7 +392,7 @@
       "aiCoworkers": "AI Coworkers",
       "workThread": "Work thread",
       "workThreadCopy": "Message, decision, evidence, and system update stay linked to the same work card.",
-      "richWorkCard": "Rich work card",
+      "richWorkCard": "Work card",
       "routed": "routed",
       "knowledge": "Knowledge",
       "records": "Records",
@@ -404,7 +404,7 @@
     "metadataDescription": "Request access, a pilot conversation, or a strategic partnership discussion with JobDone AI.",
     "eyebrow": "Closed preview",
     "heroTitle": "Request access to JobDone AI.",
-    "heroDescription": "The AI Agent Work System is in closed preview. Use this page for access requests, pilot conversations, and strategic partnership discussions.",
+    "heroDescription": "JobDone AI is in closed preview. Use this page for access requests, pilot conversations, and strategic partnership discussions.",
     "heroAlt": "JobDone AI closed-preview contact panel.",
     "closedPreviewTitle": "Closed preview only",
     "closedPreviewCopy": "JobDone AI is not generally available yet. We are prioritizing strong workflows, clear business cases, and teams ready to bring AI agents into real work with control.",
@@ -415,49 +415,49 @@
       "Strategic partnership"
     ],
     "requestPipeline": {
-      "title": "Request packet",
-      "description": "A compact control plane for moving from business signal to a scoped work system.",
+      "title": "Access request",
+      "description": "Tell us what kind of work you want to improve with JobDone AI.",
       "badge": "Preview queue",
       "metrics": [
         [
-          "records",
-          "attached"
+          "workflow",
+          "shared"
         ],
         [
-          "agents",
-          "visible"
+          "team",
+          "reviewing"
         ],
         [
-          "approval",
-          "scoped"
+          "follow-up",
+          "prepared"
         ]
       ],
       "steps": [
         [
           "01",
-          "Signal",
-          "Business context, workflow shape, and priority are captured."
+          "Share",
+          "Tell us what team, workflow, or recurring task you want to improve."
         ],
         [
           "02",
-          "Map",
-          "AI Coworker roles, records, tools, and approvals are modeled."
+          "Review",
+          "We look at the workflow, the people involved, and where AI could help safely."
         ],
         [
           "03",
-          "Scope",
-          "A preview path is assembled with boundaries and ownership."
+          "Plan",
+          "We shape a practical first use case with clear ownership and review points."
         ],
         [
           "04",
-          "Open",
-          "The right work system surface is prepared for access."
+          "Follow up",
+          "The JobDone AI team gets back to you with the next step."
         ]
       ],
       "consoleLines": [
-        "workspace_graph: hydrated",
-        "human_review: required",
-        "email_delivery: api_route"
+        "Request received",
+        "Workflow context reviewed",
+        "Team follow-up prepared"
       ]
     }
   },

@@ -24,9 +24,9 @@ const pageCopy = {
     metadataTitle: "Use cases",
     metadataDescription: "Department-specific use cases for human and AI agent teams.",
     eyebrow: "Use cases",
-    title: "Operating rooms for human and AI work.",
+    title: "Work rooms for human and AI work.",
     description:
-      "Each workspace brings channels, AI coworkers, work cards, automations, knowledge, records, approvals, and activity into one focused operating surface.",
+      "Each workspace gives a team one place to track work, involve AI Coworkers and AI Automations, and review important changes.",
     primaryCta: "View use cases",
     secondaryCta: "View platform",
     heroAlt:
@@ -35,8 +35,8 @@ const pageCopy = {
     live: "live",
     sectionEyebrow: "Start where work already lives",
     sectionTitle: "Department-specific rooms, one shared system.",
-    matrixEyebrow: "use case runtime",
-    matrixTitle: "Every room ships with the same operating primitives.",
+    matrixEyebrow: "use case flow",
+    matrixTitle: "Each team starts with the same simple way to track work, involve AI, and review changes.",
     matrixDescription:
       "Teams can start with one department and keep the same model as more workflows move into the system.",
     workspaces: [
@@ -50,24 +50,24 @@ const pageCopy = {
     coworkerCards: [
       ["Finance AI", "Reconciles invoices", "searching policy"],
       ["Inventory AI", "Maintains asset records", "drafting rows"],
-      ["Approval Agent", "Routes decisions", "waiting review"],
+      ["Approvals", "Routes decisions", "waiting review"],
     ],
     workspaceMatrix: [
       ["Channels", "Shared room", "human + AI conversation"],
-      ["Work cards", "Durable object", "owner, state, evidence"],
-      ["Knowledge", "Grounding layer", "approved citations"],
+      ["Work cards", "Tracked work", "owner, status, evidence"],
+      ["Knowledge", "Trusted context", "approved citations"],
       ["Records", "Data layer", "drafts and updates"],
       ["Automations", "Process layer", "repeatable handoffs"],
-      ["Approvals", "Control layer", "approval and audit"],
+      ["Approvals", "Human review", "approval and audit"],
     ],
   },
   de: {
     metadataTitle: "Anwendungsfälle",
-    metadataDescription: "Abteilungsspezifische Anwendungsfälle für Teams aus Menschen und KI-Agenten.",
+    metadataDescription: "Abteilungsspezifische Anwendungsfälle für Teams aus Menschen und AI.",
     eyebrow: "Anwendungsfälle",
-    title: "Operationsräume für menschliche und KI-Arbeit.",
+    title: "Arbeitsräume für menschliche und AI-Arbeit.",
     description:
-      "Jeder Workspace bündelt Channels, AI Coworker, Work Cards, Automatisierungen, Wissen, Datensätze, Freigaben und Aktivität in einer fokussierten Arbeitsoberfläche.",
+      "Jeder Workspace gibt einem Team einen Ort, um Arbeit zu verfolgen, AI Coworker und AI-Automatisierungen einzubeziehen und wichtige Änderungen zu prüfen.",
     primaryCta: "Anwendungsfälle ansehen",
     secondaryCta: "Plattform ansehen",
     heroAlt:
@@ -76,8 +76,8 @@ const pageCopy = {
     live: "live",
     sectionEyebrow: "Dort starten, wo Arbeit bereits entsteht",
     sectionTitle: "Abteilungsspezifische Räume, ein gemeinsames System.",
-    matrixEyebrow: "Anwendungsfall-Runtime",
-    matrixTitle: "Jeder Raum bringt dieselben operativen Bausteine mit.",
+    matrixEyebrow: "Anwendungsfall-Ablauf",
+    matrixTitle: "Jedes Team startet mit derselben einfachen Art, Arbeit zu verfolgen, AI einzubeziehen und Änderungen zu prüfen.",
     matrixDescription:
       "Teams können mit einer Abteilung starten und dasselbe Modell beibehalten, wenn weitere Workflows ins System wechseln.",
     workspaces: [
@@ -91,15 +91,15 @@ const pageCopy = {
     coworkerCards: [
       ["Finance AI", "Gleicht Rechnungen ab", "sucht Richtlinie"],
       ["Inventory AI", "Pflegt Asset-Datensätze", "entwirft Zeilen"],
-      ["Approval Agent", "Routet Entscheidungen", "wartet auf Prüfung"],
+      ["Freigaben", "Routet Entscheidungen", "wartet auf Prüfung"],
     ],
     workspaceMatrix: [
       ["Channels", "Gemeinsamer Raum", "Mensch + KI-Konversation"],
-      ["Work Cards", "Dauerhaftes Objekt", "Owner, Status, Nachweis"],
-      ["Wissen", "Grounding-Ebene", "freigegebene Zitate"],
+      ["Work Cards", "Nachverfolgbare Arbeit", "Owner, Status, Nachweis"],
+      ["Wissen", "Verlässlicher Kontext", "freigegebene Zitate"],
       ["Datensätze", "Datenebene", "Entwürfe und Updates"],
       ["Automatisierungen", "Prozessebene", "wiederholbare Übergaben"],
-      ["Freigaben", "Kontrollebene", "Freigabe und Audit"],
+      ["Freigaben", "Menschliche Prüfung", "Freigabe und Audit"],
     ],
   },
 } as const;

@@ -15,26 +15,26 @@ const pageCopy = {
   en: {
     metadataTitle: "Platform",
     metadataDescription:
-      "The inspectable operating layer for AI Coworkers, AI Automations, and human work.",
+      "A workspace where people can see, review, and guide AI-assisted work.",
     title:
       "The platform where AI Coworkers and AI Automations do accountable work.",
     description:
-      "Coordinate shared work channels, rich work cards, knowledge, records, approvals, and evidence in one inspectable operating layer.",
+      "Messages, tasks, company knowledge, approvals, and record updates stay connected in one place.",
     primaryCta: "Explore the platform",
     secondaryCta: "Request access",
     heroAlt:
-      "JobDone AI work graph connecting work cards, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence",
+      "JobDone AI platform connecting work cards, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence",
     sharedWorkTitle: "Shared rooms for the work people and AI do together.",
     sharedWorkDescription:
       "People and AI Coworkers coordinate in communication rooms built for durable work, not scattered follow-up. Messages become work cards, context stays attached, and every action can open the knowledge or records behind it.",
     sharedWorkCards: [
       ["Work channels", "Coordinate people and AI Coworkers in persistent rooms with threads, mentions, attachments, and linked work."],
-      ["Rich work cards", "Turn messages into tracked objects with owners, status, priority, evidence, approvals, and next actions."],
+      ["Work cards", "Turn messages into tracked work with owners, status, context, approvals, and next actions."],
       ["Direct context", "Open the source document, database record, proposed diff, or approval packet from the work itself."],
     ],
-    architectureTitle: "One platform layer, seven connected primitives.",
+    architectureTitle: "Everything needed to move work from request to completion.",
     architectureDescription:
-      "The system joins communication, autonomous action, workflow inputs, governed knowledge, structured records, approvals, and evidence.",
+      "Messages, tasks, company knowledge, approvals, and record updates stay connected in one place.",
     knowledgeRecordsTitle:
       "Knowledge and records become the memory of the work system.",
     knowledgeRecordsDescription:
@@ -50,7 +50,7 @@ const pageCopy = {
       record: "record",
       approval: "approval",
       evidence: "evidence",
-      traceAttached: "Trace attached",
+      traceAttached: "Evidence attached",
       role: "role",
       tools: "tools",
       memory: "memory",
@@ -67,8 +67,8 @@ const pageCopy = {
       review: "review",
       coworker: "AI Coworker",
       automation: "AI Automation",
-      input: "input adapter",
-      runtime: "runtime",
+      input: "input",
+      runtime: "activity",
       accountable: "Accountable work object",
       objectDetail: "context, owner, status, sources, approvals, output",
       policy: "Policy v4",
@@ -87,7 +87,7 @@ const pageCopy = {
         id: "work",
         title: "Work",
         description:
-          "Work is the durable object that carries context from conversation to completion.",
+          "Work carries context from the first conversation to completion.",
         items: ["Messages become scoped work cards", "Owners, status, priority, and evidence stay visible", "Work links directly to records, knowledge, approvals, and runs"],
       },
       {
@@ -101,8 +101,8 @@ const pageCopy = {
         id: "ai-automations",
         title: "AI Automations",
         description:
-          "Input-driven workflow lanes turn business signals into work with checkpoints and traceable outcomes.",
-        items: ["Receive email, forms, files, document drops, APIs, and integration inputs", "Create work and route it to people or AI Coworkers", "Use knowledge, update structured records, and request approvals"],
+          "Incoming business signals become work with checkpoints and traceable outcomes.",
+        items: ["Receive email, forms, files, document drops, APIs, and integration events", "Create work and route it to people or AI Coworkers", "Use knowledge, update structured records, and request approvals"],
       },
       {
         id: "knowledge",
@@ -129,17 +129,17 @@ const pageCopy = {
         id: "audit-evidence",
         title: "Audit and evidence",
         description:
-          "Every input, action, citation, approval, and output leaves an inspectable trail.",
-        items: ["Runtime events stay visible beside the work", "Record changes and knowledge sources remain traceable", "Teams can prove what happened without reconstructing it later"],
+          "Every request, action, citation, approval, and output leaves an inspectable trail.",
+        items: ["AI activity stays visible beside the work", "Record changes and knowledge sources remain traceable", "Teams can prove what happened without reconstructing it later"],
       },
     ],
     coworkerTitle: "AI Coworkers act like visible teammates, not hidden scripts.",
     coworkerDescription:
       "They join the same work rooms as people, understand assigned roles, use approved tools, create work, save knowledge, and operate against structured records with their progress visible.",
-    automationTitle: "AI Automations turn inputs into governed work.",
+    automationTitle: "AI Automations turn incoming requests into governed work.",
     automationDescription:
-      "They listen to flexible business inputs, prepare work, gather approved knowledge, write structured record proposals, and stop for approval where policy or risk requires it.",
-    runtimeKicker: "Runtime + evidence",
+      "They listen for business signals, prepare work, gather approved knowledge, write structured record proposals, and stop for approval where policy or risk requires it.",
+    runtimeKicker: "Activity + evidence",
     runtimeTitle: "Every run leaves a trail people can inspect.",
     runtimeDescription:
       "Agent work is not a black box. Messages, tool calls, citations, proposals, approvals, and completed AI Automations stay visible beside the work they affected.",
@@ -159,31 +159,31 @@ const pageCopy = {
   de: {
     metadataTitle: "Plattform",
     metadataDescription:
-      "Die inspizierbare operative Ebene für AI Coworker, AI Automatisierungen und menschliche Arbeit.",
+      "Ein Arbeitsbereich, in dem Menschen AI-gestützte Arbeit sehen, prüfen und steuern können.",
     title:
-      "Die Plattform, auf der AI Coworker und AI Automatisierungen verantwortliche Arbeit erledigen.",
+      "Die Plattform, auf der AI Coworker und AI-Automatisierungen verantwortliche Arbeit erledigen.",
     description:
-      "Koordiniere gemeinsame Arbeitsräume, Rich Work Cards, Wissen, Datensätze, Freigaben und Nachweise in einer inspizierbaren operativen Ebene.",
+      "Nachrichten, Aufgaben, Unternehmenswissen, Freigaben und Datensatzänderungen bleiben an einem Ort verbunden.",
     primaryCta: "Plattform erkunden",
     secondaryCta: "Zugang anfragen",
     heroAlt:
-      "JobDone AI Work Graph verbindet Work Cards, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise",
+      "JobDone AI Plattform verbindet Work Cards, AI Coworker, AI-Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise",
     sharedWorkTitle:
       "Gemeinsame Räume für die Arbeit, die Menschen und AI erledigen.",
     sharedWorkDescription:
       "Menschen und AI Coworker koordinieren sich in Kommunikationsräumen, die für dauerhafte Arbeit gebaut sind. Nachrichten werden zu Work Cards, Kontext bleibt verbunden, und jede Aktion kann das Wissen oder die Datensätze dahinter öffnen.",
     sharedWorkCards: [
       ["Arbeitsräume", "Koordiniere Menschen und AI Coworker in dauerhaften Räumen mit Threads, Erwähnungen, Anhängen und verknüpfter Arbeit."],
-      ["Rich Work Cards", "Verwandle Nachrichten in nachverfolgbare Objekte mit Ownern, Status, Priorität, Nachweisen, Freigaben und nächsten Aktionen."],
+      ["Work Cards", "Verwandle Nachrichten in nachverfolgbare Arbeit mit Owner, Status, Kontext, Freigaben und nächsten Aktionen."],
       ["Direkter Kontext", "Öffne Quelldokumente, Datensätze, vorgeschlagene Diffs oder Freigabepakete direkt aus der Arbeit."],
     ],
-    architectureTitle: "Eine Plattformebene, sieben verbundene Bausteine.",
+    architectureTitle: "Alles, was Arbeit von der Anfrage bis zum Abschluss braucht.",
     architectureDescription:
-      "Das System verbindet Kommunikation, autonomes Handeln, Workflow-Inputs, gesteuertes Wissen, strukturierte Datensätze, Freigaben und Nachweise.",
+      "Nachrichten, Aufgaben, Unternehmenswissen, Freigaben und Datensatzänderungen bleiben an einem Ort verbunden.",
     knowledgeRecordsTitle:
       "Wissen und Datensätze werden zum Gedächtnis des Arbeitssystems.",
     knowledgeRecordsDescription:
-      "AI Coworker und AI Automatisierungen können freigegebene Quellen nutzen und nützlichen Kontext sowie strukturierte Daten in gesteuerte Systeme zurückspeichern.",
+      "AI Coworker und AI-Automatisierungen können freigegebene Quellen nutzen und nützlichen Kontext sowie strukturierte Daten in gesteuerte Systeme zurückspeichern.",
     visualLabels: {
       room: "Arbeitsraum",
       financeRoom: "# finance",
@@ -195,7 +195,7 @@ const pageCopy = {
       record: "Datensatz",
       approval: "Freigabe",
       evidence: "Nachweis",
-      traceAttached: "Trace verbunden",
+      traceAttached: "Nachweis verbunden",
       role: "Rolle",
       tools: "Tools",
       memory: "Memory",
@@ -211,9 +211,9 @@ const pageCopy = {
       draft: "Entwerfen",
       review: "Prüfen",
       coworker: "AI Coworker",
-      automation: "AI Automatisierung",
-      input: "Input-Adapter",
-      runtime: "Runtime",
+      automation: "AI-Automatisierung",
+      input: "Eingang",
+      runtime: "Aktivität",
       accountable: "Verantwortliches Arbeitsobjekt",
       objectDetail: "Kontext, Owner, Status, Quellen, Freigaben, Output",
       policy: "Richtlinie v4",
@@ -244,10 +244,10 @@ const pageCopy = {
       },
       {
         id: "ai-automations",
-        title: "AI Automatisierungen",
+        title: "AI-Automatisierungen",
         description:
-          "Input-getriebene Workflow-Lanes verwandeln Geschäftssignale in Arbeit mit Prüfpunkten und nachvollziehbaren Ergebnissen.",
-        items: ["Empfangen E-Mails, Formulare, Dateien, Dokumentenablagen, APIs und Integrations-Inputs", "Erstellen Arbeit und routen sie an Menschen oder AI Coworker", "Nutzen Wissen, aktualisieren strukturierte Datensätze und fragen Freigaben an"],
+          "Eingehende Geschäftssignale werden zu Arbeit mit Prüfpunkten und nachvollziehbaren Ergebnissen.",
+        items: ["Empfangen E-Mails, Formulare, Dateien, Dokumentenablagen, APIs und Integrationsereignisse", "Erstellen Arbeit und routen sie an Menschen oder AI Coworker", "Nutzen Wissen, aktualisieren strukturierte Datensätze und fragen Freigaben an"],
       },
       {
         id: "knowledge",
@@ -261,7 +261,7 @@ const pageCopy = {
         title: "Datensätze",
         description:
           "Flexible strukturierte Datenbanken bringen Agentenarbeit über Chat hinaus in gesteuerte operative Daten.",
-        items: ["Schema-gestützte Datensätze modellieren Business-Objekte hinter der Arbeit", "AI Coworker und AI Automatisierungen können Änderungen entwerfen", "Menschen können Diffs prüfen, bevor wichtige Updates landen"],
+        items: ["Schema-gestützte Datensätze modellieren Business-Objekte hinter der Arbeit", "AI Coworker und AI-Automatisierungen können Änderungen entwerfen", "Menschen können Diffs prüfen, bevor wichtige Updates landen"],
       },
       {
         id: "approvals",
@@ -274,32 +274,32 @@ const pageCopy = {
         id: "audit-evidence",
         title: "Audit und Nachweise",
         description:
-          "Jeder Input, jede Aktion, jedes Zitat, jede Freigabe und jeder Output hinterlässt eine inspizierbare Spur.",
-        items: ["Runtime-Ereignisse bleiben neben der Arbeit sichtbar", "Datensatzänderungen und Wissensquellen bleiben nachvollziehbar", "Teams können belegen, was passiert ist, ohne es später zu rekonstruieren"],
+          "Jede Anfrage, jede Aktion, jedes Zitat, jede Freigabe und jeder Output hinterlässt eine inspizierbare Spur.",
+        items: ["AI-Aktivität bleibt neben der Arbeit sichtbar", "Datensatzänderungen und Wissensquellen bleiben nachvollziehbar", "Teams können belegen, was passiert ist, ohne es später zu rekonstruieren"],
       },
     ],
     coworkerTitle:
       "AI Coworker handeln wie sichtbare Teamkollegen, nicht wie versteckte Skripte.",
     coworkerDescription:
       "Sie arbeiten in denselben Räumen wie Menschen, verstehen zugewiesene Rollen, nutzen freigegebene Tools, erstellen Arbeit, speichern Wissen und handeln mit strukturierten Datensätzen bei sichtbarem Fortschritt.",
-    automationTitle: "AI Automatisierungen verwandeln Inputs in gesteuerte Arbeit.",
+    automationTitle: "AI-Automatisierungen verwandeln Eingänge in gesteuerte Arbeit.",
     automationDescription:
-      "Sie hören auf flexible Geschäftsinputs, bereiten Arbeit vor, sammeln freigegebenes Wissen, schreiben strukturierte Datensatzvorschläge und stoppen dort für Freigaben, wo Richtlinie oder Risiko es erfordern.",
-    runtimeKicker: "Runtime + Nachweise",
+      "Sie hören auf Geschäftssignale, bereiten Arbeit vor, sammeln freigegebenes Wissen, schreiben strukturierte Datensatzvorschläge und stoppen dort für Freigaben, wo Richtlinie oder Risiko es erfordern.",
+    runtimeKicker: "Aktivität + Nachweise",
     runtimeTitle: "Jeder Lauf hinterlässt eine Spur, die Menschen prüfen können.",
     runtimeDescription:
-      "Agentenarbeit ist keine Black Box. Nachrichten, Tool Calls, Zitate, Vorschläge, Freigaben und abgeschlossene AI Automatisierungen bleiben neben der betroffenen Arbeit sichtbar.",
-    runtimeStatus: "Live Trace",
+      "Agentenarbeit ist keine Black Box. Nachrichten, Tool Calls, Zitate, Vorschläge, Freigaben und abgeschlossene AI-Automatisierungen bleiben neben der betroffenen Arbeit sichtbar.",
+    runtimeStatus: "Live-Nachweis",
     runtimeItems: [
       ["09:41:02", "Nachricht erhalten", "Maya fragt nach Atlas-Rechnung und Inventory-Übergabe."],
       ["09:41:08", "AI Coworker Aktion", "Finance AI durchsucht Richtlinien, Lieferantendatensätze und den offenen Arbeitsraum."],
       ["09:41:21", "Datensatzvorschlag", "Inventory AI entwirft fünf Asset-Datensätze aus Rechnungspositionen."],
       ["09:41:34", "Freigabeprüfung", "Controller-Prüfung vor Datensatzupdate erforderlich."],
-      ["09:42:11", "AI Automatisierung abgeschlossen", "Assets vorbereitet, Nachweise verbunden und Work Card aktualisiert."],
+      ["09:42:11", "AI-Automatisierung abgeschlossen", "Assets vorbereitet, Nachweise verbunden und Work Card aktualisiert."],
     ],
     finalTitle: "Eine Plattform für Arbeit, die nachvollziehbar bleiben muss.",
     finalDescription:
-      "JobDone AI gibt Menschen, AI Coworkern und AI Automatisierungen einen gemeinsamen Ort, um zu koordinieren, zu entscheiden, Datensätze zu aktualisieren und nachzuweisen, was passiert ist.",
+      "JobDone AI gibt Menschen, AI Coworkern und AI-Automatisierungen einen gemeinsamen Ort, um zu koordinieren, zu entscheiden, Datensätze zu aktualisieren und nachzuweisen, was passiert ist.",
     finalCta: "Zugang anfragen",
   },
 } as const;
@@ -857,7 +857,7 @@ function KnowledgeRecordsSection({ copy }: { copy: PlatformCopy }) {
   );
 }
 
-function RuntimeEvidencePanel({ copy }: { copy: PlatformCopy }) {
+function ActivityEvidencePanel({ copy }: { copy: PlatformCopy }) {
   return (
     <Card
       className="border-white/10 bg-[linear-gradient(180deg,rgba(12,22,34,0.9),rgba(5,8,12,0.92))] py-0 text-white shadow-[0_28px_90px_rgba(0,0,0,0.3)]"
@@ -939,7 +939,7 @@ function GovernanceEvidenceSection({ copy }: { copy: PlatformCopy }) {
             ))}
           </div>
         </div>
-        <RuntimeEvidencePanel copy={copy} />
+        <ActivityEvidencePanel copy={copy} />
       </Container>
     </section>
   );

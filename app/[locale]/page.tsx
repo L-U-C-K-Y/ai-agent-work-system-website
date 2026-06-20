@@ -23,28 +23,19 @@ const useImagegenExperimentVisuals = true;
 
 const pageCopy = {
   en: {
-    statusBadge: "closed preview",
-    statusLabel: "Work graph online",
-    statusItems: ["channels: synced", "agents: visible", "records: attached"],
-    heroBadge: "AI Agent Work System",
-    heroTitle: "A work system for teams and AI agents.",
+    heroTitle: "A shared workspace for teams and AI teammates.",
     heroDescription:
-      "JobDone AI brings people, AI Coworkers, AI Automations, work cards, knowledge, records, approvals, and evidence into one shared operating surface.",
+      "JobDone AI is a shared workspace where teams work with AI Coworkers and AI Automations to get recurring business work done, while people stay in control.",
     primaryCta: "See the platform",
     secondaryCta: "Explore use cases",
-    heroStats: [
-      ["42", "active work items"],
-      ["8", "agent coworkers"],
-      ["100%", "traceable actions"],
-    ],
     heroAlt:
       "JobDone AI collaborative workspace showing channels, AI Coworkers, AI Automations, work cards, knowledge, records, and approvals",
     businessValue: [
       ["Coordinate shared work", "People and AI Coworkers collaborate in work rooms, turn conversations into durable work, and stay aligned across handoffs."],
       ["Delegate to AI Coworkers", "Named AI teammates use approved tools, knowledge, and structured records while their progress stays visible."],
-      ["Trigger AI Automations", "Input-driven lanes receive business signals, create work, gather context, update records, and route approvals."],
+      ["Trigger AI Automations", "Incoming signals from forms, email, or tools create work, gather context, update records, and route approvals."],
       ["Update knowledge and records", "Useful context and structured business data stay connected to the work instead of living only in messages."],
-      ["Prove what happened", "Approvals, evidence, citations, runtime events, and record changes remain inspectable."],
+      ["Prove what happened", "Approvals, evidence, citations, AI activity, and record changes remain inspectable."],
     ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
@@ -54,7 +45,7 @@ const pageCopy = {
       threadDescription: "Human and AI coworking thread",
       activeLabel: "3 active",
       now: "now",
-      workCardLabel: "Rich work card",
+      workCardLabel: "Work card",
       approval: "approval",
       workCardTitle: "Atlas invoice -> inventory handoff",
       workCardDescription:
@@ -97,13 +88,13 @@ const pageCopy = {
       ["Knowledge link", "Open the exact document or citation the agent used to make a recommendation."],
       ["Record link", "Jump straight into the database row, schema, or proposed record diff behind the work."],
     ],
-    primitiveEyebrow: "Work system primitives",
-    primitiveTitle: "The operating model for mixed human and agent teams.",
+    primitiveEyebrow: "How JobDone AI works",
+    primitiveTitle: "The shared model for mixed human and AI teams.",
     systemPrimitives: [
       ["Channels", "A shared room for people and AI Coworkers to discuss work, attach evidence, and create durable work items."],
-      ["Rich work cards", "Messages become structured cards with source context, owners, priority, linked records, and next actions."],
+      ["Tracked work", "Messages become tracked work with an owner, status, context, and next steps."],
       ["AI Coworkers", "Named AI teammates appear in the workspace with roles, status, tools, memory, and visible progress."],
-      ["AI Automations", "Input-driven workflow lanes create work, use knowledge, update records, and keep the right approval checkpoints."],
+      ["AI Automations", "Incoming requests create work, use knowledge, update records, and keep the right approval checkpoints."],
       ["Knowledge", "Agents search approved documents with citations and bring the right context back into the thread."],
       ["Record databases", "Agents read, draft, and update governed operational databases instead of leaving data in chat."],
     ],
@@ -133,7 +124,7 @@ const pageCopy = {
     },
     governanceItems: [
       ["Scoped tools", "Agents only use approved capabilities inside the workspace policy."],
-      ["Traceable runs", "Inputs, prompts, tool calls, approvals, and outputs stay linked to work."],
+      ["Traceable runs", "Requests, prompts, tool calls, approvals, and outputs stay linked to work."],
       ["Role-aware access", "Humans and agents operate inside workspace boundaries and permissions."],
       ["Operational metrics", "Leaders can see throughput, blocked work, approval load, and agent impact."],
     ],
@@ -141,33 +132,24 @@ const pageCopy = {
       eyebrow: "Closed preview",
       title: "Put people, AI Coworkers, and AI Automations in the same work system.",
       description:
-        "Request access to see how JobDone AI coordinates work rooms, knowledge, records, approvals, AI Coworkers, and AI Automations in one operating workspace.",
+        "Request access to see how JobDone AI coordinates work rooms, knowledge, records, approvals, AI Coworkers, and AI Automations in one shared workspace.",
       button: "Request Access",
     },
   },
   de: {
-    statusBadge: "geschlossene Vorschau",
-    statusLabel: "Work Graph online",
-    statusItems: ["Channels: synchronisiert", "Agenten: sichtbar", "Datensätze: verbunden"],
-    heroBadge: "AI Agent Work System",
-    heroTitle: "Ein Arbeitssystem für Teams und KI-Agenten.",
+    heroTitle: "Ein gemeinsamer Arbeitsbereich für Teams und AI-Teamkollegen.",
     heroDescription:
-      "JobDone AI bringt Menschen, AI Coworker, AI Automatisierungen, Work Cards, Wissen, Datensätze, Freigaben und Nachweise in eine gemeinsame operative Oberfläche.",
+      "JobDone AI ist ein gemeinsamer Arbeitsbereich, in dem Teams mit AI Coworkern und AI-Automatisierungen wiederkehrende Arbeit erledigen, ohne Kontrolle und Überblick zu verlieren.",
     primaryCta: "Plattform ansehen",
     secondaryCta: "Anwendungsfälle erkunden",
-    heroStats: [
-      ["42", "aktive Work Items"],
-      ["8", "Agent-Coworker"],
-      ["100%", "nachvollziehbare Aktionen"],
-    ],
     heroAlt:
-      "JobDone AI kollaborativer Workspace mit Channels, AI Coworkern, AI Automatisierungen, Work Cards, Wissen, Datensätzen und Freigaben",
+      "JobDone AI gemeinsamer Arbeitsbereich mit Kanälen, AI Coworkern, AI-Automatisierungen, Work Cards, Wissen, Datensätzen und Freigaben",
     businessValue: [
       ["Gemeinsame Arbeit koordinieren", "Menschen und AI Coworker arbeiten in Arbeitsräumen zusammen, verwandeln Konversationen in dauerhafte Arbeit und bleiben über Übergaben hinweg abgestimmt."],
       ["An AI Coworker delegieren", "Benannte AI-Teamkollegen nutzen freigegebene Tools, Wissen und strukturierte Datensätze, während ihr Fortschritt sichtbar bleibt."],
-      ["AI Automatisierungen auslösen", "Input-getriebene Lanes empfangen Geschäftssignale, erstellen Arbeit, sammeln Kontext, aktualisieren Datensätze und routen Freigaben."],
+      ["AI-Automatisierungen auslösen", "Eingehende Signale aus Formularen, E-Mails oder Tools erstellen Arbeit, sammeln Kontext, aktualisieren Datensätze und routen Freigaben."],
       ["Wissen und Datensätze aktualisieren", "Nützlicher Kontext und strukturierte Geschäftsdaten bleiben mit Arbeit verbunden, statt nur in Nachrichten zu liegen."],
-      ["Nachweisen, was passiert ist", "Freigaben, Nachweise, Zitate, Runtime-Ereignisse und Datensatzänderungen bleiben inspizierbar."],
+      ["Nachweisen, was passiert ist", "Freigaben, Nachweise, Zitate, AI-Aktivität und Datensatzänderungen bleiben prüfbar."],
     ],
     heroWorkspace: {
       liveLabel: "finance-workspace/live",
@@ -177,7 +159,7 @@ const pageCopy = {
       threadDescription: "Menschlicher und KI-Coworking-Thread",
       activeLabel: "3 aktiv",
       now: "jetzt",
-      workCardLabel: "Rich Work Card",
+      workCardLabel: "Work Card",
       approval: "Freigabe",
       workCardTitle: "Atlas-Rechnung -> Inventory-Übergabe",
       workCardDescription:
@@ -220,13 +202,13 @@ const pageCopy = {
       ["Wissenslink", "Öffne genau das Dokument oder Zitat, das der Agent für eine Empfehlung genutzt hat."],
       ["Datensatzlink", "Springe direkt zur Datenbankzeile, zum Schema oder zum vorgeschlagenen Datensatz-Diff hinter der Arbeit."],
     ],
-    primitiveEyebrow: "Bausteine des Arbeitssystems",
-    primitiveTitle: "Das operative Modell für gemischte Menschen- und Agententeams.",
+    primitiveEyebrow: "So funktioniert JobDone AI",
+    primitiveTitle: "Das gemeinsame Modell für Teams aus Menschen und AI.",
     systemPrimitives: [
       ["Channels", "Ein gemeinsamer Raum, in dem Menschen und AI Coworker Arbeit besprechen, Nachweise anhängen und dauerhafte Work Items erstellen."],
-      ["Rich Work Cards", "Nachrichten werden zu strukturierten Cards mit Quellkontext, Ownern, Priorität, verknüpften Datensätzen und nächsten Aktionen."],
+      ["Nachverfolgbare Arbeit", "Nachrichten werden zu Arbeit mit Owner, Status, Kontext und nächsten Schritten."],
       ["AI Coworker", "Benannte AI-Teamkollegen erscheinen im Workspace mit Rollen, Status, Tools, Memory und sichtbarem Fortschritt."],
-      ["AI Automatisierungen", "Input-getriebene Workflow-Lanes erstellen Arbeit, nutzen Wissen, aktualisieren Datensätze und behalten die richtigen Freigabepunkte."],
+      ["AI-Automatisierungen", "Eingänge aus Formularen, E-Mails oder Tools erstellen Arbeit, nutzen Wissen, aktualisieren Datensätze und behalten die richtigen Freigabepunkte."],
       ["Wissen", "Agenten durchsuchen freigegebene Dokumente mit Zitaten und bringen den richtigen Kontext zurück in den Thread."],
       ["Datensatz-Datenbanken", "Agenten lesen, entwerfen und aktualisieren gesteuerte operative Datenbanken, statt Daten im Chat liegen zu lassen."],
     ],
@@ -256,15 +238,15 @@ const pageCopy = {
     },
     governanceItems: [
       ["Begrenzte Tools", "Agenten nutzen nur freigegebene Fähigkeiten innerhalb der Workspace-Richtlinie."],
-      ["Nachvollziehbare Läufe", "Inputs, Prompts, Tool Calls, Freigaben und Outputs bleiben mit Arbeit verknüpft."],
+      ["Nachvollziehbare Läufe", "Anfragen, Prompts, Tool Calls, Freigaben und Outputs bleiben mit Arbeit verknüpft."],
       ["Rollenbewusster Zugriff", "Menschen und Agenten arbeiten innerhalb von Workspace-Grenzen und Berechtigungen."],
       ["Operative Metriken", "Leitende sehen Durchsatz, blockierte Arbeit, Freigabelast und Agentenwirkung."],
     ],
     finalCta: {
-      eyebrow: "Geschlossene Vorschau",
-      title: "Bringe Menschen, AI Coworker und AI Automatisierungen in dasselbe Arbeitssystem.",
+      eyebrow: "Geschlossene Preview",
+      title: "Bringe Menschen, AI Coworker und AI-Automatisierungen in dasselbe Arbeitssystem.",
       description:
-        "Fordere Zugang an, um zu sehen, wie JobDone AI Arbeitsräume, Wissen, Datensätze, Freigaben, AI Coworker und AI Automatisierungen in einem operativen Workspace koordiniert.",
+        "Fordere Zugang an, um zu sehen, wie JobDone AI Arbeitsräume, Wissen, Datensätze, Freigaben, AI Coworker und AI-Automatisierungen an einem Ort koordiniert.",
       button: "Zugang anfragen",
     },
   },

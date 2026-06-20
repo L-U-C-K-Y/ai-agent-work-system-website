@@ -239,18 +239,19 @@ function MegaMenuPanel({
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,6,9,0.52),#030609_78%)]" />
           <div className="relative">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-[var(--primary)]">
-            {eyebrow}
-          </p>
-          <h2 className="mt-3 text-xl font-semibold leading-tight text-white">
-            {title}
-          </h2>
-          <div className="mt-20 rounded-md border border-white/10 bg-black/35 p-3 font-mono text-[0.68rem] leading-5 text-[#8ea0b5] backdrop-blur-md">
-            <p className="text-[var(--chart-2)]">system.status</p>
-            <p>agents: visible</p>
-            <p>records: attached</p>
-            <p>approvals: scoped</p>
-          </div>
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-[var(--primary)]">
+              {eyebrow}
+            </p>
+            <h2 className="mt-3 text-xl font-semibold leading-tight text-white">
+              {title}
+            </h2>
+            <div className="mt-20 rounded-md border border-white/10 bg-black/35 p-3 text-[0.68rem] leading-5 text-[#8ea0b5] backdrop-blur-md">
+              <p className="font-semibold text-[var(--chart-2)]">
+                Work stays visible
+              </p>
+              <p>AI actions are reviewable</p>
+              <p>Approvals stay attached</p>
+            </div>
           </div>
         </div>
         <div className="grid gap-2 p-3">
