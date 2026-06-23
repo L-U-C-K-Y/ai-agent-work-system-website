@@ -749,7 +749,7 @@ export default async function Home({ params }: HomeProps) {
               {useImagegenExperimentVisuals ? (
                 <ProductVideoVisual
                   alt={copy.heroAlt}
-                  className="aspect-[16/9] bg-black shadow-[0_0_110px_80px_#000] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                  className="aspect-[16/9] bg-black shadow-[0_0_110px_80px_#000] lg:-mr-[4vw] lg:w-[calc(100%+4vw)]"
                   fallbackSrc="/videos/jobdone-ai/home-hero-poster.jpg"
                   imageClassName="object-contain"
                   posterSrc="/videos/jobdone-ai/home-hero-poster.jpg"

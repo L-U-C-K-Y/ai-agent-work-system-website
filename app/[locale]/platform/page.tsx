@@ -1025,7 +1025,7 @@ export default async function PlatformPage({ params }: PageProps) {
             <div className="reveal-delay-2 min-w-0" data-reveal="scale">
               <ProductVideoVisual
                 alt={copy.heroAlt}
-                className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] lg:-mr-[4vw] lg:w-[calc(100%+4vw)]"
                 fallbackSrc="/videos/jobdone-ai/platform-graph-poster.jpg"
                 imageClassName="object-contain"
                 posterSrc="/videos/jobdone-ai/platform-graph-poster.jpg"

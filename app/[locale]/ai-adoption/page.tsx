@@ -454,7 +454,7 @@ export default async function AIAdoptionPage({ params }: PageProps) {
             <div className="reveal-delay-2 min-w-0" data-reveal="scale">
               <ProductVideoVisual
                 alt={copy.heroAlt}
-                className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] [mask-image:linear-gradient(90deg,transparent_0%,black_7%,black_96%,transparent_100%)] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] [mask-image:linear-gradient(90deg,transparent_0%,black_7%,black_96%,transparent_100%)] lg:-mr-[4vw] lg:w-[calc(100%+4vw)]"
                 fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
                 imageClassName="scale-[1.08] object-contain brightness-[1.32] contrast-[1.08] saturate-[1.08]"
                 posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
