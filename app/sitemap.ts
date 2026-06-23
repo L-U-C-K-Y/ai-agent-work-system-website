@@ -11,6 +11,7 @@ const localizedRoutes = [
   { en: "/contact", de: "/de/kontakt" },
   { en: "/privacy", de: "/de/datenschutz" },
   { en: "/terms", de: "/de/agb" },
+  { en: "/imprint", de: "/de/impressum" },
   ...publicProductSlugs.map((slug) => ({
     en: `/products/${slug}`,
     de: `/de/produkte/${slug}`,

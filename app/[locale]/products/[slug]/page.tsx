@@ -186,26 +186,31 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.32em] text-[#206ae9]">
               {product.platforms.join(" / ")}
             </p>
-            <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.96] tracking-[-0.04em] text-white md:text-7xl">
+            <h1
+              className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.96] tracking-[-0.04em] text-white md:text-7xl"
+              data-reveal="rise"
+            >
               {product.name}
             </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-8 text-[#b7c4d3]">
+            <p className="reveal-delay-1 mt-6 max-w-2xl text-xl leading-8 text-[#b7c4d3]" data-reveal="rise">
               {product.description}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row" data-reveal="rise">
               <Button href={product.primaryCtaHref}>{product.primaryCta}</Button>
               <Button href={product.secondaryCtaHref} variant="secondary">
                 {product.secondaryCta}
               </Button>
             </div>
           </div>
-          <WorkspaceSystemGraphic product={product} t={t} />
+          <div className="reveal-delay-2" data-reveal="scale">
+            <WorkspaceSystemGraphic product={product} t={t} />
+          </div>
         </Container>
       </section>
 
       <section className="py-16 md:py-24">
         <Container className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr]">
-          <div>
+          <div data-reveal="rise">
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.32em] text-[#5ee7ff]">
               {t("capabilitiesEyebrow")}
             </p>
@@ -213,10 +218,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {t("capabilitiesTitle")}
             </h2>
           </div>
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid gap-3 md:grid-cols-2" data-reveal-stagger>
             {product.features.map((feature) => (
               <div
                 className="rounded-lg border border-white/10 bg-[#0d141b] p-5"
+                data-reveal="rise"
                 key={feature}
               >
                 <h3 className="text-base font-semibold text-white">{feature}</h3>
@@ -231,7 +237,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <section className="border-y border-white/10 bg-[#080d12] py-16 md:py-24">
         <Container>
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end" data-reveal="rise">
             <div>
               <p className="font-mono text-xs font-semibold uppercase tracking-[0.32em] text-[#206ae9]">
                 {t("workflowEyebrow")}
@@ -247,10 +253,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {t("platformLink")} -&gt;
             </Link>
           </div>
-          <div className="mt-10 grid gap-3 md:grid-cols-4">
+          <div className="mt-10 grid gap-3 md:grid-cols-4" data-reveal-stagger>
             {product.workflow.map((step, index) => (
               <div
                 className="rounded-lg border border-white/10 bg-[#0d141b] p-5"
+                data-reveal="rise"
                 key={step}
               >
                 <span className="font-mono text-xs font-semibold text-[#206ae9]">
@@ -264,20 +271,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </section>
 
       <section className="py-16 md:py-24">
-        <Container className="rounded-xl border border-[#206ae9]/20 bg-[#206ae9]/[0.04] p-6 md:p-10">
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.32em] text-[#206ae9]">
-            {t("ctaEyebrow")}
-          </p>
-          <div className="mt-5 grid items-end gap-8 md:grid-cols-[1fr_auto]">
-            <div>
-              <h2 className="max-w-3xl text-4xl font-semibold leading-[1] tracking-[-0.03em] text-white md:text-5xl">
-                {t("ctaTitle")}
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-[#b7c4d3]">
-                {t("ctaCopy")}
-              </p>
+        <Container>
+          <div
+            className="rounded-xl border border-[#206ae9]/20 bg-[#206ae9]/[0.04] p-6 md:p-10"
+            data-reveal="scale"
+          >
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.32em] text-[#206ae9]">
+              {t("ctaEyebrow")}
+            </p>
+            <div className="mt-5 grid items-end gap-8 md:grid-cols-[1fr_auto]">
+              <div>
+                <h2 className="max-w-3xl text-4xl font-semibold leading-[1] tracking-[-0.03em] text-white md:text-5xl">
+                  {t("ctaTitle")}
+                </h2>
+                <p className="mt-4 max-w-2xl text-base leading-7 text-[#b7c4d3]">
+                  {t("ctaCopy")}
+                </p>
+              </div>
+              <Button href={product.primaryCtaHref}>{product.primaryCta}</Button>
             </div>
-            <Button href={product.primaryCtaHref}>{product.primaryCta}</Button>
           </div>
         </Container>
       </section>

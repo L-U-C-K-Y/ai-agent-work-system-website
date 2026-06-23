@@ -132,16 +132,26 @@ export default async function ContactPage({ params }: ContactPageProps) {
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#206ae9]">
               {t("eyebrow")}
             </p>
-            <h1 className="mt-5 max-w-full break-words text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.98] tracking-tight text-white md:text-7xl">
+            <h1
+              className="mt-5 max-w-full break-words text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.98] tracking-tight text-white md:text-7xl"
+              data-reveal="rise"
+            >
               {t("heroTitle")}
             </h1>
-            <p className="mt-6 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-xl md:text-lg md:leading-8">
+            <p
+              className="reveal-delay-1 mt-6 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-xl md:text-lg md:leading-8"
+              data-reveal="rise"
+            >
               {t("heroDescription")}
             </p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+            <div
+              className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2"
+              data-reveal-stagger
+            >
               {topics.map((topic) => (
                 <Card
                   className="border-white/10 bg-[#0b1117]/82 text-white shadow-none"
+                  data-reveal="rise"
                   key={topic}
                 >
                   <CardContent className="flex min-h-20 items-end p-4">
@@ -150,7 +160,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 </Card>
               ))}
             </div>
-            <div className="mt-8 rounded-lg border border-[#206ae9]/20 bg-[#206ae9]/8 p-5">
+            <div className="mt-8 rounded-lg border border-[#206ae9]/20 bg-[#206ae9]/8 p-5" data-reveal="rise">
               <p className="text-sm font-semibold text-white">
                 {t("closedPreviewTitle")}
               </p>
@@ -158,11 +168,15 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 {t("closedPreviewCopy")}
               </p>
             </div>
-            <RequestPipelineGraphic copy={requestPipeline} />
+            <div data-reveal="scale">
+              <RequestPipelineGraphic copy={requestPipeline} />
+            </div>
           </div>
-          <Suspense fallback={<div className="min-h-[520px]" />}>
-            <ContactForm />
-          </Suspense>
+          <div className="reveal-delay-2" data-reveal="scale">
+            <Suspense fallback={<div className="min-h-[520px]" />}>
+              <ContactForm />
+            </Suspense>
+          </div>
         </Container>
       </section>
     </main>

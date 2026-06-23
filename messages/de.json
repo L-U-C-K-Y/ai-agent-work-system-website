@@ -1,8 +1,8 @@
 {
   "Site": {
     "name": "JobDone AI",
-    "description": "Das AI Agent Work System für Unternehmen.",
-    "ogAlt": "JobDone AI kollaboratives Arbeitssystem für Teams aus Menschen und KI-Agenten."
+    "description": "Das Arbeitssystem für Teams und AI.",
+    "ogAlt": "JobDone AI gemeinsamer Arbeitsbereich für Teams, AI Coworker und AI-Automatisierungen."
   },
   "Navigation": {
     "home": "Home",
@@ -24,19 +24,19 @@
   "MegaMenu": {
     "platform": {
       "eyebrow": "Plattform",
-      "title": "Die operative Ebene hinter menschlicher und KI-Arbeit.",
+      "title": "Der gemeinsame Arbeitsbereich für menschliche und AI-Arbeit.",
       "links": {
         "workGraph": {
-          "title": "Work Graph",
+          "title": "Verbundene Arbeit",
           "description": "Verbindet Nachrichten, Work Cards, Datensätze und Audit-Historie."
         },
         "aiCoworkers": {
           "title": "AI Coworker",
-          "description": "Gibt autonomen Coworkern Identität, Kontext, Tools, Memory und Sichtbarkeit."
+          "description": "Gibt AI-Teamkollegen klare Rollen, freigegebene Tools und sichtbaren Fortschritt."
         },
         "aiAutomations": {
-          "title": "AI Automatisierungen",
-          "description": "Verwandeln Inputs mit Wissen, Datensätzen und Freigabepunkten in Arbeit."
+          "title": "AI-Automatisierungen",
+          "description": "Verwandeln eingehende Anfragen mit Wissen, Datensätzen und Freigabepunkten in Arbeit."
         },
         "knowledgeRecords": {
           "title": "Wissen und Datensätze",
@@ -46,7 +46,7 @@
     },
     "useCases": {
       "eyebrow": "Anwendungsfälle",
-      "title": "Operationsräume für Arbeit, die AI Agenten und Teams gemeinsam erledigen.",
+      "title": "Arbeitsräume für Teams und AI.",
       "viewAll": "Alle Anwendungsfälle ansehen",
       "links": {
         "finance": {
@@ -88,12 +88,16 @@
         "terms": {
           "title": "AGB",
           "description": "Bedingungen für die öffentliche Website und die geschlossene Preview."
+        },
+        "imprint": {
+          "title": "Impressum",
+          "description": "Anbieterkennzeichnung der JobDone AI GmbH."
         }
       }
     }
   },
   "Footer": {
-    "tagline": "Kollaboratives Arbeitssystem für Menschen, AI Coworker und AI Automatisierungen.",
+    "tagline": "Kollaboratives Arbeitssystem für Menschen, AI Coworker und AI-Automatisierungen.",
     "explore": "Entdecken",
     "company": "Unternehmen",
     "platform": "Plattform",
@@ -102,6 +106,7 @@
     "about": "Über uns",
     "privacy": "Datenschutz",
     "terms": "AGB",
+    "imprint": "Impressum",
     "contact": "Kontakt",
     "aiAdoption": "AI Adoption",
     "rights": "(c) {year} JobDone AI. Alle Rechte vorbehalten.",
@@ -110,7 +115,7 @@
       "platform": {
         "work": "Arbeit",
         "aiCoworkers": "AI Coworker",
-        "automations": "AI Automatisierungen",
+        "automations": "AI-Automatisierungen",
         "knowledge": "Wissen",
         "records": "Datensätze",
         "approvals": "Freigaben",
@@ -133,11 +138,11 @@
         "shortName": "Finance",
         "tagline": "Rechnungen, Freigaben, Lieferantendaten und Ausnahmen in einem Raum.",
         "summary": "Finance-Teams koordinieren Dokumente, Freigaben, Abstimmungen und Systemupdates mit AI Coworkern, während Nachweise verbunden bleiben.",
-        "description": "Ein gemeinsamer Operationsraum für Finance-Arbeit, in dem Menschen und AI Coworker Rechnungen prüfen, Richtlinienkontext sammeln, Datensatzupdates vorschlagen und Freigaben nachvollziehbar halten.",
+        "description": "Ein gemeinsamer Raum für Finance-Arbeit, in dem Menschen und AI Coworker Rechnungen prüfen, Richtlinienkontext sammeln, Datensatzupdates vorschlagen und Freigaben nachvollziehbar halten.",
         "platforms": [
           "Finance AI",
           "Controller",
-          "Approval Agent"
+          "Freigaben"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -173,8 +178,8 @@
         "description": "Ein Workspace für Inventory- und Operations-Teams, um Asset-Datensätze, Lagerausnahmen, Nachbestellungsanfragen und funktionsübergreifende Übergaben mit sichtbaren AI Coworkern zu koordinieren.",
         "platforms": [
           "Inventory AI",
-          "Records Agent",
-          "Handoff Agent"
+          "Datensätze",
+          "Übergaben"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -210,8 +215,8 @@
         "description": "Ein gesteuerter Workspace für Onboarding, Richtlinienfragen, Mitarbeiterdokumente und freigabelastige People Operations, in dem jede Agentenaktion sichtbar ist.",
         "platforms": [
           "People AI",
-          "Policy Agent",
-          "Access Agent"
+          "Richtlinien",
+          "Zugriff"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -247,8 +252,8 @@
         "description": "Ein kollaborativer Raum für Support Operations, in dem menschliche Antwortende und AI Coworker Fälle triagieren, Kundenkontext sammeln, Wissen durchsuchen und Eskalationen routen.",
         "platforms": [
           "Support AI",
-          "Triage Agent",
-          "Escalation Agent"
+          "Triage",
+          "Eskalationen"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -284,8 +289,8 @@
         "description": "Ein Product-Operations-Workspace, der Feedback, Bugs, Incidents und Release-Koordination in nachvollziehbare Arbeit verwandelt, die Menschen und AI Coworker teilen.",
         "platforms": [
           "Product AI",
-          "Feedback Agent",
-          "Release Agent"
+          "Feedback",
+          "Releases"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -321,8 +326,8 @@
         "description": "Ein Revenue-Operations-Raum für Account-Recherche, CRM-Hygiene, Meeting-Vorbereitung, Follow-up-Arbeit und Pipeline-Updates, koordiniert von Menschen und AI Coworkern.",
         "platforms": [
           "Revenue AI",
-          "Research Agent",
-          "CRM Agent"
+          "Recherche",
+          "CRM-Updates"
         ],
         "primaryCta": "Zugang anfragen",
         "secondaryCta": "Anwendungsfälle ansehen",
@@ -335,7 +340,7 @@
         "useCases": [
           "Account-Pläne, Gesprächsnotizen, Produktkontext",
           "Account-, Kontakt-, Deal- und Aktivitätsdatensätze",
-          "Follow-up-Automatisierungen mit Review Gates"
+          "Follow-up-Automatisierungen mit Prüfpunkten"
         ],
         "supportTopics": [
           "Recherche",
@@ -364,7 +369,7 @@
       },
       {
         "title": "Gesteuerte Aktionen",
-        "copy": "Agenten arbeiten über begrenzte Tools, Review Gates und auditierbare Berechtigungen."
+        "copy": "Agenten arbeiten über begrenzte Tools, Prüfpunkte und nachvollziehbare Berechtigungen."
       },
       {
         "title": "Für echte Operations gebaut",
@@ -379,15 +384,15 @@
     "workflowEyebrow": "Wie Arbeit läuft",
     "workflowTitle": "Von der Anfrage zu erledigter Arbeit, ohne Kontext zu verlieren.",
     "platformLink": "Plattform erkunden",
-    "ctaEyebrow": "Geschlossene Vorschau",
+    "ctaEyebrow": "Geschlossene Preview",
     "ctaTitle": "Bringe diesen Workspace in das JobDone AI Arbeitssystem.",
-    "ctaCopy": "JobDone AI ist in der Closed Preview. Fordere Zugang an, um die Workflows, Datensätze und AI Coworker zu besprechen, die für dein Team wichtig sind.",
+    "ctaCopy": "JobDone AI ist in der geschlossenen Preview. Fordere Zugang an, um die Workflows, Datensätze und AI Coworker zu besprechen, die für dein Team wichtig sind.",
     "graphic": {
       "channel": "Channel",
       "aiCoworkers": "AI Coworker",
       "workThread": "Work Thread",
       "workThreadCopy": "Nachricht, Entscheidung, Nachweis und Systemupdate bleiben mit derselben Work Card verbunden.",
-      "richWorkCard": "Rich Work Card",
+      "richWorkCard": "Work Card",
       "routed": "geroutet",
       "knowledge": "Wissen",
       "records": "Datensätze",
@@ -397,11 +402,11 @@
   "Contact": {
     "metadataTitle": "Kontakt",
     "metadataDescription": "Zugang, Pilotgespräch oder strategische Partnerschaft mit JobDone AI anfragen.",
-    "eyebrow": "Geschlossene Vorschau",
+    "eyebrow": "Geschlossene Preview",
     "heroTitle": "Zugang zu JobDone AI anfragen.",
-    "heroDescription": "Das AI Agent Work System ist in der Closed Preview. Diese Seite ist für Zugangsanfragen, Pilotgespräche und strategische Partnerschaften.",
+    "heroDescription": "JobDone AI ist in der geschlossenen Preview. Diese Seite ist für Zugangsanfragen, Pilotgespräche und strategische Partnerschaften.",
     "heroAlt": "JobDone AI Kontaktbereich.",
-    "closedPreviewTitle": "Closed Preview",
+    "closedPreviewTitle": "Geschlossene Preview",
     "closedPreviewCopy": "JobDone AI ist noch nicht allgemein verfügbar. Wir priorisieren relevante Workflows, klare Business Cases und Teams, die AI-Agenten kontrolliert in echte Arbeit einführen wollen.",
     "topics": [
       "Zugang anfragen",
@@ -410,49 +415,49 @@
       "Allgemeine Anfrage"
     ],
     "requestPipeline": {
-      "title": "Anfragepaket",
-      "description": "Eine kompakte Steuerungsebene, um vom Business-Signal zu einem begrenzten Arbeitssystem zu kommen.",
+      "title": "Zugangsanfrage",
+      "description": "Sag uns, welche Arbeit du mit JobDone AI verbessern möchtest.",
       "badge": "Preview-Warteschlange",
       "metrics": [
         [
-          "Datensätze",
-          "verbunden"
+          "Workflow",
+          "geteilt"
         ],
         [
-          "Agenten",
-          "sichtbar"
+          "Team",
+          "prüft"
         ],
         [
-          "Freigabe",
-          "begrenzt"
+          "Follow-up",
+          "vorbereitet"
         ]
       ],
       "steps": [
         [
           "01",
-          "Signal",
-          "Business-Kontext, Workflow-Form und Priorität werden erfasst."
+          "Teilen",
+          "Sag uns, welches Team, welcher Workflow oder welche wiederkehrende Aufgabe verbessert werden soll."
         ],
         [
           "02",
-          "Map",
-          "Rollen von AI Coworkern, Datensätze, Tools und Freigaben werden modelliert."
+          "Prüfen",
+          "Wir schauen auf den Workflow, die beteiligten Menschen und wo AI sicher helfen kann."
         ],
         [
           "03",
-          "Scope",
-          "Ein Preview-Pfad wird mit Grenzen und Ownership zusammengestellt."
+          "Planen",
+          "Wir formen einen praktischen ersten Anwendungsfall mit klarer Verantwortung und Prüfpunkten."
         ],
         [
           "04",
-          "Open",
-          "Die passende Arbeitssystem-Oberfläche wird für den Zugang vorbereitet."
+          "Antworten",
+          "Das JobDone AI Team meldet sich mit dem nächsten Schritt."
         ]
       ],
       "consoleLines": [
-        "workspace_graph: hydrated",
-        "human_review: required",
-        "email_delivery: api_route"
+        "Anfrage erhalten",
+        "Workflow-Kontext geprüft",
+        "Follow-up vorbereitet"
       ]
     }
   },
@@ -770,6 +775,70 @@
         "title": "18. Änderungen dieser Bedingungen",
         "paragraphs": [
           "Wir können diese Bedingungen aktualisieren, wenn sich unsere Website, unser Dienst, Geschäft, Anbieter, rechtliche Anforderungen, Risikokontrollen oder öffentlichen Materialien ändern. Die aktualisierte Version wird mit einem neuen Aktualisierungsdatum auf dieser Seite veröffentlicht. Die weitere Nutzung der Website nach Veröffentlichung aktualisierter Bedingungen bedeutet, dass Sie die aktualisierten Bedingungen akzeptieren. Separate schriftliche Vereinbarungen können nur nach ihren eigenen Bedingungen geändert werden."
+        ]
+      }
+    }
+  },
+  "Imprint": {
+    "metadataTitle": "Impressum",
+    "metadataDescription": "Anbieterkennzeichnung der JobDone AI GmbH.",
+    "eyebrow": "Anbieterkennzeichnung",
+    "title": "Impressum",
+    "intro": "Unternehmens- und Kontaktangaben für die öffentliche JobDone AI Website.",
+    "sections": {
+      "provider": {
+        "title": "Anbieterin",
+        "paragraphs": [
+          "Diese öffentliche Website wird von der JobDone AI GmbH bereitgestellt."
+        ],
+        "details": [
+          {
+            "label": "Firma",
+            "value": "JobDone AI GmbH"
+          },
+          {
+            "label": "Adresse",
+            "value": "Baarerstrasse 11, 6300 Zug, Schweiz"
+          },
+          {
+            "label": "Rechtsform",
+            "value": "Gesellschaft mit beschränkter Haftung (GmbH)"
+          },
+          {
+            "label": "Sitz",
+            "value": "Zug"
+          },
+          {
+            "label": "UID",
+            "value": "CHE-408.536.393"
+          },
+          {
+            "label": "CH-ID",
+            "value": "CH-170.4.024.762-7"
+          },
+          {
+            "label": "EHRA-ID",
+            "value": "1751464"
+          }
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "paragraphs": [
+          "Sie erreichen JobDone AI per E-Mail an <email>hello@jobdone.ai</email> oder über das <contact>JobDone AI Kontaktformular</contact>.",
+          "Offizielle Handelsregisterinformationen sind beim <registry>Handelsregister des Kantons Zug</registry> verfügbar."
+        ]
+      },
+      "responsible": {
+        "title": "Verantwortlich für Website-Inhalte",
+        "paragraphs": [
+          "Die JobDone AI GmbH ist für die Inhalte dieser öffentlichen Website verantwortlich, sofern nicht ausdrücklich eine andere Quelle angegeben ist."
+        ]
+      },
+      "terms": {
+        "title": "Kommerzielle Bedingungen und Kundenbedingungen",
+        "paragraphs": [
+          "Dieses Impressum ersetzt keine separate Kundenvereinbarung, Pilotvereinbarung, Datenverarbeitungsvereinbarung, Sicherheitsbedingungen oder andere schriftliche kommerzielle Bedingungen."
         ]
       }
     }

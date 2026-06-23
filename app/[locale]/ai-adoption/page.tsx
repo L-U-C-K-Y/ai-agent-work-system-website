@@ -19,9 +19,9 @@ const pageCopy = {
       "Move from disconnected AI experiments to integrated, accountable work systems with JobDone AI.",
     title: "Adopt AI agents where real work happens.",
     description:
-      "JobDone AI helps teams move from disconnected AI experiments to governed workflows where people, AI Coworkers, and AI Automations coordinate inside one operating layer.",
+      "JobDone AI helps teams move from disconnected AI experiments to shared workflows where people, AI Coworkers, and AI Automations work together with clear review points.",
     heroAlt:
-      "Abstract glass work graph connecting business signals, AI Coworkers, AI Automations, knowledge, records, approvals, and evidence",
+      "JobDone AI workspace connecting business signals, AI Coworkers, AI Automations, knowledge, records, approvals, and evidence",
     primaryCta: "Request access",
     secondaryCta: "Explore platform",
     heroVisual: {
@@ -34,7 +34,7 @@ const pageCopy = {
       approvals: "approvals",
       evidence: "evidence",
     },
-    journeyTitle: "From exploration to operating rhythm.",
+    journeyTitle: "From exploration to everyday work.",
     journeyDescription:
       "Adoption becomes practical when the path moves from business reality into a working system, not a separate AI side project.",
     journey: [
@@ -46,7 +46,7 @@ const pageCopy = {
       {
         title: "Integrate",
         description:
-          "Configure work rooms, inputs, AI Coworkers, AI Automations, knowledge, records, and approvals.",
+          "Set up work rooms, incoming requests, AI Coworkers, AI Automations, knowledge, records, and approvals.",
       },
       {
         title: "Operate",
@@ -74,11 +74,11 @@ const pageCopy = {
       {
         title: "Integration",
         description:
-          "The mapped workflow becomes a real JobDone AI workspace with communication rooms, flexible inputs, AI Coworkers, AI Automations, connected knowledge, records, and approvals.",
-        output: "Output: first operating workspace on JobDone AI.",
+          "The mapped workflow becomes a real JobDone AI workspace with communication rooms, flexible entry points, AI Coworkers, AI Automations, connected knowledge, records, and approvals.",
+        output: "Output: first live workspace on JobDone AI.",
         items: [
           "Work rooms and work card structure",
-          "AI Coworker roles and AI Automation inputs",
+          "AI Coworker roles and AI Automation entry points",
           "Knowledge, records, and approval routing",
         ],
       },
@@ -88,7 +88,7 @@ const pageCopy = {
           "Teams monitor work, evidence, approvals, record changes, and adoption patterns while the system becomes a repeatable way to run agent-assisted work.",
         output: "Output: expansion path across teams and workflows.",
         items: [
-          "Runtime and evidence review",
+          "Activity and evidence review",
           "Approval and record-change visibility",
           "Repeatable workspace patterns",
         ],
@@ -96,7 +96,7 @@ const pageCopy = {
     ],
     mapTitle: "Adoption work lands inside the platform.",
     mapDescription:
-      "Exploration and integration connect directly to the operating layer that runs the work: shared rooms, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence.",
+      "Exploration and integration connect directly to the workspace where people and AI do the work: shared rooms, AI Coworkers, AI Automations, knowledge, records, approvals, and audit evidence.",
     platformTitle: "Why the platform matters.",
     platformDescription:
       "AI adoption needs more than advice and isolated tools. It needs a place where agent work can be assigned, inspected, approved, and connected to the knowledge and structured records that already shape the business.",
@@ -118,12 +118,12 @@ const pageCopy = {
   de: {
     metadataTitle: "AI Adoption",
     metadataDescription:
-      "Von getrennten KI-Experimenten zu integrierten, verantwortlichen Arbeitssystemen mit JobDone AI.",
-    title: "KI-Agenten dort einführen, wo echte Arbeit passiert.",
+      "Von getrennten AI-Experimenten zu integrierten, verantwortlichen Arbeitssystemen mit JobDone AI.",
+    title: "AI dort einführen, wo echte Arbeit passiert.",
     description:
-      "JobDone AI hilft Teams, von getrennten KI-Experimenten zu gesteuerten Workflows zu kommen, in denen Menschen, AI Coworker und AI Automatisierungen in einer operativen Ebene zusammenarbeiten.",
+      "JobDone AI hilft Teams, von getrennten AI-Experimenten zu gemeinsamen Workflows zu kommen, in denen Menschen, AI Coworker und AI-Automatisierungen mit klaren Prüfpunkten zusammenarbeiten.",
     heroAlt:
-      "Abstrakter Glass Work Graph verbindet Business-Signale, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise",
+      "JobDone AI Arbeitsbereich verbindet Business-Signale, AI Coworker, AI-Automatisierungen, Wissen, Datensätze, Freigaben und Nachweise",
     primaryCta: "Zugang anfragen",
     secondaryCta: "Plattform erkunden",
     heroVisual: {
@@ -131,14 +131,14 @@ const pageCopy = {
       mapping: "Workflow-Mapping",
       workspace: "JobDone AI Workspace",
       coworker: "AI Coworker",
-      automation: "AI Automatisierungen",
+      automation: "AI-Automatisierungen",
       records: "Wissen + Datensätze",
       approvals: "Freigaben",
       evidence: "Nachweise",
     },
     journeyTitle: "Von Exploration zu operativem Rhythmus.",
     journeyDescription:
-      "AI Adoption wird praktisch, wenn der Weg aus der echten Business-Arbeit in ein funktionierendes System führt, nicht in ein separates KI-Nebenprojekt.",
+      "AI Adoption wird praktisch, wenn der Weg aus der echten Business-Arbeit in ein funktionierendes System führt, nicht in ein separates AI-Nebenprojekt.",
     journey: [
       {
         title: "Explorieren",
@@ -148,7 +148,7 @@ const pageCopy = {
       {
         title: "Integrieren",
         description:
-          "Arbeitsräume, Inputs, AI Coworker, AI Automatisierungen, Wissen, Datensätze und Freigaben konfigurieren.",
+          "Arbeitsräume, eingehende Anfragen, AI Coworker, AI-Automatisierungen, Wissen, Datensätze und Freigaben einrichten.",
       },
       {
         title: "Betreiben",
@@ -176,21 +176,21 @@ const pageCopy = {
       {
         title: "Integration",
         description:
-          "Der abgebildete Workflow wird zu einem echten JobDone AI Workspace mit Kommunikationsräumen, flexiblen Inputs, AI Coworkern, AI Automatisierungen, verbundenem Wissen, Datensätzen und Freigaben.",
+          "Der abgebildete Workflow wird zu einem echten JobDone AI Workspace mit Kommunikationsräumen, flexiblen Eingängen, AI Coworkern, AI-Automatisierungen, verbundenem Wissen, Datensätzen und Freigaben.",
         output: "Output: erster operativer Workspace auf JobDone AI.",
         items: [
           "Arbeitsräume und Work-Card-Struktur",
-          "Rollen für AI Coworker und Inputs für AI Automatisierungen",
+          "Rollen für AI Coworker und Eingänge für AI-Automatisierungen",
           "Routing für Wissen, Datensätze und Freigaben",
         ],
       },
       {
         title: "Operation",
         description:
-          "Teams beobachten Arbeit, Nachweise, Freigaben, Datensatzänderungen und Adoptionsmuster, während das System zu einer wiederholbaren Arbeitsweise mit AI Agenten wird.",
+          "Teams beobachten Arbeit, Nachweise, Freigaben, Datensatzänderungen und Adoptionsmuster, während das System zu einer wiederholbaren Arbeitsweise mit AI-Teamkollegen wird.",
         output: "Output: Erweiterungspfad über Teams und Workflows.",
         items: [
-          "Runtime- und Nachweisprüfung",
+          "Aktivitäts- und Nachweisprüfung",
           "Sichtbarkeit für Freigaben und Datensatzänderungen",
           "Wiederholbare Workspace-Muster",
         ],
@@ -198,13 +198,13 @@ const pageCopy = {
     ],
     mapTitle: "Adoptionsarbeit landet direkt in der Plattform.",
     mapDescription:
-      "Exploration und Integration verbinden sich mit der operativen Ebene, die Arbeit ausführt: gemeinsame Räume, AI Coworker, AI Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise.",
+      "Exploration und Integration verbinden sich direkt mit dem Arbeitsbereich, in dem Menschen und AI arbeiten: gemeinsame Räume, AI Coworker, AI-Automatisierungen, Wissen, Datensätze, Freigaben und Audit-Nachweise.",
     platformTitle: "Warum die Plattform wichtig ist.",
     platformDescription:
       "AI Adoption braucht mehr als Beratung und isolierte Tools. Sie braucht einen Ort, an dem Agentenarbeit zugewiesen, geprüft, freigegeben und mit dem Wissen sowie den strukturierten Datensätzen verbunden wird, die das Business bereits prägen.",
     platformLinks: [
       ["AI Coworker", { pathname: "/platform", hash: "ai-coworkers" }],
-      ["AI Automatisierungen", { pathname: "/platform", hash: "ai-automations" }],
+      ["AI-Automatisierungen", { pathname: "/platform", hash: "ai-automations" }],
       ["Wissen", { pathname: "/platform", hash: "knowledge" }],
       ["Datensätze", { pathname: "/platform", hash: "records" }],
       ["Freigaben", { pathname: "/platform", hash: "approvals" }],
@@ -212,7 +212,7 @@ const pageCopy = {
     ],
     handoffTitle: "Vom Adoption-Plan zum Live-Arbeitssystem.",
     handoffDescription:
-      "Der erste abgegrenzte Workflow bleibt nicht in einer Präsentation. Er wird zu einem Workspace, in dem Menschen und AI Agenten koordinieren, Wissen und Datensätze aktualisieren und die Spur prüfbar halten.",
+      "Der erste abgegrenzte Workflow bleibt nicht in einer Präsentation. Er wird zu einem Workspace, in dem Menschen und AI-Teamkollegen koordinieren, Wissen und Datensätze aktualisieren und die Spur prüfbar halten.",
     finalTitle: "Starte mit einem AI Adoption Gespräch.",
     finalDescription:
       "Bring den Workflow, das Team oder das Business-Signal mit, das real werden soll. Wir helfen dabei, den ersten Weg in JobDone AI zu formen.",
@@ -423,15 +423,24 @@ export default async function AIAdoptionPage({ params }: PageProps) {
       <section className="relative overflow-hidden border-b border-white/8 bg-black">
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
         <Container className="relative min-w-0 pb-24 pt-16 md:pb-32 md:pt-24 lg:min-h-[720px]">
-          <h1 className="relative z-10 max-w-full text-[clamp(2.4rem,9vw,4.5rem)] font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:max-w-[62%]">
+          <h1
+            className="relative z-10 max-w-full text-[clamp(2.4rem,9vw,4.5rem)] font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:max-w-[62%]"
+            data-reveal="rise"
+          >
             {copy.title}
           </h1>
           <div className="relative z-10 mt-10 grid min-w-0 gap-8 lg:mt-12 lg:grid-cols-[minmax(23rem,0.36fr)_minmax(0,1.64fr)] lg:items-center">
             <div className="min-w-0">
-              <p className="max-w-full text-[0.94rem] leading-7 text-[#a4b3c6] md:text-[0.96rem] md:leading-7 lg:max-w-[25rem]">
+              <p
+                className="reveal-delay-1 max-w-full text-[0.94rem] leading-7 text-[#a4b3c6] md:text-[0.96rem] md:leading-7 lg:max-w-[25rem]"
+                data-reveal="rise"
+              >
                 {copy.description}
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col">
+              <div
+                className="reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col"
+                data-reveal="rise"
+              >
                 <Button href="/contact">{copy.primaryCta}</Button>
                 <Button
                   className="!border-white/14 !bg-white/[0.025] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10"
@@ -442,23 +451,25 @@ export default async function AIAdoptionPage({ params }: PageProps) {
                 </Button>
               </div>
             </div>
-            <ProductVideoVisual
-              alt={copy.heroAlt}
-              className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] [mask-image:linear-gradient(90deg,transparent_0%,black_7%,black_96%,transparent_100%)] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
-              fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
-              imageClassName="scale-[1.08] object-contain brightness-[1.32] contrast-[1.08] saturate-[1.08]"
-              posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
-              priority
-              videoSrc="/videos/jobdone-ai/ai-adoption-journey.mp4"
-              variant="plain"
-            />
+            <div className="reveal-delay-2 min-w-0" data-reveal="scale">
+              <ProductVideoVisual
+                alt={copy.heroAlt}
+                className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] [mask-image:linear-gradient(90deg,transparent_0%,black_7%,black_96%,transparent_100%)] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
+                imageClassName="scale-[1.08] object-contain brightness-[1.32] contrast-[1.08] saturate-[1.08]"
+                posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
+                priority
+                videoSrc="/videos/jobdone-ai/ai-adoption-journey.mp4"
+                variant="plain"
+              />
+            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-[#020508] py-16 md:py-24">
         <Container>
-          <div className="max-w-3xl">
+          <div className="max-w-3xl" data-reveal="rise">
             <h2 className="text-3xl font-medium leading-tight md:text-5xl">
               {copy.journeyTitle}
             </h2>
@@ -466,48 +477,52 @@ export default async function AIAdoptionPage({ params }: PageProps) {
               {copy.journeyDescription}
             </p>
           </div>
-          <JourneyTimeline copy={copy} />
+          <div data-reveal="scale">
+            <JourneyTimeline copy={copy} />
+          </div>
         </Container>
       </section>
 
       <section className="border-y border-white/10 bg-[#05090d] py-16 md:py-24">
         <Container className="grid gap-8 lg:grid-cols-[0.74fr_1.26fr]">
-          <GlassPanel className="relative self-start overflow-hidden p-4">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(32,106,233,0.18),transparent_34%)]" />
-            <span className="absolute bottom-8 left-9 top-8 hidden w-px bg-[linear-gradient(180deg,#206ae9,rgba(96,239,255,0.22),transparent)] md:block" />
-            <div className="relative grid gap-3">
-            {copy.phases.map((phase, index) => (
-              <div
-                className="relative grid grid-cols-[3rem_1fr] gap-3 rounded-lg border border-white/10 bg-[#050b12]/66 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
-                key={phase.title}
-              >
-                <span className="relative z-10 grid size-10 place-items-center rounded-md border border-[#206ae9]/35 bg-[#071522] font-mono text-xs text-[#8fb5ff] shadow-[0_0_24px_rgba(32,106,233,0.16)]">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                <div className="min-w-0">
-                  <h3 className="text-base font-medium text-white">
-                    {phase.title}
-                  </h3>
-                  <p className="text-sm leading-6 text-[#9aabbf]">
-                    {phase.output}
-                  </p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {phase.items.map((item) => (
-                      <li
-                        className="rounded-full border border-[#206ae9]/24 bg-[#071522]/72 px-2.5 py-1 text-[0.72rem] leading-5 text-[#a8b7c9]"
-                        key={item}
-                      >
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          <div data-reveal="scale">
+            <GlassPanel className="relative self-start overflow-hidden p-4">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(32,106,233,0.18),transparent_34%)]" />
+              <span className="absolute bottom-8 left-9 top-8 hidden w-px bg-[linear-gradient(180deg,#206ae9,rgba(96,239,255,0.22),transparent)] md:block" />
+              <div className="relative grid gap-3">
+                {copy.phases.map((phase, index) => (
+                  <div
+                    className="relative grid grid-cols-[3rem_1fr] gap-3 rounded-lg border border-white/10 bg-[#050b12]/66 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                    key={phase.title}
+                  >
+                    <span className="relative z-10 grid size-10 place-items-center rounded-md border border-[#206ae9]/35 bg-[#071522] font-mono text-xs text-[#8fb5ff] shadow-[0_0_24px_rgba(32,106,233,0.16)]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-medium text-white">
+                        {phase.title}
+                      </h3>
+                      <p className="text-sm leading-6 text-[#9aabbf]">
+                        {phase.output}
+                      </p>
+                      <ul className="mt-3 flex flex-wrap gap-2">
+                        {phase.items.map((item) => (
+                          <li
+                            className="rounded-full border border-[#206ae9]/24 bg-[#071522]/72 px-2.5 py-1 text-[0.72rem] leading-5 text-[#a8b7c9]"
+                            key={item}
+                          >
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-            </div>
-          </GlassPanel>
+            </GlassPanel>
+          </div>
           <div>
-            <div className="mb-6 max-w-2xl">
+            <div className="mb-6 max-w-2xl" data-reveal="rise">
               <h2 className="text-3xl font-medium leading-tight md:text-5xl">
                 {copy.mapTitle}
               </h2>
@@ -515,14 +530,16 @@ export default async function AIAdoptionPage({ params }: PageProps) {
                 {copy.mapDescription}
               </p>
             </div>
-            <WorkflowMapVisual copy={copy} />
+            <div data-reveal="scale">
+              <WorkflowMapVisual copy={copy} />
+            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-[#020508] py-16 md:py-24">
         <Container className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
+          <div data-reveal="rise">
             <h2 className="text-3xl font-medium leading-tight md:text-5xl">
               {copy.platformTitle}
             </h2>
@@ -537,7 +554,7 @@ export default async function AIAdoptionPage({ params }: PageProps) {
               ))}
             </div>
           </div>
-          <div>
+          <div data-reveal="scale">
             <h3 className="mb-4 text-2xl font-medium text-white">
               {copy.handoffTitle}
             </h3>
@@ -551,7 +568,10 @@ export default async function AIAdoptionPage({ params }: PageProps) {
 
       <section className="bg-[#020508] pb-16 md:pb-24">
         <Container>
-          <div className="relative overflow-hidden rounded-lg border border-[#206ae9]/45 bg-[#071522] p-8 md:p-14">
+          <div
+            className="relative overflow-hidden rounded-lg border border-[#206ae9]/45 bg-[#071522] p-8 md:p-14"
+            data-reveal="scale"
+          >
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,21,34,0.95),rgba(7,21,34,0.72),rgba(7,21,34,0.96)),url('/images/jobdone-ai/neon-abstract-glass-primitives.png')] bg-cover bg-center opacity-90" />
             <div className="relative max-w-3xl">
               <h2 className="text-3xl font-medium leading-tight md:text-5xl">

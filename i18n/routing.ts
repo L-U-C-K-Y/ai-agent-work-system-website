@@ -38,6 +38,10 @@ export const routing = defineRouting({
       en: "/terms",
       de: "/agb",
     },
+    "/imprint": {
+      en: "/imprint",
+      de: "/impressum",
+    },
   },
 });
 

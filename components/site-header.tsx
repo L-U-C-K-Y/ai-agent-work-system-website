@@ -27,7 +27,6 @@ import {
 import { Button as UiButton } from "@/components/ui/button";
 import { getPathname, Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { mainNavigation } from "@/lib/site";
 
 type LinkHref = ComponentProps<typeof Link>["href"];
 type MegaMenuLink = readonly [string, LinkHref, string];
@@ -70,6 +69,7 @@ const companyLinks = [
   ["contact", "/contact"],
   ["privacy", "/privacy"],
   ["terms", "/terms"],
+  ["imprint", "/imprint"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
 function toInternalPathname(pathname: string) {
@@ -108,6 +108,10 @@ function toInternalPathname(pathname: string) {
     return "/terms";
   }
 
+  if (unprefixed === "/impressum") {
+    return "/imprint";
+  }
+
   return unprefixed;
 }
 
@@ -135,7 +139,8 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
     internalPathname === "/ai-adoption" ||
     internalPathname === "/contact" ||
     internalPathname === "/privacy" ||
-    internalPathname === "/terms"
+    internalPathname === "/terms" ||
+    internalPathname === "/imprint"
   ) {
     return getPathname({ href: internalPathname, locale: targetLocale });
   }
@@ -226,18 +231,19 @@ function MegaMenuPanel({
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,6,9,0.52),#030609_78%)]" />
           <div className="relative">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-[var(--primary)]">
-            {eyebrow}
-          </p>
-          <h2 className="mt-3 text-xl font-semibold leading-tight text-white">
-            {title}
-          </h2>
-          <div className="mt-20 rounded-md border border-white/10 bg-black/35 p-3 font-mono text-[0.68rem] leading-5 text-[#8ea0b5] backdrop-blur-md">
-            <p className="text-[var(--chart-2)]">system.status</p>
-            <p>agents: visible</p>
-            <p>records: attached</p>
-            <p>approvals: scoped</p>
-          </div>
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-[var(--primary)]">
+              {eyebrow}
+            </p>
+            <h2 className="mt-3 text-xl font-semibold leading-tight text-white">
+              {title}
+            </h2>
+            <div className="mt-20 rounded-md border border-white/10 bg-black/35 p-3 text-[0.68rem] leading-5 text-[#8ea0b5] backdrop-blur-md">
+              <p className="font-semibold text-[var(--chart-2)]">
+                Work stays visible
+              </p>
+              <p>AI actions are reviewable</p>
+              <p>Approvals stay attached</p>
+            </div>
           </div>
         </div>
         <div className="grid gap-2 p-3">
@@ -378,37 +384,89 @@ export function SiteHeader() {
             <MenuIcon className="size-5" />
           </SheetTrigger>
           <SheetContent
-            className="w-[88vw] border-l border-white/10 bg-[#05080c] text-white"
+            className="max-h-dvh w-[88vw] gap-0 border-l border-white/10 bg-[#05080c] text-white"
             side="right"
           >
-            <SheetHeader>
+            <SheetHeader className="shrink-0 border-b border-white/10 pb-5 pr-12">
               <SheetTitle className="text-white">JobDone AI</SheetTitle>
               <SheetDescription>
                 {t("mobileDescription")}
               </SheetDescription>
             </SheetHeader>
-            <div className="flex flex-col gap-2 px-4">
-              {mainNavigation.map((item) => (
+            <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4">
+              <nav className="flex flex-col gap-2" aria-label={t("mobileLabel")}>
                 <Link
                   className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
-                  href={item.href}
-                  key={item.key}
+                  href="/"
                 >
-                  {t(item.key)}
+                  {t("home")}
                 </Link>
-              ))}
-              {useCaseLinks.map(([key, href]) => (
                 <Link
-                  className="rounded-lg border border-white/10 bg-white/[0.02] px-3 py-3 text-sm font-medium text-[#9aabbf]"
-                  href={href}
-                  key={key}
+                  className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
+                  href="/ai-adoption"
                 >
-                  {mega(`useCases.links.${key}.title`)}
+                  {t("aiAdoption")}
                 </Link>
-              ))}
+                <Link
+                  className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
+                  href="/contact"
+                >
+                  {t("contact")}
+                </Link>
+                <details className="group rounded-lg border border-white/10 bg-white/[0.025]">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-3 text-sm font-medium text-white [&::-webkit-details-marker]:hidden">
+                    <span>{t("solutions")}</span>
+                    <span className="text-[#8ea0b5] transition-transform group-open:rotate-180">
+                      ↓
+                    </span>
+                  </summary>
+                  <div className="grid gap-1 border-t border-white/10 p-2">
+                    <Link
+                      className="rounded-md px-3 py-2 text-sm font-medium text-[#c8d8ff] hover:bg-white/[0.04] hover:text-white"
+                      href="/products"
+                    >
+                      {mega("useCases.viewAll")}
+                    </Link>
+                    {useCaseLinks.map(([key, href]) => (
+                      <Link
+                        className="rounded-md px-3 py-2 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.04] hover:text-white"
+                        href={href}
+                        key={key}
+                      >
+                        {mega(`useCases.links.${key}.title`)}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+                <Link
+                  className="rounded-lg border border-white/10 bg-white/[0.025] px-3 py-3 text-sm font-medium text-white"
+                  href="/platform"
+                >
+                  {t("platform")}
+                </Link>
+                <details className="group rounded-lg border border-white/10 bg-white/[0.025]">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-3 text-sm font-medium text-white [&::-webkit-details-marker]:hidden">
+                    <span>{t("company")}</span>
+                    <span className="text-[#8ea0b5] transition-transform group-open:rotate-180">
+                      ↓
+                    </span>
+                  </summary>
+                  <div className="grid gap-1 border-t border-white/10 p-2">
+                    {companyLinks.map(([key, href]) => (
+                      <Link
+                        className="rounded-md px-3 py-2 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.04] hover:text-white"
+                        href={href}
+                        key={key}
+                      >
+                        {mega(`company.links.${key}.title`)}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+              </nav>
             </div>
-            <Separator className="bg-white/10" />
-            <div className="px-4">
+            <Separator className="shrink-0 bg-white/10" />
+            <div className="shrink-0 bg-[#05080c] px-4 py-4">
               <LanguageSwitcher />
               <UiButton
                 className="mt-4 h-10 w-full rounded-md font-semibold"
