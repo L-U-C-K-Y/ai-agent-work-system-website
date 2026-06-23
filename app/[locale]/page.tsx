@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 import { ExperimentVisual } from "@/components/experiment-visual";
+import { ProductVideoVisual } from "@/components/product-video-visual";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -738,12 +739,14 @@ export default async function Home({ params }: HomeProps) {
             </div>
             <div className="relative min-w-0">
               {useImagegenExperimentVisuals ? (
-                <ExperimentVisual
+                <ProductVideoVisual
                   alt={copy.heroAlt}
                   className="aspect-[16/9] lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
+                  fallbackSrc="/videos/jobdone-ai/home-hero-poster.jpg"
                   imageClassName="object-contain"
+                  posterSrc="/videos/jobdone-ai/home-hero-poster.jpg"
                   priority
-                  src="/images/jobdone-ai/neon-home-edge-to-edge-black.png"
+                  videoSrc="/videos/jobdone-ai/home-hero.mp4"
                   variant="blend"
                 />
               ) : (

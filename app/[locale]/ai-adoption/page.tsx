@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
+import { ProductVideoVisual } from "@/components/product-video-visual";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 type PageProps = {
@@ -254,13 +255,15 @@ function HeroAdoptionVisual({ alt }: { alt: string }) {
   return (
     <div className="relative mt-4 min-h-[18rem] overflow-hidden lg:mt-0 lg:-mr-14 lg:min-h-[34rem]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_50%,rgba(32,106,233,0.18),transparent_42%)]" />
-      <Image
+      <ProductVideoVisual
         alt={alt}
-        className="absolute inset-0 size-full object-cover object-[62%_58%] opacity-95 [mask-image:linear-gradient(90deg,transparent_0%,black_16%,black_88%,transparent_100%)] lg:object-center"
-        height={1024}
+        className="absolute inset-0 size-full opacity-95 [mask-image:linear-gradient(90deg,transparent_0%,black_16%,black_88%,transparent_100%)]"
+        fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
+        imageClassName="object-cover object-[62%_58%] lg:object-center"
+        posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
         priority
-        src="/images/jobdone-ai/neon-ai-adoption-hero.png"
-        width={1792}
+        videoSrc="/videos/jobdone-ai/ai-adoption-journey.mp4"
+        variant="plain"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#020508_0%,transparent_18%,transparent_82%,#020508_100%),linear-gradient(180deg,#020508_0%,transparent_18%,transparent_78%,#020508_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(180deg,transparent,#020508)]" />

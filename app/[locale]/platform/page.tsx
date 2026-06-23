@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 import { ExperimentVisual } from "@/components/experiment-visual";
+import { ProductVideoVisual } from "@/components/product-video-visual";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -997,12 +998,14 @@ export default async function PlatformPage({ params }: PageProps) {
               </Button>
             </div>
           </div>
-          <ExperimentVisual
+          <ProductVideoVisual
             alt={copy.heroAlt}
             className="aspect-[16/9] min-w-0 border-0 shadow-none lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
+            fallbackSrc="/videos/jobdone-ai/platform-graph-poster.jpg"
             imageClassName="object-contain"
+            posterSrc="/videos/jobdone-ai/platform-graph-poster.jpg"
             priority
-            src="/images/jobdone-ai/neon-work-card-graph.png"
+            videoSrc="/videos/jobdone-ai/platform-graph.mp4"
             variant="blend"
           />
         </Container>
