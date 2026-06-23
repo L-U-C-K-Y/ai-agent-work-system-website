@@ -72,13 +72,6 @@ const companyLinks = [
   ["terms", "/terms"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
-const platformLinks = [
-  ["workGraph", { pathname: "/platform", hash: "work" }],
-  ["aiCoworkers", { pathname: "/platform", hash: "ai-coworkers" }],
-  ["aiAutomations", { pathname: "/platform", hash: "ai-automations" }],
-  ["knowledgeRecords", { pathname: "/platform", hash: "knowledge" }],
-] as const satisfies readonly MegaMenuLinkConfig[];
-
 function toInternalPathname(pathname: string) {
   const unprefixed =
     pathname === "/de" || pathname === "/en"
@@ -295,7 +288,7 @@ export function SiteHeader() {
   const mega = useTranslations("MegaMenu");
   const internalPathname = toInternalPathname(pathname);
   const getMegaLinks = (
-    section: "useCases" | "platform" | "company",
+    section: "useCases" | "company",
     links: readonly MegaMenuLinkConfig[],
   ) =>
     links.map(
@@ -336,19 +329,15 @@ export function SiteHeader() {
               />
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger
-                className={navTriggerClassName}
-                data-active={internalPathname === "/platform" ? "" : undefined}
+              <NavigationMenuLink
+                aria-current={
+                  internalPathname === "/platform" ? "page" : undefined
+                }
+                className={navLinkClassName}
+                render={<Link href="/platform" />}
               >
                 {t("platform")}
-              </NavigationMenuTrigger>
-              <MegaMenuPanel
-                eyebrow={mega("platform.eyebrow")}
-                links={getMegaLinks("platform", platformLinks)}
-                title={mega("platform.title")}
-                ctaHref="/platform"
-                ctaLabel={t("platform")}
-              />
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink

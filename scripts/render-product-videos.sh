@@ -33,8 +33,8 @@ render_video() {
     "${out_dir}/${name}-poster.jpg"
 }
 
-render_video "HomeHero" "home-hero" 72
-render_video "PlatformGraph" "platform-graph" 72
-render_video "AIAdoptionJourney" "ai-adoption-journey" 72
+render_video "HomeHero" "home-hero" 150
+render_video "PlatformGraph" "platform-graph" 150
+render_video "AIAdoptionJourney" "ai-adoption-journey" 150
 
 rm -rf "${tmp_dir}"

@@ -3,7 +3,7 @@ import { Composition, Folder } from "remotion";
 import { ProductLoop, type ProductLoopVariant } from "./product-loop";
 
 const fps = 30;
-const durationInFrames = 240;
+const durationInFrames = 300;
 const width = 1920;
 const height = 1080;
 

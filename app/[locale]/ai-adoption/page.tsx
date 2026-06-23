@@ -251,28 +251,6 @@ function GlassPanel({
   );
 }
 
-function HeroAdoptionVisual({ alt }: { alt: string }) {
-  return (
-    <div className="relative mt-4 min-h-[18rem] overflow-hidden lg:mt-0 lg:-mr-14 lg:min-h-[34rem]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_50%,rgba(32,106,233,0.18),transparent_42%)]" />
-      <ProductVideoVisual
-        alt={alt}
-        className="absolute inset-0 size-full opacity-95 [mask-image:linear-gradient(90deg,transparent_0%,black_16%,black_88%,transparent_100%)]"
-        fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
-        imageClassName="object-cover object-[62%_58%] lg:object-center"
-        posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
-        priority
-        videoSrc="/videos/jobdone-ai/ai-adoption-journey.mp4"
-        variant="plain"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,#020508_0%,transparent_18%,transparent_82%,#020508_100%),linear-gradient(180deg,#020508_0%,transparent_18%,transparent_78%,#020508_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(180deg,transparent,#020508)]" />
-      <div className="absolute inset-x-0 top-0 h-20 bg-[linear-gradient(180deg,#020508,transparent)]" />
-      <div className="absolute right-[16%] top-[45%] hidden size-2 rounded-full bg-[#60efff] shadow-[0_0_32px_10px_rgba(96,239,255,0.22)] md:block" />
-    </div>
-  );
-}
-
 function JourneyTimeline({ copy }: { copy: AdoptionCopy }) {
   return (
     <div className="relative mt-10 grid gap-3 md:grid-cols-4">
@@ -441,26 +419,40 @@ export default async function AIAdoptionPage({ params }: PageProps) {
   const copy = getCopy(locale);
 
   return (
-    <main className="text-white">
-      <section className="relative overflow-hidden border-b border-white/10 bg-[#020508] py-16 md:py-24">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(32,106,233,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(32,106,233,0.08)_1px,transparent_1px)] bg-[size:72px_72px] opacity-45" />
-        <div className="absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_50%_0%,rgba(32,106,233,0.18),transparent_55%)]" />
-        <Container className="relative grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <h1 className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-normal text-white md:text-7xl">
-              {copy.title}
-            </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-[#a8b7c9] md:text-xl">
-              {copy.description}
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/contact">{copy.primaryCta}</Button>
-              <Button href="/platform" variant="secondary">
-                {copy.secondaryCta}
-              </Button>
+    <main className="bg-[#05080c] text-white">
+      <section className="relative overflow-hidden border-b border-white/8 bg-black">
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
+        <Container className="relative min-w-0 pb-24 pt-16 md:pb-32 md:pt-24 lg:min-h-[720px]">
+          <h1 className="relative z-10 max-w-full text-[clamp(2.4rem,9vw,4.5rem)] font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:max-w-[62%]">
+            {copy.title}
+          </h1>
+          <div className="relative z-10 mt-10 grid min-w-0 gap-8 lg:mt-12 lg:grid-cols-[minmax(23rem,0.36fr)_minmax(0,1.64fr)] lg:items-center">
+            <div className="min-w-0">
+              <p className="max-w-full text-[0.94rem] leading-7 text-[#a4b3c6] md:text-[0.96rem] md:leading-7 lg:max-w-[25rem]">
+                {copy.description}
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col">
+                <Button href="/contact">{copy.primaryCta}</Button>
+                <Button
+                  className="!border-white/14 !bg-white/[0.025] !text-white hover:!border-[#206ae9]/40 hover:!bg-[#206ae9]/10"
+                  href="/platform"
+                  variant="secondary"
+                >
+                  {copy.secondaryCta}
+                </Button>
+              </div>
             </div>
+            <ProductVideoVisual
+              alt={copy.heroAlt}
+              className="aspect-[16/9] min-w-0 border-0 bg-black shadow-[0_0_110px_80px_#000] [mask-image:linear-gradient(90deg,transparent_0%,black_7%,black_96%,transparent_100%)] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+              fallbackSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
+              imageClassName="scale-[1.08] object-contain brightness-[1.32] contrast-[1.08] saturate-[1.08]"
+              posterSrc="/videos/jobdone-ai/ai-adoption-journey-poster.jpg"
+              priority
+              videoSrc="/videos/jobdone-ai/ai-adoption-journey.mp4"
+              variant="plain"
+            />
           </div>
-          <HeroAdoptionVisual alt={copy.heroAlt} />
         </Container>
       </section>
 

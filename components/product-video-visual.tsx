@@ -24,7 +24,7 @@ export function ProductVideoVisual({
   const isBlend = variant === "blend";
 
   return (
-    <div className={`relative overflow-hidden bg-transparent ${className}`}>
+    <div className={`relative overflow-hidden bg-black ${className}`}>
       <video
         aria-hidden="true"
         autoPlay
@@ -47,10 +47,10 @@ export function ProductVideoVisual({
       />
       {isBlend ? (
         <>
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#05080c] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#05080c] to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#05080c] to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#05080c] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-black to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-black to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black to-transparent" />
         </>
       ) : null}
     </div>
