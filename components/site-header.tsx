@@ -25,7 +25,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button as UiButton } from "@/components/ui/button";
-import { getPathname, Link } from "@/i18n/navigation";
+import { getPathname, Link, useRouter } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 
 type LinkHref = ComponentProps<typeof Link>["href"];
@@ -71,6 +71,35 @@ const companyLinks = [
   ["terms", "/terms"],
   ["imprint", "/imprint"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
+
+const heroVideoByRoute = {
+  "/": "/videos/jobdone-ai/home-hero.mp4",
+  "/platform": "/videos/jobdone-ai/platform-graph.mp4",
+  "/ai-adoption": "/videos/jobdone-ai/ai-adoption-journey.mp4",
+} as const;
+
+const warmedVideoSources = new Set<string>();
+
+function warmVideoSource(src: string) {
+  if (warmedVideoSources.has(src) || typeof document === "undefined") {
+    return;
+  }
+
+  warmedVideoSources.add(src);
+
+  const link = document.createElement("link");
+  link.as = "video";
+  link.href = src;
+  link.rel = "preload";
+  link.type = "video/mp4";
+  document.head.appendChild(link);
+
+  const video = document.createElement("video");
+  video.muted = true;
+  video.preload = "auto";
+  video.src = src;
+  video.load();
+}
 
 function toInternalPathname(pathname: string) {
   const unprefixed =
@@ -290,6 +319,7 @@ function CompanyMenuPanel({
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const router = useRouter();
   const t = useTranslations("Navigation");
   const mega = useTranslations("MegaMenu");
   const internalPathname = toInternalPathname(pathname);
@@ -305,9 +335,43 @@ export function SiteHeader() {
           mega(`${section}.links.${key}.description`),
         ] as const,
     ) satisfies readonly MegaMenuLink[];
+  const warmHeroRoute = (href: keyof typeof heroVideoByRoute) => {
+    router.prefetch(href);
+    warmVideoSource(heroVideoByRoute[href]);
+  };
+  const warmHeroRouteFromTarget = (target: EventTarget | null) => {
+    if (!(target instanceof Element)) {
+      return;
+    }
+
+    const link = target.closest("a");
+    if (!link) {
+      return;
+    }
+
+    const route = toInternalPathname(link.pathname);
+    if (route in heroVideoByRoute) {
+      warmHeroRoute(route as keyof typeof heroVideoByRoute);
+    }
+  };
+  const heroWarmHandlers = (href: keyof typeof heroVideoByRoute) => ({
+    onFocus: () => warmHeroRoute(href),
+    onMouseEnter: () => warmHeroRoute(href),
+    onMouseMove: () => warmHeroRoute(href),
+    onPointerEnter: () => warmHeroRoute(href),
+    onPointerMove: () => warmHeroRoute(href),
+    onTouchStart: () => warmHeroRoute(href),
+  });
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#05080c]/88 backdrop-blur-xl">
+    <header
+      className="sticky top-0 z-50 border-b border-white/10 bg-[#05080c]/88 backdrop-blur-xl"
+      onFocusCapture={(event) => warmHeroRouteFromTarget(event.target)}
+      onMouseOver={(event) => warmHeroRouteFromTarget(event.target)}
+      onMouseMove={(event) => warmHeroRouteFromTarget(event.target)}
+      onPointerOver={(event) => warmHeroRouteFromTarget(event.target)}
+      onPointerMove={(event) => warmHeroRouteFromTarget(event.target)}
+    >
       <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between gap-4 px-5 md:px-6">
         <Logo />
 
@@ -317,7 +381,7 @@ export function SiteHeader() {
               <NavigationMenuLink
                 aria-current={internalPathname === "/" ? "page" : undefined}
                 className={navLinkClassName}
-                render={<Link href="/" />}
+                render={<Link href="/" prefetch {...heroWarmHandlers("/")} />}
               >
                 {t("home")}
               </NavigationMenuLink>
@@ -340,7 +404,13 @@ export function SiteHeader() {
                   internalPathname === "/platform" ? "page" : undefined
                 }
                 className={navLinkClassName}
-                render={<Link href="/platform" />}
+                render={
+                  <Link
+                    href="/platform"
+                    prefetch
+                    {...heroWarmHandlers("/platform")}
+                  />
+                }
               >
                 {t("platform")}
               </NavigationMenuLink>
@@ -351,7 +421,13 @@ export function SiteHeader() {
                   internalPathname === "/ai-adoption" ? "page" : undefined
                 }
                 className={navLinkClassName}
-                render={<Link href="/ai-adoption" />}
+                render={
+                  <Link
+                    href="/ai-adoption"
+                    prefetch
+                    {...heroWarmHandlers("/ai-adoption")}
+                  />
+                }
               >
                 {t("aiAdoption")}
               </NavigationMenuLink>
@@ -398,12 +474,16 @@ export function SiteHeader() {
                 <Link
                   className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
                   href="/"
+                  prefetch
+                  {...heroWarmHandlers("/")}
                 >
                   {t("home")}
                 </Link>
                 <Link
                   className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
                   href="/ai-adoption"
+                  prefetch
+                  {...heroWarmHandlers("/ai-adoption")}
                 >
                   {t("aiAdoption")}
                 </Link>
@@ -441,6 +521,8 @@ export function SiteHeader() {
                 <Link
                   className="rounded-lg border border-white/10 bg-white/[0.025] px-3 py-3 text-sm font-medium text-white"
                   href="/platform"
+                  prefetch
+                  {...heroWarmHandlers("/platform")}
                 >
                   {t("platform")}
                 </Link>

@@ -424,12 +424,12 @@ export default async function AIAdoptionPage({ params }: PageProps) {
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
         <Container className="relative min-w-0 pb-24 pt-16 md:pb-32 md:pt-24 lg:min-h-[720px]">
           <h1
-            className="relative z-10 max-w-full text-[clamp(2.4rem,9vw,4.5rem)] font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:max-w-[62%]"
+            className="relative z-10 max-w-full text-[clamp(2.4rem,9vw,4.5rem)] font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:max-w-[65%]"
             data-reveal="rise"
           >
             {copy.title}
           </h1>
-          <div className="relative z-10 mt-10 grid min-w-0 gap-8 lg:mt-12 lg:grid-cols-[minmax(23rem,0.36fr)_minmax(0,1.64fr)] lg:items-center">
+          <div className="relative z-10 mt-10 grid min-w-0 gap-8 lg:mt-12 lg:grid-cols-[minmax(23rem,0.36fr)_minmax(0,1.64fr)] lg:items-center lg:gap-14">
             <div className="min-w-0">
               <p
                 className="reveal-delay-1 max-w-full text-[0.94rem] leading-7 text-[#a4b3c6] md:text-[0.96rem] md:leading-7 lg:max-w-[25rem]"
