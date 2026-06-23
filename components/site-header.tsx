@@ -72,13 +72,6 @@ const companyLinks = [
   ["imprint", "/imprint"],
 ] as const satisfies readonly MegaMenuLinkConfig[];
 
-const platformLinks = [
-  ["workGraph", { pathname: "/platform", hash: "work" }],
-  ["aiCoworkers", { pathname: "/platform", hash: "ai-coworkers" }],
-  ["aiAutomations", { pathname: "/platform", hash: "ai-automations" }],
-  ["knowledgeRecords", { pathname: "/platform", hash: "knowledge" }],
-] as const satisfies readonly MegaMenuLinkConfig[];
-
 function toInternalPathname(pathname: string) {
   const unprefixed =
     pathname === "/de" || pathname === "/en"
@@ -301,7 +294,7 @@ export function SiteHeader() {
   const mega = useTranslations("MegaMenu");
   const internalPathname = toInternalPathname(pathname);
   const getMegaLinks = (
-    section: "useCases" | "platform" | "company",
+    section: "useCases" | "company",
     links: readonly MegaMenuLinkConfig[],
   ) =>
     links.map(
@@ -342,19 +335,15 @@ export function SiteHeader() {
               />
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger
-                className={navTriggerClassName}
-                data-active={internalPathname === "/platform" ? "" : undefined}
+              <NavigationMenuLink
+                aria-current={
+                  internalPathname === "/platform" ? "page" : undefined
+                }
+                className={navLinkClassName}
+                render={<Link href="/platform" />}
               >
                 {t("platform")}
-              </NavigationMenuTrigger>
-              <MegaMenuPanel
-                eyebrow={mega("platform.eyebrow")}
-                links={getMegaLinks("platform", platformLinks)}
-                title={mega("platform.title")}
-                ctaHref="/platform"
-                ctaLabel={t("platform")}
-              />
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
@@ -449,34 +438,12 @@ export function SiteHeader() {
                     ))}
                   </div>
                 </details>
-                <details
-                  className="group rounded-lg border border-white/10 bg-white/[0.025]"
-                  open
+                <Link
+                  className="rounded-lg border border-white/10 bg-white/[0.025] px-3 py-3 text-sm font-medium text-white"
+                  href="/platform"
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-3 text-sm font-medium text-white [&::-webkit-details-marker]:hidden">
-                    <span>{t("platform")}</span>
-                    <span className="text-[#8ea0b5] transition-transform group-open:rotate-180">
-                      ↓
-                    </span>
-                  </summary>
-                  <div className="grid gap-1 border-t border-white/10 p-2">
-                    <Link
-                      className="rounded-md px-3 py-2 text-sm font-medium text-[#c8d8ff] hover:bg-white/[0.04] hover:text-white"
-                      href="/platform"
-                    >
-                      {t("platform")}
-                    </Link>
-                    {platformLinks.map(([key, href]) => (
-                      <Link
-                        className="rounded-md px-3 py-2 text-sm font-medium text-[#9aabbf] hover:bg-white/[0.04] hover:text-white"
-                        href={href}
-                        key={key}
-                      >
-                        {mega(`platform.links.${key}.title`)}
-                      </Link>
-                    ))}
-                  </div>
-                </details>
+                  {t("platform")}
+                </Link>
                 <details className="group rounded-lg border border-white/10 bg-white/[0.025]">
                   <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-3 text-sm font-medium text-white [&::-webkit-details-marker]:hidden">
                     <span>{t("company")}</span>

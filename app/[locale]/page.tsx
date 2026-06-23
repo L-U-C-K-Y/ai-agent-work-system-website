@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 import { ExperimentVisual } from "@/components/experiment-visual";
+import { ProductVideoVisual } from "@/components/product-video-visual";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -717,25 +718,25 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <main className="bg-[#05080c] text-white">
-      <section className="relative overflow-hidden border-b border-white/8 bg-[#030609]">
+      <section className="relative overflow-hidden border-b border-white/8 bg-black">
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,transparent,#05080c)]" />
-        <Container className="relative pb-28 pt-20 md:pb-36 md:pt-28">
-          <div className="relative z-10 grid min-w-0 gap-12 lg:grid-cols-[0.62fr_1.38fr] lg:items-center">
+        <Container className="relative min-w-0 pb-28 pt-20 md:pb-36 md:pt-28 lg:min-h-[720px]">
+          <h1
+            className="relative z-10 max-w-full text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.97] tracking-tight text-white md:text-7xl lg:max-w-[62%]"
+            data-reveal="rise"
+          >
+            {copy.heroTitle}
+          </h1>
+          <div className="relative z-10 mt-10 grid min-w-0 gap-8 lg:mt-12 lg:grid-cols-[minmax(23rem,0.36fr)_minmax(0,1.64fr)] lg:items-center">
             <div className="min-w-0">
-              <h1
-                className="max-w-full text-[clamp(2.3rem,9.5vw,4.5rem)] font-semibold leading-[0.97] tracking-tight text-white md:max-w-3xl md:text-7xl"
-                data-reveal="rise"
-              >
-                {copy.heroTitle}
-              </h1>
               <p
-                className="reveal-delay-1 mt-7 max-w-full text-base leading-7 text-[#a4b3c6] md:max-w-2xl md:text-lg md:leading-8"
+                className="reveal-delay-1 max-w-full text-[0.94rem] leading-7 text-[#a4b3c6] md:text-[0.96rem] md:leading-7 lg:max-w-[25rem]"
                 data-reveal="rise"
               >
                 {copy.heroDescription}
               </p>
               <div
-                className="reveal-delay-2 mt-9 flex flex-col gap-3 sm:flex-row"
+                className="reveal-delay-2 mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col"
                 data-reveal="rise"
               >
                 <Button href="/platform">{copy.primaryCta}</Button>
@@ -746,12 +747,14 @@ export default async function Home({ params }: HomeProps) {
             </div>
             <div className="reveal-delay-2 relative min-w-0" data-reveal="scale">
               {useImagegenExperimentVisuals ? (
-                <ExperimentVisual
+                <ProductVideoVisual
                   alt={copy.heroAlt}
-                  className="aspect-[16/9] lg:-mr-[18vw] lg:w-[calc(100%+18vw)]"
+                  className="aspect-[16/9] bg-black shadow-[0_0_110px_80px_#000] lg:-mr-[20vw] lg:w-[calc(100%+20vw)]"
+                  fallbackSrc="/videos/jobdone-ai/home-hero-poster.jpg"
                   imageClassName="object-contain"
+                  posterSrc="/videos/jobdone-ai/home-hero-poster.jpg"
                   priority
-                  src="/images/jobdone-ai/neon-home-edge-to-edge-black.png"
+                  videoSrc="/videos/jobdone-ai/home-hero.mp4"
                   variant="blend"
                 />
               ) : (
