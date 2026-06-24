@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Manrope } from "next/font/google";
 import Image from "next/image";
 import NextLink from "next/link";
+import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -184,6 +185,10 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
+          <Script
+            src="https://t.contentsquare.net/uxa/c7a3e54b932de.js"
+            strategy="afterInteractive"
+          />
           <MotionObserver />
           <SiteIntro />
           <Suspense fallback={<HeaderFallback locale={locale as Locale} />}>
