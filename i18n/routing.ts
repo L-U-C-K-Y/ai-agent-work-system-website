@@ -26,6 +26,10 @@ export const routing = defineRouting({
       en: "/ai-adoption",
       de: "/ki-einfuehrung",
     },
+    "/pricing": {
+      en: "/pricing",
+      de: "/preise",
+    },
     "/contact": {
       en: "/contact",
       de: "/kontakt",

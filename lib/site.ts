@@ -9,6 +9,7 @@ export const mainNavigation = [
   { key: "solutions", href: "/products" },
   { key: "platform", href: "/platform" },
   { key: "aiAdoption", href: "/ai-adoption" },
+  { key: "pricing", href: "/pricing" },
   { key: "company", href: "/contact" },
 ] as const;
 

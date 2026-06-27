@@ -8,6 +8,7 @@
     "home": "Home",
     "platform": "Platform",
     "aiAdoption": "AI Adoption",
+    "pricing": "Pricing",
     "solutions": "Use cases",
     "company": "Company",
     "contact": "Contact",
@@ -109,6 +110,7 @@
     "imprint": "Imprint",
     "contact": "Contact",
     "aiAdoption": "AI Adoption",
+    "pricing": "Pricing",
     "rights": "(c) {year} JobDone AI. All rights reserved.",
     "madeWithCare": "Human and agent work, fully traceable.",
     "links": {

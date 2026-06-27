@@ -25,6 +25,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const shouldLoadContentsquare =
+  process.env.NEXT_PUBLIC_CONTENTSQUARE_DISABLED === "true"
+    ? false
+    : process.env.NEXT_PUBLIC_CONTENTSQUARE_ENABLED === "true" ||
+      process.env.NODE_ENV === "production";
+
 type LocaleLayoutProps = {
   children: ReactNode;
   params: Promise<{
@@ -45,6 +51,7 @@ const fallbackNavigation = {
       ["Use cases", "/products"],
       ["Platform", "/platform"],
       ["AI Adoption", "/ai-adoption"],
+      ["Pricing", "/pricing"],
       ["Company", "/contact"],
     ],
     cta: "Request Access",
@@ -56,6 +63,7 @@ const fallbackNavigation = {
       ["Anwendungsfälle", "/de/produkte"],
       ["Plattform", "/de/plattform"],
       ["AI Adoption", "/de/ki-einfuehrung"],
+      ["Preise", "/de/preise"],
       ["Unternehmen", "/de/kontakt"],
     ],
     cta: "Zugang anfragen",
@@ -185,10 +193,12 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
-          <Script
-            src="https://t.contentsquare.net/uxa/c7a3e54b932de.js"
-            strategy="afterInteractive"
-          />
+          {shouldLoadContentsquare ? (
+            <Script
+              src="https://t.contentsquare.net/uxa/c7a3e54b932de.js"
+              strategy="afterInteractive"
+            />
+          ) : null}
           <MotionObserver />
           <SiteIntro />
           <Suspense fallback={<HeaderFallback locale={locale as Locale} />}>

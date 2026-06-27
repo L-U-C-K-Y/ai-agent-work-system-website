@@ -81,6 +81,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-white" href="/pricing">
+                {footer("pricing")}
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-white" href="/contact">
                 {footer("contact")}
               </Link>

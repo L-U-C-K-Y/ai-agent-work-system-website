@@ -125,6 +125,10 @@ function toInternalPathname(pathname: string) {
     return "/ai-adoption";
   }
 
+  if (unprefixed === "/preise") {
+    return "/pricing";
+  }
+
   if (unprefixed === "/kontakt") {
     return "/contact";
   }
@@ -166,6 +170,7 @@ function getLocalizedHref(targetLocale: Locale, internalPathname: string) {
   if (
     internalPathname === "/platform" ||
     internalPathname === "/ai-adoption" ||
+    internalPathname === "/pricing" ||
     internalPathname === "/contact" ||
     internalPathname === "/privacy" ||
     internalPathname === "/terms" ||
@@ -433,6 +438,17 @@ export function SiteHeader() {
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <NavigationMenuLink
+                aria-current={
+                  internalPathname === "/pricing" ? "page" : undefined
+                }
+                className={navLinkClassName}
+                render={<Link href="/pricing" prefetch />}
+              >
+                {t("pricing")}
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuTrigger className={navTriggerClassName}>
                 {t("company")}
               </NavigationMenuTrigger>
@@ -486,6 +502,13 @@ export function SiteHeader() {
                   {...heroWarmHandlers("/ai-adoption")}
                 >
                   {t("aiAdoption")}
+                </Link>
+                <Link
+                  className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
+                  href="/pricing"
+                  prefetch
+                >
+                  {t("pricing")}
                 </Link>
                 <Link
                   className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-3 text-sm font-medium text-white"
